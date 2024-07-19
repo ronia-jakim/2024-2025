@@ -1,0 +1,73 @@
+\usepackage[default]{cantarell}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[
+  a4paper,
+  total={170mm, 247mm},
+  left=20mm,
+  top=25mm,
+  % showframe
+]{geometry}
+
+\usepackage{xcolor}
+
+\definecolor{rosewater}{HTML}{dc8a78}
+\definecolor{flamingo}{HTML}{dd7878}
+\definecolor{pink}{HTML}{ea76cb}
+\definecolor{mauve}{HTML}{8839ef}
+\definecolor{red}{HTML}{d20f39}
+\definecolor{maroon}{HTML}{e64553}
+\definecolor{peach}{HTML}{fe640b}
+\definecolor{yellow}{HTML}{df8e1d}
+\definecolor{green}{HTML}{40a02b}
+\definecolor{teal}{HTML}{179299}
+\definecolor{sky}{HTML}{04a5e5}
+\definecolor{sapphire}{HTML}{209fb5}
+\definecolor{blue}{HTML}{1e66f5}
+\definecolor{lavender}{HTML}{7287fd}
+\definecolor{subtext2}{HTML}{4c4f69}
+\definecolor{subtext1}{HTML}{5c5f77}
+\definecolor{subtext0}{HTML}{6c6f85}
+\definecolor{overlay2}{HTML}{7c7f93}
+\definecolor{overlay1}{HTML}{8c8fa1}
+\definecolor{overlay0}{HTML}{9ca0b0}
+
+\definecolor{text}{HTML}{000000}
+\color{text}
+
+
+\makeatletter 
+\let\htitle\@title
+\let\fauthor\@author
+\makeatother
+
+\usepackage{fancyhdr}
+
+\fancyfoot[CE, CO]{}
+\fancyfoot[LE, RO]{\color{overlay2}\thepage}
+
+\fancyhead[RE, LO]{$ \quad $\color{subtext1}\fauthor $ \quad $}
+\fancyhead[LE, RO]{$ \quad $\color{green!40!subtext2}\bfseries\htitle $ \quad $}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[CE, CO]{}
+  \fancyfoot[LE, RO]{\color{overlay2}\thepage}
+
+  \fancyhead[RE, LO]{$ \quad $\color{subtext1}\fauthor $ \quad $}
+  \fancyhead[LE, RO]{$ \quad $\color{green!40!subtext2}\bfseries\htitle $ \quad $}
+}
+\usepackage{dashrule}
+
+\renewcommand{\headrule}{\color{overlay0}\hdashrule[.5ex]{\headwidth}{1pt}{1pt}}
+
+\pagestyle{fancy}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}[block]{\bfseries\Huge}{\color{green!40!subtext2}\filright\Huge\thechapter.}{1ex}{\color{green!40!subtext2}\Huge\filright}
+
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
