@@ -1,3 +1,4 @@
+%! TeX program = lualatex
 \documentclass[twoside, a4paper, 12pt]{book}
 
 \title{Algebraic geometry}
@@ -7,7 +8,7 @@
 \input{../../../../preamble.tex}
 
 \begin{document}
-\frontmatter
+\frontmatter 
 \maketitle
 \thispagestyle{empty}
 \setcounter{page}{0}
@@ -17,9 +18,8 @@
 
 \pagestyle{fancy}
 
-\chapter{Schemes}
-
-\input{01_schemes.tex} 
-
+ 
+\include{./rozdzialy/01_schemes/01_schemes.tex} 
+  
 
 \end{document}

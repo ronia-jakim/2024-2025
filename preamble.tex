@@ -1,7 +1,10 @@
-\usepackage[default]{cantarell}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+
+\usepackage{fontspec}
+
+\usepackage[default]{cantarell}
+
 
 \usepackage[
   a4paper,
@@ -10,6 +13,19 @@
   top=25mm,
   % showframe
 ]{geometry}
+
+\usepackage[skip=3mm]{parskip}
+\renewcommand{\baselinestretch}{1.2}
+\selectfont
+
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{mathastext}
+
+\DeclareMathOperator{\Spec}{Spec}
 
 \usepackage{xcolor}
 
@@ -36,7 +52,6 @@
 
 \definecolor{text}{HTML}{000000}
 \color{text}
-
 
 \makeatletter 
 \let\htitle\@title
@@ -71,3 +86,102 @@
 
 \titlespacing*{\chapter}{0pt}{0pt}{20pt}
 
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{tcolorbox}
+
+% \RequirePackage[framemethod=TikZ]{mdframed}
+
+\tcbuselibrary{theorems}
+\tcbuselibrary{breakable}
+\tcbuselibrary{skins}
+
+\tcbset{greenTHM/.style={
+    fonttitle = \bfseries\large,
+    coltitle = green!50!black,
+    description color = green!50!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{green!40},
+    arc=0mm,
+    after skip=5mm,
+    before skip=5mm
+  }
+}
+
+\tcbset{orangeTHM/.style={
+    fonttitle = \bfseries\large,
+    coltitle = orange!60!black,
+    description color = orange!60!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{orange!40}, 
+    arc=0mm,
+    before skip=5mm,
+    after skip=5mm
+  }
+}
+
+\NewTcbTheorem[
+  auto counter, 
+  number within=chapter
+]{definition}{Definition}{greenTHM}{def} 
+
+\NewTcbTheorem[
+  use counter from=definition
+]{theorem}{Theorem}{orangeTHM}{th}
+
+\NewTcbTheorem[
+  use counter from=definition
+]{proposition}{Proposition}{orangeTHM}{prop}
+
+
+\usepackage{svg}
+
+\renewenvironment{proof}{{\bfseries\color{green!60!black} Dowód}$ $\newline}{
+  \begin{flushright} \includesvg[width=4mm]{../../../../duck.svg} \end{flushright}$ $\newline
+}
+
+\usepackage{soul}
+
+\sethlcolor{green!15}
+
+\makeatletter
+%\font\SOUL@tt="LMMono10-Regular"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@ %
+\makeatother
+
+\newcommand{\buff}[1]{
+  {\bfseries\color{green}#1}
+}
+
+\usepackage{enumitem}
