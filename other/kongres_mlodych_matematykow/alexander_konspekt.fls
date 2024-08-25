@@ -1,4 +1,4 @@
-PWD /home/marudka/uni-stuff/2024-2025/other/kongres_mlodych_matematykow
+PWD /home/maruda/uni-stuff/2024-2025/other/kongres_mlodych_matematykow
 INPUT /var/lib/texmf/web2c/luahbtex/lualatex.fmt
 INPUT ./alexander_konspekt.tex
 OUTPUT alexander_konspekt.log
@@ -15,7 +15,7 @@ INPUT /usr/share/texmf-dist/tex/luatex/lualibs/lualibs-extended.lua
 INPUT /usr/share/texmf-dist/tex/luatex/lualibs/lualibs-extended-merged.lua
 INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload-log.lua
 INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua
-OUTPUT /home/marudka/.texlive/texmf-var/m_t_x_t_e_s_t.tmp
+OUTPUT /home/maruda/.texlive/texmf-var/m_t_x_t_e_s_t.tmp
 INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload-parsers.lua
 INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload-configuration.lua
 INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload-status.lua
@@ -62,8 +62,8 @@ INPUT /usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload-bcp47.lua
 INPUT /usr/share/texmf-dist/tex/latex/l3kernel/expl3.lua
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/size10.clo
-INPUT /home/marudka/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz
-INPUT /home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
 INPUT /usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 INPUT /usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 INPUT /usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -206,7 +206,7 @@ INPUT /usr/share/texmf-dist/tex/latex/fontspec/fontspec.lua
 INPUT /usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg
-INPUT /home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc
 INPUT /usr/share/texmf-dist/tex/latex/cantarell/cantarell.sty
 INPUT /usr/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
@@ -215,11 +215,11 @@ INPUT /usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
 INPUT /usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 INPUT /usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 INPUT /usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-INPUT /home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-regular.luc
-INPUT /home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-thin.luc
-INPUT /home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-light.luc
-INPUT /home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-bold.luc
-INPUT /home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-extrabold.luc
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-regular.luc
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-thin.luc
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-light.luc
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-bold.luc
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-extrabold.luc
 INPUT /usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/share/texmf-dist/tex/latex/parskip/parskip.sty
@@ -332,9 +332,13 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT ./R1_matrices.png
+INPUT ./R1_matrices.png
 INPUT ./alexander_konspekt.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

@@ -93,7 +93,7 @@ Zdarza się, że jedna orientacja węzła nie jest równoważna przeciwnej orien
 
 \section{Kolorowanie węzłów}
 
-Ściśle rzecz biorąc, węzłów nigdy nie kolorujemy - robimy to z ich diagramami. W diagramach zawsze skrzyżowania będą nam mówić, czy kolorowanie jest sensowne, czy też nie. Tym, czemu przypisujemy barwy może być obszar odgrodzony przez kawałek sznurka lub fragment nitki od jednego skrzyżowania do drugiego. Alexander w swojej pracy zajmował się tym pierwszym sposobem, jednak teraz króluje ten drugi sposób. Jest to związane z innym, o wiele trudniejszym i dokładniejszym niezmiennikiem węzła (grupa węzła).
+Ściśle rzecz biorąc, węzłów nigdy nie kolorujemy - robimy to z ich diagramami. W diagramach zawsze skrzyżowania będą nam mówić, czy kolorowanie jest sensowne, czy też nie. Tym, czemu przypisujemy barwy może być obszar odgrodzony przez kawałek sznurka lub fragment nitki od jednego skrzyżowania do drugiego. Alexander w swojej pracy zajmował się tym pierwszym sposobem, jednak teraz króluje ten drugi sposób. Jest to związane z innym, o wiele trudniejszym i dokładniejszym niezmiennikiem węzła (a dokładniej to reprezentacją grupy węzła).
 
 \begin{center}
   \begin{tikzpicture}
@@ -146,7 +146,7 @@ Zdarza się, że jedna orientacja węzła nie jest równoważna przeciwnej orien
 \begin{definition}{Kolorowanie węzła}{}
   Ponumerujmy łuczki/segmenty węzła, czyli kawałki okręgu między dwoma kolejnymi skrzyżowaniami - będą one $l_1,..., l_n$. Zróbmy to samo ze skrzyżowaniami, które będziemy nazywać $x_1,..., x_n$ i będziemy je traktować jako maszynki, które przyjmują kolory $3$ łuczków: \textbf{górny, wchodzący i wychodzący}, i mówią, czy kolorowanie jest dobre (wartość $0$) czy nie (wartość różna od $0$).
 
-  {\bfseries\color{green}Kolorowaniem nazwiemy przyporządkowanie łuczkom kolorów (liczb całkowitych) w taki sposób, że każde skrzyżowanie zwraca nam liczbę $\boldsymbol0$.}
+  {\bfseries\color{green}Kolorowaniem nazwiemy przyporządkowanie łuczkom kolorów (liczb całkowitych). Kolorowanie jest sensowne, jeśli przyporządkujemy w taki sposób, że każde skrzyżowanie zwraca nam liczbę $\boldsymbol0$.}
 \end{definition}
 
 Każdy artysta ma inną paletę, więc maszynki którymi są skrzyżowania mogą działać na wiele sposobów. My dzisiaj będziemy się zajmować dwoma konkretnymi paletami, które działają jak funkcje:
@@ -174,28 +174,15 @@ Mając kilka skrzyżowań możemy zbudować z takich poziomych paseczków więks
       (90:2);
     \end{knot}
 
-    \begin{scope}[shift={(7, 1.8)}]
-    \matrix (m) [
-      matrix of nodes, 
-      left delimiter = {[}, 
-      right delimiter={]},
-      column sep=5mm
-    ]
-      {
-              2  & -1 & 1  \\
-              -1 & 1  & 2  \\
-              1  & 2  & -1 \\
-      };
-         
-    \draw[red, thick, dashed] (m-1-1.north west) rectangle (m-2-2.south east);
-    \node at ($(m-1-1)!0.5!(m-1-2)+(0, .7)$) {$\color{red}1$};
+    \node at (90:2.5) {$l_1$};
+    \node at (210:2.5) {$l_2$};
+    \node at (-30:2.5) {$l_3$};
 
-    \draw[green, thick, dashed] (m-2-2.north west) rectangle (m-3-3.south east);
-    \node at ($(m-3-2)!0.5!(m-3-3)+(0, -0.7)$) {$\color{green}-5$};
-      \node at ($(m-2-1.west)+(-1.8, 0)$) {$P_1(D)=$};
-    \end{scope}
-    
-    \begin{scope}[shift={(7, -1.8)}]
+    \node at (150:2) {$x_3$};
+    \node at (30:2) {$x_1$};
+    \node at (-90:2) {$x_2$};
+
+    \begin{scope}[shift={(6, 0)}]
       \matrix (m) [
         matrix of nodes, 
         left delimiter = {[}, 
@@ -207,41 +194,41 @@ Mając kilka skrzyżowań możemy zbudować z takich poziomych paseczków więks
                 -1 & -1  & 2  \\
                 -1  & 2  & -1 \\
         };
-           
-      \draw[red, thick, dashed] (m-1-1.north west) rectangle (m-2-2.south east);
-      \node at ($(m-1-1)!0.5!(m-1-2)+(0, .7)$) {$\color{red}-3$};
+        \node at ($(m-1-1)+(0, .6)$) {$l_1$};
+        \node at ($(m-1-2)+(0, .6)$) {$l_2$};
+        \node at ($(m-1-3)+(0, .6)$) {$l_3$};
 
-      \draw[green, thick, dashed] (m-2-2.north west) rectangle (m-3-3.south east);
-      \node at ($(m-3-2)!0.5!(m-3-3)+(0, -0.7)$) {$\color{green}-3$};
-      \node at ($(m-2-1.west)+(-1.8, 0)$) {$P_2(D)=$};
+        \node at ($(m-1-1)+(-1, 0)$) {$x_1$};
+        \node at ($(m-2-1)+(-1, 0)$) {$x_2$};
+        \node at ($(m-3-1)+(-1, 0)$) {$x_3$};
     \end{scope}
-    % \begin{scope}[shift={(7, 2.5)}]
-    %   \matrix (m) [
-    %     matrix of nodes, 
-    %     left delimiter = {[}, 
-    %     right delimiter={]},
-    %     column sep=5mm
-    %   ]
-    %     {
-    %       0  & 2 & 1 & -1  \\
-    %       0  & -1 & 2  & 1  \\
-    %       1  & 0  & -1  & 2 \\
-    %       1 & 1 & 0 & 0 \\
-    %     };
-    %
-    %   \draw[red, thick, dashed] (m-1-1.north west) rectangle (m-3-3.south east);
-    %   \node at ($(m-1-1)!0.5!(m-1-3)+(0, .7)$) {$\color{red}5$};
-    %
-    %   \draw[green, thick, dashed] (m-2-2.north west) rectangle (m-4-4.south east);
-    %   \node at ($(m-4-2)!0.5!(m-4-4)+(0, -0.7)$) {$\color{green}5$};
-    %
-    %   \draw[blue, thick, dashed] ($(m-1-2.north west)+(-0.01, 0.1)$) rectangle ($(m-3-4.south east)+(0.1, 0.1)$);
-    %   \node at ($(m-1-2)!0.5!(m-1-4)+(0, 0.7)$) {$\color{blue}11$};
-    %
-    %   \node at ($(m-2-1.west)+(-1.8, 0)$) {$P_1(D)=$};
-    % \end{scope}
-
   \end{tikzpicture}
 \end{center}
+
+Spróbujmy policzyć to samo, ale dla troszkę innego diagramu tego węzła, np. po pierwszym ruchu Reidemeistera na $l_1$.
+
+Mamy dwie macierze, jak będzie czas to można poprosić uczestników o poszukanie niezmienników? (mam nadzieje, że strzelą w wyznacznik, bo on w tym momencie jest zawsze $0$).
+
+Wyznacznik macierzy jaką w ten sposób dostajemy zawsze jest $0$, niezależnie od tego, jaki węzeł kolorujemy. Wynika to z faktu, że zawsze każdy węzeł możemy pokolorować "każdy łuczek jest czerwony". Wystarczy zauważyć, że współczynniki palety sumują się do $0$. Żeby więc dostać wiadomość unikalną dla rozważanego węzła, potrzebujemy usunąć informację o jednym kolorowaniu. Najłatwiej jest to zrobić usuwając jedną kolumnę, ale wtedy mamy macierz niekwadratową - nie umiemy wyliczyć jej wyznacznika. Musimy więc usunąć jeszcze wiersz - można się przekonać, że $\pm1$ zawsze dostajemy to samo, nieważne który wiersz wyrzucimy (nad $\Z[t, t^{-1}]$ to jest $\pm t^{k}$ dla $k\in\Z$). 
+
+Dlaczego usunięcie kolumny działa? Bo odwzorowanie nie jest różnowartościowe - dla każdego $x\in\Z$ mamy $(x,...,x)\mapsto (0,...,0)$. Co prawda to bardziej jest dla przestrzeni wektorowych, ale nie mam ochoty wchodzić w formalności tutaj.
+
+\section{Dlaczego kolorowanie jest niezmiennikiem?}
+
+Szybko na wiarę mówimy, że jeśli macierz zmienimy tak, aby cały lewy dolny trójkąt był $0$, to wtedy wyznacznik możemy szybko liczyć mnożąc wszystkie elementy na przekątnej. Troszkę rzeczy tutaj zamiatam, ale jesteśmy w tęczowej krainie PIDów i się cieszymy.
+
+Rysujemy ruchy Reidemeistera jeszcze raz i pokazujemy co one zmieniają w macierzach
+\begin{center}
+  \includegraphics[width=15cm]{R1_matrices.png}
+
+  Tutaj przykład jednego ruchu, reszta idzie podobnie. Palety były nieco ogólniejsze, bo odpowiednio $au+bi+co$ oraz $\alpha u+\beta i+\gamma o$.
+\end{center}
+
+Przedstawiam operacje kolumnowe i wierszowe (zmiana kolejności, dodawanie kombinacji liniowej kolumn/wierszy do innej kolumny/wiersza) i pokazuję, że drugi ruch Reidemeistera nie zmienia rzeczy na przekątnej z dokładnością do $\pm1$. Jako zadanie zostawiam ruch pierwszy, a trzeci zostawiam jako dla odważnych (bo jest dłuższy).
+
+\section{Zadania}
+
+Jako zadania chcę dać kilka węzłów, ale np. dwa mają ten sam wielomian Alexandera ($6_1$ i $9_{46}$) a trzy pozostałe mają różny wielomian (nawet po podstawieniu $t\mapsto -1$). Łatwo jest podzielić węzły na $4$ grupki, ale te dwa z tym samym wielomianem są trudniejsze. Jeśli zostanie czasu, to opowiem o tym, że czasem na przekątnej dostajemy tylko jednostki i jedną nie-jednostkę, a czasem zdarzają się dwie nie-jednostki (Smith normal form). To też jest przydatne do rozróżniania węzłów (nie zawsze co prawda, ale działa dla przykładu z 6 i 9 skrzyżowaniami) c:
+
 
 \end{document}
