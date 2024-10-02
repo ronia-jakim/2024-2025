@@ -1,0 +1,2 @@
+\contentsline {chapter}{\numberline {1}Wstępy}{1}{chapter.1}%
+\contentsline {section}{\numberline {02.10.2024}Grafy Cayleya}{1}{section.1.1}%

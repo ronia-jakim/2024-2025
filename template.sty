@@ -1,12 +1,16 @@
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-
-\usepackage{fontspec}
-
-\usepackage[default]{cantarell}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{template}
 
 
-\usepackage[
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+
+\RequirePackage{fontspec}
+
+\RequirePackage[default]{cantarell}
+
+
+\RequirePackage[
   a4paper,
   total={170mm, 247mm},
   left=20mm,
@@ -14,16 +18,16 @@
   % showframe
 ]{geometry}
 
-\usepackage[skip=3mm]{parskip}
+\RequirePackage[skip=3mm]{parskip}
 \renewcommand{\baselinestretch}{1.2}
 \selectfont
 
 
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\RequirePackage{amsfonts}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
 
-\usepackage{mathastext}
+\RequirePackage{mathastext}
 
 \DeclareMathOperator{\Spec}{Spec}
 
@@ -32,7 +36,7 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\C}{\mathbb{C}}
 
-\usepackage{xcolor}
+\RequirePackage{xcolor}
 
 \definecolor{rosewater}{HTML}{dc8a78}
 \definecolor{flamingo}{HTML}{dd7878}
@@ -63,7 +67,7 @@
 \let\fauthor\@author
 \makeatother
 
-\usepackage{fancyhdr}
+\RequirePackage{fancyhdr}
 
 \fancyfoot[CE, CO]{}
 \fancyfoot[LE, RO]{\color{overlay2}\thepage}
@@ -79,21 +83,21 @@
   \fancyhead[RE, LO]{$ \quad $\color{subtext1}\fauthor $ \quad $}
   \fancyhead[LE, RO]{$ \quad $\color{green!40!subtext2}\bfseries\htitle $ \quad $}
 }
-\usepackage{dashrule}
+\RequirePackage{dashrule}
 
 \renewcommand{\headrule}{\color{overlay0}\hdashrule[.5ex]{\headwidth}{1pt}{1pt}}
 
 \pagestyle{fancy}
 
-\usepackage{titlesec}
+\RequirePackage{titlesec}
 
 \titleformat{\chapter}[block]{\bfseries\Huge}{\color{green!40!subtext2}\filright\Huge\thechapter.}{1ex}{\color{green!40!subtext2}\Huge\filright}
 
 \titlespacing*{\chapter}{0pt}{0pt}{20pt}
 
-\usepackage{amsthm}
-\usepackage{thmtools}
-\usepackage{tcolorbox}
+\RequirePackage{amsthm}
+\RequirePackage{thmtools}
+\RequirePackage{tcolorbox}
 
 % \RequirePackage[framemethod=TikZ]{mdframed}
 
@@ -158,7 +162,7 @@
 \NewTcbTheorem[
   auto counter, 
   % number within=chapter
-  number within=section
+  number within=chapter
 ]{definition}{Definition}{greenTHM}{def} 
 
 \NewTcbTheorem[
@@ -170,13 +174,13 @@
 ]{proposition}{Proposition}{orangeTHM}{prop}
 
 
-\usepackage{svg}
+\RequirePackage{svg}
 
 \renewenvironment{proof}{{\bfseries\color{green!60!black} Dowód}$ $\newline}{
   \begin{flushright} \includesvg[width=4mm]{../../../../duck.svg} \end{flushright}$ $\newline
 }
 
-\usepackage{soul}
+\RequirePackage{soul}
 
 \sethlcolor{green!15}
 
@@ -190,4 +194,23 @@
   {\bfseries\color{green}#1}
 }
 
-\usepackage{enumitem}
+\RequirePackage{enumitem}
+
+\RequirePackage{tocloft}
+
+\RequirePackage{hyperref}
+
+\DeclareOption{dates}{
+  \setlength\cftsecnumwidth{6em}
+  \let\oldsection\section 
+  % \setlength\cftsectionnumwidth{4em}
+
+  \renewcommand{\section}[2]{
+    \renewcommand{\thesection}{#1}
+    \oldsection{#2}
+  }
+}
+
+\ProcessOptions\relax
+
+\endinput

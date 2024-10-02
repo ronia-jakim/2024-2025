@@ -1,0 +1,15 @@
+\section{02.10.2024}{Grafy Cayleya}
+
+\begin{definition}{metryka słów}{}
+  Niech $G$ będzie grupą, a $S$ dowolnym układem jej generatorów. Wówczas dla dowolnych $g_1,g_2\in G$ \buff{odległość między nimi w metryce słów} definiujemy jako
+$$ds(g_1, g_2)=\min\{n\;:\;g_2=g_1s_1,...,s_n,\;s_i\in S\cup S^{-1}\},$$
+gdzie $S^{-1}=\{g^{-1}\;:\;g\in S\}$.
+\end{definition}
+
+Metryka słów jest 
+\begin{enumerate}
+  \item skończona
+  \item symetryczna (z definicji generatorów)
+  \item \hl{lewo-niezmiennicza}, czyli $(\forall\;\gamma\in G)\;ds(\gamma g_1,\gamma g_2)=ds(g_1, g_2)$
+\end{enumerate}
+Ostatnia własność oznacza, że $G$ działa na sobie jako na przestrzeni metrycznej przez izometrie.

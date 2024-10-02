@@ -1,11 +1,12 @@
 %! TeX program = lualatex
 \documentclass[twoside, a4paper, 12pt]{book}
 
-\title{Algebraic geometry}
+\title{Geometryczna Teoria Grup}
 \author{\color{subtext1}Weronika Jakimowicz}
-\date{}
+\date{Zima 2024/25}
 
-\input{../../../../preamble.tex}
+% \input{../../../preamble.tex}
+\usepackage[dates]{../../../template}
 
 \begin{document}
 \frontmatter 
@@ -17,9 +18,9 @@
 \mainmatter
 
 \pagestyle{fancy}
-
- 
-\include{./rozdzialy/01_schemes/01_schemes.tex} 
   
+\chapter{Wstępy}
+
+\input{rozdzialy/01_cayley.tex}
 
 \end{document}
