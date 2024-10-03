@@ -89,6 +89,9 @@
 
 \pagestyle{fancy}
 
+\RequirePackage{tikz}
+\RequirePackage{tikz-cd}
+
 \RequirePackage{titlesec}
 
 \titleformat{\chapter}[block]{\bfseries\Huge}{\color{green!40!subtext2}\filright\Huge\thechapter.}{1ex}{\color{green!40!subtext2}\Huge\filright}
@@ -159,20 +162,71 @@
   }
 }
 
+\def\deff{Definition}
+\def\thmm{Theorem}
+\def\propp{Proposition}
+
 \NewTcbTheorem[
   auto counter, 
   % number within=chapter
   number within=chapter
-]{definition}{Definition}{greenTHM}{def} 
+]{definition}{\deff}{greenTHM}{def} 
 
 \NewTcbTheorem[
   use counter from=definition
-]{theorem}{Theorem}{orangeTHM}{th}
+]{theorem}{\thmm}{orangeTHM}{th}
 
 \NewTcbTheorem[
   use counter from=definition
-]{proposition}{Proposition}{orangeTHM}{prop}
+]{proposition}{\propp}{orangeTHM}{prop}
 
+\RequirePackage{xparse}
+
+\tcbset{exBOX/.style={
+    fonttitle = \bfseries\large,
+    coltitle = blue!50!black,
+    description color = blue!50!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline west = {1pt}{0pt}{blue!40},
+    borderline north = {1pt}{0pt}{blue!40},
+    arc=0mm,
+    after skip=5mm,
+    before skip=5mm
+  }
+}
+
+\def\exone{Example}
+\def\exmult{Examples}
+
+\NewDocumentEnvironment{example}{o}{
+  \IfNoValueTF{#1}{
+    \begin{tcolorbox}[title=\exone, exBOX]
+  }
+  {
+    \begin{tcolorbox}[title=\exmult, exBOX]
+    \begin{enumerate}
+  }
+}{
+  \IfNoValueF{#1}{
+    \end{enumerate}
+  }
+\end{tcolorbox}
+}
 
 \RequirePackage{svg}
 
@@ -209,6 +263,16 @@
     \renewcommand{\thesection}{#1}
     \oldsection{#2}
   }
+
+  \renewcommand{\thesubsection}{\arabic{subsection}.}
+}
+
+\DeclareOption{pl}{
+  \def\deff{Definicja}
+  \def\thmm{Twierdzenie}
+  \def\propp{Fakt}
+  \def\exone{Przykład}
+  \def\exmult{Przykłady}
 }
 
 \ProcessOptions\relax
