@@ -1,0 +1,157 @@
+\section{04.10.2024}{Topologia Z, noetherowskość}
+
+\subsection{Konwencje}
+
+pierścień := pierścień przemienny z 1
+
+homomorfizmy z definicji zachowują 1
+
+Dla $A\subseteq R$ ideał przez niego generowany to $(A)=AR\triangleleft R$. Dla ideałów $I,J\triangleleft R$ znamy operacje $I+J$, $IJ$, $I\cap J$ i $\sqrt{I}$ jako radykał.
+
+$R$-algebra to homomorfizm pierścieni $R\to S$, a homomorfizm $R$-algebr to strzałka $f$ taka, że diagram
+\begin{center}
+  \begin{tikzcd}
+    S_1\arrow[rr, "f"] & & S_2\\ 
+                       & R\arrow[ul]\arrow[ur]
+  \end{tikzcd}
+\end{center}
+komutuje.
+
+Jeśli $K$ to ciało, to $K\to R$ jest injekcją, czyli $K$-algebry można utożsamiać z rozszerzeniami ciała $K\subseteq R$. Dla rozszerzenia ciał $K\subseteq L$ definiujemy stopień przestępny $trdeg_K(L)=|B|$ dla $B\subseteq L$ będącego największym zbiorem liniowo niezależnym nad $K$.
+
+Niech $K$ będzie ustalonym ciałem algebraicznie domkniętym, np. $\C$. Wtedy $A^n$ lub $A^n(K)$ to $K^n$ rozważane jako obiekt geometryczny. Będziemy to nazywać $n$-przestrzenią afiniczną, czyli $A^1=K$ to prosta afiniczna i $A^2=K^2$ - płaszczyzna afiniczna.
+
+\subsection{Topologia Zariskiego}
+
+\begin{definition}{zbiory Zariskiego}{}
+  Dla dowolnego $A\subseteq K[\overline{X}]$, gdzie $\overline{X}=(X_1,..., X_n)$ definiujemy zbiór zer $A$ w $K^n$
+  $$V(A):=\{\overline{a}\in K^n\;:\;(\forall\;F\in A)\;F(\overline{A}=0\}.$$
+  Zbiory tej postaci nazywamy \buff{afinicznymi zbiorami algebraicznymi} lub \buff{zbiorami domkniętymi Zariskiego}.
+\end{definition}
+
+\begin{example}[m]
+  \item Gdy popatrzymy na $A=\{y-x^2\}$ to zbiór zer jest parabolką, która jest spójna {\large\color{red}narysowac}
+  \item dla $A=\{yx-1\}$ zbiór zer to hiperbola, która już spójna nie jest.
+  \item Jeśli $F\in K[\overline{X}]$ jest nierozkładalny, to dla $n=2$ $V(F)$ jest \hl{krzywa planarna}, dla $n=3$ jest \hl{powierzchnia planarna} a dla $n>3$ jest \hl{hiperpowierzchnia planarna}.
+  \item $\{\overline{a}\}$ singleton jest domkniętym zbiorem Zariskiego jako $V(X-a_1,..., X_n-a_n)$
+  \item $\emptyset=V(1)$
+  \item $A=V(0)$
+\end{example}
+
+\begin{lemma}{podwały topologii}{top}
+  Jeśli $I,J\triangleleft K[\overline{X}]$ oraz $A_i\subseteq K[\overline{X}]$, to wtedy 
+  \begin{enumerate}
+    \item $A_0\subseteq A_1\implies V(A_1)\subseteq V(A_0)$
+    \item $V(\bigcup A_i)=\bigcap V(A_i)$
+    \item $V(A_0)=V((A_0))$, czyli zbiór rozwiązań zbioru jest taki sam jak zbiór rozwiązań jego ideału
+    \item $V(I\cap J)=V(IJ)=V(I)\cup V(J)$
+    \item $V(I+J)=V(I)\cap V(J)$
+  \end{enumerate}
+\end{lemma}
+
+\begin{proof}
+  1 i 2 są oczywiste. 
+  
+  Jedno zawieranie w punkcie 3 jest wnioskiem z 1, bo $A_0\subseteq (A_0)$, czyli $V(A_0)\subseteq V((A_0))$. Dla zawierania w drugą stronę bierzemy dowolne $\overline{a}\in V(A_0)$ oraz $F\in (A_0)$, chcemy pokazać $F(\overline{a})=0$. Ponieważ $A_0$ generuje ten ideał, to istnieją $F_1,..., F_k\in A_0$ oraz $H_1,..., H_k\in K[\overline{X}]$, że $F=\sum H_iF_i$.
+
+  W 4 wiemy, że $I\cap J\supseteq IJ$, czyli $V(IJ)\supseteq V(I\cap J)\supseteq V(I)\cup V(J)$. Wystarczy pokazać, że $V(IJ)\subseteq V(I)\cup V(J)$ Weźmy więc $\overline{a}\in V(IJ)$ i załóżmy, że $\overline{a}\notin V(I)$, będziemy pokazywać $\overline{a}\in V(J)$. Niech $H\in J$ i $F\in I$. Czyli $FH\in IJ$. Ale $\overline{a}\in V(IJ)$, czyli $FH(\overline{a})$, ale skoro $\overline{a}\notin V(I)$, to $F(\overline{a})\neq 0$ czyli pozostaje $H(\overline{a})=0$.
+
+  W ostatnim podpunkcie z 2 i 4 wiemy, że 
+  $$V(I)\cap V(J)=V(I\cup J)=V((I\cup J))=V(I+J),$$
+  bo $I\cup J=I+J$.
+\end{proof}
+
+\begin{conclusion}{}{}
+  Z przykładu 5 i 6 i lematu \ref{lmm:top} wiemy, że zbiory domknięte Zariskiego są zbiorami domkniętymi pewnej topologii na $A^n$, nazywanej \buff{topologią Zariskiego}. Singletony są domknięte, czyli topologia Zariskiego jest $T_1$, ale nie jest Hausdorffa.
+\end{conclusion}
+
+
+\begin{example}
+  Na $A^1=K$ niezerowe wielomiany mają zawsze skończenie wiele zer, czyli $V\subseteq A^1$ jest domknięty $\iff$ jest skończony lub jest wszystkim. Zbiory otwarte Zariskiego są natomiast koskończone lub puste, czyli przekrój dowolnych dwóch niepustych zbiorów otwartych jest niepusty.
+\end{example}
+
+\begin{remark}{}{}
+  Dla $K=\C$ jest $A^n=\C^n=\R^{2n}$ i na $\R$ zwykłą topologię, którą na $\R^{2n}$ nazywamy \hl{euklidesowa}, która jest znacznie bogatsza od topologii Zariskiego.
+
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0,0) rectangle (3, 3);
+      \node at (3, 3.5) {$\C$};
+      \fill[green!40] (1, 1) rectangle (2, 1.5); 
+      \node[anchor=north west] at (2.5, 2) {\begin{varwidth}{3cm}domknięty euklidesowo, ale nie domknięty Zariskiego\end{varwidth}};
+      \draw [->] (2.6, 2.1) to[in=90, out=180-45] (1.8, 1.55);
+    \end{tikzpicture}
+  \end{center}
+\end{remark}
+
+\begin{remark}{}{}
+  Topologia Zariskiego na $A^2=A^1\times A^1$ nie jest topologią produktową. Np. Parabola i prosta nie są domknięte w topologii produktowej.
+\end{remark}
+
+\subsection{Przestrzenie noetherowskie}
+
+\begin{proposition}{}{}
+  Dla wszystkich $A\subseteq K[\overline{X}]$ istnieje skończony $A_0\subseteq A$ taki, że $V(A_0)=V(A)$.
+\end{proposition}
+
+\begin{proof}
+  Z twierdzenia Hilberta o bazie pierścień $K[\overline{X}]$ jest Noetherowski. Ideał generowany przez $A$ jest skończenie generowany. W takim razie istnieje $A_0$ wybrany z dowolnego skończonego zbioru generatorów i z \ref{lmm:top} wiemy, że $V(A_0)=V((A))=V(A)$.
+\end{proof}
+
+\begin{definition}{przestrzeń noetherowska}{}
+  Mówimy, że przestrzeń topologiczna $X$ jest \buff{noetherowska}, jeśli każdy zstępujący ciąg zbiorów domkniętych się stabilizuje. To znaczy, że dla każdego
+  $$...\subseteq X_n\subseteq X_{n-1}\subseteq...\subseteq X_0\subseteq X$$
+  istnieje $N$ takie, że dla wszystkich $n\geq N$ $X_n=X_N$.
+\end{definition}
+
+\begin{remark}{}{}
+  \begin{enumerate}
+    \item  Jeśli $X$ jest noetherowska, to $X$ jest quasi-zwarta, ale niekoniecznie Hausdorffa.
+    \item $X$ jest noetherowska i Hausdorffa $\iff$ $X$ jest skończona i dyskretna (punkty są otwarte).
+    \item Z przykładu wyżej $A^1$ z topologią Zariskiego jest Noetherowska.
+    \item Podprzestrzeń przestrzeni noetherowskiej jest nadal noetherowska.
+  \end{enumerate}
+\end{remark}
+
+\begin{proposition}{}{}
+  $A^n$ jest noetherowska 
+\end{proposition}
+
+\begin{proof}
+  Niech $A^n\supseteq V_0\supseteq V_1\supseteq...$ będzie zstępującym ciągiem domkniętych zbiorów Zariskiego. Niech $A_i\subseteq K[\overline{X}]$ takie, że $V(A_i)=V_i$. Niech $I_i:=(A_0\cup...\cup A_i)$. Wtedy z \ref{lmm:top} 
+  $$V(A_0\cup...\cup A_i)=V(A_0)\cap ...\cap V(A_i) = V(A_i)=V_i,$$
+  bo to zbiory zstępujące.
+
+  Teraz $I_0\subseteq I_1\subseteq ...$ jest wstępującym ciągiem w pierścieniu noetherowskim $K[\overline{X}]$, czyli stabilizuje się od pewnego momentu. W takim razie zbiory $V_i$ przez nie generowane też się stabilizują.
+\end{proof}
+
+\subsection{Przestrzenie nierozkładalne}
+
+\begin{definition}{nierozkładalność}{}
+  Niepusta przestrzeń topologiczna $X$ jest \buff{nierozkładalna}, gdy dla każdych $A, B\subsetneq X$ domkniętych $X\neq A\cup B$.
+\end{definition}
+
+\begin{remark}{}{}
+  \begin{enumerate}
+    \item nierozkładalna $\implies$ spójna
+    \item nierozkładalna i $T_2$ $\implies$ singleton
+    \item $A^1$ z topologią Zariskiego jest nierozkładalna
+    \item $Y\subseteq X$ ($X$ potencjalnie noetherowska), to $Y$ jest nierozkładalny $\iff$ $\overline{Y}$ jest nierozkładalny
+  \end{enumerate}
+\end{remark}
+
+\begin{proposition}{}{}
+  Niech $X$ będzie noetherowską przestrzenią topologiczną. Wtedy 
+  \begin{enumerate}
+    \item istnieją $X_1,..., X_k\subseteq X$ domknięte, nierozkładalne, to wówczas $X=X_1\cup...\cup X_k$
+    \item jeśli dla wszystkich $i\neq j$ $X_i\not\subseteq X_j$, to rozkład z punktu 1 jest jednoznaczny z dokładnością do permutacji.
+  \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+  1. Prawie taki sam jak dowód faktu, że dla $r\in R-R^*$ w pierścieniu noetherowskim istnieją nierozkładalne $p_i$ takie, że $r=p_1...p_k$.
+
+  Załóżmy nie wprost, że $X$ nie ma takiego rozkładu, wtedy $X$ nie może być nierozkładalny. W takim razie istnieją domknięte $A, B\subsetneq X$ takie, że $X=A\cup B$. Wtedy $A$ lub $B$ nie mają rozkładu, BSO $A$ nie ma. Powtarzamy ten tok rozumowania dla $A$. W ten sposób moglibyśmy dostać nieskończony, niestabilizujący się ciąg zstępujących zbiorów domkniętych, co jest sprzeczne z noetherowskością $X$.
+\end{proof}
+
+

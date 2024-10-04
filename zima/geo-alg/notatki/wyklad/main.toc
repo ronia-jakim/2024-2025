@@ -1,0 +1,6 @@
+\contentsline {chapter}{\numberline {1}Zariski}{1}{chapter.1}%
+\contentsline {section}{\numberline {04.10.2024}Topologia Z, noetherowskość}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.}Konwencje}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {2.}Topologia Zariskiego}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {3.}Przestrzenie noetherowskie}{4}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {4.}Przestrzenie nierozkładalne}{5}{subsection.1.1.4}%

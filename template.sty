@@ -102,6 +102,15 @@
 \RequirePackage{thmtools}
 \RequirePackage{tcolorbox}
 
+\RequirePackage{enumitem}
+
+\RequirePackage{tocloft}
+
+\RequirePackage{hyperref}
+
+\RequirePackage{cleveref}
+
+
 % \RequirePackage[framemethod=TikZ]{mdframed}
 
 \tcbuselibrary{theorems}
@@ -162,9 +171,66 @@
   }
 }
 
+\tcbset{purpleTHM/.style={
+    fonttitle = \bfseries\large,
+    coltitle = purple!60!black,
+    description color = purple!60!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{blue!40!purple!20}, 
+    arc=0mm,
+    before skip=5mm,
+    after skip=5mm
+  }
+}
+
+\tcbset{blueTHM/.style={
+    fonttitle = \bfseries\large,
+    coltitle = blue!60!black,
+    description color = blue!60!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{blue!40}, 
+    arc=0mm,
+    before skip=5mm,
+    after skip=5mm
+  }
+}
+
 \def\deff{Definition}
 \def\thmm{Theorem}
 \def\propp{Proposition}
+\def\lmm{Lemma}
+\def\wnn{Conclusion}
+\def\rmm{Remark}
 
 \NewTcbTheorem[
   auto counter, 
@@ -175,6 +241,28 @@
 \NewTcbTheorem[
   use counter from=definition
 ]{theorem}{\thmm}{orangeTHM}{th}
+
+\NewTcbTheorem[
+  use counter from=definition
+]{remark}{\rmm}{purpleTHM}{rm}
+
+
+\NewTcbTheorem[
+  use counter from=definition,
+  crefname={lemma}{lemmas}
+]{lemma}{\lmm}{purpleTHM}{lmm}
+
+\NewTcbTheorem[
+  use counter from=definition,
+  crefname={conclusion}{conclusions}
+]{conc}{\wnn}{blueTHM}{con}
+
+\newenvironment{conclusion}[2]{
+  \begin{conc*}{#1}{#2}
+  }{
+  \end{conc*}
+}
+
 
 \NewTcbTheorem[
   use counter from=definition
@@ -230,11 +318,18 @@
 
 \RequirePackage{svg}
 
-\renewenvironment{proof}{{\bfseries\color{green!60!black} Dowód}$ $\newline}{
-  \begin{flushright} \includesvg[width=4mm]{../../../../duck.svg} \end{flushright}$ $\newline
+\def\dwd{Proof}
+
+\RequirePackage{emoji}
+
+\renewenvironment{proof}{{\bfseries\color{green!60!black} \dwd}$ $\newline}{
+  \begin{flushright} \emoji{peacock} \end{flushright}$ $\newline
 }
 
+
 \RequirePackage{soul}
+
+\RequirePackage{varwidth}
 
 \sethlcolor{green!15}
 
@@ -244,15 +339,9 @@
 \SOUL@ttwidth\wd\z@ %
 \makeatother
 
-\newcommand{\buff}[1]{
-  {\bfseries\color{green}#1}
+\newcommand{\buff}[1]{%
+  {\bfseries\color{green}#1}%
 }
-
-\RequirePackage{enumitem}
-
-\RequirePackage{tocloft}
-
-\RequirePackage{hyperref}
 
 \DeclareOption{dates}{
   \setlength\cftsecnumwidth{6em}
@@ -273,6 +362,9 @@
   \def\propp{Fakt}
   \def\exone{Przykład}
   \def\exmult{Przykłady}
+  \renewcommand{\contentsname}{Spis treści}
+  \def\dwd{Dowód}
+  \def\rmm{Uwaga}
 }
 
 \ProcessOptions\relax
