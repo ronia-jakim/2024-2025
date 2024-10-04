@@ -69,3 +69,28 @@ gdzie $g\in G$ i $s\in S$.
 Każdy graf Cayleya jest \buff{spójny}, bo jego krawędzie to mnożenie przez generatory. Dodatkowo, grupa $G$ działa na nim przez \hl{automorfizmy zachowując krawędzie oraz ich etykiety}. To znaczy, że krawędż z wierzchołkami \begin{tikzcd}g\arrow[r, "s"]&gs\end{tikzcd} pod działaniem elementu $\gamma \in G$ staje się \begin{tikzcd}\gamma g\arrow[r, "s"] & \gamma gs\end{tikzcd}.
 
 Jeśli każdą krawędź w grafie Cayleya potraktujemy jako odcinek długości $1$, to możemy na nim zdefiniować metrykę która jako odległość dwóch punktów przyjmuje długość najkrótszej ścieżki między nimi. Ta metryka na wierzchołkach pokrywa się z \buff{metryką słów} na grupie $G$ o generatorach $S$, której graf rozpatrujemy. Przy takiej metryce działanie grupy $G$ jest więc działaniem nie tylko przez automorfizmy, ale przez izometrie (lewa-niezmienniczość).
+
+Innym wariantem grafu Cayleya jest graf w którym wierzchołki są elementami grupy $V=G$, ale krawędzie są niezorientowane: $E=\{\{g_1, g_2\}\;:\;ds(g_1,g_2)=1\}$. W przykładzie z parkietarzem zamiast podwójnych krawędzi w obie strony będzie on miał pojedyńczą, nieskierowaną krawędź
+
+
+Dla surjekcji $\pi:F_S\to G$, gdzie $G=\langle S\;|\; R\rangle=F_S/N$ możemy mieć dwie tak samo zorientowane strzałki między dwoma wierzchołkami (gdy np. $g_1\pi(s_1)=g_1\pi(s_2)=g_2$
+\begin{center}
+  \begin{tikzpicture}
+    \node (g1) at (0, 0) {$g_1$};
+    \node (g2) at (2, 1) {$g_2$};
+    \draw[->] (g1) to [out=90, in=180] node[midway, above] {$s_1$} (g2);
+    \draw[->] (g1) to [out=0, in=-90] node[midway, below] {$s_2$} (g2);
+  \end{tikzpicture}
+\end{center}
+
+Graf Cayleya grupy wolnej to nieskończone drzewo stopnia równego ilości $2\cdot$ ilość generatorów. 
+
+\begin{definition}{suma drzewiasta}{}
+  Mając dwie grupy $(G_1, S_1)$ i $(G_2, S_2)$ graf Cayleya ich sumy wolnej, czyli graf $(G_1\star G_2, S_1\cup S_2)$ to graf pierwszej grupy, który w każdym wierzchołku ma kopię grafu drugiej grupy, która w każdym wierzchołku ma kopię pierwszej grupy...
+
+  \begin{center}
+    \begin{tikzpicture}
+
+    \end{tikzpicture}
+  \end{center}
+\end{definition}
