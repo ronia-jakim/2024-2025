@@ -2,4 +2,4 @@
 \contentsline {section}{\numberline {02.10.2024}Grafy Cayleya}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {1.}Metryka słów}{2}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {2.}Graf Cayleya}{2}{subsection.1.1.2}%
-\contentsline {section}{\numberline {09.10.2024}To be named}{5}{section.1.2}%
+\contentsline {section}{\numberline {09.10.2024}Lemat Milnora-\v {S}varca}{5}{section.1.2}%

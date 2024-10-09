@@ -360,7 +360,7 @@
 \sethlcolor{green!15}
 
 \makeatletter
-%\font\SOUL@tt="LMMono10-Regular"
+\font\SOUL@tt="LMMono10-Regular"
 \setbox\z@\hbox{\SOUL@tt-}
 \SOUL@ttwidth\wd\z@ %
 \makeatother
@@ -385,12 +385,13 @@
 \DeclareOption{pl}{
   \def\deff{Definicja}
   \def\thmm{Twierdzenie}
-  \def\propp{Fakt}
+  \def\propp{Stwierdzenie}
   \def\exone{Przykład}
   \def\exmult{Przykłady}
   \renewcommand{\contentsname}{Spis treści}
   \def\dwd{Dowód}
   \def\rmm{Uwaga}
+  \def\lmm{Lemat}
 }
 
 \ProcessOptions\relax

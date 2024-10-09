@@ -1,2 +1,0 @@
-\contentsline {chapter}{\numberline {1}Schemes}{1}{}%
-\contentsline {section}{\numberline {1.1}Spectrum}{1}{}%

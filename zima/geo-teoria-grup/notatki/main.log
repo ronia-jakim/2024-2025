@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.10.4)  9 OCT 2024 16:56
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.10.1)  9 OCT 2024 21:27
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -8,7 +8,7 @@ L3 programming layer <2024-02-20>
 Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended collection.
-luaotfload | conf : Root cache directory is "/home/marudka/.texlive/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/maruda/.texlive/texmf-var/luatex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-resolved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lua".
 Lua-only attribute luaotfload@noligature = 1
 luaotfload | init : Context OpenType loader version 3.134
@@ -17,7 +17,7 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/home/marudka/.texlive/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/maruda/.texlive/texmf-var/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -39,7 +39,7 @@ Inserting `tracingstacklevels' in `input_level_string'. (/usr/share/texmf-dist/t
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /home/marudka/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+luaotfload | db : Font names database loaded from /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \c@part=\count186
 \c@chapter=\count187
 \c@section=\count188
@@ -1382,7 +1382,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \sift@deathcycles=\count339
 \@vwid@loff=\dimen303
 \@vwid@roff=\dimen304
-)) (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux))
+)
+luaotfload | cache : Lookup cache loaded from /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.) (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux))
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1532,7 +1533,6 @@ Package hyperref Info: Link coloring OFF on input line 11.
 \@outlinefile=\write4
 
 \openout4 = main.out
-luaotfload | cache : Lookup cache loaded from /home/marudka/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 
 Package fontspec Info: Font family 'NotoColorEmoji(0)' created for font 'Noto
 (fontspec)             Color Emoji' with options
@@ -1700,7 +1700,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[7<./luatex.Znc2b0/1.png>])
+[7<./luatex.1l0PAu/1.png>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -1714,20 +1714,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AA1AAC142790226F47D3C7C6162DB590;567.
+(rerunfilecheck)             Checksum: 2DC008E5F39D7B40A3AEF40763025C8C;612.
 )
 
 Here is how much of LuaTeX's memory you used:
  40138 strings out of 476447
  125086,1977958 words of node,token memory allocated
- 868 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 10 glyph, 28 attribute, 95 glue_spec, 28 attribute_list, 4 write nodes
-   avail lists: 1:3,2:5433,3:2741,4:446,5:415,6:54,7:5229,8:92,9:1296,10:12,11:175
+ 780 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 20 attribute, 95 glue_spec, 20 attribute_list, 4 write nodes
+   avail lists: 1:4,2:5445,3:2741,4:446,5:415,6:54,7:5229,8:92,9:1296,10:12,11:175
  61242 multiletter control sequences out of 65536+600000
- 68 fonts using 9972871 bytes
+ 69 fonts using 10098959 bytes
  109i,15n,129p,1192b,2180s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (10 pages, 136509 bytes).
+Output written on main.pdf (10 pages, 136476 bytes).
 
 PDF statistics: 157 PDF objects out of 1000 (max. 8388607)
  121 compressed objects within 2 object streams
