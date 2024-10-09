@@ -1,5 +1,6 @@
 \contentsline {chapter}{\numberline {1}Wstępy}{1}{chapter.1}%
-\contentsline {section}{\numberline {02.10.2024}Grafy Cayleya}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.}Metryka słów}{2}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {2.}Graf Cayleya}{2}{subsection.1.1.2}%
-\contentsline {section}{\numberline {09.10.2024}Lemat Milnora-\v {S}varca}{5}{section.1.2}%
+\contentsline {section}{\numberline {02.10.2024}Grafy Cayleya}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.}Metryka słów}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {2.}Graf Cayleya}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {3.}Quasi-izometrie}{3}{subsection.1.1.3}%
+\contentsline {section}{\numberline {09.10.2024}Lemat Milnora-\v {S}varca}{6}{section.1.2}%

@@ -273,8 +273,6 @@ INPUT /usr/share/texmf-dist/tex/generic/soul/soul-ori.sty
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT /usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 INPUT /usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
-INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
-INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT ./main.aux
 INPUT ./rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/02.aux
@@ -289,6 +287,7 @@ INPUT ./main.out
 OUTPUT main.pdf
 INPUT ./main.out
 OUTPUT main.out
+INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
 INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/otl/notocoloremoji.luc
 INPUT /home/maruda/.texlive/texmf-var/luatex-cache/generic/fonts/hb/69a82e6e33be86d4bc29b15d6a9bdbcc6d60f8d4af378d44bb9f5580261ab06a.luc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -324,8 +323,8 @@ OUTPUT rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/01_cayley.tex
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
-OUTPUT luatex.1l0PAu/1.png
-INPUT ./luatex.1l0PAu/1.png
+OUTPUT luatex.OX9f6d/1.png
+INPUT ./luatex.OX9f6d/1.png
 INPUT ./main.aux
 INPUT ./rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/02.aux

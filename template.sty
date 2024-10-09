@@ -255,6 +255,7 @@
 \def\lmm{Lemma}
 \def\wnn{Conclusion}
 \def\rmm{Remark}
+\def\fc{Fact}
 
 \NewTcbTheorem[
   auto counter, 
@@ -280,6 +281,11 @@
   use counter from=definition,
   crefname={conclusion}{conclusions}
 ]{conc}{\wnn}{blueTHM}{con}
+
+\NewTcbTheorem[
+  use counter from=definition,
+  crefname={fact}{facts}
+]{fact}{\fc}{blueTHM}{fac}
 
 \newenvironment{conclusion}[2]{
   \begin{conc*}{#1}{#2}
@@ -360,7 +366,7 @@
 \sethlcolor{green!15}
 
 \makeatletter
-\font\SOUL@tt="LMMono10-Regular"
+%\font\SOUL@tt="LMMono10-Regular"
 \setbox\z@\hbox{\SOUL@tt-}
 \SOUL@ttwidth\wd\z@ %
 \makeatother
@@ -392,6 +398,8 @@
   \def\dwd{Dowód}
   \def\rmm{Uwaga}
   \def\lmm{Lemat}
+  \def\fc{Fakt}
+  \def\wnn{Wniosek}
 }
 
 \ProcessOptions\relax
