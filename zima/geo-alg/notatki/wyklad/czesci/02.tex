@@ -1,0 +1,171 @@
+\section{11.10.2024}{To be named}
+
+\begin{definition}{}{}
+  Niech $V$ będzie afinicznym zbiorem algebraicznym. Wtedy $V$ jest afiniczną rozmaitością algebraiczną, gdy $V$ jest nierozkładalny w topologii Zariskiego.
+\end{definition}
+
+\begin{proposition}{}{}
+  Każdy afiniczny zbiór algebraiczny jednoznacznie rozkłada się na sumę afinicznych rozmaitości algebraicznych.
+\end{proposition}
+
+\begin{center}
+  \begin{tikzpicture}
+    % \draw (-3,0)--(3,0);
+    % \draw (0,-3)--(0,3);
+
+    \begin{axis}[axis lines=middle, xmax=3, xmin=-3, ymin=-3, ymax=3, yticklabel=\empty,xticklabel=\empty]
+      \addplot [domain=-2:2, samples=10] { x };
+      \addplot [domain=-2:2, samples=100] { x^2 };
+      \addplot [domain=0.1:2, samples=100] { 1/x };
+      \addplot [domain=-2:-.1, samples=100] { 1/x };
+    \end{axis}
+    % \draw (-2.5, -2.5)--(2.5, 2.5);
+    % dorysować X^2 i y=1/x
+  \end{tikzpicture}
+\end{center}
+
+\begin{definition}{}{}
+  Niech $X$ będzie (noetherowską) przestrzenią topologiczną. 
+  $$dim(X):=\sup\{k\in\N\;:\;\exists\;X\supseteq \underbrace{X_0\supsetneq X_1\supsetneq...\supsetneq X_k}_\text{ domknięte, nierozkładalne}\neq\emptyset\}$$
+\end{definition}
+
+\begin{fact}{}{}
+  Jeśli $X$ jest noetherowska i $T_1$, to $dim(X)=0\iff$ $X$ jest skończona.
+\end{fact}
+
+Istnieje natomiast przestrzeń noetherowska o nieskończonym wymiarze.
+
+\begin{definition}{}{}
+  Jeśli $V$ jest afinicznym zbiorem algebraicznym, to $dim(V)$ jest wymiarem tego zbioru jako przestrzeni z topologią Zariskiego.
+\end{definition}
+
+\begin{example}
+  $dim(\mathbb{A}^1)=1$, bo właściwe domknięte podzbiory Zariskiego są skończone.
+\end{example}
+
+\begin{definition}{afiniczna krzywa algebraiczna}{}
+  Mówimy, że afiniczna rozmaitość algebraiczna $C$ jest afiniczną krzywą algebraiczną, jeśli $dim(C)=1$
+\end{definition}
+
+\subsection{Pierścienie współrzędnych}
+
+Do tej pory zakładalniśmy, że ciało nad którym pracujemy jest algebraicznie domknięte, mimo że tego nie używaliśmy. Teraz zaczniemy z tego korzystać.
+
+Niech $K$ będzie ciałem algebraicznie domkniętym, a $Y$ niech będzie zbiorem.
+$$\fun(Y, K)=\{f:Y\to K\}$$
+Zbiór wszystkich funkcji w ciało jest pierścieniem przemiennym z $1$.
+
+{\color{red}hom. pierścieni $\implies$ $\fun(Y, K)$ jest $K$-algebrą}
+
+Dla $F\in K[\overline{X}]$ przez chwilę oznaczymy 
+$$\overline{F}:\mathbb{A}^n\to K$$
+jako funkcję wielomianową. Wtedy odwzorowanie 
+$$K[\overline{X}]\ni F\mapsto \overline{F}\in \fun(\A^n, K)$$
+jest homomorfizmem $K$-algebr.
+
+Jeśli dwa wielomiany $F, G\in K[\overline{X}]$ są różne, to ich funkcje wielomianowe również są różne ($F\neq G\implies \overline{F}\neq\overline{G}$). Dlatego utożsamiamy $K[\overline{X}]$ z $K$-podalgebrą $Fun(\A^n, K)$ funkcji wielomianowych i piszemy "$F$" zamiast "$\overline{F}$".
+
+\begin{definition}{coordinate ring}{}
+  Niech $V\subseteq\A^n$ będzie dowolnym podzbiorem. Jego \buff{pierścień współrzędnych} (lub wielomianowych) definiujemy jako
+  $$K[V]:=\{f\in \fun(V, K)\;:\;(\exists\;F\in K[\overline{X}])F|_V = f\}$$
+\end{definition}
+
+Łatwo jest pokazać, że $K[V]$ to $K$-podalgebra $\fun(V, K)$.
+
+\begin{fact}{}{}
+  Jeśli $V$ jest skończony, to $K[V]=\fun(V, K)$. Stąd możemy pisać $K[V]\cong K^{|V|}$.
+
+  Z tego wynika również, że $K[\A^n]\cong_K K[\overline{X}]$.
+\end{fact}
+
+Mamy epimorfizm $K$-algebr 
+$$K[\overline{X}]\ni F\mapsto F|_V\in K[V]$$
+którego jądro oznaczamy 
+$$I(V):=\{F\in K[\overline{X}]\;:\;F(V)=0\}$$
+i nazywamy \buff{ideałem $V$}. Stąd
+$$K[V]\cong K[\overline{X}]/I(V).$$
+
+\begin{lemma}{}{}
+  $I(V)$ jest \hl{radykalny}, czyli $I(V)=\sqrt{I(V)}$.
+\end{lemma}
+
+\begin{proof}
+  Weźmy $F\in\sqrt{I(V)}$, wtedy istnieje $n$ takie, że $F^n\in I(V)$, ale skoro dla każdego $v\in V$ $F(v)^n=0$ i ciało $K$, to musimy mieć $F(v)=0$, czyli $F\in I(V)$.
+\end{proof}
+
+\begin{lemma}{}{}
+  Niech $V_i\subseteq\A^n$ oraz $J\triangleleft K[\overline{X}]$, to wówczas 
+  \begin{enumerate}
+    \item $V_0\subseteq V_1\implies I(V_1)\subseteq I(V_0)$
+    \item $I(\bigcip V_i)=\bigcap I(V_i)$
+    \item $J\subseteq I(V(J))^i$
+    \item $V(I(V_0))=\overline{V_0}$ domknięcie $V_0$ w toplogii Zariskiego
+  \end{enumerate}
+\end{lemma}
+
+\begin{proof}
+  Podpunkty 1-3 są łatwe i je pomijamy.
+
+  Podpunkt 4 zaczyna od łatwiejszej inkluzji $V_0\subseteq V(I(V_0))$, ale skoro $V(I(V_0))$ jest domknięty, to $\overline{V_0}$ też do niego należy.
+
+  Dla drugiej inkluzji potrzebujemy pokazać, że każdy domknięty $W\subseteq \A^n$ jeśli zawiera $V_0\subseteq W\implies V(I(V_0))$. Z definicji topologii istnieje $J\trianglelefteq K[\overline{X}]$ takie, że $V_0\subseteq W=V(J)$. Z podpunktu 3 wynika, że $J\subseteq I(V(J))$, a podpunkt 1 mówi, że $I(V(J))\subseteq I(V_0)$.
+
+  Skoro $J\subseteq I(V_0)$ to z poprzedniego wykładu wiemy, że $V(I(V_0))\subseteq V(J)=W$.
+\end{proof}
+
+Mamy operacje:
+\begin{center}
+\begin{tikzcd}
+  \text{Podzbiory domknięte Zariskiego }\A^n\arrow[r, "I", yshift=1ex] & \text{Podzbiory (ideały) }K[\overline{X}\arrow[l, "V", yshift=-1ex]
+\end{tikzcd}
+\end{center}
+Pozostaje nam pokazać, że $I(V(J))=?\trianglelefteq K[\overline{X}]$. Do tego skorzystamy z algebraicznej domkniętości ciała.
+
+\begin{theorem}{słabe Nullstellensatz}{}
+  \hl{Słabe twierdzenie Hilberta o zerach} mówi, że dla algebraicznie domkniętego ciała $K$, jeśli $I\triangleleft K[\overline{X}]$ i $I\neq K[\overline{X}]$ to $V(I)\neq \emptyset$.
+\end{theorem}
+
+\begin{proof}
+  Raczej idea dowodu a nie sam dowód.
+
+  Niech $I=(F_1,...,F_k)$ dla $F_i\in K[\overline{X}]$. Ponieważ $I$ jest właściwym podzbiorem, to rozszerza się do ideału maksymalnego $I\subseteq\mathfrak{m}\triangleleft K[\overline{X}]$. Oznaczmy pierścień ilorazowy $L:=K[\overline{X}]/\mathfrak{m}$, który jest ciałem (dzielenie przez ideał maksymalny).
+
+  \begin{center}\begin{tikzcd}
+    K\arrow[r, "\subseteq"]\arrow[rr, bend right=30, "\Phi"] & K[\overline{X}] \arrow[r, "ilor"] & K[\overline{X}]/\mathfrak{m}=L
+  \end{tikzcd}\end{center}
+  $\Phi$ jest homomorfizmem ciał, czyli jest injekcją. Czyli możemy utożsamić $K$ z podciałem $L$.
+
+  Niech $\overline{v}:=(X_1+\mathfrak{m},...,X_n+\mathfrak{m})$. Wtedy dla każdego $i$ $F_i(\overline{v})=0$, a więc $\overline{v}\in V_L(I)$, tzn. jest rozwiązaniem ale w kontekście innego ciała.
+
+  Chcemy zrzucić to rozwiązanie $\overline{v}$ do $K$. Są na to dwa sposoby.
+  \begin{enumerate}
+    \item W algebraicznym domknięciu $L$, $L^{alg}$, $\overline{v}\in (L^{alg})^n$ jest nadal rozwiązaniem. Czyli zdanie 
+      $$(\exists\overline{v})F_1(\overline{V})=0\;\land\;...\;\land\;F_k(\overline{v})=0$$
+      jest prawdziwe.
+
+      Tworia modeli mówi, że każde rozszerzenie ciał algebraicznie domkniętych jest elementarne, czyli zachowuje prawdziwość ciał. $K\subseteq L^{alg}$ jest rozszerzeniem ciał algebraicznie domkniętych, czyli $F_1(\overline{v})=0\;\land\;...\;\land\; F_k(\overline{v})=0$ ma rozwiązanie w $K$
+    \item \textbf{Lemat Zariskiego}: niech $K\subseteq L$ będzie rozszerzeniem ciał takie, że $L$ jest skończenie generowane jako $K$-algebra. Wtedy to tak naprawdę skończone rozszerzenie ($dim_KL<\infty$), a więc algebraiczne. 
+
+      U nas $K$ jest algebraicznie domknięte, czyli $K=L$ i $\overline{v}\in K^n$. 
+  \end{enumerate}
+\end{proof}
+
+\begin{conclusion}{Nullstellensatz Hilberta}{}
+  $I(V(I))=\sqrt{I}$
+\end{conclusion}
+
+\begin{proof}
+  Z lematu wcześniej wiemy, że $I\subseteq I(V(I))$, czyli $\sqrt{I}\subseteq I(V(I))$, co również pojawiło się wcześniej.
+
+  Pozostaje nam pokazać $I(V(I))\supseteq \sqrt{I}$. Bierzemy $0\neq G\in I(V(I))$ i niech $I=(F_1,..., F_r)$. Rozważmy $J:=(F_1,.., F_r, X_{n+1}G-1)\trianglelefteq K[\overline{X}]$. Pokażemy, że $V(J)=\emptyset$.
+
+  Weźmy $(\overline{v}, v)\in\A^{n+1}$. Możemy przyjąć, że dla wszystkich $i\leq r$ $F(\overline{v})=0$, tzn. $\overline{v}\in V(I)$, a ponieważ $G\in I(V(I))$, to $G(\overline{v})=0$. To znaczy, że $(X_{n+1}G-1)(\overline{v}, v)=0-1\neq 0$. Stąd $(\overline{v},v)\notin V(J)$, czyli $V(J)=\emptyset$.
+
+  Ze słabego Nullstellensatz wiemy, że $J=K[\overline{X}, X]$, czyli isteniją $H_1,..., H_{r+1}\in K[\overline{X}, X]$ takie, że 
+  $$\sum H_iF_i+H_{r+1}(X_{n+1}G-1)=1\quad (\star)$$
+  Niech $\Psi:K[\overline{X}, X_{n+1}]\to K(\overline{X})$ będzie homomorfizmem $K$-algebr takie, że $\overline{X}\mapsto \overline{X}$ i $X_{n+1}\mapsto G^{-1}$ (które istnieje, bo $G\neq 0$). Nakładamy $\Psi$ na równanie $(\star)$ i dostajemy:
+  $$1=\sum H_i(\overline{X}, G^{-1})F_i\quad (\star\star)$$
+  Niech $N:=\max(deg_{X_{n+1}} H_i)$. Mnożymy obie strony $(\star\star)$ przez $G^N$ i dostajemy 
+  $$G^N=\sum H_i(\overline{X}, G^{-1})G^NF_i$$
+  w którym nie mamy już mianowników (czyli z funkcji wymiernej zrobiliśmy wielomian). Z tego wynika, że $G^N\in(F_1,..., F_r)=I$ i $G\in\sqrt{I}$.
+\end{proof}
