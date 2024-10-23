@@ -339,6 +339,7 @@ INPUT ./main.aux
 INPUT ./rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/02.aux
 INPUT ./rozdzialy/03.aux
+INPUT ./rozdzialy/04.aux
 OUTPUT main.aux
 INPUT /usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -385,8 +386,8 @@ OUTPUT rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/01_cayley.tex
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
-OUTPUT luatex.9GCg1t/1.png
-INPUT ./luatex.9GCg1t/1.png
+OUTPUT luatex.yXudm0/1.png
+INPUT ./luatex.yXudm0/1.png
 OUTPUT rozdzialy/03.aux
 INPUT ./rozdzialy/03.tex
 INPUT /usr/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
@@ -405,10 +406,13 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufb10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufb10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eufb10.tfm
+OUTPUT rozdzialy/04.aux
+INPUT ./rozdzialy/04.tex
 INPUT ./main.aux
 INPUT ./rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/02.aux
 INPUT ./rozdzialy/03.aux
+INPUT ./rozdzialy/04.aux
 INPUT ./main.out
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

@@ -8,3 +8,5 @@
 \contentsline {section}{\numberline {16.10.2024}Końce (w nieskończoności) grup przestrzeni}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {1.}Podejście przez granice}{11}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.}Toopologia granicy odwrotnej}{12}{subsection.2.1.2}%
+\contentsline {section}{\numberline {23.10.2024}}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {1.}Alternatywny opis przestrzeni końców (promienie)}{16}{subsection.2.2.1}%

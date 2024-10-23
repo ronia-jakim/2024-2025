@@ -1,6 +1,6 @@
 # Fdb version 4
-["lualatex"] 1729090668.08896 "main.tex" "main.pdf" "main" 1729090671.82647 2
-  "../../../template.sty" 1729086664.75554 8668 24556cc6481556ba99206dde2458d05f ""
+["lualatex"] 1729695447.64583 "main.tex" "main.pdf" "main" 1729695451.74954 2
+  "../../../template.sty" 1729694125.34413 8824 ee0bd8d98242642774d03fc0173b09d1 ""
   "/home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/hb/69a82e6e33be86d4bc29b15d6a9bdbcc6d60f8d4af378d44bb9f5580261ab06a.luc" 1728062200.86532 124354 7b4739c54bee5d667ef8f5c47615f9bd ""
   "/home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-bold.luc" 1728062199.57537 173110 bf9ccb37a973958682e6e1771e272f72 ""
   "/home/marudka/.texlive/texmf-var/luatex-cache/generic/fonts/otl/cantarell-extrabold.luc" 1728062199.6287 172297 9f69c700a404cc02492c7696b857a995 ""
@@ -351,16 +351,18 @@
   "/usr/share/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1727349926 13565 50482dad4c221a79dbdbb982122baf8c ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1728062233.18738 5467607 1f3b9843102088c2a7136e28f005c5e4 ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1728062198 12260681 b7ac37edc01dcd9257ed35eb95fec919 ""
-  "main.aux" 1729090671.54292 342 9ff52d0142c3506249e24fe4ec3ca243 "lualatex"
-  "main.out" 1729090671.54292 1588 b9461c34d469af08bbb9bfb9143406e8 "lualatex"
-  "main.tex" 1729086668.63866 489 bc0975785af35489792ea4dfc66bdcc9 ""
-  "main.toc" 1729090671.54292 857 f75e370f3c4f4b2be27cbb470d91797a "lualatex"
-  "rozdzialy/01_cayley.aux" 1729090670.51038 1651 cd03cc3c9c58c9e347cb8c785ccd2459 "lualatex"
+  "main.aux" 1729695451.46113 368 6b3d0925dd799ffd3d2ebf443c1fd6ca "lualatex"
+  "main.out" 1729695451.46113 1961 8dbd8f78615ec5dfacdc72603c020060 "lualatex"
+  "main.tex" 1729693378.0402 517 b19df6fa1ff44a599e4afe5cd74ad0d4 ""
+  "main.toc" 1729695451.46113 1043 3bd109ce59baa4a28ccae120e2c7552b "lualatex"
+  "rozdzialy/01_cayley.aux" 1729695450.15099 1651 cd03cc3c9c58c9e347cb8c785ccd2459 "lualatex"
   "rozdzialy/01_cayley.tex" 1728580506.44327 9615 7290d3dd51ba96a92e46e68879e85bce ""
-  "rozdzialy/02.aux" 1729090670.86011 1113 5bb8f850f8e0ee3849406bf09090c46a "lualatex"
+  "rozdzialy/02.aux" 1729695450.51436 1113 5bb8f850f8e0ee3849406bf09090c46a "lualatex"
   "rozdzialy/02.tex" 1728580506.44327 8878 c16a6d187af5a8c5fa5e5a30e3878471 ""
-  "rozdzialy/03.aux" 1729090671.54292 1600 7d15a19c5b70393097b876e4cfa5d1ee "lualatex"
-  "rozdzialy/03.tex" 1729090666.8099 8549 d867751cf5fa9cb0a510d6086582090b ""
+  "rozdzialy/03.aux" 1729695451.23444 1600 7d15a19c5b70393097b876e4cfa5d1ee "lualatex"
+  "rozdzialy/03.tex" 1729689632.40794 8604 fa059cbca63aa523e742fa5f28ecda19 ""
+  "rozdzialy/04.aux" 1729695451.46113 1411 de2cdd3b8c33393ed334fb45d55c6868 "lualatex"
+  "rozdzialy/04.tex" 1729695446.29724 5943 bfb416aa6fa0ed0644d8c6a55b5c8d61 ""
   (generated)
   "main.aux"
   "main.log"
@@ -370,4 +372,5 @@
   "rozdzialy/01_cayley.aux"
   "rozdzialy/02.aux"
   "rozdzialy/03.aux"
+  "rozdzialy/04.aux"
   (rewritten before read)
