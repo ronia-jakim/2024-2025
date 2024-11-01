@@ -1,0 +1,53 @@
+\section{30.10.2024}{cos}
+
+
+% $\xleftswishingghost{abc\dots z} $
+
+Główne twierdzenie na dzisiaj:
+\begin{theorem}{Freudanthal-Hopf}{}
+  Skończenie generowalna grupa $G$ ma $0$, $1$ $2$ lub nieskończenie wiele końców.
+
+  Gdy $|\Ends(G)|=\infty$, to $|\Ends(G)|$ jest przestrzenią bez punktów izolowanych - w szczególności mamy continuum. W istocie, $\Ends(G)$ jest wtedy zbiorem Cantora.
+\end{theorem}
+
+Zanim przejdziemy dalej, warto wiedzieć kilka rzeczy o zbiorze Cantora, np. jak jest on charakteryzowany w matematyce:
+\begin{itemize}
+  \item[\pumpkin] jest to {\slshape jedyna z dokładnością do homeomorfizmu przestrzeń metryczna, która jest całkowicie niespójna ($0$-wymiarowa)}, to znaczy, że każdy punkt posiada bazę otoczeń otwarto-domkniętych 
+  \item[\skull] nie ma on punktów izolowanych.
+\end{itemize}
+
+Niech $X=(\Lambda, \mathcal{X}, \mathcal{F})$ będzie systemem odwrotnym zbiorów skończonych. Załóżmy, że wszystkie odwzorowania $f_{\lambda,\mu}\in\mathcal{F}$ są surjekcjami oraz $\forall\;\lambda\in\Lambda\;\forall\;x\in X\;\forall\mu>\lambda$ takie, że $|f^{-1}_{\lambda\mu}(x)|\geq 2$ to wówczas $\varprojlim \underline{X}$ jest homeomorficzny ze zbiorem Cantora. To znaczy, że $\underline{X}$ rozdziela się w każdym kroku na co najmniej dwie części dokładnie tak jak zbiór Cantora.
+
+\begin{proof}
+  Wiemy, że $|\Ends(G)|=0,1,2$ jest możliwe, bo $0$ końców mają grupy skończone, $1$ ma $\Z^2$, a $\Z$ ma końców $2$ sztuki.
+
+  Załóżmy, że $|\Ends(G)|\geq3$. Oznacza to, że dla $X=Cay(G, S)$ istnieje zwarty $K\subseteq X$ taki, że $\Pi_K^X$ ma co najmniej $3$ elementy (tzn. $X-K$ ma co najmniej $3$ nieograniczone komponenty spójności). 
+
+  Naszym celem jest pokazanie, że dla dowolnego $L\subseteq X$ zwartego i dowolnej nieograniczonej komponenty $C$ w $X-L$ istnieje większy zbiór $L\subseteq L'\subseteq X$ oraz nieograniczone komponenty $C_1\neq C_2$ w $X=L'$ takie, że $C_1,C_2\subseteq C$ (czyli $f_{LL'}(C_i)=C$ dla $i=1,2$).
+
+  Ustalmy zwarty $L\subseteq X$ oraz nieograniczoną komponentę $C$ w $X-L$. Niech $M\subseteq X$ będzie zbiorem z definicji kozwartości działania $G \curvearrowright X$, tzn. takim, że 
+  $$\bigcup_{g\in G}gM=X.$$ 
+  Bez straty ogólności załóżmy, że $K\subseteq X$ 
+
+  {\Large\color{red}OBRAZEK}
+
+  Niech $x_0\in C$ będzie takim punktem, że $d(x_0,L)\geq \text{diam}L+2\text{diam}M$. Niech teraz $g_0\in G$ będzie taki, że $x_0\in g_0M$. Wtedy ponieważ $\text{diam}(g_0M)=\text{diam}(M)$, mamy $d_X(L, g_0M)\geq \text{diam}M$ ale też $\geq\text{diam}L$. Więc tym bardziej $d_X(L, g_0K)\geq \text{diam}M$ ale też $\text{diam}L$.
+
+  Twierdzimy, że $g_0K\subseteq g_0M\subseteq C$ oraz 
+  {\Large\color{red}no i spadlo mi sie z rowerka}
+
+  Dowód (3)
+
+  Załóżmy, że komponenty $C_1,...,C_m$ są rozłączne z $L$, bo $L\subseteq C_0$. Więc każda z nich zawiera się w pojedynczej komponencie $X-L$. Każda spośród $C_1$,..., $C_m$ posiada punkty dowolnie bliskie zbioru $g_0K$, bo np. pierwszy punkt na geodezyjnej od punktu $a\in C_i$ do punktu $b\in g_0K$ nienależący do $C_i$  musi należeć do $g_0K$, czyli punkty leżące w $C$
+
+  Skoro $C_i$ zachacza o $C$, to musi być zawarte w $C$.
+
+  Dla ukończenia realizacji CELU (i dowodu twierdzenia) weźmy $L'=L\cup g_0K$. Wtedy $C_1,..., C_m$ są komponentami w $X-L'$.
+\end{proof}
+
+Dalsze wyniki:
+\begin{enumerate}
+  \item[\skull] Grupa ma $2$ końce $\iff$ jest wirtualnie $\Z$ (zawiera $\Z$ jako podgrupę skończonego indeksu $\equiv$ jest współmierna z $\Z$)
+  \item[\skull] Jeśli $|\Ends(G)|=\infty$, to $G$ rozkłada się w sposób  nietrywialny i nie $2$-końcowy nad skończoną podgrupą $H$, tzn. $G=G_1\star_H G_2$ i $[G_i:H]\geq 3$ dla przynajmniej jednego $i$, lub $G=\star_H G_0$ (HNN-rozszerzeniem), $\phi_i:H\hookrightarrow G_0$, $[G_0:\phi_i(H)]\geq 2$ dla pewnego $i$.
+\end{enumerate}
+
