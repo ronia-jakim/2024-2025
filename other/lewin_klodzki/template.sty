@@ -27,6 +27,23 @@
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 
+\RequirePackage{tikz}
+\RequirePackage{tikz-cd}
+
+\RequirePackage{soul}
+
+\sethlcolor{green!15}
+
+\makeatletter
+\font\SOUL@tt="LMMono10-Regular"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@ %
+\makeatother
+
+\newcommand{\buff}[1]{%
+  {\bfseries\color{green}#1}%
+}
+
 \RequirePackage[nolessnomore,noequal,noparenthesis,nospecials,noplusnominus,noexclam]{mathastext}
 
 \DeclareMathOperator{\Spec}{Spec}
@@ -38,7 +55,7 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathbb{A}}
 
-\newcommand{\rozwiazanie}[1]{#1}
+\newcommand{\rozwiazanie}[1]{{\color{green}\slshape#1}}
 
 \RequirePackage{xcolor}
 
