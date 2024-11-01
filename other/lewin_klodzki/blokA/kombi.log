@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.10.4)  1 NOV 2024 17:40
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.10.4)  1 NOV 2024 19:52
  restricted system commands enabled.
  file:line:error style messages enabled.
 **kombi.tex
@@ -1259,26 +1259,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (11.21632pt too wide) in paragraph at lines 147--148
-\TU/Cantarell(0)/m/n/10 jak na-jcz-er-wieńszą wieżę, więc co na-jwyżej dwa bloki niebieskie mogą stać je-den na drugim bez by-cia rozdzielonym
- []
-
-LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 151.
-LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
-(Font)              scaled to size 6.0pt on input line 151.
-[2]
-Overfull \hbox (0.7953pt too wide) in paragraph at lines 179--180
-[]\TU/Cantarell(0)/m/n/10 Wek-tor to strza-łka narysowana na płaszczyźnie. Dowolny punkt połąc-zony ze środ-kiem układu współrzęd-
- []
-
-
-Overfull \hbox (8.99971pt too wide) in paragraph at lines 193--194
-\TU/Cantarell(0)/m/n/10 Za-uważmy, że wek-tor prosty jed-noz-nacznie wyz-nacza prostą, ale prosta ma więcej niż je-den wek-tor kierunk-
- []
-
-[3] (./kombi.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./kombi.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1286,19 +1267,19 @@ L3 programming layer <2024-02-20>
 )
 
 Here is how much of LuaTeX's memory you used:
- 23940 strings out of 476447
+ 23891 strings out of 476447
  125086,1977958 words of node,token memory allocated
- 630 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 34 attribute, 55 glue_spec, 34 attribute_list, 2 write nodes
-   avail lists: 2:2350,3:1005,4:214,5:213,6:43,7:5406,8:35,9:1007,10:8,11:228
- 45414 multiletter control sequences out of 65536+600000
- 66 fonts using 6575975 bytes
+ 634 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 35 attribute, 55 glue_spec, 35 attribute_list, 2 write nodes
+   avail lists: 2:2348,3:1005,4:120,5:179,6:43,7:5138,8:94,9:1007,10:3,11:144
+ 45365 multiletter control sequences out of 65536+600000
+ 52 fonts using 5070623 bytes
  117i,15n,129p,534b,1499s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on kombi.pdf (3 pages, 69580 bytes).
+</usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on kombi.pdf (2 pages, 68545 bytes).
 
-PDF statistics: 69 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+PDF statistics: 59 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
