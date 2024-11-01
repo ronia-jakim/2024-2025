@@ -152,7 +152,49 @@ Do windy na ośmiopiętrowym budynku wsiadło $5$ osób. Na ile sposobów mogą 
 \end{mybox}
 
 \begin{zadanie}
-  Tak jak na $\R\times\R=\R^2$ umiemy rysować wektory i proste, tak analogicznie możemy to robić na kracie $\Z_p\times\Z_p$. Czy umiesz powiedzieć ile jest prostych na $\Z_p\times \Z_p$ dla $p=2,3,5$? A dla dowolnego $p$? A co jeśli chcemy liczyć proste w $\Z_p^3$?
+  Celem zadania będzie zliczenie prostych przechodzących przez $(0,0)$ na $\Z_p^2$, które dla $p=3$ wygląda następująco
+  \begin{center}
+    \begin{tikzpicture}
+      \foreach \x in {0, 1, 2} {
+        \foreach \y in {0, 1, 2} {
+          \fill (\x, \y) circle (2pt);
+        }
+      }
+
+      \fill[green](0, 0) circle (2.2pt);
+      \fill[green](1, 2) circle (2.2pt);
+      \fill[green](2, 1) circle (2.2pt);
+
+      \draw[green](0,0) circle (4pt);
+      \draw[green](1,2) circle (4pt);
+      \draw[green](2,1) circle (4pt);
+
+      \node at (0,-.5) {$(0,0)$};
+      % \node at (1, -.5) {$(1, 0)$};
+    \end{tikzpicture}
+  \end{center}
+  \begin{enumerate}
+    \item Przykładowa prosta na $\Z_3^2$ została zaznaczona na rysunku wyżej. Narysuj kilka prostych na $\Z_p^2$ dla $p=2,3,5$.
+    \item Ile punktów mają proste na $\R^2$? A ile na $\Z_p^3$?
+    \item Wektor to strzałka narysowana na płaszczyźnie. Dowolny punkt połączony ze środkiem układu współrzędnych to wektor. To samo jest prawdziwe dla $\Z_p^2$. Czy umiesz powiedzieć ile jest niezerowych wektorów na $\Z_p^2$?
+    \item Dla dowolnej prostej na płaszczyźnie możemy wybrać jej wektor kierunkowy, czyli strzałkę, która na niej leży (wskazuje kierunek w którym rośnie prosta). Rysunek niżej daje przykład kilku prostych na $\R^2$ i ich wektorów kierunkowych.
+      \begin{center}
+        \begin{tikzpicture}
+          \draw[->] (-1, 0)--(2, 0);
+          \draw[->] (0, -1)--(0, 2);
+
+          \draw (-.5,-.5)--(1.5,1.5);
+          \draw[ultra thick, ->, orange] (0, 0)--(1, 1);
+
+          \draw (-.5, 1)--(1.5, 2);
+          \draw[ultra thick, ->, orange] (-.5, 1)--(.5,1.5);
+        \end{tikzpicture}
+      \end{center}
+      Zauważmy, że wektor prosty jednoznacznie wyznacza prostą, ale prosta ma więcej niż jeden wektor kierunkowy (wystarczy przeskalować). To samo jest prawdziwe dla $\Z_p^2$.
+
+      Korzystając z poprzednich podpunktów oblicz, ile jest prostych przechodzących przez zero na $\Z_p^2$.
+  \end{enumerate}
+  % Tak jak na $\R\times\R=\R^2$ umiemy rysować wektory i proste, tak analogicznie możemy to robić na kracie $\Z_p\times\Z_p$. Czy umiesz powiedzieć ile jest prostych na $\Z_p\times \Z_p$ dla $p=2,3,5$? A dla dowolnego $p$? A co jeśli chcemy liczyć proste w $\Z_p^3$?
 \end{zadanie}
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
