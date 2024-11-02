@@ -1,17 +1,71 @@
 %! TeX program = lualatex
-\documentclass{article}
+\documentclass{uoom}
 
-\usepackage[bezRozw]{../template} 
+\autor{Weronika Jakimowicz}{dupa}
+\temat{Wielomiany}
 
-\title{Wielomiany}
-\author{Weronika Jakimowicz}
-\date{}
+\theoremstyle{definition}
+\newtheorem{zadd}{Zadanie}
+
+\newenvironment{zadanie}{
+  \begin{zadd}
+  }
+  {
+    \end{zadd}\vspace{\ooodstep}
+  }
+
+\renewcommand{\stopka}{
+    \blfootnote{Materiały przygotowane przez \aaautor.}
+  }
+
+\RequirePackage{tcolorbox}
+
+\tcbuselibrary{theorems}
+\tcbuselibrary{breakable}
+\tcbuselibrary{skins}
+
+  \NewTColorBox{mybox}{ O{red} m d"" !O{} }
+{
+  enhanced,
+  fonttitle = \bfseries\large,
+  coltitle = green!50!black,
+  description color = green!50!black, 
+  description font = \bfseries\large,
+  colbacktitle = white, %green!40!black!75,
+  breakable, 
+  enhanced,
+  attach boxed title to top left = {
+    xshift=0.5cm, 
+    yshift=-\tcboxedtitleheight/2
+  },
+  boxed title style = {
+    boxrule=0pt,
+    colframe=white
+  },
+  top=6mm,
+  bottom=4mm,
+  colback=white,
+  frame hidden,
+  borderline={1pt}{0pt}{green!40},
+  arc=0mm,
+  after skip=5mm,
+  before skip=5mm,
+  fonttitle=\bfseries,
+  title={#2}
+}
+
+\usepackage{xcolor}
+\definecolor{green}{HTML}{40a02b}
+
+\def\Z{\mathbb{Z}}
+
+\usepackage{tikz-cd}
 
 \begin{document}
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
-\textbf{\large Rozgrzewka}
+\noindent\textbf{Rozgrzewka}
 
   \begin{zadanie}
     Udowodnij, że jeśli $a+b=c+d$ oraz $ab=cd$, to wówczas $a=b$ i $c=d$ lub $a=d$ i $b=c$.
@@ -31,7 +85,7 @@
     \begin{enumerate}
       \item $(x^6-2x^4+2x^3-2x+1):(x^3-2x+1)$
       \item $(2x^7-3x^6+4x^4-x^2+2x+4):(2x^5+x^4-1)$
-      \item $(x^4+x^3+10x^2+9x+9):(x^2+2x+1)$ \rozwiazanie{dzielę $(x-3i)(x+3i)(x-i)(x+i)$ przez $(x+1)^2$}
+      \item $(x^4+x^3+10x^2+9x+9):(x^2+2x+1)$ %\rozwiazanie{dzielę $(x-3i)(x+3i)(x-i)(x+i)$ przez $(x+1)^2$}
       \item $(38x^3+7x^2-8x-1):(x+\frac{1}{2})$
     \end{enumerate}
   \end{zadanie}
@@ -137,6 +191,6 @@
   Przedstawić wielomian $x^4+x^2+x^2+x+1$ w postaci różnicy kwadratów dwóch wielomianów niejednakowego stopnia o współczynnikach rzeczywistych.
 \end{zadanie}
 
-\rozwiazanie{Zauważamy, że te wielomiany muszą być stopnia 2 i 1, a reszta to już uzgodnienie współczynników}
+% \rozwiazanie{Zauważamy, że te wielomiany muszą być stopnia 2 i 1, a reszta to już uzgodnienie współczynników}
 
 \end{document}

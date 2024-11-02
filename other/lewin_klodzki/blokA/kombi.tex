@@ -1,39 +1,72 @@
 %! TeX program = lualatex
-\documentclass{article}
+\documentclass{uoom}
 
-\usepackage[bezRozw]{../template} 
-% \usepackage{../template} 
+\autor{Weronika Jakimowicz}{dupa}
+\temat{Kombinatoryka (i grafy)}
 
-\title{Wielomiany}
-\author{Weronika Jakimowicz}
-\date{}
+\theoremstyle{definition}
+\newtheorem{zadd}{Zadanie}
+
+\newenvironment{zadanie}{
+  \begin{zadd}
+  }
+  {
+    \end{zadd}\vspace{\ooodstep}
+  }
+
+\renewcommand{\stopka}{
+    \blfootnote{Materiały przygotowane przez \aaautor.}
+  }
+
+\RequirePackage{tcolorbox}
+
+\tcbuselibrary{theorems}
+\tcbuselibrary{breakable}
+\tcbuselibrary{skins}
+
+  \NewTColorBox{mybox}{ O{red} m d"" !O{} }
+{
+  enhanced,
+  fonttitle = \bfseries\large,
+  coltitle = green!50!black,
+  description color = green!50!black, 
+  description font = \bfseries\large,
+  colbacktitle = white, %green!40!black!75,
+  breakable, 
+  enhanced,
+  attach boxed title to top left = {
+    xshift=0.5cm, 
+    yshift=-\tcboxedtitleheight/2
+  },
+  boxed title style = {
+    boxrule=0pt,
+    colframe=white
+  },
+  top=6mm,
+  bottom=4mm,
+  colback=white,
+  frame hidden,
+  borderline={1pt}{0pt}{green!40},
+  arc=0mm,
+  after skip=5mm,
+  before skip=5mm,
+  fonttitle=\bfseries,
+  title={#2}
+}
+
+\usepackage{xcolor}
+\definecolor{green}{HTML}{40a02b}
+
+\usepackage{tikz-cd}
 
 \begin{document}
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
-\textbf{\large Rozgrzewka}
-
-\begin{zadanie}
-  Ile jest dwucyfrowych liczb parzystych? Ile trzycyfrowych, a ile stucyfrowych?
-\end{zadanie}
-
-\begin{zadanie}
-  Ile liczb  mniejszych od $1000$ jest podzielnych przez $3$ i $4$?
-\end{zadanie}
+\noindent\textbf{Rozgrzewka}
 
 \begin{zadanie}
   Ile jest przestawień (nie)słowa LEWINKLODZKI?
-\end{zadanie}
-
-\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
-
-\begin{zadanie}
-  A słowa MATEMATYKA?
-\end{zadanie}
-
-\begin{zadanie}
-  Ile osób musiałoby urodzić się w Polsce jednego dnia, żeby zabrakło dla nich PESELi?
 \end{zadanie}
 
 \begin{zadanie}
@@ -41,17 +74,16 @@
 \end{zadanie}
 
 \begin{zadanie}
-  W powiecie kłodzkim rejestracja samochodowa zaczyna się od $DKL$ i ma potem ciąg $5$ cyfr i liter, w którym wszystkie cyfry (których może być od $0$ do $5$) są zawsze przed literami. Ile jest możliwych rejestracji samochodów w powiecie kłodzkim?
+  Ile wynosi $n$, jeśli liczba permutacji zbioru mającego $(n+1)$ elementów jest o $600$ większa od liczby permutacji zbioru mającego $n$ elementów?
 \end{zadanie}
 
-\begin{zadanie}
-  Na ile sposobów można posadzić $150$ uczniów przy $150$-kątnym stole (lub okrągłym, jeśli takiego nie mamy pod ręką)?
-\end{zadanie}
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
 \begin{mybox}{Dwumian Newtona}
   Liczbę
   $$\binom{n}{k}=\frac{n!}{k!(n-k)!}$$
-  nazywamy dwumianem Newtona. Warto kojarzyć tzw. \hl{trójkąt Pascala}
+  nazywamy dwumianem Newtona. Warto kojarzyć tzw. trójkąt Pascala
   \begin{center}
     \begin{tikzcd}[column sep=tiny, row sep=tiny]
       n=0 &   &   &   &   & 1 \\ 
@@ -69,39 +101,18 @@
   Chcemy się wszyscy na sali przywitać uściskiem dłoni. Ile zostanie wymienionych uścisków dłoni?
 \end{zadanie}
 
-\begin{zadanie}
-  Chcemy wybrać $k$ osób spośród $30$. Na ile sposobów możemy to zrobić dla sensownych $k$?
-\end{zadanie}
-
-\begin{zadanie}
-  W biegu niepodległości w Warszawie bierze udział $50$ biegaczy. Ile jest możliwych układów na podium?
-\end{zadanie}
-
-\begin{zadanie}
-  Rzucamy $n$ rozróżnialnymi kośćmi. Na ile sposobów zobaczymy dokładnie $6$ jedynek i $3$ czwórki?
-\end{zadanie}
-
-\begin{zadanie}
+\begin{zadanie}[trudniejsze]
   Zakładając, że jesteśmy po poniedziałku 4 XI 2024, zgadnij (warto spojrzeć na $\triangle$ Pascala) wzór na
   $$\sum_{k=0}^n\binom{n}{k}$$
   i udowodnij go indukcyjnie.
-\end{zadanie}
 
-% \begin{zadanie}
-%   Robert budowniczy buduje ciągi składające się z $1$ i $2$, które sumują się do liczby $n$. Ile takich ciągów może ułożyć?
-% \end{zadanie}
-
-% \begin{zadanie}
-%   Mamy przejść szachownice $n\times k$ z jednego wierzchołka do przeciwnego poruszając się skokami po bokach pól. Ile jest możliwych dróg?
-% \end{zadanie}
-
-\begin{zadanie}
-  Ile wynosi $n$, jeśli liczba permutacji zbioru mającego $(n+1)$ elementów jest o $600$ większa od liczby permutacji zbioru mającego $n$ elementów?
+  Możesz też spróbować zinterpretować powyższą wartość jako zliczanie ciągów długości $n$ złożonych z samych $0$ i $1$.
 \end{zadanie}
 
 \begin{zadanie}
-Do windy na ośmiopiętrowym budynku wsiadło $5$ osób. Na ile sposobów mogą opuścić na różnych piętrach windę?
+  Dodaj do siebie $n$ pierwszych liczb naturalnych. Teraz dodaj do siebie kwadraty $n$ pierwszych liczb naturalnych. Czy umiesz wytłumaczyć ten wzór przy pomocy $\triangle$ Pascala i bez jego pomocy?
 \end{zadanie}
+
 
 \begin{zadanie}
   Na ile sposobów potrafisz rozłożyć $25$ skarpet do $5$ szuflad tak, żeby żadna szuflada nie była pusta?
@@ -111,116 +122,116 @@ Do windy na ośmiopiętrowym budynku wsiadło $5$ osób. Na ile sposobów mogą 
   Na ile sposobów umiesz zapisać liczbę $25$ jako sumę $5$ liczb naturalnych różnych od $0$? A jeśli chcesz wysumować w ten sposób liczbę $x$? 
   % Robert budowniczy buduje wieże wysokości $n$ z czerwonych i niebieskich bloków o wymiarach $1\times 1\times 1$. Ile różnych wież może ułożyć? 
 \end{zadanie}
-  
-\begin{zadanie}
-  Dodaj do siebie $n$ pierwszych liczb naturalnych. Teraz dodaj do siebie kwadraty $n$ pierwszych liczb naturalnych. 
-\end{zadanie}
-
-\rozwiazanie{Najpierw mamy kwadrat $n\times n$ bloczków, potem kładziemy na niego kwadrat $(n-1)\times (n-1)$ bloczków i tak dalej. Wynik to zliczenie rzędów z odpowiednią krotnością.
-\begin{eqnarray}
-\sum_{i=1}^{n}i^2&=&1\cdot(n+n-1)+2\cdot(n-1+n-2)+3\cdot(n-2+n-3)\\
-&+&\cdots+(n-1)\cdot(2+1)+n\cdot1\\
-&=&1\cdot(2n-1)+2\cdot(2n-3)+3\cdot(2n-5)+\cdots+(n-1)\cdot3+n\cdot1\\
-&=&\sum_{i=1}^{n}i(2n-2i+1)\\
-&=&2n\sum_{i=1}^{n}i-2\sum_{i=1}^{n}i^2+\sum_{i=1}^{n}i\\
-\sum_{i=1}^{n}i^2&=&(2n+1)\sum_{i=1}^{n}i-2\sum_{i=1}^{n}i^2\\
-3\sum_{i=1}^{n}i^2&=&(2n+1)\sum_{i=1}^{n}i\\
-&=&\dfrac{n(n+1)(2n+1)}{2}\\
-\sum_{i=1}^{n}i^2&=&\dfrac{n(n+1)(2n+1)}{6}
-\end{eqnarray}
-}
-
-\begin{zadanie}
-  Jeśli w poprzednim zadaniu nie korzystałeś do obliczania sumy kwadratów $\triangle$ Pascala, zrób to teraz. W przeciwnym przypadku pomyśl czy umiesz to zrobić bez $\triangle$ Pascala?
-\end{zadanie}
-\rozwiazanie{Chodzi o zapisani $\sum k^2=\sum [k(k+1)-k]$ suma $\sum k(k+1)$ to tak naprawdę $2\sum\binom{k+1}{2}$, a to wystarczy zejść o jedno w dół w trójkącie pascala, tzn. $\sum_1^n\binom{k+1}{2}=\binom{n+2}{3}$}
-
-\begin{zadanie}
-  Na ile sposobów można podzielić $2n$ elementowy zbiór na $n$ zbiorów $2$ elementowych? % Co jeśli dzielimy $2n$ elementów na $n$ niepustych zbiorów? Czy umiesz policzyć na ile sposobów można podzielić zbiór o $(n+1)$ elementach na $k$ podzbiorów?
-\end{zadanie}
-
-% \rozwiazanie{Liczby Stirlinga $\{n+1,k\}=k\{n,k\}+\{n,k-1\}$}
-
-\def\n{\color{blue}N}
-\def\c{\color{red}C}
-
-% \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
-%
-% \textbf{\large Dla odważnych i o mocnym sercu}
-%
-% \begin{zadanie}
-%   Na teren budowy na którym pracuje Robert przyszedł kierownik Józef i powiedział, że partia chce jak najczerwieńszą wieżę, więc co najwyżej dwa bloki niebieskie mogą stać jeden na drugim bez bycia rozdzielonym blokiem czerwonym. Tzn. wieże $\n\c\n\c\n\n\c$ i $\n\n\c\n\n$ są dozwolone, ale wieża $\c\c\c\c\c\n\c\c\c\n\n\c\c\c$ już nie. Co umiesz powiedzieć o ilości możliwych wież, które może wyprodukować Robert? 
-% \end{zadanie}
-%
-% \begin{mybox}{Liczby modulo $\boldsymbol{p}$}
-%   Niech $p\in\N$ będzie liczbą pierwszą. Wtedy dowolna liczba $n\in\N$ zapisuje się jako $n=x\cdot p + y$, gdzie $y<p$ i $x\in\N$. Zbiór wszystkich możliwych $y$ (reszt z dzielenia przez $p$) oznaczamy $\Z_p$. Na $\Z_p$ mamy działanie $+_p$ dodawania modulo $p$, czyli gdy $a,b\in\Z_p$, to $a+_pb$ jest resztą z dzielenia $a+b$ przez $p$, np. $2+_53=0\in\Z_5$, $3+_53=1\in\Z_5$ czy $2+_73=5\in\Z_7$.
-% \end{mybox}
-%
-% \begin{zadanie}
-%   Celem zadania będzie zliczenie prostych przechodzących przez $(0,0)$ na $\Z_p^2$, które dla $p=3$ wygląda następująco
-%   \begin{center}
-%     \begin{tikzpicture}
-%       \foreach \x in {0, 1, 2} {
-%         \foreach \y in {0, 1, 2} {
-%           \fill (\x, \y) circle (2pt);
-%         }
-%       }
-%
-%       \fill[green](0, 0) circle (2.2pt);
-%       \fill[green](1, 2) circle (2.2pt);
-%       \fill[green](2, 1) circle (2.2pt);
-%
-%       \draw[green](0,0) circle (4pt);
-%       \draw[green](1,2) circle (4pt);
-%       \draw[green](2,1) circle (4pt);
-%
-%       \node at (0,-.5) {$(0,0)$};
-%       % \node at (1, -.5) {$(1, 0)$};
-%     \end{tikzpicture}
-%   \end{center}
-%   \begin{enumerate}
-%     \item Przykładowa prosta na $\Z_3^2$ została zaznaczona na rysunku wyżej. Narysuj kilka prostych na $\Z_p^2$ dla $p=2,3,5$.
-%     \item Ile punktów mają proste na $\R^2$? A ile na $\Z_p^3$?
-%     \item Wektor to strzałka narysowana na płaszczyźnie. Dowolny punkt połączony ze środkiem układu współrzędnych to wektor. To samo jest prawdziwe dla $\Z_p^2$. Czy umiesz powiedzieć ile jest niezerowych wektorów na $\Z_p^2$?
-%     \item Dla dowolnej prostej na płaszczyźnie możemy wybrać jej wektor kierunkowy, czyli strzałkę, która na niej leży (wskazuje kierunek w którym rośnie prosta). Rysunek niżej daje przykład kilku prostych na $\R^2$ i ich wektorów kierunkowych.
-%       \begin{center}
-%         \begin{tikzpicture}
-%           \draw[->] (-1, 0)--(2, 0);
-%           \draw[->] (0, -1)--(0, 2);
-%
-%           \draw (-.5,-.5)--(1.5,1.5);
-%           \draw[ultra thick, ->, orange] (0, 0)--(1, 1);
-%
-%           \draw (-.5, 1)--(1.5, 2);
-%           \draw[ultra thick, ->, orange] (-.5, 1)--(.5,1.5);
-%         \end{tikzpicture}
-%       \end{center}
-%       Zauważmy, że wektor prosty jednoznacznie wyznacza prostą, ale prosta ma więcej niż jeden wektor kierunkowy (wystarczy przeskalować). To samo jest prawdziwe dla $\Z_p^2$.
-%
-%       Korzystając z poprzednich podpunktów oblicz, ile jest prostych przechodzących przez zero na $\Z_p^2$.
-%   \end{enumerate}
-%   % Tak jak na $\R\times\R=\R^2$ umiemy rysować wektory i proste, tak analogicznie możemy to robić na kracie $\Z_p\times\Z_p$. Czy umiesz powiedzieć ile jest prostych na $\Z_p\times \Z_p$ dla $p=2,3,5$? A dla dowolnego $p$? A co jeśli chcemy liczyć proste w $\Z_p^3$?
-% \end{zadanie}
-%
-% \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
-%
 
 \begin{zadanie}
   Na ile sposobów potrafisz wysumować liczbę $10$ z $3$ liczb naturalnych (włączając $0$)? 
 \end{zadanie}
 
-\begin{mybox}{Zbiór włączeń i wyłączeń}
-  Niech $A_1$, ..., $A_n$ będą dowolnymi skończonymi zbiorami. Wtedy ilość elementów ich sumy mnogościowej wyraża się wzorem
+\begin{mybox}{Zasada włączeń i wyłączeń}
+  Przypomnijmy zasadę włączeń i wyłączeń z wczoraj. Niech $A_1$, ..., $A_n$ będą dowolnymi skończonymi zbiorami. Wtedy ilość elementów ich sumy mnogościowej wyraża się wzorem
   $$|A_1\cup...\cup A_n|=\sum_{i=1}^n|A_i|-\sum_{1\leq i< j\leq n}|A_i\cap A_j|+\sum_{i<j<k}|A_i\cap A_j\cap A_k|-...+(-1)^{n+1}|A_1\cap...\cap A_n|.$$
 \end{mybox}
-
+  
 \begin{zadanie}
   Ile jest rozwiązań równania $x_1+x_2+x_3=80$, jeśli $0\leq x_i\leq 30$ dla $i=1,2,3$?
 \end{zadanie}
 
-\rozwiazanie{
-  $u_i=30-x_i$, wtedy 
-  $$80=x_1+x_2+x_3=(30-u_1)+(30-u_2)+(30-u_3)\implies u_1+u_2+u_3=10$$
-}
+\begin{mybox}{Pojęcie grafu}
+  Grafem nazywamy parę zbiorów $G=(V, E)$, gdzie $V$ to zbiór wierzchołków, a elementy zbioru $E$ to (nieuporządkowane) pary $\{v, w\}$ dla $v,w\in V$. Zbiór $E$ nazywamy zbiorem krawędzi grafu $G$.
+\end{mybox}
+
+\begin{zadanie}
+  Narysuj grafy $G=(V, E)$ dla:
+  \begin{enumerate}
+    \item $V=\{1,2,3,4\}$, $E=\{\{1,2\}, \{2,3\}, \{3, 4\} \}$ (taki graf nazwiemy drogą długości $4$ i oznaczymy $P_4$)
+    \item $V=\{1,2,3,4\}$, $E=\{\{1,2\},\{2,3\},\{3,4\},\{4,1\}\}$ (taki graf oznaczamy $C_4$ - jak go nazwać?)
+    \item $V$ - zbiór (dodatnich) liczb naturalnych nie większych niż $7$, $E = \{\{x, y\}\;:\;x, y \in V,\; x + y \text{ jest nieparzysta}\}$ (ten to z kolei $K_{3,4}$)
+    \item $V$ to dwuelementowe podzbiory zbioru $\{1,2,3,4,5\}$, zaś $E=\{\{x,y\}\;:\;x,y\in V,\;x\cap y=\emptyset\}$ (taki graf to graf Petersona).
+  \end{enumerate}
+\end{zadanie}
+
+\begin{zadanie}
+  Czy potrafisz narysować grafy $C_6$, $K_{4,5}$?
+\end{zadanie}
+
+\begin{mybox}{Kiedy dwa grafy są tym samym?}
+  Czasem zdarza się, że dwa grafy $G_1=(V_1,E_1)$ i $G_2=(V_2, E_2)$ mają wierzchołki podpisane w inny sposób, ale potrafimy narysować je w identyczny sposób. Takie grafy nazywamy izomorficznymi.
+
+  Formalniej, potrafimy przeprowadzić wierzchołki $G_1$ na wierzchołki $G_2$ i vice versa tak, żeby wierzchołki połączone krawędzią nadal takie były.
+\end{mybox}
+
+\begin{zadanie}
+  Ile jest nieizomorficznych grafów o $3$, $4$ lub $5$ wierzchołkach?
+\end{zadanie}
+
+\begin{zadanie}
+  Drzewo to graf, w którym nie istnieje podzbiór wierzchołków $x_i\in V$ dla $0\leq i\leq k$ taki, że $x_0=x_k$ oraz $\{\{x_i, x_{i+1}\}\;:\;0\leq i\leq k\}\subseteq E$ (nie ma w nim cyklu). Policz, ile jest różnych drzew o:
+  \begin{enumerate}
+    \item trzech wierzchołkach
+    \item czterech wierzchołkach
+    \item pięciu wierzchołkach
+  \end{enumerate}
+\end{zadanie}
+
+\begin{zadanie}
+  Czy umiesz pokazać, ile krawędzi ma drzewo o $n$ wierzchołkach?
+\end{zadanie}
+
+\begin{mybox}{Stopień wierzchołka}
+  Dla wierzchołka $v\in V$ przez jego zbiór sąsiadów rozumiemy zbiór
+  $$\Gamma(v)=\{w\in V\;:\;\{v,w\}\in E\}.$$
+  Ilość elementów tego zbioru nazywamy stopniem wierzchołka $v$ i oznaczamy $d(v)=|\Gamma(v)|$.
+\end{mybox}
+
+\begin{zadanie}
+  Wybierz dowolny wierzchołek grafu Petersona, znajdź zbiór jego sąsiadów i oblicz jego stopień. Czy każdy wierzchołek tego grafu ma taki sam stopień?
+\end{zadanie}
+
+\begin{zadanie}
+  Narysuj graf, którego wierzchołki mają stopnie $1,1,1,2,2,3,4$. A co, jeśli dołożymy jeszcze jeden wierzchołek stopnia $1$?
+\end{zadanie}
+
+\begin{zadanie}
+  Jaki jest związek między liczbą krawędzi grafu a sumą stopni wszystkich jego wierzchołków? Czy umiesz wytłumaczyć dlaczego nie udało Ci się narysować drugiego grafu z poprzedniego zadania?
+\end{zadanie}
+
+\begin{mybox}{Graf regularny}
+  Graf, w którym wszystkie wierzchołki mają ten sam stopień równy $k$ nazywamy grafem $k$-regularnym.
+\end{mybox}
+
+\begin{zadanie}
+  Podaj przykład
+  \begin{enumerate}
+    \item grafu $2$-regularnego o $5$ wierzchołkach
+    \item grafu $4$-regularnego, który nie jest izomorficzny z $K_5$ ani z $K_{4,4}$.
+  \end{enumerate}
+\end{zadanie}
+
+\begin{zadanie}
+  Ile jest grafów regularnych o $6$ wierzchołkach?
+\end{zadanie}
+
+\begin{zadanie}
+  Dla jakich $n$ i $r$ istnieją grafy $r$-regularne o $n$ wierzchołkach?
+\end{zadanie}
+
+\begin{mybox}{Wzór Eulera}
+  Graf planarny to taki, który umiesz narysować na kartce bez przecinających się krawędzi. Ścianą takiego grafu nazywamy dowolny obszar ograniczony przez jego krawędzie  lub przez krawędzie i brzegi kartki (tzn. $\triangle$ jako graf ma dwie ściany - środek trójkąta i obszar na zewnątrz). 
+
+  Niech $v$ oznacza ilość wierzchołków grafu planarnego, $e$ ilość jego krawędzi, a $f$ - ilość ścian. Zachodzi wówczas równanie
+  $$v-e+f=2$$
+\end{mybox}
+
+\begin{zadanie}
+  "Gra w kropki" polega na tym, że po narysowaniu na kartce dowolnej ilości wierzchołków (kropek) gracze na przemian wykonują następujący ruch: łączą krawędzią (krzywą ciągłą) dwa wierzchołki i zaznaczają na niej nowy wierzchołek. Warunek, jaki musi być spełniony jest taki, że krawędzie nie mogą się przecinać i stopień wierzchołków nie może przekraczać $3$. Udowodnij, że gra zawsze kończy się po skończonej liczbie ruchów.
+\end{zadanie}
+
+\begin{mybox}{Kolorowanie grafu}
+  Kolorowanie grafu $G=(V, E)$ przy pomocy $n$ kolorów to przypisanie jego wierzchołkom dokładnie jednego z tych kolorów tak, żeby wierzchołki połączone krawędzią nie miały tego samego koloru.
+\end{mybox}
+
+\begin{zadanie}
+  Ile kolorów potrzebujesz, żeby pokolorować graf Petersena? Narysuj graf, dla którego potrzebujesz co najmniej $6$ kolorów.
+\end{zadanie}
 
 \end{document}
