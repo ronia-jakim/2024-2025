@@ -12,7 +12,38 @@ Zanim zaczniemy, zróbmy szybką motywację, czyli graf Cayleya grupy $\Z$ z jed
 który ma "dwa końce". Natomiast grupa wolna $F_2$ o dwóch generatorach ma "nieskończenie wiele końców". 
 \begin{center}
   \begin{tikzpicture}
-    \node at (0,0) {NARYSOWAC F2};
+    % \tikzmath {
+    %   \power = 2.3;
+    %   \numsteps = 4;
+    %   \deviation = 90;
+    %   function drawRec(\x, \y, \rotate, \step) {
+    %     \step = \step - 1;
+    %     if (\step >= 0) 
+    %     then {
+    %       \scale = \power^\step;
+    %       \draw
+    %       [
+    %         shift={(\x pt,\y pt)},
+    %         rotate=\rotate,
+    %         scale=\scale,
+    %         line width=\scale*.1 pt,
+    %         line cap=round,
+    %       ]
+    %         (0,0)--(1,0) coordinate (newbase);
+    %       coordinate \b;
+    %       \b1 = (newbase); % the new base point
+    %
+    %       for \a in {-\deviation,0,\deviation} {
+    %         drawRec(\bx1,\by1,mod(\rotate+\a,360),\step); % draw one child edge
+    %       };
+    %     };
+    %   };
+    %   for \angle in {0,90,180,-90} {
+    %     drawRec(0,0,\angle,\numsteps);
+    %   };
+    % }
+    \tikzmath {
+    }
   \end{tikzpicture}
 \end{center}
 Z drugiej strony, grupa $\Z^2$ ma jeden koniec: jeśli weźmiemy dwa bardzo odległe od siebie obszary, to one są ze sobą połączone, chociaż jest to połączenie "bardzo odległe".
