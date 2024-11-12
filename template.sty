@@ -7,6 +7,8 @@
 
 \RequirePackage{fontspec}
 
+\RequirePackage{float}
+
 \RequirePackage[default]{cantarell}
 
 
@@ -38,7 +40,7 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathbb{A}}
 
-\DeclareMathOperator{\wspolkon}{\overset{E}{\sim}}
+\DeclareMathOperator{\wspolkon}{\overset{{\scriptscriptstyle E}}{\sim}}
 
 \DeclareMathOperator{\fun}{Fun}
 \DeclareMathOperator{\Ends}{Ends}
@@ -122,6 +124,7 @@
 \RequirePackage{tikz}
 \RequirePackage{tikz-cd}
 \usetikzlibrary{decorations.pathreplacing,calc,math,backgrounds}
+\usetikzlibrary{positioning, decorations.text, decorations.pathmorphing}
 
 \RequirePackage{pgfplots}
 
@@ -408,6 +411,7 @@
   \def\lmm{Lemat}
   \def\fc{Fakt}
   \def\wnn{Wniosek}
+  \renewcommand{\figurename}{Rysunek}
 }
 
 \ProcessOptions\relax

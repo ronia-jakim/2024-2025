@@ -1,21 +1,23 @@
-\section{23.10.2024}{}
+\section{23.10.2024}{Przestrzeń końców jest niezmiennikiem q.i.}
 
 Celem dzisiejszego wykładu będzie udowodnienie poniższego twierdzenia.
 
 \begin{theorem}{}{niezmienniczoscEnds} 
-  Przestrzeń końców $Ends(X)$, a w szczególności ich liczba, jest niezmiennikiem quasi-izometrii geodezyjnych przestrzeni właściwych. Takie q.i. przestrzenie mają homeomorficzne przestrzenie końców.
+  Przestrzeń końców $Ends(X)$, a w szczególności ich liczba, jest niezmiennikiem quasi-izometrii geodezyjnych przestrzeni właściwych (przestrzenie końców są wtedy homeomorficzne). %Takie q.i. przestrzenie mają homeomorficzne przestrzenie końców.
 \end{theorem}
 
 \subsection{Alternatywny opis przestrzeni końców (promienie)}
 
-Jeśli $X$ jest właściwa przestrzenią geodezyjną, to jest również lokalnie drogowo spójna. Czyli otwarte podzbiory $U\subseteq X$ są spójne $\iff$ są drogowo spójne.
+Przypomnijmy, że jeśli $X$ jest właściwa przestrzenią geodezyjną, to jest również lokalnie drogowo spójna. Czyli otwarte podzbiory $U\subseteq X$ są spójne $\iff$ są drogowo spójne.
 
 \begin{definition}{promień, współkońcowość promieni}{}
-  \buff{Właściwy promień} (eng. proper ray) w $X$ to dowolne ciągłe odwzorowanie $\rho:[0,\infty)\to X$ takie, że $\lim_{t\to\infty}d_X(\rho(0), \rho(t))$, odległość mierzona od początku $\rho$ ucieka do nieskończoności wraz z oddalaniem się od $0$.
+  \buff{Właściwy promień} (eng. proper ray) w $X$ to dowolne ciągłe odwzorowanie $\rho:[0,\infty)\to X$ takie, że 
+  $$\lim_{t\to\infty}d_X(\rho(0), \rho(t)),$$
+  odległość mierzona od początku $\rho$ ucieka do nieskończoności wraz z oddalaniem się od $0$.
 
-  Zbiór wszystkich promieni w $X$ oznaczamy $\rho^X$.
+  \hl{Zbiór wszystkich promieni w $X$ oznaczamy $\rho^X$.}
 
-  Powiemy, że dwa promienie $\rho_1,\rho_2$ są współkońcowe ($\rho\overset{E}{\sim}\rho_2$), jeśli dla dowolnego zwartego $K\subseteq X$ istnieje $R>0$ taki, że $\rho_1([R, \infty))$ oraz $\rho_2([R, \infty))$ leżą w tej samej komponencie $X-K$.
+  Powiemy, że dwa promienie $\rho_1,\rho_2$ są współkońcowe ($\rho_1\wspolkon\rho_2$), jeśli dla dowolnego zwartego $K\subseteq X$ istnieje $R>0$ taki, że $\rho_1([R, \infty))$ oraz $\rho_2([R, \infty))$ leżą w tej samej komponencie $X-K$.
 \end{definition}
 
 Relacja współkońcowości promieni na zbiorze $\rho^X$ jest relacją równoważności.
@@ -25,17 +27,28 @@ Relacja współkońcowości promieni na zbiorze $\rho^X$ jest relacją równowa�
 \end{fact}
 
 \begin{proof}
-  Niech $\rho\in\rho^X$ takie, że dla każdego $K\subseteq X$ mamy jedyną komponentę $C_K^\rho\in\Pi_K^X$ w dopełnieniu zbioru $K$ w $X$ do której należy $\rho([R,\infty))$ dla dostatecznie dużych $R$. Wtedy ciąg $(C_K^\rho)_{K\in\mathcal{K}}$ jest nicią w systemie odwrotnym $\Pi^X$. W ten sposób współkońcowe promienie wyznaczają tę samą nić.
+  Weźmy $\rho\in\rho^X$ takie, że dla każdego $K\subseteq X$ mamy jedyną komponentę $C_K^\rho\in\Pi_K^X$ w dopełnieniu zbioru $K$ w $X$ do której należy $\rho([R,\infty))$ dla dostatecznie dużych $R$. Wtedy ciąg 
+  $$(C_K^\rho)_{K\in\mathcal{K}}$$ 
+  jest nicią [\ref{def:granica odwrotna}] w systemie odwrotnym $(\mathcal{K},\Pi^X,)f_{KK'})$ . 
 
-  Mamy dobrze określone odwzorowanie 
+  Współkońcowe promienie wyznaczają tę samą nić, więc istnieje dobrze określone odwzorowanie 
   $$\beta:\rho^X/\wspolkon \to \Ends(X)$$
-  $$\beta([\rho]_{\wspolkon})=(C_K^{\rho})\in \Ends(X)$$
+  $$\beta([\rho]_{\wspolkon})=(C_K^{\rho})_{K\in\mathcal{K}}\in \Ends(X)$$
   $\beta$ jest różnowartościowe, bo dla niewspółkońcowych $\rho_1,\rho_2$ istnieje $K\subseteq X$ takie, że $C_K^{\rho_1}\neq C_K^{\rho_2}$, a wtedy nici $\beta([\rho_1])\neq \beta([\rho_2])$.
 
-  Niech $\xi=(\xi_K)\in\Ends(X)$, szukamy promienia który na nie przechodzi. Dla każdego $n\in\N$ wybieramy punkt $y_n\in \xi_{B_n}$, gdzie $\xi_{B_n}$ to nieograniczona komponenta w $X-B_n$ dla $B_n=B_n(x_0)$ przy ustalonym $x_0$. Określmy $\rho=[y_0,y_1]\cup[y_1,y_2]\cup...$ mając na myśli odwzorowanie $[n, n+1]\mapsto$ geodezyjna od $y_n$ do $y_{n+1}$. Dla takiego $\rho$ mamy $C_{B_n}^\rho=\xi_{B_n}$. Dla dowolnego innego $K\in \mathcal{K}$ z racji, że $K\subseteq B_n$ to dla pewnego $n$ mamy zarówno $C_K^\rho$ jak i $\xi_K$ to ta sama komponenta w $X_K$, zawierająca $\xi_{B_n}$.
+  Wystarczy przekonać się, że $\beta$ jest surjekcją. 
+
+  Niech $\xi=(\xi_K)\in\Ends(X)$ będzie dowolną nicią. Szukamy promienia który na nie przechodzi. Dla każdego $n\in\N$ wybieramy punkt $y_n\in \xi_{B_n}$, gdzie $\xi_{B_n}$ to nieograniczona komponenta w $X-B_n$ dla $B_n=B_n(x_0)$ przy ustalonym $x_0$. 
+
+  Określmy $\rho=[y_0,y_1]\cup[y_1,y_2]\cup...$ mając na myśli odwzorowanie $\rho$ które odcinek $[n, n+1]$ przeprowadza na geodezyjną od $y_n$ do $y_{n+1}$. Dla takiego $\rho$ mamy $C_{B_n}^\rho=\xi_{B_n}$. Dla dowolnego innego $K\in \mathcal{K}$ z racji, że istnieje kula taka, że $K\subseteq B_n$ to dla pewnego $n$ zarówno $C_K^\rho$ jak i $\xi_K$ to ta sama komponenta w $X_K$, zawierająca $\xi_{B_n}$.
 \end{proof}
 
-Na $\rho^X/\wspolkon$ mamy topologie indukowana przez bijekcję $\beta$ z topologią $\Ends(X)$. Baza tej topologii są zbiory postaci $\{U_C^K\;:\;K\in\mathcal{K}$ i $C\in\Pi_K^X\}$, $U_C^K=\{[\rho]\;:\;\rho([R, \infty))\subset C\}$ dla pewnego $R$.
+Na $\rho^X/\wspolkon$ mamy topologie indukowana przez bijekcję $\beta$ z topologii $\Ends(X)$. Baza tej topologii są zbiory postaci 
+$$\{U_C^K\;:\;K\in\mathcal{K}$ i $C\in\Pi_K^X\},$$ 
+$U_C^K=\{[\rho]\;:\;\rho([R, \infty))\subset C\}$ dla pewnego $R$.
+
+
+Wróćmy więc do twierdzenia \ref{th:niezmienniczoscEnds}.
 
 \begin{proof}Dowód twierdzenia \ref{th:niezmienniczoscEnds}.
 
