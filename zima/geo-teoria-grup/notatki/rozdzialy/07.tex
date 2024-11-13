@@ -1,0 +1,148 @@
+\section{13.11.2024}{To be named}
+
+Funkcja wzrostu: $\beta_{G, S}:\N\to\N$ zdefiniowana jako liczność kuli o promieniu $k$ i środku w elemencie neutralnym: $f_{G, S}(k)=|B_k^{G,S}(e)|$
+
+\subsection{Abstrakcyjne funkcje wzrostu} %quasi-dominacja i quasi-rownowaznosc
+
+\hl{Abstrakcyjna funkcja wzrostu $f$} to po prostu niemalejąca funkcja $f:\R_{\geq 0}\to \R_{\geq 0}$. Każda funkcja wzrostu $\beta_{G, S}$ wyznacza abstrakcyjną funkcję wzrostu 
+$$\widetilde{\beta}_{G,S}(t):=\beta_{G,S}(\lceil t\rceil),$$
+która nadal jest multiplikatywna, tzn. $\widetilde{\beta}_{G,S}(t+t')\leq \widetilde{\beta}_{G,S}(t)\cdot\widetilde{\beta}_{G,S}(t')$.
+
+Konkurencyjnie możemy zdefiniować $\doublewidetilde{\beta}_{G,S}(t):=\beta_{G,S}(\lfloor t\rfloor)$, ale nie zachowujemy wówczas multiplikatywności funkcji.
+
+\begin{definition}{quasi-dominacja}{}
+  Mówimy, że funkcja $g$ \buff{quasi-dominuje} [$g\succ f$] funkcję $f$, jeśli istnieje $c\geq1$ i $b\geq0$ takie, że
+  $$(\forall\;t\in\R_{\geq0})\;f(t)\leq c\cdot g(ct+b)+b$$
+\end{definition}
+
+\begin{example}[m]
+  \item Dla każdego wielomianu $w(t)$ stopnia $n$ o dodatnich współczynnikach $w(t)\prec t^n$.
+  \item Dla dowolnych $a,b>1$ zachodzi 
+    $$a^t\succ b^t,$$
+    nawet gdy $a>b$.
+\end{example}
+
+Relacja quasi-dominacji jest relacją przechodnią i zwrotną.
+
+\subsection{Tempo wzrostu grupy}
+
+\begin{definition}{quasi-równoważność}{}
+  Dwie funkcje $f$ i $g$ są quasi-równoważne [$f\sim g$], gdy $f\succ g$ i $g\succ f$. Jest to relacja równoważności. Klasy tej relacji nazywamy \hl{typami wzrostu} [eng. growth rate types].
+\end{definition}
+
+\begin{example}[m]
+  \item Dla $a\geq0$ funkcje $t\mapsto t^a$ określają parami różne typy wzrostu.
+  \item Dla $0>a>b$ zachodzi $e^{ta}\sim e^{tb}$. Jest to tzw. tym wzrostu eksponencjalnego.
+  \item $(\forall\;a\geq0)\;t^a\prec e^t$ oraz $t^a\not\prec e^t$, czyli wzrost eksponencjalny nigdy nie jest równy wzrostowi $t^a$.
+  \item Wszystkie funkcje wzrostu grup $\beta_{G,S}$ są quasi-zdominowane przez $e^t$, $\beta_{G,S}\prec e^t$. Aby pokazać, że grupa $(G,S)$ ma typ wzrostu eksponencjalnego wystarczy pokazać, że $\beta_{G,S}\succ e^t$, co jest równoważne nierówności $\beta_{G,S}\geq ca^t-b$ dla $a>1$, $b\geq0$ i $c>0$.
+  \item $\doublewidetilde{\beta}_{G,S}\sim\widetilde{\beta}_{G,S}$
+\end{example}
+
+\begin{fact}{}{wlozenie a typ wzrostu}
+  Niech $(G,S)$ i $(H,T)$ będą grupami ze skończonym układem generatorów. Jeśli istnieje quasi-izometryczne zanurzenie 
+  $$f:(G, d_S)\to (H, d_T),$$
+  to wówczas funkcja wzrostu w $G$ jest zdominowana przez funkcję wzrostu w $H$: $\beta_{G,S}\prec \beta_{H,T}$.
+\end{fact}
+
+Zanim przejdziemy do dowodu faktu \ref{fac:wlozenie a typ wzrostu}, wymieńmy kilka ważnych wniosków z niego wynikających.
+
+\begin{conclusion}{}{}
+  \begin{enumerate}
+    \item Jeśli grupy $(G, d_S)$ i $(H, d_T)$ są quasi-izometryczne, to wówczas mają ten sam typ wzrostu: $\beta_{G,S}\sim\beta_{H,T}$.
+    \item Dla różnych skończonych układów generatorów $S_1, S_2$ grupy $G$ zachodzi $\beta_{G, S_1}\sim \beta_{G,S_2}$, czyli grupa jednoznacznie determinuje swój typ wzrostu.
+  \end{enumerate}
+\end{conclusion}
+
+\buff{Wyróżniamy grupy o wzroście}
+\begin{itemize}
+  \item wielomianowym, czyli taki dla których funkcja wzrostu jest zdominowana przez $t^a$ dla pewnego $a$ [$\beta_{G,S}\prec t^a$],
+  \item eksponencjalnym,
+  \item pośrednim [eng. intermediate growth], czyli ani wielomianowym ani eksponencjalnym (dominuje ściśle nad wielomianowym, ale jest zdominowany ściśle nad eksponencjalnym).
+\end{itemize}
+
+Okazuje się, że w przypadku wzrostu nieprzekraczającego wielomianowego, wzrost musi być typu $\beta_{G,S}\sim t^m$ dla pewnego $m\in\N$. Tzn. nie ma grup o typie wzrostu "ułamkowo-potęgowego" ani $t\cdot\log t$ etc.
+
+Istnieją grupy o wzroście pośrednim, np. tak zwana grupa Grigorchuka (automorfizmów pewnego drzewa). Wiadomo dla niej, że 
+$$e^{t^\alpha}\prec \beta_G\prec e^{t^\beta}$$
+dla pewnych $0<\alpha<\beta<1$, ale nie mamy wyznaczonej konkretnej funkcji. Grupa ta jest skończenie generowalna, ale nieskończenie prezentowalna.
+
+Istnieje otwarta hipoteza, że jeśli $G$ ma wzrost pośredni, to $\beta_G\succ e^{t^\alpha}$ dla pewnego $0<\alpha<1$. Nie wiemy też, czy istnieje grupa skończenie prezentowalna, która dopuszcza pośredniego wzrostu (otwarte jest pytanie o dowód, że nie może tak być).
+
+Żadna grupa o wzroście pośrednim nie ma wyznaczonego dokładnego typu wzrostu.
+
+Wracamy do \ref{fac:wlozenie a typ wzrostu}.
+
+\begin{proof}
+
+  Niech $f:(G, d_S)\to (H, d_T)$ będzie q.i. zanurzenie i niech $C\geq 1$ będzie takie, że 
+  $$(\forall\;g,g'\in G)\;\frac{1}{c}d_S(g, g') - C\leq d_T(f(g), f(g'))\leq Cd_S(g, g') + C.$$
+  Niech $e'=f(e)$ i niech $r\in \N$. Wtedy jeśli $g\in B^{G,S}_r(e)$, to wówczas 
+  $$d_T(f(g), e')\leq C\cdot d_S(g, e)+C\leq C\cdot r+C.$$
+  W takim razie
+  $$f\left(B_r^{G,S}(e)\right)\subseteq B_{Cr+C}^{H,T}(e').$$
+  Niestety, q.i. może sklejać elementy i niekoniecznie jest różnowartościowa. Musimy więc znaleźć oszacowanie na moc przeciwobrazów $f^{-1}(h)$.
+
+  Jeśli $f(g)=f(g')$, to wówczas z faktu, że $f$ jest q.i. mamy
+  $$d_S(g, g')\leq C\cdot [d_T(f(g), f(g'))+C]=C^2.$$
+  Stąd $f^{-1}(h)$ zawiera się w kuli o promieniu $C^2$ wokół dowolnego punktu z $f^{-1}(h)$. Ponieważ kule względem metryki słów o ustalonym promieniu i zmiennym środku są równoliczne, więc mamy oszacowanie
+  $$|f'(h)|\leq \left| B_{C^2}^{G, S}(e) \right|.$$
+  Stąd dostajemy 
+  $$\left|B_r^{G,S}(e)\right| \leq \left| B_{C^2}^{G,S}(e) \right|\cdot \left| B_{Cr+C}^{H,T}(e') \right|, $$
+  czyli 
+  $$\beta_{G,S}(r)\leq \left| B_{C^2}^{G,S}(e) \right|\cdot \beta_{H,T}(Cr+C), $$
+  czyli $\beta_{G,S}\prec \beta_{H,T}$.
+\end{proof}
+
+\begin{example}[m]
+\item $\Z^n\approx \Z^m$ są q.i. $\iff n=m$, bo $\beta_{\Z^n}\sim t^n\not\sim t^m\sim \beta_{\Z^m}$.
+\item Grupa wolna $F$ nie jest q.i. z $\Z^m$, bo $\beta_F\sim e^t$, a $\beta_{\Z^m}\sim t^m$ i $e^t\not\sim t^m$.
+\item Dla skończenie generowalnej podgrupy $H\leq G$ zachodzi $\beta_H\prec\beta_G$.
+  \begin{conclusion}{}{}
+    Każda grupa zawierająca podgrupę wolną (nieabelową) ma wzrost eksponencjalny.
+  \end{conclusion}
+\item Grupa Heisenberga 
+  $$H=\Z\ltimes_A \Z^2,$$ 
+  $$A=\begin{bmatrix}1&1\\0&1\end{bmatrix}$$ 
+  ma $\beta_H\sim t^4$. Stąd można wywnioskować, że $H\not\approx\Z^3$ nie jest q.i.. Jako ciekawostka można nadmienić, że wymiar asymptotyczny grupy $H$ wynosi $3$, a grupy $\Z^4$ wynosi $4$, co mówi, że $H\not\approx\Z^4$ nie są q.i..
+\end{example}
+
+\subsection{Grupy o wzroście wielomianowym}
+
+Dla przypomnienia, patrzymy teraz na grupy $\beta_G\prec t^a$ dla pewnego $a>0$. Zacznijmy od kilku przykładów.
+
+Dla grupy $G$ określamy $C_n(G)$ indukcyjnie przez $C_0(G):=G$, $C_{n+1}(G)=[G, C_n(G)]$. Taki ciąg nazywamy \buff{dolnym ciągiem centralnym grupy}. Zachodzi $C_{j+1}(G)\triangleleft C_j(G)$ oraz $C_j(G)/C_{j+1}(G)$ jest abelowa. Gdy $G$ jest skończenie generowalna, to wszystkie $C_j(G)$ i ilorazy $C_j(G)/C_{j+1}(G)$ też takie są.
+
+Grupa $G$ jest \hl{nilpotentna}, gdy $C_n(G)$ jest trywialne dla pewnego $n$.
+
+\begin{definition}{wymiar jednorodny grupy nilpotentnej}{}
+  Skończenie generowalna grupa abelowa $A$ ma jednoznaczny rozkład $A\sim \Z^m\oplus B$, gdzie $B$ jest grupą skończoną. Definiujemy wówczas $\rank(A)=m$.
+
+  Wymiar jednorodny grupy nilpotentnej to skończona suma (bo od pewnego momentu $C_j(G)=0$)
+  $$d(G):=\sum_{j=0}^\infty (j+1)\rank(C_j(G)/C_{j+1}(G)).$$
+\end{definition}
+
+\begin{fact}{}{}
+  Dla dowolnej skończenie generowalnej grupy nilpotentnej $G$ zachodzi 
+  $$\beta_G \sim t^{d(G)}$$
+\end{fact}
+
+\begin{example}
+  Dla grupy Heisenberga $H=\Z\ltimes_A\Z^2$, która jest nilpotentna, mamy 
+  $$\begin{matrix}
+    C_1(H)\cong\Z & C_0(H)/C_1(H)=H/C_1(H)\cong\Z^2 \\
+    C_2(H)=0  & C_1(H)/C_2(H)\cong C_1(H)\cong\Z 
+  \end{matrix}$$
+  więc $d(H)=\rank(\Z^2)+2\cdot\rank(\Z)=2+2=4$.
+\end{example}
+
+\begin{definition}{wirtualna nilpotentność}{}
+  Skończenie generowana grupa $G$ jest wirtualnie nilpotentna, jeśli zawiera skończonego indeksu podgrupę nilpotentną.
+\end{definition}
+
+\begin{theorem}{[Gromova]}{}
+  Skończenie generowalna grupa $G$ ma wzrost wielomianowy $\beta_G\prec t^a$ $\iff$ $G$ jest wirtualnie nilpotentna.
+\end{theorem}
+
+
+
+

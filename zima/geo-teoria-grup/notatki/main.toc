@@ -8,5 +8,7 @@
 \contentsline {section}{\numberline {16.10.2024}Końce (w nieskończoności) grup przestrzeni}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {1.}Granica odwrotna}{12}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.}Przestrzeń końców}{14}{subsection.2.1.2}%
-\contentsline {section}{\numberline {23.10.2024}Przestrzeń końców jest niezmiennikiem q.i.}{17}{section.2.2}%
-\contentsline {subsection}{\numberline {1.}Alternatywny opis przestrzeni końców (promienie)}{17}{subsection.2.2.1}%
+\contentsline {section}{\numberline {13.11.2024}To be named}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {1.}Abstrakcyjne funkcje wzrostu}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.}Tempo wzrostu grupy}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {3.}Grupy o wzroście wielomianowym}{20}{subsection.2.2.3}%

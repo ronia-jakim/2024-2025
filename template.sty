@@ -32,6 +32,7 @@
 \RequirePackage[nolessnomore,noequal,noparenthesis,nospecials,noplusnominus,noexclam]{mathastext}
 
 \DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\rank}{rank}
 
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
@@ -67,6 +68,17 @@
   \kern-.2\wd0 %
   \clipbox{\dimexpr(\wd4-.6\wd0) 0pt 0pt 0pt}{\copy4}%
 }
+
+\makeatletter
+\newcommand{\doublewidetilde}[1]{{%
+  \mathpalette\double@widetilde{#1}%
+}}
+\newcommand{\double@widetilde}[2]{%
+  \sbox\z@{$\m@th#1\widetilde{#2}$}%
+  \ht\z@=.9\ht\z@
+  \widetilde{\box\z@}%
+}
+\makeatother
 
 \RequirePackage{xcolor}
 
