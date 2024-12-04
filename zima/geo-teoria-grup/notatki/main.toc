@@ -12,3 +12,4 @@
 \contentsline {subsection}{\numberline {1.}Abstrakcyjne funkcje wzrostu}{17}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.}Tempo wzrostu grupy}{17}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {3.}Grupy o wzroście wielomianowym}{20}{subsection.2.2.3}%
+\contentsline {section}{\numberline {04.12.2024}To be named 2}{22}{section.2.3}%

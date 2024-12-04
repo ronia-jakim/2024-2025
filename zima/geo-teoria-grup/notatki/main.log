@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.11.9)  13 NOV 2024 17:07
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.12.4)  4 DEC 2024 16:07
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -979,8 +979,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package trimclip Info: No clipping driver 'tc-luatex.def' available.
 (trimclip)             Using fall-back PGF driver.
 )
-LaTeX Info: Redefining \Longrightarrow on input line 53.
-LaTeX Info: Redefining \Longleftarrow on input line 54.
+LaTeX Info: Redefining \Longrightarrow on input line 54.
+LaTeX Info: Redefining \Longleftarrow on input line 55.
  (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip53
@@ -1458,7 +1458,7 @@ File: p2e-luatex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \pIIe@tempdimf=\dimen320
 )
 \@HwM@arrowfill@skip=\skip104
-) (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/07.aux))
+) (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/07.aux) (./rozdzialy/09.aux))
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -1658,14 +1658,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [0]
-\openout2 = rozdzialy/07.aux
- (./rozdzialy/07.tex
+\openout2 = rozdzialy/01_cayley.aux
+ (./rozdzialy/01_cayley.tex
+Chapter 1.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 1.
+(Font)              scaled to size 17.28pt on input line 3.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 1.
+(Font)              scaled to size 17.28pt on input line 3.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 5.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[1
+
+
+
+]
+Overfull \hbox (1.70178pt too wide) in paragraph at lines 73--74
+[]\TU/Cantarell(0)/m/n/12 Każdy graf Cay-leya jest []\TU/Cantarell(0)/b/n/12 spójny[]\TU/Cantarell(0)/m/n/12 , bo jego krawędzie to mnoże-nie przez gen-er-a-tory. Do-datkowo,
+ []
+
+
+Overfull \hbox (1.07774pt too wide) in paragraph at lines 73--74
+\TU/Cantarell(0)/m/n/12 grupa $[]$ dzi-ała na nim przez []au[]-[]to[]-[]mor[]-[]fizmy[] [][][]za[]-[]chowu[]-[]jąc[] [][][]krawędzie[] [][][]oraz[] [][][]ich[] [][][]etyki[]-[]ety. To znaczy,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1674,9 +1699,218 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[4])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[5]
+\openout2 = rozdzialy/02.aux
+ (./rozdzialy/02.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[6
+
+
+
+]
+Overfull \hbox (10.34468pt too wide) in paragraph at lines 73--75
+\TU/Cantarell(0)/m/n/12 Niech $[][]$ będzie punk-tem na geodezyjnej $\OT1/cmr/m/n/12 [[][]\mst@mathfont , \OML/cmm/m/it/12  \OMS/cmsy/m/n/12  [][]\OT1/cmr/m/n/12 ] = \OML/cmm/m/it/12 $ \TU/Cantarell(0)/m/n/12 z kuli $[]$ na-j-dal-szy od $[][]$ na tej geodezyjnej.
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[8<./luatex.NO8DEe/1.png>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[9]
+\openout2 = rozdzialy/03.aux
+ (./rozdzialy/03.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[10
+
+
+
+
+]
+Chapter 2.
+
+Package varwidth Warning: Failed to reprocess entire contents on input line 70.
+
+
+Package varwidth Warning: Failed to reprocess entire contents on input line 70.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[11]
+Overfull \hbox (19.0551pt too wide) in paragraph at lines 83--84
+\TU/Cantarell(0)/m/n/12 asymp-to-ty-czny, czyli cechę niezmi-enną na quazi-izometrie właś-ci-wych geodezyjnych przestrzeni
+ []
+
+LaTeX Font Info:    Trying to load font information for U+euf on input line 95.
+(/usr/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[12]
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 105.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 105.
+
+Overfull \hbox (8.88351pt too wide) in paragraph at lines 115--118
+\TU/Cantarell(0)/m/n/12 takie, że $[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 []$ \TU/Cantarell(0)/m/n/12 nazy-wamy []\TU/Cantarell(0)/b/n/12 odw-zorowa-ni-ami granicznymi[]\TU/Cantarell(0)/m/n/12 . O odw-zorowa-ni-ach granicznych
+ []
+
+
+Underfull \vbox (badness 1325) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[13]
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[14]
+Overfull \hbox (4.35905pt too wide) in paragraph at lines 190--191
+[]\TU/Cantarell(0)/m/n/12 Przestrzeń geodezyjna jest lokalnie dro-gowo spójna i każda jej ot-warta pod-przestrzeń również
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[15]
+Overfull \hbox (0.1133pt too wide) in paragraph at lines 209--211
+\TU/Cantarell(0)/m/n/12 w $[] \OMS/cmsy/m/n/12 ^^@ []$ \TU/Cantarell(0)/m/n/12 przecina nie-pusto sferę $[][]\OT1/cmr/m/n/12 ([][])$\TU/Cantarell(0)/m/n/12 , bo $[]$ jest geodezyjna, a więc lokalnie dro-gowo spójna... 
+ []
+
+
+Overfull \hbox (11.34175pt too wide) in paragraph at lines 216--217
+\TU/Cantarell(0)/m/n/12 bo za-w-iera punkty które należą tylko do niego. Stąd nieogranic-zonych kom-po-nent jest skończe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 220--221
+[]\TU/Cantarell(0)/m/n/12 Zbiorem (przestrzenią) końców, $[][][][]\OT1/cmr/m/n/12 ([])$\TU/Cantarell(0)/m/n/12 , właś-ci-wej geodezyjnej przestrzeni me-
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[16]
+\openout2 = rozdzialy/07.aux
+ (./rozdzialy/07.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
 [17
-
-
 
 
 
@@ -1724,7 +1958,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[20<./luatex.TGAXAf/1.png>])
+[20])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -1732,49 +1966,70 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[21] (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/07.aux))
+[21]
+\openout2 = rozdzialy/09.aux
+ (./rozdzialy/09.tex
+Overfull \hbox (6.74968pt too wide) in paragraph at lines 11--12
+[]\TU/Cantarell(0)/m/n/12 na koniec wystar-czy pokazać, że zwykły wymiar asymp-to-ty-czny jest nie mniejszy $[] \OMS/cmsy/m/n/12 
+ []
+
+./rozdzialy/09.tex:43: Undefined control sequence.
+<recently read> \asdmin 
+        
+l.43   $\asdmin
+             _h(X)=\min \{p\;:\;\asdim_h(X)\leq p\}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[22
+
+
+
+])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[23] (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/07.aux) (./rozdzialy/09.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 622FA2163AA1F899E428E4A1E9DFF6B1;702.
+(rerunfilecheck)             Checksum: 74F07A96518D588DC0DB66DDF0C04825;2401.
 )
 
 Here is how much of LuaTeX's memory you used:
- 50958 strings out of 476447
+ 52128 strings out of 476447
  125086,1977958 words of node,token memory allocated
- 808 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 27 attribute, 95 glue_spec, 27 attribute_list, 4 write nodes
-   avail lists: 1:3,2:3099,3:1861,4:258,5:312,6:58,7:4344,8:69,9:1029,10:6,11:154
- 71750 multiletter control sequences out of 65536+600000
- 69 fonts using 9960719 bytes
- 109i,13n,129p,1192b,2196s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 920 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 55 attribute, 95 glue_spec, 55 attribute_list, 4 write nodes
+   avail lists: 1:3,2:5189,3:2768,4:592,5:424,6:61,7:5231,8:92,9:1301,10:12,11:173
+ 72791 multiletter control sequences out of 65536+600000
+ 89 fonts using 13002903 bytes
+ 109i,26n,129p,1192b,2196s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufb10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (25 pages, 280855 bytes).
 
-warning  (pdf backend): unreferenced destination with name 'subsection.2.1.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.2.1.1'
-
-warning  (pdf backend): unreferenced destination with name 'section.2.1'
-
-warning  (pdf backend): unreferenced destination with name 'chapter.2'
-
-warning  (pdf backend): unreferenced destination with name 'section.1.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.1.3'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.1.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.1.1'
-
-warning  (pdf backend): unreferenced destination with name 'section.1.1'
-
-warning  (pdf backend): unreferenced destination with name 'chapter.1'
-</usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (7 pages, 120415 bytes).
-
-PDF statistics: 167 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 131072)
- 48 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 373 PDF objects out of 1000 (max. 8388607)
+ 311 compressed objects within 4 object streams
+ 118 named destinations out of 1000 (max. 131072)
+ 136 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,0 +1,64 @@
+\section{04.12.2024}{To be named 2}
+
+Yu [1998] pokazał, że jeśli $\asdim G<\infty$, to $G$ spełnia hipotezę Novikova, a w 2003 Roe udowodnił, że $\asdim G<\infty$ $\implies$ $G$ zgrubnie zanurza się w przestrzeni Hilberta.
+
+Pytanie na dziś: jak pokazać, że $\asdim\Z^n=\asdim\R^n\geq n$?
+
+Metoda homologiczna:
+\begin{enumerate}
+  \item zdefiniowanie $\asdim_h$ (asymptotyczny wymiar homologiczny)
+  \item pokazanie, że $\asdim_h\Z^n\geq n$
+  \item na koniec wystarczy pokazać, że zwykły wymiar asymptotyczny jest nie mniejszy $\asdim \geq \asdim_h$.
+\end{enumerate}
+
+\begin{definition}{}{}
+  Dla $\epsilon>0$ $q$-wymiarowy $\epsilon$-sympleks w przestrzeni metrycznej $X$ to układ $(x_0,x_1,...,x_q)$ punktów z $X$ (niekoniecznie różnych) takich, że $d_X(x_i, x_j)\leq\epsilon$ dla $0\leq i\neq j\leq q$.
+\end{definition}
+
+Określamy w oczywisty sposób $q$-wymiarowe $\epsilon$-łańcuchy, brzegowanie oraz $\epsilon$-homologie $H_q^\epsilon(X)$ [teoria homologii Alexandrowa].
+
+Dla $\epsilon$-łańcucha $U$ w $X$ definiujemy nośnik $supp(U)$ jako zbiór wszystkich wierzchołków we wszystkich $\epsilon$-sympleksach z $U$ (mających niezerowy współczynnik).
+
+Dla $\epsilon$-cyklu $z$, jego $\epsilon$-wypełnieniem nazywamy dowolny $\epsilon$-łańcuch $w$ taki, że $\partial w=z$.
+
+
+%% OBRAZEK ZE JEST KWADRAT JAKO Z I JAK GO WYPELNIMY TROJKACIKAMI TO CALOSC JEST W TAKIE, ZE \PARTIAL W=Z
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0,..., 7} {
+      \fill (\x, 0) circle (2pt);
+      \fill (\x, 7) circle (2pt);
+      \fill(0, \x) circle (2pt);
+      \fill(7, \x) circle (2pt);
+    }
+
+  \end{tikzpicture}
+\end{center}
+
+\begin{definition}{}{}
+  $\asdim_h(X)\leq p$ gdy dla każdego $\nu>0$ istnieje $\alpha>0$ (zależna tylko od $X$ i $\nu$) taka, że dla $q\geq p$ dowolny $q$-wymiarowy $\nu$-cykl $\phi$, $\nu$-homologicznie trywialny w $X$, jest także $\alpha$-homologicznie trywialny w swoim nośniku $supp(\phi)$.
+
+  $\asdim_h(X)\geq n$ gdy istnieje $\nu$ takie, że dla każdego $\alpha$ istnieje $(n-1)$-wymiarowy $\nu$-cykl $\nu$-homologii $\phi$ trywialny w $X$ oraz $\alpha$-homologicznie nietrywialny w swoim nośniku.
+
+  $\asdmin_h(X)=\min \{p\;:\;\asdim_h(X)\leq p\}$
+\end{definition}
+
+Można pokazać, że $\asdim_h$ jest niezmiennikiem q.i..
+
+% \subsection{Szkic dowodu, że $\asdim_h(\Z^n)=\asdmin_h(\R^n)\geq n$}
+
+
+\begin{theorem}{}{}
+  $$\asdim_h(\Z^n)=\asdim_h(\R^n)\geq n$$
+\end{theorem}
+
+{\large\color{red}TUTAJ ZDJECIA JAKIES CZY COS}
+
+\begin{theorem}{}{}
+  $$\asdim(X)\geq\asdim_h(X)$$
+\end{theorem}
+
+
+
+
+
