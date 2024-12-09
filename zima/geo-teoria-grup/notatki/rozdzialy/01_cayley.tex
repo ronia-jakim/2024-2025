@@ -191,7 +191,95 @@ Zwykle przyjmujemy $L=D$ (większe z dwóch) i mówimy o tzw. \hl{(C, L)-quasi-i
   Niech $G$ będzie grupą skończenie generowalną i niech $S_1$, $S_2$ jej skończonymi zbiorami generatorów. Wówczas odwzorowanie tej grupy jako dwóch przestrzeni metrycznych $(G, S_1)\to (G, S_2)$ gdzie zmieniamy metrykę słów jest q.i.
 \end{fact}
 
+\begin{proof}
+  Dokładniej, $id_G$ jest $(C,L)$-q.i. dla 
+  $$C=\max\{\max\{|s_1|_{S_2}\;:\;s_1\in S_1\}, \max\{|s_2|_{S_1}\;:\;s_2\in S_2\}\},$$
+  gdzie $|g|=d(1, g)=\min\{n\;:\;g=s_1...s_n,\;s_i\in S\cup S^{-1}\}$, oraz $L=0$.
+\end{proof}
+
 \begin{conc}{}{}
   Skończenie generowana grupa $G$ determinuje jednoznacznie klasę quasi-izometrii. Innymi słowy, skończenie generowana grupa jest \hl{jednoznacznym obiektem quasi-metrycznym}.
 \end{conc}
+
+\subsection{Przestrzenie geodezyjne}
+
+% \begin{definition}{geodezyjna}{}
+\buff{Geodezyjną} w przestrzeni metrycznej $(X, d)$ łączącą punkty $a,b\in X$ nazwiemy izometryczne włożenie 
+  $$\gamma:[0, d(a,b)]\to X$$
+  takie, że $\gamma(0)=a$ i $\gamma(d(a,b))=b$.
+% \end{definition}
+
+\begin{definition}{przestrzeń geodezyjna}{}
+  Powiemy, że przestrzeń $X$ jest przestrzenią geodezyjną, jeśli dla wszystkich par punktów $a,b\in X$ istnieje geodezyjna pomiędzy nimi (niekoniecznie jedyna).
+\end{definition}
+
+\begin{definition}{}{}
+  Przestrzeń $X$ jest \buff{właściwa}, gdy domknięte kule $B_r(x)$ w $X$ są zwarte dla dowolnych $r<\infty$ i $x\in X$.
+\end{definition}
+
+Każda przestrzeń właściwa jest lokalnie zwarta oraz zupełna, z kolei dla przestrzeni geode\-zyjnych jeśli przestrzeń jest właściwa, to jest też zwarta i zupełna.
+% zachodzi równoważność (właściwa $\iff$ zwarta i zupełna).
+
+\begin{example}[m]
+\item Spójne i gładkie rozmaitości Riemmanowskie są przestrzeniami metrycznymi z metryką $\rho$ minimalizowania długości krzywych gładkich łączących punkty.
+
+  Gdy $(M, \rho)$ jest zupełna, to $M$ jest geodezyjna oraz właściwa.
+
+\item Graf Cayleya skończenie generowanej grupy $G$ jest przestrzenią geodezyjną właściwą.
+\end{example}
+
+\subsection{Lemat Milnora-\v{S}varca}
+
+\begin{lemma}{Milnora-\v{S}varca}{}
+  Niech $X$ będzie właściwą przestrzenią geodezyjną a $\Gamma$ grupą działającą na $X$ przez izometrie właściwie i kozwarcie. Wówczas $\Gamma$ jest skończenie generowalna i quasi-izometryczna z $X$. Dokładniej, $\forall\;x_0\in X$ odwzorowanie $\Gamma\to X$ określone przez $\gamma\mapsto \gamma\cdot x_0$ jest quasi-izometrią.
+\end{lemma}
+
+Mówimy, że grupa działa
+\begin{description}[format=\color{orange}]
+  \item[właściwie,] gdy dla dowolnego zwartego $K\subseteq X$ zbiór $\{g\in\Gamma\;:\;g\cdot K\cap K\neq \emptyset\}$ jest skończony
+  \item[kozwarcie,] gdy istnieje zwarty $K\subseteq X$ taki, że rodzina $\{g\cdot K\;:\;g\in\Gamma\}$ pokrywa $X$.
+\end{description}
+
+\begin{example}[m]
+\item Działanie grupy $\Z^n\acts(\R^n, d_{eukl.})$ przez przesunięcia jest izometrią. Czyli $\Z^n\qi\R^n$.
+\item Grupa symetrii regularnego (co najmniej dwie symetrie w dwóch różnych kierunkach) parkietażu/wzorca działa na $(\R^2, d_{eukl.})$ geometrycznie.
+\item Kozwarte, dyskretne podgrupy w grupach Liego $G$ działają lewostronnie na $G$ w sposób geometryczny.
+\item $\Pi_1(\text{sk. kompleks symplicajlny})\acts\widetilde{K}$
+\end{example}
+
+\textbf{\color{green}Konsekwencje lematu Milnora-\v{S}varca}
+\begin{enumerate}
+  \item Jeśli $H\leq G$ jest grupą skończonego indeksu w grupie skończenie generowalnej, to $H\acts (G, S)$ jest działaniem geometrycznym. Stąd $H$ jest q.i. z $G$ i jest skończenie generowalna.
+  \item Niech ciąg
+    \begin{center}\begin{tikzcd}1\arrow[r] & K\arrow[r] & \Gamma \arrow[r, "q"] & G\arrow[r] & 1\end{tikzcd}\end{center} 
+    gdzie $q$ jest odwzorowaniem ilorazowym, będzie ciągiem dokładnym. Załóżmy, że $K$ i $G\cong \Gamma/K$ są skończenie generowalne. Wówczas $\Gamma\acts (G, S)$ przez $\gamma\cdot g=q(\gamma)g$ jest działaniem geometrycznym. Stąd $\Gamma$ jest skończenie generowana i $q:\Gamma\to G$ jest q.i..
+\end{enumerate}
+
+
+\subsection{Grupy współmierne}
+
+\begin{definition}{}{}
+  Dwie grupy $G_1, G_2$ są \buff{współmierne} (commeasurable), gdy posiadają izomorficzne podgrupy skończonego indeksu.
+  % $$(\exists\;H_1\leq G_1, H_2\leq G_2)\;H_1\cong H_2$$
+\end{definition}
+
+\begin{conclusion}{}{}
+  Grupy współmierne są q.i..
+\end{conclusion}
+
+Można więc zadać pytanie, czy q.i. nie sprowadza się do współmierności? Okazuje się, że tak nie jest.
+
+\begin{definition}{}{}
+  Grupa $G$ jest współmiernościowo sztywna, jeśli każda $H$ q.i. z $G$ jest współmierna z $G$.
+\end{definition}
+
+\begin{example}[m]
+\item Wszystkie grupy skończone są współmiernościowo sztywne, bo $H$ jest q.i. ze skończoną grupą $G$ $\iff$ $H$ jest samo skończone.
+\item Grupy wirtualnie cykliczne - grupy zawierające cykliczną podgrupę skończonego indeksu, są współmiernościowo sztywne.
+\item Grupy wirtualnie $\Z^n$.
+\item Grupy wirtualnie wolne, np. $K_1\# K_2$ dla skończoneych $K_1$, $K_2$.
+\item Grupy powierzchni $\pi_1(z_g)$ dla $g>1$.
+\end{example}
+
+
 

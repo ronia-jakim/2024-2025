@@ -4,6 +4,19 @@
   Niech $X$ będzie właściwą przestrzenią geodezyjną a $\Gamma$ grupą działającą na $X$ przez izometrie właściwie i kozwarcie. Wówczas $\Gamma$ jest skończenie generowalna i quasi-izometryczna z $X$. Dokładniej, $\forall\;x_0\in X$ odwzorowanie $\Gamma\to X$ określone przez $\gamma\mapsto \gamma\cdot x_0$ jest quasi-izometrią.
 \end{lemma}
 
+Mówimy, że grupa działa
+\begin{description}[format=\color{orange}]
+  \item[właściwie,] gdy dla dowolnego zwartego $K\subseteq X$ zbiór $\{g\in\Gamma\;:\;g\cdot K\cap K\neq \emptyset\}$ jest skończony
+  \item[kozwarcie,] gdy istnieje zwarty $K\subseteq X$ taki, że rodzina $\{g\cdot K\;:\;g\in\Gamma\}$ pokrywa $X$.
+\end{description}
+
+% \begin{example}[m]
+% \item Działanie grupy $\Z^n\acts(\R^n, d_{eukl.})$ przez przesunięcia jest izometrią. Czyli $\Z^n\qi\R^n$.
+% \item Grupa symetrii regularnego (co najmniej dwie symetrie w dwóch różnych kierunkach) parkietażu/wzorca działa na $(\R^2, d_{eukl.})$ geometrycznie.
+% \item Kozwarte, dyskretne podgrupy w grupach Liego $G$ działają lewostronnie na $G$ w sposób geometryczny.
+% \item $\Pi_1(\text{sk. kompleks symplicajlny})\acts\widetilde{K}$
+% \end{example}
+
 \begin{proof}
   Wybierzmy $x_0\in X$. Z kozwartości tego działania, istnieje promień $R>0$ taki, że dla kuli $B=B_R(x_0)$ o środku w $x_0$ taki, że rodzina przesunięć kuli $\{g\cdot B\;:\; g\in\Gamma\}$ jest pokryciem $X$. Rozważmy zbiór $S=\{s\in\Gamma\;:\;s\neq1,s\cdot B\cap B\neq \emptyset\}$ niewielkich przesunięć kuli $B$. Z właściwości działania oraz z właściwości przestrzeni $X$, zbiór $S$ jest skończony. Ponadto, zbiór jest ten jest symetryczny $S=S^{-1}$ ($s\in S\implies s^{-1}\in S$), bo jeśli $s\cdot B\cap S\neq \emptyset$ to również $s^{-1}\cdot (s\cdot B\cap B)\neq \emptyset$.
 
