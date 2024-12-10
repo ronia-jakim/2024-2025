@@ -403,8 +403,8 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 OUTPUT main.toc
 OUTPUT rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/01_cayley.tex
-OUTPUT luatex.evIYru/1.png
-INPUT ./luatex.evIYru/1.png
+OUTPUT luatex.qmwMKG/1.png
+INPUT ./luatex.qmwMKG/1.png
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
 OUTPUT rozdzialy/03.aux

@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {16.10.2024}Końce (w nieskończoności) grup przestrzeni}{13}{section.2.1}%
 \contentsline {subsection}{\numberline {1.}Granica odwrotna}{14}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.}Przestrzeń końców}{16}{subsection.2.1.2}%
-\contentsline {section}{\numberline {13.11.2024}To be named}{19}{section.2.2}%
+\contentsline {section}{\numberline {13.11.2024}Tempo wzrostu grupy}{19}{section.2.2}%
 \contentsline {subsection}{\numberline {1.}Abstrakcyjne funkcje wzrostu}{19}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.}Tempo wzrostu grupy}{19}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {3.}Grupy o wzroście wielomianowym}{22}{subsection.2.2.3}%
