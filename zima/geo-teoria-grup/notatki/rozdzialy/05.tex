@@ -1,4 +1,4 @@
-\section{30.10.2024}{cos}
+\section{30.10.2024}{Końce skończenie generowalnych grup - twierdzenie Freudanthala-Hopfa}
 
 
 % $\xleftswishingghost{abc\dots z} $
@@ -23,7 +23,7 @@ Niech $X=(\Lambda, \mathcal{X}, \mathcal{F})$ będzie systemem odwrotnym zbioró
 
   Załóżmy, że $|\Ends(G)|\geq3$. Oznacza to, że dla $X=Cay(G, S)$ istnieje zwarty $K\subseteq X$ taki, że $\Pi_K^X$ ma co najmniej $3$ elementy (tzn. $X-K$ ma co najmniej $3$ nieograniczone komponenty spójności). 
 
-  Naszym celem jest pokazanie, że dla dowolnego $L\subseteq X$ zwartego i dowolnej nieograniczonej komponenty $C$ w $X-L$ istnieje większy zbiór $L\subseteq L'\subseteq X$ oraz nieograniczone komponenty $C_1'\neq C_2'$ w $\Pi^X_{L'}$ takie, że $C_1',C_2'\subseteq C$ (czyli $f_{LL'}(C_i)=C$ dla $i=1,2$). Jako ćwiczenie pozostawione zostanie pokazanie, że wówczas $|\Ends(G)|=\infty$.
+  Naszym celem jest pokazanie, że dla dowolnego $L\subseteq X$ zwartego i dowolnej nieograniczonej komponenty $C$ w $X-L$ istnieje większy zbiór $L\subseteq L'\subseteq X$ oraz nieograniczone komponenty $C_1'\neq C_2'$ w $\Pi^X_{L'}$ takie, że $C_1',C_2'\subseteq C$ (czyli $f_{LL'}(C_i)=C$ dla $i=1,2$). Jako ćwiczenie pozostawione zostanie pokazanie, że wówczas $|\Ends(G)|=\infty$ (to pokazuje, że nici sklejają się).
 
   Ustalmy zwarty $L\subseteq X$ oraz nieograniczoną komponentę $C$ w $X-L$. Niech $M\subseteq X$ będzie zbiorem z definicji kozwartości działania $G \acts X$, tzn. takim, że 
   $$\bigcup_{g\in G}gM=X.$$ 
@@ -50,28 +50,57 @@ Niech $X=(\Lambda, \mathcal{X}, \mathcal{F})$ będzie systemem odwrotnym zbioró
       \draw (4, -2) -- (2.25, -4.5) -- (4, -5) -- (4.5, -4);
 
       \node at (3.5, -4) {$g_0\cdot K$};
+
+      \draw[<->] ($(4, -2)!0.5!(2.25, -4.5) + (-.2, 0)$)--(2.2, -1.35);
+      \node[anchor=west] at (2.5, -2) {$\geq \text{diam}L$};
+
+      \node at (3, -1) {$C_0$};
+      \node at (2.7, -5.5) {$C_1$};
+      \node at (5, -5) {$C_2$};
     \end{tikzpicture}
   \end{center}
 
   % {\Large\color{red}OBRAZEK}
 
-  Niech $x_0\in C$ będzie takim punktem, że $d(x_0,L)\geq \text{diam}L+2\text{diam}M$. Niech teraz $g_0\in G$ będzie taki, że $x_0\in g_0M$. Wtedy ponieważ $\text{diam}(g_0M)=\text{diam}(M)$, mamy $d_X(L, g_0M)\geq \text{diam}M$ ale też $\geq\text{diam}L$. Więc tym bardziej $d_X(L, g_0K)\geq \text{diam}M$ ale też $\text{diam}L$.
+  Niech $x_0\in C$ będzie takim punktem, że 
+  $$d(x_0,L)\geq \text{diam}L+2\text{diam}M.$$ 
+  Niech teraz $g_0\in G$ będzie taki, że $x_0\in g_0M$. Wtedy ponieważ $\text{diam}(g_0M)=\text{diam}(M)$, mamy 
+  $$d_X(L, g_0M)\geq \text{diam}M$$ 
+  ale też $\geq\text{diam}L$. Więc tym bardziej 
+  $$d_X(L, g_0K)\geq \text{diam}M\geq \text{diam}K$$ 
+  ale też $\geq\text{diam}L$.
 
-  Twierdzimy, że $g_0K\subseteq g_0M\subseteq C$ oraz 
-  {\Large\color{red}no i spadlo mi sie z rowerka}
+  Twierdzimy, że 
+  \begin{enumerate}
+    \item $g_0K\subseteq g_0M\subseteq C$,
+    \item $L$ zawiera się w dokładnie jednej spośród komponent $C_0,...,C_m$ w $X-g_0K$ ($m\geq0$), BSO w $C_0$,
+    \item pozostałe komponenty $C_1,..., C_m$ w $X-g_0K$ zawierają się wtedy w $C$ (przynajmniej $2$ spośród nich są nieograniczone).
+  \end{enumerate}
+  % {\Large\color{red}no i spadlo mi sie z rowerka}
 
-  Dowód (3)
+  \begin{description}
+    \item[Dowód 1.] Wystarczy, że $g_0M\subseteq C$. Gdyby $x_1\in g_0M$ leżał w innej $C'\neq C$ komponencie $X-L$, to geodezyjna $[x_0, x_1]$ przechodziłaby przez $L$ (składowe spójności = składowe łukowej spójności), ale $d_X(x_0, x_1)\geq 2\cdot \text{diam}M$ dawałoby sprzeczność.
+    \item[Dowód 2.] Argument analogiczny do 1., zastosowany symetrycznie.
+    \item[Dowód 3.] Załóżmy, że komponenty $C_1,...,C_m$ są rozłączne z $L$, bo $L\subseteq C_0$. Więc każda z nich zawiera się w pojedynczej komponencie $X-L$. Każda spośród $C_1$,..., $C_m$ posiada punkty dowolnie bliskie zbioru $g_0K$, czyli należące do $C$. Np. pierwszy punkt na geodezyjnej od dowolnego punktu $a\in C_i$ do dowolnego punktu $b\in g_0K$ nienależący do $C_i$  musi należeć do $g_0K$. 
 
-  Załóżmy, że komponenty $C_1,...,C_m$ są rozłączne z $L$, bo $L\subseteq C_0$. Więc każda z nich zawiera się w pojedynczej komponencie $X-L$. Każda spośród $C_1$,..., $C_m$ posiada punkty dowolnie bliskie zbioru $g_0K$, bo np. pierwszy punkt na geodezyjnej od punktu $a\in C_i$ do punktu $b\in g_0K$ nienależący do $C_i$  musi należeć do $g_0K$, czyli punkty leżące w $C$
+  Skoro $C_i$ zahacza o $C$, to musi być zawarte w $C$.
 
-  Skoro $C_i$ zachacza o $C$, to musi być zawarte w $C$.
+  \end{description}
 
-  Dla ukończenia realizacji CELU (i dowodu twierdzenia) weźmy $L'=L\cup g_0K$. Wtedy $C_1,..., C_m$ są komponentami w $X-L'$.
+
+  Dla ukończenia realizacji CELU (i dowodu twierdzenia) weźmy $L'=L\cup g_0K$. Wtedy $C_1,..., C_m$ są komponentami w $X-L'$, bo są rozłączne zarówno z $g_0K$ jak i z $L$. Wszystkie komponenty z $X-L'$ są zawarte w komponentach $X-g_0K$. Co najmniej $2$ z nich są nieograniczone, co daje nam szukane $C_1', C_2'$. 
 \end{proof}
 
 Dalsze wyniki:
 \begin{enumerate}
   \item[$\skull$] Grupa ma $2$ końce $\iff$ jest wirtualnie $\Z$ (zawiera $\Z$ jako podgrupę skończonego indeksu $\equiv$ jest współmierna z $\Z$)
-  \item[$\skull$] Jeśli $|\Ends(G)|=\infty$, to $G$ rozkłada się w sposób  nietrywialny i nie $2$-końcowy nad skończoną podgrupą $H$, tzn. $G=G_1\star_H G_2$ i $[G_i:H]\geq 3$ dla przynajmniej jednego $i$, lub $G=\star_H G_0$ (HNN-rozszerzeniem), $\phi_i:H\hookrightarrow G_0$, $[G_0:\phi_i(H)]\geq 2$ dla pewnego $i$.
+  \item[$\skull$] Jeśli $|\Ends(G)|=\infty$, to $G$ rozkłada się w sposób  nietrywialny i nie $2$-końcowy nad skończoną podgrupą $H$, tzn. 
+    $$G=G_1\star_H G_2$$
+    i $[G_i:H]\geq 3$ dla przynajmniej jednego $i$, lub 
+    $$G=\star_H G_0$$
+    (HNN-rozszerzenie), $\phi_i:H\hookrightarrow G_0$, $[G_0:\phi_i(H)]\geq 2$ dla pewnego $i$.
+  \item[$\skull$] Iterowany proces rozkładów nad skończonymi podgrupami kończy się. Końcowe wektory maja $\leq 1$ końców i są w pewnym sensie jednoznaczne. Dla kończenie generowalnych grup nie jest to jednak prawdą.
 \end{enumerate}
+
+Jeśli więc skończone grupy można uznać za nieciekawe, to najciekawsze są grupy z jednym końcem (1-ended).
 
