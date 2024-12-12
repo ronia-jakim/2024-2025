@@ -143,8 +143,9 @@ Kiedy zbiory $X_\lambda$ są przestrzeniami topologicznymi, zaś $f_{\lambda\mu}
   \begin{enumerate}
     \item domkniętym podzbiorem $\prod_{\lambda\in\Lambda}X_\lambda$, jeśli $X_\lambda$ są Hausdorffa,
       % gdy przestrzenie $X_\lambda$ są Hausdorffa, to $\varprojlim \underline{X}$ jest domkniętym podzbiorem w $\prod_{\lambda\in\Lambda}X_\lambda$.
-    \item zwarta i metryczna, jeśli $X_\lambda$ takie są,
-    \item zwarta i metryczna, jeśli $\Lambda$ jest przeliczalny, a $X_\lambda$ są skończone (z topologią dyskretną).
+    \item zwarta i metryczna, jeśli $X_\lambda$ takie są (bo wówczas $\Pi X_\lambda$ jest zwarta i metryczna),
+    \item %zwarta i metryczna, jeśli $\Lambda$ jest przeliczalny, a $X_\lambda$ są skończone (z topologią dyskretną).
+      zwarta i metryczna, jeśli $X_\lambda$ są skończone (z topologią dyskretną).
   \end{enumerate}
 \end{fact}
 
@@ -174,7 +175,7 @@ Na tym wykładzie będziemy zajmować się $X$, które są właściwymi geodezyj
 
 \begin{fact}{}{}
   $$\varprojlim\underline{X}=\varprojlim\underline{X}_{|M}$$
-  Przez bijekcją polegającą na obcinaniu nici do $M$. Jest ona jednocześnie homomorfizmem.
+  Przez bijekcję polegającą na obcinaniu nici do $M$. Jest ona jednocześnie homomorfizmem.
 \end{fact}
 
 \begin{conclusion}{}{} 
@@ -207,7 +208,7 @@ Trójka $(\mathcal{K}, \{\Pi_K^X\;:\;K\in\mathcal{K}\},\{f_{KK'}\;:\;K'\subseteq
 \begin{proof}
   Weźmy dowolny $K\in\mathcal{K}$ i $x_0$ oraz $r$ takie, że 
   $$K\subseteq B_r(x_0).$$ 
-  Niech $R>r$ i rozważmy zwartą kulę $B_R(x_0)$. Każda nieograniczona komponenta $C$ spójności w $X-K$ przecina niepusto sferę $S_R(x_0)$, bo $X$ jest geodezyjna, a więc lokalnie drogowo spójna...
+  Niech $R>r$ i rozważmy zwartą kulę $B_R(x_0)$. Każda nieograniczona komponenta $C$ spójności w $X-K$ przecina niepusto sferę $S_R(x_0)$, bo $X$ jest geodezyjna, a więc lokalnie drogowo spójna.
 
   Zatem przekrój $C\cap B_R(x_0)$ jest niepusty. Wtedy rodzina 
   $$\{C\cap B_R(x_0)\;:\;C\text{ dowolna komponenta dopełnienia }X-K\}\cup \{\overline{B_R}(x_0)=B_R(x_0)-S_R(x_0)\}$$

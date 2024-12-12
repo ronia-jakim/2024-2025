@@ -27,9 +27,15 @@
 
 \RequirePackage{amsfonts}
 \RequirePackage{amsmath}
-% \RequirePackage{amssymb}
+\RequirePackage{amssymb}
 
-\RequirePackage{MnSymbol}
+\RequirePackage{tikz}
+\RequirePackage{tikz-cd}
+\usetikzlibrary{decorations.pathreplacing,calc,math,backgrounds, arrows}
+\usetikzlibrary{positioning, decorations.text, decorations.pathmorphing}
+
+
+% \RequirePackage{MnSymbol}
 
 \RequirePackage[nolessnomore,noequal,noparenthesis,nospecials,noplusnominus,noexclam]{mathastext}
 
@@ -43,9 +49,48 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathbb{A}}
 
+\DeclareRobustCommand{\checkbold}[1]{% https://tex.stackexchange.com/a/24635/121799
+ \edef\@tempa{\math@version}\edef\@tempb{bold}%
+ \ifx\@tempa\@tempb%
+  \def#1{1}%
+ \else
+  \def#1{0}%
+ \fi
+}
 \def\acts{%\curvearrowright}
 % \rotatebox[origin=c]{-90}{\circlearrowright}}
-\lcirclearrowright}
+%\lcirclearrowright
+%}
+%\newcommand{\excl}[1][]{
+\checkbold\tmp%
+  \ensuremath{%
+    \operatorname{%
+      \mathchoice{%
+        \begin{tikzpicture} 
+        \draw[line cap=round,line width=(1+0.33*\tmp)*0.06em, ->, >=stealth'] (0,0) arc (310:-5:.5ex and .7ex); 
+        \end{tikzpicture}
+      }
+      {%
+        \begin{tikzpicture}
+        \draw[line cap=round,line width=(1+0.33*\tmp)*0.06em, ->, >=stealth'] (0,0) arc (310:-5:.5ex and .7ex); 
+        \end{tikzpicture}
+      }
+      {%
+        \begin{tikzpicture}
+        \draw[line cap=round,line width=(1+0.33*\tmp)*0.04em, ->] (0,0) arc (310:-5:.4ex and .5ex); 
+        % \draw[line cap=round,line width=(1+0.33*\tmp)*0.045em] (0,0) arc (340:20:.5ex); 
+        \end{tikzpicture}
+      }
+      {%
+        \begin{tikzpicture}
+        \draw[line cap=round,line width=(1+0.33*\tmp)*0.035em, ->] (0,0) arc (310:-5:.3ex and .4ex); 
+        % \draw[line cap=round,line width=(1+0.33*\tmp)*0.035em] (0,0) arc (340:20:.3ex); 
+        \end{tikzpicture}
+      }
+    }
+  }
+}
+
 \def\qi{\overset{{\scriptscriptstyle q.i.}}{\cong}}
 
 \DeclareMathOperator{\wspolkon}{\overset{{\scriptscriptstyle E}}{\sim}}
@@ -140,11 +185,6 @@
 \renewcommand{\headrule}{\color{overlay0}\hdashrule[.5ex]{\headwidth}{1pt}{1pt}}
 
 \pagestyle{fancy}
-
-\RequirePackage{tikz}
-\RequirePackage{tikz-cd}
-\usetikzlibrary{decorations.pathreplacing,calc,math,backgrounds}
-\usetikzlibrary{positioning, decorations.text, decorations.pathmorphing}
 
 \RequirePackage{pgfplots}
 

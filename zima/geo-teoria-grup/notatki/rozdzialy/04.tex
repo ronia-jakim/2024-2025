@@ -8,7 +8,7 @@ Celem dzisiejszego wykładu będzie udowodnienie poniższego twierdzenia.
 
 \subsection{Alternatywny opis przestrzeni końców (promienie)}
 
-Przypomnijmy, że jeśli $X$ jest właściwa przestrzenią geodezyjną, to jest również lokalnie drogowo spójna. Czyli otwarte podzbiory $U\subseteq X$ są spójne $\iff$ są drogowo spójne.
+Przypomnijmy, że jeśli $X$ jest właściwą przestrzenią geodezyjną, to jest również lokalnie drogowo spójna. Czyli otwarte podzbiory $U\subseteq X$ są spójne $\iff$ są drogowo spójne.
 
 \begin{definition}{promień, współkońcowość promieni}{}
   \buff{Właściwy promień} (eng. proper ray) w $X$ to dowolne ciągłe odwzorowanie $\rho:[0,\infty)\to X$ takie, że 
@@ -29,7 +29,7 @@ Relacja współkońcowości promieni na zbiorze $\rho^X$ jest relacją równowa�
 \begin{proof}
   Weźmy $\rho\in\rho^X$ takie, że dla każdego $K\subseteq X$ mamy jedyną komponentę $C_K^\rho\in\Pi_K^X$ w dopełnieniu zbioru $K$ w $X$ do której należy $\rho([R,\infty))$ dla dostatecznie dużych $R$. Wtedy ciąg 
   $$(C_K^\rho)_{K\in\mathcal{K}}$$ 
-  jest nicią [\ref{def:granica odwrotna}] w systemie odwrotnym $(\mathcal{K},\Pi^X,)f_{KK'})$ . 
+  jest nicią [\ref{def:granica odwrotna}] w systemie odwrotnym $(\mathcal{K},\Pi^X_K,f_{KK'})$ . 
 
   Współkońcowe promienie wyznaczają tę samą nić, więc istnieje dobrze określone odwzorowanie 
   $$\beta:\rho^X/\wspolkon \to \Ends(X)$$
@@ -48,26 +48,51 @@ $$\{U_C^K\;:\;K\in\mathcal{K}\text{ i }C\in\Pi_K^X\},$$
 $U_C^K=\{[\rho]\;:\;\rho([R, \infty))\subset C\}$ dla pewnego $R$.
 
 
+\subsection{Dowód - końce są niezmiennikiem q.i.}
+
 Wróćmy więc do twierdzenia \ref{th:niezmienniczoscEnds}.
 
 \begin{proof}Dowód twierdzenia \ref{th:niezmienniczoscEnds}.
 
-  Niech $X,Y$ będą włąsciwymi przestrzeniami geodezyjnymi oraz $f:X\to Y$ niech będzie $(L,C)$-quasi-izometrią. Ciągłe drogi $\nu:[a,b]\to X$ lub $\nu:[0,\infty)\to X$ przerabiamy na ciągłe drogi $\nu:_f$ w $Y$ następująco:
+  Niech $X,Y$ będą włąsciwymi przestrzeniami geodezyjnymi oraz $f:X\to Y$ niech będzie $(L,C)$-quasi-izometrią. Ciągłe drogi $\nu:[a,b]\to X$ lub $\nu:[0,\infty)\to X$ przerabiamy na ciągłe drogi $\nu_f$ w $Y$ następująco:
   \begin{enumerate}
-    \item niech $a=t_0< t_1 < ... <t_m=b$ będzie takie, że $d_X(\nu(t_k),\nu(t_{k+1}))\leq 1$
-    \item wtedy ciąg $f(\nu(t_n))$ jest \hl{$(L+C)$-drogą}, czyli $d_Y(f(\nu(t_k)), f(\nu(t_{k+1})))\leq L+C$ dla każdego $k$
+    \item niech $a=t_0< t_1 < ... <t_m=b$ (lub $a=t_0<t_1<...$) będzie takie, że 
+      $$d_X(\nu(t_k),\nu(t_{k+1}))\leq 1$$
+    \item wtedy ciąg $f(\nu(t_n))$ jest \hl{$(L+C)$-drogą}, czyli 
+      $$d_Y(f(\nu(t_k)), f(\nu(t_{k+1})))\leq L+C$$ 
+      dla każdego $k$
     \item łączymy te punkty kolejno odcinkami geodezyjnymi w $Y$
   \end{enumerate}
-  W ten sposób dostajemy ciągłą drogę $\nu_f$ w $Y$ zawierającą się w $(L+C)$-otocznieu obrazu $f(\nu[a,b])$ łączącą $f(\nu(a))$ z $f(\nu(b))$. Gdy $\nu:[0,\infty)\to X$ jest ciągłym odwzorowaniem, to $\nu_f$ jest ciągłym odwzorowaniem o obrazie zawierającym się w $(L+C)$-otoczeniu obrazu $f(\nu[0,\infty))$ i o początku w $f(\nu(0))$.
+  W ten sposób dostajemy ciągłą drogę $\nu_f$ w $Y$ zawierającą się w $(L+C)$-otocznieu obrazu $f(\nu[a,b])$ łączącą $f(\nu(a))$ z $f(\nu(b))$. Gdy $\nu:[0,\infty)\to X$ jest ciągłym odwzorowaniem (promieniem w $X$), to $\nu_f$ jest ciągłym odwzorowaniem o obrazie zawierającym się w $(L+C)$-otoczeniu obrazu $f(\nu[0,\infty))$ i o początku w $f(\nu(0))$ (promieniem w $Y$).
+
   \begin{lemma}{}{}
-    Niech $f:X\to Y$ będzie $(L,C)$-quasi-izometrią. Wówczas dla każdego zwartego $K\subseteq Y$ istnieje zwarty $K'\subseteq X$ taki, że dla każdej komponenty $C'\subseteq X-K'$ jej pogrubiony obraz $N_{L+C}[f(C')]$ ($N_R(A)=\{x\in X\;:\;d_X(x, A)\leq R\}$) zawiera się w pojedynczej komponencie $C$ w dopełnieniu $X-K$.
+    Niech $f:X\to Y$ będzie $(L,C)$-quasi-izometrią. Wówczas dla każdego zwartego $K\subseteq Y$ istnieje zwarty $K'\subseteq X$ taki, że dla każdej komponenty $C'\subseteq X-K'$ jej pogrubiony obraz $N_{L+C}[f(C')]$, rozumiany jako $N_R(A)=\{x\in X\;:\;d_X(x, A)\leq R\}$, zawiera się w pojedynczej komponencie $C$ w dopełnieniu $X-K$.
   \end{lemma}
 
-  Jeśli więc $\nu,\nu'$ są współkońcowymi promieniami w $X$, to utworzone przez nie promienie $\nu_f$ i $\nu_f'$ również są współkońcowe. Chcemy sprawdzić, czy "końcówki" $\nu_f$ oraz $\nu_f'$ należą do tej samej komponenty $X-K$.
+  \begin{proof}
+    Jeśli $C_1\neq C_2$ są nieograniczonymi komponentami w $Y-K$, to ich przekroje z pogrubionym obrazek $K$ 
+    $$C_1\cap (Y-N_{L+C}(K)$$ 
+    $$C_2\cap (Y-N_{L+C}(K)$$
+    są $(2L+2C)$-oddzielone, tzn. dystans w $Y$ pomiędzy nimi jest $\geq 2L+2C$.
 
-  Z założenia wiemy, że końcówki $\nu$ i $\nu'$ należą do tej samej komponenty $C'$ w $X-K'$ (dla $K'$ jak w lemacie wyżej). Czyli końcówka $\nu_f$ zawiera się w obrazie w $N_{L+C}$ obrazu przez $f$ końcówki $\nu$, która z kolei zawiera się w $N_{L+C}f(C')\subseteq C$. Stąd $\nu_f$ jest wpsółkońcowe z $\nu_f'$. Mamy zatem przyporządkowanie $f_E:\rho^X/\wspolkon \to \rho^Y/\wspolkon$ zadane przez $f_E([\nu])=[\nu_f]$. Mamy też podobne przyporządkowanie $g_E$ idące w odwrotną stronę, gdzie $g:Y\to X$ jest "odwrotną" q.i..
+    Można pokazać, że istnieje $K'\subseteq X$ taki, że $f(X-K')\subseteq Y-N_{L+C}(K)$ (co zostaje pozostawione jako ćwiczenie). W takim razie dla komponenty $C'$ w $X-K'$ mamy $f(C')\subseteq Y-N_{L+C}(K)$.
 
-  Odwzorowanie $f_E:\rho^X/\wspolkon\to \rho^Y/\wspolkon$ jest ciągłe. Stąd $f_E$ jest homeomorfizmem. Bierzemy bazowy zbiór $U_K^C$ będący otoczeniem $[\nu_f]$, tzn. $K\subseteq Y$ jest zwarty i $C$ jest nieograniczoną komponentą $Y-K$. Wtedy $\nu_f([R,\infty))\subseteq C$. Znajdziemy wówczas bazowy $U_{K'}^{C'}$ zawierający $[\nu]$ taki, że $f_E(U_{K'}^{C'})\subseteq U_K^C$. Niech $K'\subseteq X$ jak w lemacie wyżej i niech $C;$ będzie tą nieograniczoną komponentą w $X-K'$ dla której $\nu([R,\infty))\subseteq C'$. Wówczas $C$ jest dokładnie tą komponentą w $Y-K$ w której zawiera się $N_{L+C}(f(C'))$. $f_E(U_{K'}^{C'})\subseteq U_K^C$. {\large\color{red}DOKOŃCZYĆ BO COŚ SIĘ NIE MOGĘ SKUPIĆ}
+    Wiemy, że dowolne dwa punkty z $C'$ można połączyć ciągłą drogą w $C'$, więc ich obrazy są łączone drogą $\nu_f$ w $N_{L+C}(f(C'))$, stąd $f(C')$ zawiera się w pojedynczej komponencie $Y-K$.
+  \end{proof}
+
+  Jeśli więc \hl{$\nu,\nu'$ są współkońcowymi promieniami w $X$, to utworzone przez nie promienie $\nu_f$ i $\nu_f'$ również są współkońcowe}. Chcemy sprawdzić, czy "końcówki" $\nu_f$ oraz $\nu_f'$ należą do tej samej komponenty $X-K$.
+
+  Z założenia wiemy, że końcówki $\nu$ i $\nu'$ należą do tej samej komponenty $C'$ w $X-K'$ (dla $K'$ jak w lemacie wyżej). Czyli końcówka $\nu_f$ zawiera się w obrazie w $N_{L+C}$ obrazu przez $f$ końcówki $\nu$, która z kolei zawiera się w $N_{L+C}f(C')\subseteq C$. Stąd $\nu_f$ jest wpsółkońcowe z $\nu_f'$. 
+
+  Mamy zatem przyporządkowanie $f_E:\rho^X/\wspolkon \to \rho^Y/\wspolkon$ zadane przez 
+  $$f_E([\nu])=[\nu_f].$$ 
+  Mamy też podobne przyporządkowanie $g_E$ idące w odwrotną stronę, gdzie $g:Y\to X$ jest "odwrotną" q.i..
+
+  Pozostaje sprawdzić, że odwzorowanie $f_E:\rho^X/\wspolkon\to \rho^Y/\wspolkon$ jest ciągłe i wtedy $f_E$ jest homeomorfizmem. 
+
+  Bierzemy bazowy zbiór $U_K^C$ będący otoczeniem $[\nu_f]$, tzn. $K\subseteq Y$ jest zwarty i $C$ jest nieograniczoną komponentą $Y-K$. Wtedy $\nu_f([R,\infty))\subseteq C$. %Znajdziemy wówczas bazowy $U_{K'}^{C'}$ zawierający $[\nu]$ taki, że $f_E(U_{K'}^{C'})\subseteq U_K^C$. 
+  Niech $K'\subseteq X$ jak w lemacie wyżej i niech $C'$ będzie tą nieograniczoną komponentą w $X-K'$ dla której $\nu([R,\infty))\subseteq C'$. Wówczas $C$ jest dokładnie tą komponentą w $Y-K$ w której zawiera się $N_{L+C}(f(C'))$.%, a więc $f_E(U_{K'}^{C'})\subseteq U_K^C$. %{\large\color{red}DOKOŃCZYĆ BO COŚ SIĘ NIE MOGĘ SKUPIĆ}
+  Jeśli $[\rho]\in U_{K'}^{C'}$ (czyli $\rho([R, \infty))\subseteq C'$), to $(\rho_{|[R, \infty)})_f$ ma obraz w pojedynczej komponencie $Y-K$ i jest to ta sama komponenta, w której zawiera się $N_{L+C}(f(C'))$, czyli $C$. Zatem $f_E([\rho])\in U_K^C$ i mamy $f_E(U_{K'}^{C'})\subseteq U_K^C$.
 \end{proof}
 
 
