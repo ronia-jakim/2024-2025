@@ -27,7 +27,9 @@
 
 \RequirePackage{amsfonts}
 \RequirePackage{amsmath}
-\RequirePackage{amssymb}
+% \RequirePackage{amssymb}
+
+\RequirePackage{MnSymbol}
 
 \RequirePackage[nolessnomore,noequal,noparenthesis,nospecials,noplusnominus,noexclam]{mathastext}
 
@@ -41,7 +43,9 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathbb{A}}
 
-\def\acts{\curvearrowright}
+\def\acts{%\curvearrowright}
+% \rotatebox[origin=c]{-90}{\circlearrowright}}
+\lcirclearrowright}
 \def\qi{\overset{{\scriptscriptstyle q.i.}}{\cong}}
 
 \DeclareMathOperator{\wspolkon}{\overset{{\scriptscriptstyle E}}{\sim}}

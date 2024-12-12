@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.12.3)  10 DEC 2024 17:55
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.12.4)  12 DEC 2024 16:41
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -8,7 +8,7 @@ L3 programming layer <2024-02-20>
 Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended collection.
-luaotfload | conf : Root cache directory is "/home/maruda/.texlive/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/marudka/.texlive/texmf-var/luatex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-resolved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lua".
 Lua-only attribute luaotfload@noligature = 1
 luaotfload | init : Context OpenType loader version 3.134
@@ -17,7 +17,7 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/home/maruda/.texlive/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/marudka/.texlive/texmf-var/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -39,7 +39,7 @@ Inserting `tracingstacklevels' in `input_level_string'. (/usr/share/texmf-dist/t
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+luaotfload | db : Font names database loaded from /home/marudka/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \c@part=\count186
 \c@chapter=\count187
 \c@section=\count188
@@ -730,8 +730,74 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (/usr/share/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
+Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
+ (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+LaTeX Info: Redefining \dagger on input line 84.
+LaTeX Info: Redefining \ddagger on input line 84.
+LaTeX Info: Redefining \mathparagraph on input line 84.
+LaTeX Info: Redefining \mathsection on input line 84.
+LaTeX Info: Redefining \mathdollar on input line 84.
+LaTeX Info: Redefining \mathsterling on input line 84.
+LaTeX Info: Redefining \yen on input line 84.
+LaTeX Info: Redefining \circledR on input line 84.
+LaTeX Info: Redefining \Re on input line 84.
+LaTeX Info: Redefining \Im on input line 84.
+\symMnSyA=\mathgroup6
+\symMnSyB=\mathgroup7
+\symMnSyC=\mathgroup8
+\symMnSyD=\mathgroup9
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `MnSyA' in version `bold'
+(Font)                  U/MnSymbolA/m/n --> U/MnSymbolA/b/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `MnSyB' in version `bold'
+(Font)                  U/MnSymbolB/m/n --> U/MnSymbolB/b/n on input line 122.
+LaTeX Font Info:    Overwriting symbol font `MnSyC' in version `bold'
+(Font)                  U/MnSymbolC/m/n --> U/MnSymbolC/b/n on input line 123.
+LaTeX Font Info:    Overwriting symbol font `MnSyD' in version `bold'
+(Font)                  U/MnSymbolD/m/n --> U/MnSymbolD/b/n on input line 124.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/MnSymbolE/m/n --> OMX/MnSymbolE/b/n on input line 125.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  U/MnSymbolF/m/n --> U/MnSymbolF/b/n on input line 126.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 241.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  OMS/MnSymbolS/m/n --> OMS/MnSymbolS/b/n on input line 241.
+LaTeX Info: Redefining \longrightarrow on input line 548.
+LaTeX Info: Redefining \longleftarrow on input line 549.
+LaTeX Info: Redefining \longleftrightarrow on input line 550.
+LaTeX Info: Redefining \Longrightarrow on input line 551.
+LaTeX Info: Redefining \Longleftarrow on input line 552.
+LaTeX Info: Redefining \Longleftrightarrow on input line 553.
+LaTeX Info: Redefining \longmapsto on input line 554.
+LaTeX Info: Redefining \vdots on input line 868.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 1721.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 1722.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 1723.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 1724.
+LaTeX Info: Redefining \downbracefill on input line 1799.
+LaTeX Info: Redefining \upbracefill on input line 1800.
+LaTeX Info: Redefining \overbrace on input line 1819.
+LaTeX Info: Redefining \underbrace on input line 1820.
+LaTeX Info: Redefining \surd on input line 1843.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 ) (/usr/share/texmf-dist/tex/latex/mathastext/mathastext.sty
 Package: mathastext 2023/12/29 v1.3zb Use the text font in math mode (JFB)
 
@@ -743,8 +809,8 @@ Package mathastext Info: Starting the math mode configuration.
 \mst@do@easynonletters=\toks31
 \mst@do@az=\toks32
 \mst@do@AZ=\toks33
-\symmtoperatorfont=\mathgroup6
-\symmtletterfont=\mathgroup7
+\symmtoperatorfont=\mathgroup10
+\symmtletterfont=\mathgroup11
 (   mathastext:   ) punctuation: , . : ; and \colon
 (   mathastext:   ) \imath and \jmath 
 LaTeX Font Info:    Overwriting math alphabet `\Mathnormalbold' in version `normal'
@@ -870,10 +936,10 @@ File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@bigbuffer@items=\count297
 ) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+))
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
-
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: luatex.def on input line 274.
@@ -940,10 +1006,10 @@ File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen257
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
@@ -979,8 +1045,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package trimclip Info: No clipping driver 'tc-luatex.def' available.
 (trimclip)             Using fall-back PGF driver.
 )
-LaTeX Info: Redefining \Longrightarrow on input line 57.
-LaTeX Info: Redefining \Longleftarrow on input line 58.
+LaTeX Info: Redefining \Longrightarrow on input line 61.
+LaTeX Info: Redefining \Longleftarrow on input line 62.
  (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip53
@@ -1038,8 +1104,8 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/share/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
- (/usr/share/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+
+(/usr/share/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -1087,8 +1153,8 @@ Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
 \pgfplots@tmpa=\dimen284
 \c@pgfplots@coordindex=\count315
 \c@pgfplots@scanlineindex=\count316
- (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
-(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks50
 \t@pgf@tokb=\toks51
@@ -1435,7 +1501,7 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen311
 \@vwid@roff=\dimen312
 )
-luaotfload | cache : Lookup cache loaded from /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.) (/usr/share/texmf-dist/tex/latex/halloweenmath/halloweenmath.sty
+luaotfload | cache : Lookup cache loaded from /home/marudka/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.) (/usr/share/texmf-dist/tex/latex/halloweenmath/halloweenmath.sty
 Package: halloweenmath 2019/11/01 v0.11 (development)
  (/usr/share/texmf-dist/tex/latex/pict2e/pict2e.sty
 Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
@@ -1458,7 +1524,7 @@ File: p2e-luatex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \pIIe@tempdimf=\dimen320
 )
 \@HwM@arrowfill@skip=\skip104
-) (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/07.aux) (./rozdzialy/09.aux))
+) (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/04.aux) (./rozdzialy/05.aux) (./rozdzialy/07.aux) (./rozdzialy/09.aux))
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -1489,7 +1555,7 @@ LaTeX Font Info:    ... okay on input line 14.
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup8
+\symlegacymaths=\mathgroup12
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 14.
 LaTeX Font Info:    Redeclaring math accent \acute on input line 14.
@@ -1513,7 +1579,20 @@ LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 14.
 LaTeX Font Info:    Redeclaring math symbol \Phi on input line 14.
 LaTeX Font Info:    Redeclaring math symbol \Psi on input line 14.
 LaTeX Font Info:    Redeclaring math symbol \Omega on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 14.
+
+
+./main.tex:14: LaTeX Error: Command `\mathdollar' already defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \begin{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 14.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `normal' on input line 14.
@@ -1543,7 +1622,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 14.
 \c@mv@tabular=\count348
 \c@mv@boldtabular=\count349
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -1738,7 +1816,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[5<./luatex.qmwMKG/1.png>]
+[5<./luatex.sjjzjO/1.png>]
 Underfull \hbox (badness 2884) in paragraph at lines 245--246
 []\TU/Cantarell(0)/m/n/12 Grupa symetrii reg-u-larnego (co na-jm-niej dwie syme-trie w dwóch różnych
  []
@@ -1776,8 +1854,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Overfull \hbox (10.34468pt too wide) in paragraph at lines 86--88
-\TU/Cantarell(0)/m/n/12 Niech $[][]$ będzie punk-tem na geodezyjnej $\OT1/cmr/m/n/12 [[][]\mst@mathfont , \OML/cmm/m/it/12  \OMS/cmsy/m/n/12  [][]\OT1/cmr/m/n/12 ] = \OML/cmm/m/it/12 $ \TU/Cantarell(0)/m/n/12 z kuli $[]$ na-j-dal-szy od $[][]$ na tej geodezyjnej.
+Overfull \hbox (8.47836pt too wide) in paragraph at lines 86--88
+\TU/Cantarell(0)/m/n/12 Niech $[][]$ będzie punk-tem na geodezyjnej $\OT1/cmr/m/n/12 [[][]\mst@mathfont , \OML/cmm/m/it/12  \U/MnSymbolC/m/n/12 ^^@ [][]\OT1/cmr/m/n/12 ] = \OML/cmm/m/it/12 $ \TU/Cantarell(0)/m/n/12 z kuli $[]$ na-j-dal-szy od $[][]$ na tej geodezyjnej.
  []
 
 
@@ -1863,13 +1941,9 @@ LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
 (Font)              scaled to size 8.0pt on input line 105.
 
-Overfull \hbox (8.88351pt too wide) in paragraph at lines 115--118
+Overfull \hbox (8.01788pt too wide) in paragraph at lines 115--118
 \TU/Cantarell(0)/m/n/12 takie, że $[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 []$ \TU/Cantarell(0)/m/n/12 nazy-wamy []\TU/Cantarell(0)/b/n/12 odw-zorowa-ni-ami granicznymi[]\TU/Cantarell(0)/m/n/12 . O odw-zorowa-ni-ach granicznych
  []
-
-
-Underfull \vbox (badness 1325) has occurred while \output is active []
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1879,7 +1953,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [15]
-Underfull \vbox (badness 3000) has occurred while \output is active []
+Underfull \vbox (badness 2689) has occurred while \output is active []
 
 
 
@@ -1902,11 +1976,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [17]
-Overfull \hbox (0.1133pt too wide) in paragraph at lines 209--211
-\TU/Cantarell(0)/m/n/12 w $[] \OMS/cmsy/m/n/12 ^^@ []$ \TU/Cantarell(0)/m/n/12 przecina nie-pusto sferę $[][]\OT1/cmr/m/n/12 ([][])$\TU/Cantarell(0)/m/n/12 , bo $[]$ jest geodezyjna, a więc lokalnie dro-gowo spójna... 
- []
-
-
 Overfull \hbox (11.34175pt too wide) in paragraph at lines 216--217
 \TU/Cantarell(0)/m/n/12 bo za-w-iera punkty które należą tylko do niego. Stąd nieogranic-zonych kom-po-nent jest skończe-
  []
@@ -1930,8 +1999,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [18]
-\openout2 = rozdzialy/07.aux
- (./rozdzialy/07.tex
+\openout2 = rozdzialy/04.aux
+ (./rozdzialy/04.tex
+Overfull \hbox (19.45512pt too wide) in paragraph at lines 34--35
+[]\TU/Cantarell(0)/m/n/12 Współkoń-cowe promie-nie wyz-naczają tę samą nić, więc ist-nieje do-brze określone odw-zorowanie 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -1944,13 +2017,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Overfull \hbox (9.07913pt too wide) in paragraph at lines 47--48
-[]\TU/Cantarell(0)/m/n/12 Zanim prze-jdziemy do dowodu faktu []󰀡.󰀠󰀠[], wymieńmy kilka ważnych wniosków z niego wynika-
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1960,10 +2029,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -1972,12 +2042,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\openout2 = rozdzialy/05.aux
+ (./rozdzialy/05.tex
+Overfull \hbox (2.68578pt too wide) in paragraph at lines 13--15
+[]\TU/Cantarell(0)/m/n/12 Zanim prze-jdziemy dalej, warto wiedzieć kilka rzeczy o zbiorze Can-tora, np. jak jest on charak-
+ []
 
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/sl' in size <12> not available
+(Font)              Font shape `TU/Cantarell(0)/m/it' tried instead on input line 15.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 15.
+
+Overfull \hbox (27.01108pt too wide) in paragraph at lines 15--16
+[]\TU/Cantarell(0)/m/n/12 jest to \TU/Cantarell(0)/m/it/12 je-dyna z dokład-noś-cią do home-o-mor-fizmu przestrzeń me-tryczna, która jest całkowicie
  []
 
 
-Underfull \vbox (badness 2486) has occurred while \output is active []
+Underfull \vbox (badness 4316) has occurred while \output is active []
 
 
 
@@ -1987,7 +2068,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[22])
+[22
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -1996,27 +2086,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [23]
-\openout2 = rozdzialy/09.aux
- (./rozdzialy/09.tex
-Overfull \hbox (6.74968pt too wide) in paragraph at lines 11--12
-[]\TU/Cantarell(0)/m/n/12 na koniec wystar-czy pokazać, że zwykły wymiar asymp-to-ty-czny jest nie mniejszy $[] \OMS/cmsy/m/n/12 
- []
-
-./rozdzialy/09.tex:43: Undefined control sequence.
-<recently read> \asdmin 
-        
-l.43   $\asdmin
-             _h(X)=\min \{p\;:\;\asdim_h(X)\leq p\}$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+\openout2 = rozdzialy/07.aux
+ (./rozdzialy/07.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -2028,6 +2099,80 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
+]
+Overfull \hbox (9.07913pt too wide) in paragraph at lines 47--48
+[]\TU/Cantarell(0)/m/n/12 Zanim prze-jdziemy do dowodu faktu []󰀡.󰀠󰀥[], wymieńmy kilka ważnych wniosków z niego wynika-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \vbox (badness 2435) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[27])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[28]
+\openout2 = rozdzialy/09.aux
+ (./rozdzialy/09.tex
+Overfull \hbox (3.39677pt too wide) in paragraph at lines 11--12
+[]\TU/Cantarell(0)/m/n/12 na koniec wystar-czy pokazać, że zwykły wymiar asymp-to-ty-czny jest nie mniejszy $[] \U/MnSymbolD/m/n/12 C
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[29
+
+
+
 ])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2036,36 +2181,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[25] (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/07.aux) (./rozdzialy/09.aux))
+[30] (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/04.aux) (./rozdzialy/05.aux) (./rozdzialy/07.aux) (./rozdzialy/09.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: CE9D47D3695C2BED352D1DEC3E81F4DC;2905
-(rerunfilecheck)             After:  A5414F742FD834DF59AA64701F72652F;2945.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 0FAA4FF218525AC9E43BB3BC6DB38E55;3627.
 )
 
 Here is how much of LuaTeX's memory you used:
- 52229 strings out of 476447
+ 54617 strings out of 476447
  125086,1977958 words of node,token memory allocated
- 928 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 57 attribute, 95 glue_spec, 57 attribute_list, 4 write nodes
-   avail lists: 1:3,2:5185,3:2768,4:592,5:424,6:70,7:5233,8:92,9:1301,10:12,11:186
- 72869 multiletter control sequences out of 65536+600000
- 89 fonts using 13237143 bytes
- 109i,26n,129p,1192b,2196s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufb10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (27 pages, 296516 bytes).
+ 952 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 63 attribute, 95 glue_spec, 63 attribute_list, 4 write nodes
+   avail lists: 1:3,2:5169,3:2768,4:592,5:427,6:79,7:5210,8:92,9:1296,10:12,11:186
+ 75194 multiletter control sequences out of 65536+600000
+ 127 fonts using 16821607 bytes
+ 109i,21n,129p,1192b,2196s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf>{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}</usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol-Bold12.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufb10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (32 pages, 355174 bytes).
 
-PDF statistics: 415 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 141 named destinations out of 1000 (max. 131072)
- 160 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 489 PDF objects out of 1000 (max. 8388607)
+ 419 compressed objects within 5 object streams
+ 157 named destinations out of 1000 (max. 131072)
+ 184 words of extra memory for PDF output out of 10000 (max. 100000000)
 
