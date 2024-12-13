@@ -364,6 +364,7 @@ INPUT ./rozdzialy/02.aux
 INPUT ./rozdzialy/03.aux
 INPUT ./rozdzialy/04.aux
 INPUT ./rozdzialy/05.aux
+INPUT ./rozdzialy/06.aux
 INPUT ./rozdzialy/07.aux
 INPUT ./rozdzialy/09.aux
 OUTPUT main.aux
@@ -409,8 +410,8 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 OUTPUT main.toc
 OUTPUT rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/01_cayley.tex
-OUTPUT luatex.hQ2sKj/1.png
-INPUT ./luatex.hQ2sKj/1.png
+OUTPUT luatex.m6KdSr/1.png
+INPUT ./luatex.m6KdSr/1.png
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
 OUTPUT rozdzialy/03.aux
@@ -435,6 +436,8 @@ OUTPUT rozdzialy/04.aux
 INPUT ./rozdzialy/04.tex
 OUTPUT rozdzialy/05.aux
 INPUT ./rozdzialy/05.tex
+OUTPUT rozdzialy/06.aux
+INPUT ./rozdzialy/06.tex
 OUTPUT rozdzialy/07.aux
 INPUT ./rozdzialy/07.tex
 OUTPUT rozdzialy/09.aux
@@ -445,6 +448,7 @@ INPUT ./rozdzialy/02.aux
 INPUT ./rozdzialy/03.aux
 INPUT ./rozdzialy/04.aux
 INPUT ./rozdzialy/05.aux
+INPUT ./rozdzialy/06.aux
 INPUT ./rozdzialy/07.aux
 INPUT ./rozdzialy/09.aux
 INPUT ./main.out

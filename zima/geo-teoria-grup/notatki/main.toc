@@ -15,8 +15,9 @@
 \contentsline {subsection}{\numberline {1.}Alternatywny opis przestrzeni końców (promienie)}{19}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.}Dowód - końce są niezmiennikiem q.i.}{20}{subsection.2.2.2}%
 \contentsline {section}{\numberline {30.10.2024}Końce skończenie generowalnych grup - twierdzenie Freudanthala-Hopfa}{23}{section.2.3}%
-\contentsline {section}{\numberline {13.11.2024}Tempo wzrostu grupy}{26}{section.2.4}%
-\contentsline {subsection}{\numberline {1.}Abstrakcyjne funkcje wzrostu}{26}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.}Tempo wzrostu grupy}{26}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {3.}Grupy o wzroście wielomianowym}{29}{subsection.2.4.3}%
-\contentsline {section}{\numberline {04.12.2024}To be named 2}{31}{section.2.5}%
+\contentsline {section}{\numberline {06.11.2024}Grupy o dwóch końcach}{26}{section.2.4}%
+\contentsline {section}{\numberline {13.11.2024}Tempo wzrostu grupy}{27}{section.2.5}%
+\contentsline {subsection}{\numberline {1.}Abstrakcyjne funkcje wzrostu}{27}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.}Tempo wzrostu grupy}{27}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {3.}Grupy o wzroście wielomianowym}{30}{subsection.2.5.3}%
+\contentsline {section}{\numberline {04.12.2024}To be named 2}{32}{section.2.6}%
