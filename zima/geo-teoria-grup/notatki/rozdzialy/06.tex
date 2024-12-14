@@ -8,4 +8,52 @@ Z quasi-izometryczności grup współmiernych, jakimi są grupy i ich podgrupy s
 
 Wynika więc z tego, że każda grupa q.i. z $\Z$ zawiera $\Z$ jako podgrupę skończonego indeksu.
 
+\subsection{Działanie grupy na przestrzeni końców}
+
+Skończenie geneorwalna grupa $G$ indukuje w naturalny sposób działanie przez permutacje na zbiorze swoich końców homomorfizm 
+$$h^E:G\to Sym(\Ends(G))$$
+zadany na jeden z dwóch sposobów:
+\begin{enumerate}
+  \item izometria $\phi:X\to X$ wyznacza automorfizm 
+    $$\phi^{\mathcal{K}}:\mathcal{K}\to\mathcal{K}$$
+    przez 
+    $$\phi^{\mathcal{K}}(K)=\phi(K),$$
+    zaś dla każdego $K\in\mathcal{K}$ bijekcję
+    $$\phi_K:\Pi^X_K\to \Pi_{\phi(K)}^X$$
+    zadaną przez $\phi_K(C)=\phi(C)$. To razem daje automorfizm 
+    $$\phi^X:\Pi^X\to \Pi^X,$$ 
+    który indukuje homeomofrizm granic odwrotnych (w szczególności bijekcję).
+  \item izometria $\phi:X\to X$ zadaje 
+    $$h_\phi^E:\Ends(X)\to \Ends(X)$$
+    przez 
+    $$h_\phi^E([\rho])=[\phi\circ\phi],$$
+    gdzie $\rho$ to promień w $X$.
+\end{enumerate}
+
+\begin{fact}{}{}
+  Niech grupa $\Gamma\acts X$ działa właściwie, kozwarcie, gdzie $X$ jest właściwa geodezyjna oraz $H\leq \Gamma$. Wówczas $[\Gamma:H]<\infty$ $\iff$ $H\acts X$ działa kozwarcie.
+\end{fact}
+
+\begin{proof}
+  $[\Gamma:H]<\infty\implies H\acts X$ kozwarcie
+
+  Niech $\Gamma=hg_1\cup...\cup Hg_m$, gdzie $[\Gamma:H]=m$. Jeśli $\bigcup_{\gamma\in\Gamma}\gamma\cdot K=X$, to 
+  $$\bigcup_{h\in H}h(g_1K\cup...\cup g_mK)=X,$$
+  stąd kozwartość działania $H$.
+
+  $[\Gamma:H]<\infty\impliedby H\acts X$ kozwarcie
+
+  Niech $L\subseteq X$ będzie zwartym zbiorem z definicji kozwartości, tzn. 
+  $$\bigcup_{h\in H}h\cdot L=X.$$
+  Z własności działania grupy $\Gamma$ wiemy, że
+$$\left|\{\gamma\in\Gamma\;:\;\gamma L\cap L\neq \emptyset\}\right|<\infty,$$
+powiedzmy że jest to zbiór $\{\gamma_1,...,\gamma_m\}$. Wówczas $H\gamma_1\cup...\cup H\gamma_m=\Gamma$, bo dla $\gamma\in \Gamma$ istnieje $h\in H$ takie, że $h\cdot L\cap \gamma\cdot L\neq\emptyset$. Więc $L\cap h^{-1}\gamma L\neq\emptyset$, więc $h^{-1}\gamma=\gamma_j$, czyli $\gamma=h\gamma_j\in H\gamma_j$.
+\end{proof}
+
+Dla właściwej geodezyjnej przestrzeni $X$ i dla dowolnego zwartego $K\subseteq X$, liczba komponent (ograniczonych i nieograniczonych)
+
+
+
+
+
 
