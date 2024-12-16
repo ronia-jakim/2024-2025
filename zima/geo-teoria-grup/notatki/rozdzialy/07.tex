@@ -1,6 +1,37 @@
 \section{13.11.2024}{Tempo wzrostu grupy}
 
-Funkcja wzrostu: $\beta_{G, S}:\N\to\N$ zdefiniowana jako liczność kuli o promieniu $k$ i środku w elemencie neutralnym: $f_{G, S}(k)=|B_k^{G,S}(e)|$
+\subsection{Funkcje wzrostu}
+
+% Funkcja wzrostu: $\beta_{G, S}:\N\to\N$ zdefiniowana jako liczność kuli o promieniu $k$ i środku w elemencie neutralnym: $f_{G, S}(k)=|B_k^{G,S}(e)|$
+
+\begin{definition}{}{}
+  Niech $G$ będzie grupą, a $S$ jej skończonym układem generatorów. Wówczas funkcję 
+  $$\beta_{G,S}:\N\to\N$$
+  $$\beta_{G,S}(k)=|B_k^{G,S}(e)|=|\{g\in G\;:\;d_S(e, g)\leq k\}|$$
+  opisującą liczność kul o promieniu $k$ i środku w elemencie neutralnym, nazywamy \buff{funkcją wzrostu} grupy $G$.
+\end{definition}
+
+\begin{example}[m]
+  \item $G=\Z^n$ o zbiorze generatorów $S=\{\sum\pm\delta_i\}$, czyli skończone sumy parami różnych wersorów o z dowolnymi znakami. Wówczas funkcja wzrostu to 
+    $$\beta_{\Z^n, S}(k)=(2k+1)^n$$
+    wielomian $n$-tego stopnia.
+  \item $G=F_m$ a $S_m$ to standardowy zbiór generatorów grupy wolnej
+    $$\beta_{F_m, S_m}(k)=1+2m+2m(2m-1)+...+2m(2m-1)^{k-1}=\frac{m}{m-1}(2m-1)^k-\frac{1}{m-1}$$
+    jest funkcją wykładniczą.
+\end{example}
+
+
+Funkcje wzrostu są:
+\begin{description}
+  \item[podmultyplikatywne] $\beta_{G, S}(k+k')\leq \beta_{G,S}(k)\beta_{G, S}(k')$
+  \item[ściśle rosnące dla $|G|=\infty$] oraz szacują się od dołu przez funkcję liniową, tzn. $\beta_{G,S}(k)\geq k+1$
+  \item[szacują się od góry przez funkcje wykładnicze,] ponieważ
+    $$\beta_{G,S}(k)\leq\beta_{F_S, S}(k)=\begin{cases}2|S|+1&|S|=1\\\frac{|S|}{|S|-1}(2|S|-1)^k-\frac{1}{|S|-1}&|S|\geq2\end{cases}$$
+  \item[dobrze zdefiniowane dla podgrup,] tzn. jeśli $G$ jest generowane przez $S$, a $H\leq G$ jest generowane przez $T\subseteq S$, to wówczas 
+    $$\beta_{H,T}(k)\leq\beta_{G,S}(k)$$
+    dla wszystkich $k\in\N$.
+\end{description}
+
 
 \subsection{Abstrakcyjne funkcje wzrostu} %quasi-dominacja i quasi-rownowaznosc
 
@@ -143,6 +174,19 @@ Grupa $G$ jest \hl{nilpotentna}, gdy $C_n(G)$ jest trywialne dla pewnego $n$.
   Skończenie generowalna grupa $G$ ma wzrost wielomianowy $\beta_G\prec t^a$ $\iff$ $G$ jest wirtualnie nilpotentna.
 \end{theorem}
 
+\begin{conclusion}{}{}
+  \begin{enumerate}
+    \item Wśród grup o wzroście wielomianowym nie ma innych typów wzrostu niż $t^m$ dla $m\geq1$
+    \item Grupa q.i. z $\Z$ jest wirtualnie $\Z$, bo ma wzrost taki sam jak $\Z$ (wielomianowy). W takim razie jest wirtualnie nilpotentna i możemy wybrać $G_0\leq G$ nilpotentną podgrupę skończonego indeksu. Ponieważ $\beta_{G_0}\sim t^1$, to $d(G_0)=1$ i wystarczy wywnioskować, że $G_0$ jest wirtualnie $\Z$.
+    \item Podobnie można uzasadnić, ze jeśli $G$ jest q.i. z $\Z^m$, to jest wirtualnie $\Z^m$.
+  \end{enumerate}
+\end{conclusion}
+
+\subsection{Związek ze wzrostem objętości}
+
+\begin{definition}{}{}
+  Niech $M$ będzie zupełną rozmaitościa z metryką Riemanna $g$, która indukuje metrykę $d_g$ i miarę objętości $\vol_g$.
+\end{definition}
 
 
 

@@ -2,7 +2,7 @@
 
 Z quasi-izometryczności grup współmiernych, jakimi są grupy i ich podgrupy skończonego indeksu, wynika, że jeśli grupa zawiera skończonego indeksu podgrupę $\Z$, to ma wówczas dwa końce. Celem wykładu będzie udowodnienie implikacji w drugą stronę, czyli opisanie grup o dwóch końcach.
 
-\begin{theorem}{}{}
+\begin{theorem}{}{2 konce}
   Każda grupa o $2$ końcach zawiera skończonego indeksu podgrupę acykliczną (izomorficzną z $\Z$).
 \end{theorem}
 
@@ -30,7 +30,7 @@ zadany na jeden z dwóch sposobów:
     gdzie $\rho$ to promień w $X$.
 \end{enumerate}
 
-\begin{fact}{}{}
+\begin{fact}{}{kozwarcie skonczony indeks}
   Niech grupa $\Gamma\acts X$ działa właściwie, kozwarcie, gdzie $X$ jest właściwa geodezyjna oraz $H\leq \Gamma$. Wówczas $[\Gamma:H]<\infty$ $\iff$ $H\acts X$ działa kozwarcie.
 \end{fact}
 
@@ -50,7 +50,28 @@ $$\left|\{\gamma\in\Gamma\;:\;\gamma L\cap L\neq \emptyset\}\right|<\infty,$$
 powiedzmy że jest to zbiór $\{\gamma_1,...,\gamma_m\}$. Wówczas $H\gamma_1\cup...\cup H\gamma_m=\Gamma$, bo dla $\gamma\in \Gamma$ istnieje $h\in H$ takie, że $h\cdot L\cap \gamma\cdot L\neq\emptyset$. Więc $L\cap h^{-1}\gamma L\neq\emptyset$, więc $h^{-1}\gamma=\gamma_j$, czyli $\gamma=h\gamma_j\in H\gamma_j$.
 \end{proof}
 
-Dla właściwej geodezyjnej przestrzeni $X$ i dla dowolnego zwartego $K\subseteq X$, liczba komponent (ograniczonych i nieograniczonych)
+Dla właściwej geodezyjnej przestrzeni $X$ i dla dowolnego zwartego $K\subseteq X$, liczba komponent (ograniczonych i nieograniczonych) w $X-K$ jest skończona i każda z tych komponent jest otwarta w $X$. Stąd, każdy $K\subseteq X$ możemy uzupełnić o ograniczone komponenty $X-K$, otrzymując nowy zbiór $K_+$ taki, że komponenty $X-K_+$ to dokładnie nieograniczone komponenty $X-K$.
+
+Możemy więc myśleć, że \hl{$X-K$ dla zwartych $K$ to zawsze skończona suma nieograniczonych komponent tego dopełnienia} (i wszystkie one są otwarte w $X$).
+
+\subsection{Grupy o 2 końcach zawierają cykliczną podgrupę skończonego indeksu}
+
+Wróćmy do dowodu twierdzenia \ref{th:2 konce}.
+
+\begin{proof}
+  Niech $\Gamma$ będzie dowolną grupą o $2$ końcach. Rozważmy homomorfizm $h^#:\Gamma\to Sym(\Ends(G))=\Z_2$ i jego jądro $\Gamma_0=\ker(h^E)<\Gamma$ - podgrupę indeksu $\leq 2$.
+
+  $\Gamma_0$, jako podgrupa skończonego indeksu, w dalszym ciągu działa kozwarcie na $X$ (fakt \ref{fac:kozwarcie skonczony indeks}), oraz zachowuje wszystkie końce. Naszym celem będzie znalezienie generatora $g\in \Gamma_0$ dla cyklicznej podgrupy $\langle g\rangle$ skończonego indeksu w $\Gamma_0$.
+
+  Niech $K$ będzie takie, że $X-K=E\cup E'$ jest sumą nieograniczonych komponent spójności, oraz $\bigcup_{\gamma\in\Gamma_0}\gamma\cdot K=X$. Ustalmy $z\in E$ taki, że $d_X(z, K)>2\cdot \text{diam}K$.
+
+  Ponieważ orbity zbioru $K$ przez działanie $\Gamma_0$ pokrywają $X$, to możemy znaleźć $g\in\Gamma_0$ takie, że $z\in g\cdot K$. Wówczas $d_X(K, gK)>\text{diam}K$ (bo $\text{diam}(gK)=\text{diam}(K)$). Stąd $gK\subseteq E$ ($gK\cap E\neq\emptyset$ oraz pokazaliśmy, że między $gK$ oraz $K$ mieści się co najmniej jedna średnica $K$).
+
+  Ponieważ $gK\cap E'=\emptyset$ (bo $E\cap gK\neq\emptyset$ a są to zbiory spójne), to $E'$ zawiera się w dokładnie jednej komponencie $X-gK$, którymi są $gE$ oraz $gE'$. Ponieważ $g\in \Gamma_0$ zachowuje końce, to komponentą tą musi być $gE'$, zatem $E'\subseteq gE'$.
+
+  {\large\color{red}TODO: DOKOŃCZYĆ DOWÓD}
+\end{proof}
+
 
 
 

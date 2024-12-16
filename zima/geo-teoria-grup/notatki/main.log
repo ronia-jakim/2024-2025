@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.12.3)  16 DEC 2024 17:30
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.12.4)  16 DEC 2024 20:45
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -8,7 +8,7 @@ L3 programming layer <2024-02-20>
 Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended collection.
-luaotfload | conf : Root cache directory is "/home/maruda/.texlive/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/marudka/.texlive/texmf-var/luatex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-resolved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lua".
 Lua-only attribute luaotfload@noligature = 1
 luaotfload | init : Context OpenType loader version 3.134
@@ -17,7 +17,7 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/home/maruda/.texlive/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/marudka/.texlive/texmf-var/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -39,7 +39,7 @@ Inserting `tracingstacklevels' in `input_level_string'. (/usr/share/texmf-dist/t
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+luaotfload | db : Font names database loaded from /home/marudka/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \c@part=\count186
 \c@chapter=\count187
 \c@section=\count188
@@ -1062,8 +1062,8 @@ File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
 Package trimclip Info: No clipping driver 'tc-luatex.def' available.
 (trimclip)             Using fall-back PGF driver.
 )
-LaTeX Info: Redefining \Longrightarrow on input line 108.
-LaTeX Info: Redefining \Longleftarrow on input line 109.
+LaTeX Info: Redefining \Longrightarrow on input line 110.
+LaTeX Info: Redefining \Longleftarrow on input line 111.
  (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip53
@@ -1440,7 +1440,7 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen312
 \@vwid@roff=\dimen313
 )
-luaotfload | cache : Lookup cache loaded from /home/maruda/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.) (/usr/share/texmf-dist/tex/latex/halloweenmath/halloweenmath.sty
+luaotfload | cache : Lookup cache loaded from /home/marudka/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.) (/usr/share/texmf-dist/tex/latex/halloweenmath/halloweenmath.sty
 Package: halloweenmath 2019/11/01 v0.11 (development)
  (/usr/share/texmf-dist/tex/latex/pict2e/pict2e.sty
 Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
@@ -1743,7 +1743,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[5<./luatex.opdyTr/1.png>]
+[5<./luatex.3FaQ9n/1.png>]
 Underfull \hbox (badness 2884) in paragraph at lines 245--246
 []\TU/Cantarell(0)/m/n/12 Grupa symetrii reg-u-larnego (co na-jm-niej dwie syme-trie w dwóch różnych
  []
@@ -2065,7 +2065,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-)
+./rozdzialy/06.tex:62: Missing { inserted.
+<to be read again> 
+##
+l.62 ... o $2$ końcach. Rozważmy homomorfizm $h^#
+                                                  :\Gamma\to Sym(\Ends(G))=\...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+If you're confused by all this, try typing `I}' now.
+
+./rozdzialy/06.tex:62: You can't use `macro parameter character #' in math mode.
+<recently read> ##
+  
+l.62 ... o $2$ końcach. Rozważmy homomorfizm $h^#
+                                                  :\Gamma\to Sym(\Ends(G))=\...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./rozdzialy/06.tex:62: Missing } inserted.
+<inserted text> 
+}
+l.62 ...momorfizm $h^#:\Gamma\to Sym(\Ends(G))=\Z_2$
+                                                   i jego jądro $\Gamma_0=\...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -2074,6 +2104,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [27]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[28]
 \openout2 = rozdzialy/07.aux
  (./rozdzialy/07.tex
 
@@ -2083,13 +2126,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[28
+[29
 
 
 
 ]
-Overfull \hbox (9.07913pt too wide) in paragraph at lines 47--48
-[]\TU/Cantarell(0)/m/n/12 Zanim prze-jdziemy do dowodu faktu []󰀡.󰀠󰀧[], wymieńmy kilka ważnych wniosków z niego wynika-
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[30]
+Overfull \hbox (9.07913pt too wide) in paragraph at lines 78--79
+[]\TU/Cantarell(0)/m/n/12 Zanim prze-jdziemy do dowodu faktu []󰀡.󰀠󰀨[], wymieńmy kilka ważnych wniosków z niego wynika-
  []
 
 
@@ -2103,35 +2154,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 24.64995pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-
-Underfull \vbox (badness 2486) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 24.64995pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
-
-[31])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -2140,6 +2172,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [32]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[34])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[35]
 \openout2 = rozdzialy/09.aux
  (./rozdzialy/09.tex
 Overfull \hbox (6.74968pt too wide) in paragraph at lines 11--12
@@ -2157,7 +2216,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[33
+[36
 
 
 
@@ -2169,29 +2228,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[34] (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/04.aux) (./rozdzialy/05.aux) (./rozdzialy/06.aux) (./rozdzialy/07.aux) (./rozdzialy/09.aux))
+[37] (./main.aux (./rozdzialy/01_cayley.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/04.aux) (./rozdzialy/05.aux) (./rozdzialy/06.aux) (./rozdzialy/07.aux) (./rozdzialy/09.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6093F336110607B6C0F27A64441E59F2;4685.
+(rerunfilecheck)             Checksum: 9C4796CF82568AFB8A9DBF9D3E38F812;5481.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53020 strings out of 476447
+ 53056 strings out of 476447
  125086,1977958 words of node,token memory allocated
- 1042 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 84 attribute, 95 glue_spec, 84 attribute_list, 4 write, 1 pdf_action nodes
-   avail lists: 1:3,2:5133,3:2768,4:592,5:475,6:87,7:5233,8:92,9:1302,10:12,11:186
- 73553 multiletter control sequences out of 65536+600000
- 90 fonts using 14215231 bytes
+ 1066 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 90 attribute, 95 glue_spec, 90 attribute_list, 4 write, 1 pdf_action nodes
+   avail lists: 1:3,2:5121,3:2768,4:592,5:478,6:96,7:5233,8:92,9:1302,10:12,11:186
+ 73576 multiletter control sequences out of 65536+600000
+ 90 fonts using 14422591 bytes
  117i,26n,129p,1192b,2196s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufb10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (36 pages, 352805 bytes).
+Output written on main.pdf (39 pages, 370183 bytes).
 
-PDF statistics: 505 PDF objects out of 1000 (max. 8388607)
- 431 compressed objects within 5 object streams
- 171 named destinations out of 1000 (max. 131072)
- 208 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 543 PDF objects out of 1000 (max. 8388607)
+ 466 compressed objects within 5 object streams
+ 184 named destinations out of 1000 (max. 131072)
+ 232 words of extra memory for PDF output out of 10000 (max. 100000000)
 
