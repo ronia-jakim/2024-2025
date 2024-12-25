@@ -1,0 +1,488 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{zadania}
+
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+
+\RequirePackage{fontspec}
+
+\RequirePackage{float}
+
+\RequirePackage[default]{cantarell}
+
+
+\RequirePackage[
+  a4paper,
+  total={170mm, 247mm},
+  left=20mm,
+  top=25mm,
+  % showframe
+]{geometry}
+
+\RequirePackage[skip=3mm]{parskip}
+\renewcommand{\baselinestretch}{1.2}
+\selectfont
+
+
+\RequirePackage{amsfonts}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+
+\RequirePackage{tikz}
+\RequirePackage{tikz-cd}
+\usetikzlibrary{decorations.pathreplacing,calc,math,backgrounds, arrows}
+\usetikzlibrary{positioning, decorations.text, decorations.pathmorphing}
+
+
+% \RequirePackage{MnSymbol}
+
+\RequirePackage[nolessnomore,noequal,noparenthesis,nospecials,noplusnominus,noexclam]{mathastext}
+
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\vol}{Vol}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\A}{\mathbb{A}}
+
+\DeclareRobustCommand{\checkbold}[1]{% https://tex.stackexchange.com/a/24635/121799
+ \edef\@tempa{\math@version}\edef\@tempb{bold}%
+ \ifx\@tempa\@tempb%
+  \def#1{1}%
+ \else
+  \def#1{0}%
+ \fi
+}
+\def\acts{%\curvearrowright}
+% \rotatebox[origin=c]{-90}{\circlearrowright}}
+%\lcirclearrowright
+%}
+%\newcommand{\excl}[1][]{
+\checkbold\tmp%
+  \ensuremath{%
+    \operatorname{%
+      \mathchoice{%
+        \begin{tikzpicture} 
+        \draw[line cap=round,line width=(1+0.33*\tmp)*0.06em, ->, >=stealth'] (0,0) arc (310:-5:.5ex and .7ex); 
+        \end{tikzpicture}
+      }
+      {%
+        \begin{tikzpicture}
+        \draw[line cap=round,line width=(1+0.33*\tmp)*0.06em, ->, >=stealth'] (0,0) arc (310:-5:.5ex and .7ex); 
+        \end{tikzpicture}
+      }
+      {%
+        \begin{tikzpicture}
+        \draw[line cap=round,line width=(1+0.33*\tmp)*0.04em, ->] (0,0) arc (310:-5:.4ex and .5ex); 
+        % \draw[line cap=round,line width=(1+0.33*\tmp)*0.045em] (0,0) arc (340:20:.5ex); 
+        \end{tikzpicture}
+      }
+      {%
+        \begin{tikzpicture}
+        \draw[line cap=round,line width=(1+0.33*\tmp)*0.035em, ->] (0,0) arc (310:-5:.3ex and .4ex); 
+        % \draw[line cap=round,line width=(1+0.33*\tmp)*0.035em] (0,0) arc (340:20:.3ex); 
+        \end{tikzpicture}
+      }
+    }
+  }
+}
+
+\def\qi{\overset{{\scriptscriptstyle q.i.}}{\cong}}
+
+\DeclareMathOperator{\wspolkon}{\overset{{\scriptscriptstyle E}}{\sim}}
+
+\DeclareMathOperator{\fun}{Fun}
+\DeclareMathOperator{\Ends}{Ends}
+\DeclareMathOperator{\asdim}{asdim}
+
+\renewcommand\phi\varphi
+
+% \renewcommand{\implies}{\Rightarrow}
+% \renewcommand{\impliedby}{\Leftarrow}
+
+\RequirePackage{trimclip}
+\DeclareRobustCommand\Longrightarrow{\NewRelbar\joinrel\Rightarrow}
+\DeclareRobustCommand\Longleftarrow{\Leftarrow\joinrel\NewRelbar}
+
+\DeclareRobustCommand\NewRelbar{%
+  \mathrel{%
+    \mathpalette\@NewRelbar{}%
+  }%
+}
+\newcommand*\@NewRelbar[2]{%
+  % #1: math style
+  % #2: unused
+  \sbox0{$#1=$}%
+  \sbox2{$#1\Rightarrow\m@th$}%
+  \sbox4{$#1\Leftarrow\m@th$}%
+  \clipbox{0pt 0pt \dimexpr(\wd2-.6\wd0) 0pt}{\copy2}%
+  \kern-.2\wd0 %
+  \clipbox{\dimexpr(\wd4-.6\wd0) 0pt 0pt 0pt}{\copy4}%
+}
+
+\makeatletter
+\newcommand{\doublewidetilde}[1]{{%
+  \mathpalette\double@widetilde{#1}%
+}}
+\newcommand{\double@widetilde}[2]{%
+  \sbox\z@{$\m@th#1\widetilde{#2}$}%
+  \ht\z@=.9\ht\z@
+  \widetilde{\box\z@}%
+}
+\makeatother
+
+\RequirePackage{xcolor}
+
+\definecolor{rosewater}{HTML}{dc8a78}
+\definecolor{flamingo}{HTML}{dd7878}
+\definecolor{pink}{HTML}{ea76cb}
+\definecolor{mauve}{HTML}{8839ef}
+\definecolor{red}{HTML}{d20f39}
+\definecolor{maroon}{HTML}{e64553}
+\definecolor{peach}{HTML}{fe640b}
+\definecolor{yellow}{HTML}{df8e1d}
+\definecolor{green}{HTML}{40a02b}
+\definecolor{teal}{HTML}{179299}
+\definecolor{sky}{HTML}{04a5e5}
+\definecolor{sapphire}{HTML}{209fb5}
+\definecolor{blue}{HTML}{1e66f5}
+\definecolor{lavender}{HTML}{7287fd}
+\definecolor{subtext2}{HTML}{4c4f69}
+\definecolor{subtext1}{HTML}{5c5f77}
+\definecolor{subtext0}{HTML}{6c6f85}
+\definecolor{overlay2}{HTML}{7c7f93}
+\definecolor{overlay1}{HTML}{8c8fa1}
+\definecolor{overlay0}{HTML}{9ca0b0}
+
+\definecolor{text}{HTML}{000000}
+\color{text}
+
+\makeatletter 
+\let\htitle\@title
+\let\fauthor\@author
+\makeatother
+
+% \RequirePackage{fancyhdr}
+%
+% \fancyfoot[CE, CO]{}
+% \fancyfoot[LE, RO]{\color{overlay2}\thepage}
+%
+% \fancyhead[RE, LO]{$ \quad $\color{subtext1}\fauthor $ \quad $}
+% \fancyhead[LE, RO]{$ \quad $\color{green!40!subtext2}\bfseries\htitle $ \quad $}
+%
+% \fancypagestyle{plain}{%
+%   \fancyhf{}%
+%   \fancyfoot[CE, CO]{}
+%   \fancyfoot[LE, RO]{\color{overlay2}\thepage}
+%
+%   \fancyhead[RE, LO]{$ \quad $\color{subtext1}\fauthor $ \quad $}
+%   \fancyhead[LE, RO]{$ \quad $\color{green!40!subtext2}\bfseries\htitle $ \quad $}
+% }
+% \RequirePackage{dashrule}
+%
+% \renewcommand{\headrule}{\color{overlay0}\hdashrule[.5ex]{\headwidth}{1pt}{1pt}}
+%
+% \pagestyle{fancy}
+%
+\RequirePackage{pgfplots}
+
+\RequirePackage{titlesec}
+
+% \titleformat{\chapter}[block]{\bfseries\Huge}{\color{green!40!subtext2}\filright\Huge\thechapter.}{1ex}{\color{green!40!subtext2}\Huge\filright}
+
+% \titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+\RequirePackage{amsthm}
+\RequirePackage{thmtools}
+\RequirePackage{tcolorbox}
+
+\RequirePackage{enumitem}
+
+\RequirePackage{tocloft}
+
+\RequirePackage{hyperref}
+
+\RequirePackage{cleveref}
+
+
+% \RequirePackage[framemethod=TikZ]{mdframed}
+
+\tcbuselibrary{theorems}
+\tcbuselibrary{breakable}
+\tcbuselibrary{skins}
+
+\tcbset{greenTHM/.style={
+    fonttitle = \bfseries\large,
+    coltitle = green!50!black,
+    description color = green!50!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{green!40},
+    arc=0mm,
+    after skip=5mm,
+    before skip=5mm
+  }
+}
+
+\tcbset{orangeTHM/.style={
+    fonttitle = \bfseries\large,
+    coltitle = orange!60!black,
+    description color = orange!60!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{orange!40}, 
+    arc=0mm,
+    before skip=5mm,
+    after skip=5mm
+  }
+}
+
+\tcbset{purpleTHM/.style={
+    fonttitle = \bfseries\large,
+    coltitle = purple!60!black,
+    description color = purple!60!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{blue!40!purple!20}, 
+    arc=0mm,
+    before skip=5mm,
+    after skip=5mm
+  }
+}
+
+\tcbset{blueTHM/.style={
+    fonttitle = \bfseries\large,
+    coltitle = blue!60!black,
+    description color = blue!60!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{blue!40}, 
+    arc=0mm,
+    before skip=5mm,
+    after skip=5mm
+  }
+}
+
+\def\deff{Definition}
+\def\thmm{Theorem}
+\def\propp{Proposition}
+\def\lmm{Lemma}
+\def\wnn{Conclusion}
+\def\rmm{Remark}
+\def\fc{Fact}
+
+\NewTcbTheorem[
+  auto counter, 
+  number within=section
+]{definition}{\deff}{greenTHM}{def} 
+
+\NewTcbTheorem[
+  use counter from=definition
+]{theorem}{\thmm}{orangeTHM}{th}
+
+\NewTcbTheorem[
+  use counter from=definition
+]{remark}{\rmm}{purpleTHM}{rm}
+
+
+\NewTcbTheorem[
+  use counter from=definition,
+  crefname={lemma}{lemmas}
+]{lemma}{\lmm}{purpleTHM}{lmm}
+
+\NewTcbTheorem[
+  use counter from=definition,
+  crefname={conclusion}{conclusions}
+]{conc}{\wnn}{blueTHM}{con}
+
+\NewTcbTheorem[
+  use counter from=definition,
+  crefname={fact}{facts}
+]{fact}{\fc}{blueTHM}{fac}
+
+\newenvironment{conclusion}[2]{
+  \begin{conc*}{#1}{#2}
+  }{
+  \end{conc*}
+}
+
+
+\NewTcbTheorem[
+  use counter from=definition
+]{proposition}{\propp}{orangeTHM}{prop}
+
+
+\RequirePackage{xparse}
+
+\tcbset{exBOX/.style={
+    fonttitle = \bfseries\large,
+    coltitle = blue!50!black,
+    description color = blue!50!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline west = {1pt}{0pt}{blue!40},
+    borderline north = {1pt}{0pt}{blue!40},
+    arc=0mm,
+    after skip=5mm,
+    before skip=5mm
+  }
+}
+
+\def\exone{Example}
+\def\exmult{Examples}
+
+\NewDocumentEnvironment{example}{o}{
+  \IfNoValueTF{#1}{
+    \begin{tcolorbox}[title=\exone, exBOX]
+  }
+  {
+    \begin{tcolorbox}[title=\exmult, exBOX]
+    \begin{enumerate}
+  }
+}{
+  \IfNoValueF{#1}{
+    \end{enumerate}
+  }
+\end{tcolorbox}
+}
+
+\NewDocumentEnvironment{problem}{m}{%
+  \begin{tcolorbox}[title=Zadanie #1, exBOX]%
+}{%
+\end{tcolorbox}%
+}
+
+\RequirePackage{svg}
+
+\def\dwd{Proof}
+
+\RequirePackage{emoji}
+
+\renewenvironment{proof}{{\bfseries\color{green!60!black} \dwd}$ $\newline}{
+  \begin{flushright} \emoji{peacock} \end{flushright}$ $\newline
+}
+
+
+\RequirePackage{soul}
+
+\RequirePackage{varwidth}
+
+\sethlcolor{green!15}
+
+\makeatletter
+\font\SOUL@tt="LMMono10-Regular"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@ %
+\makeatother
+
+\newcommand{\buff}[1]{%
+  {\bfseries\color{green}#1}%
+}
+
+\DeclareOption{dates}{
+  \setlength\cftsecnumwidth{6em}
+  \let\oldsection\section 
+  % \setlength\cftsectionnumwidth{4em}
+
+  \renewcommand{\section}[2]{
+    \renewcommand{\thesection}{#1}
+    \oldsection{#2}
+  }
+
+  \renewcommand{\thesubsection}{\arabic{subsection}.}
+}
+
+\DeclareOption{pl}{
+  \def\deff{Definicja}
+  \def\thmm{Twierdzenie}
+  \def\propp{Stwierdzenie}
+  \def\exone{Przykład}
+  \def\exmult{Przykłady}
+  \renewcommand{\contentsname}{Spis treści}
+  \def\dwd{Dowód}
+  \def\rmm{Uwaga}
+  \def\lmm{Lemat}
+  \def\fc{Fakt}
+  \def\wnn{Wniosek}
+  \renewcommand{\figurename}{Rysunek}
+}
+
+\ProcessOptions\relax
+
+\endinput

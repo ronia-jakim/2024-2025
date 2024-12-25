@@ -1,0 +1,2553 @@
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.12.4)  19 DEC 2024 12:51
+ system commands enabled.
+**wigilia04.tex
+(./wigilia04.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "/home/marudka/.texlive/texmf-var/lu
+atex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lu
+a".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "/home/marudka/.texlive/texmf-var/lu
+atex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (/usr/share/texmf-dist/
+tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/marudka/.texlive/texmf-v
+ar/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen139
+) (../../zadania.sty
+
+LaTeX Warning: You have requested package `../../zadania',
+               but the package provides `zadania'.
+
+Package: zadania 
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+
+(/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-02-20 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2024-02-20 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count194
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box51
+))
+Package: xparse 2024-02-18 L3 Experimental document command parser
+)
+Package: fontspec 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2024/02/13 2.9a Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count195
+\l__fontspec_language_int=\count196
+\l__fontspec_strnum_int=\count197
+\l__fontspec_tmp_int=\count198
+\l__fontspec_tmpa_int=\count199
+\l__fontspec_tmpb_int=\count266
+\l__fontspec_tmpc_int=\count267
+\l__fontspec_em_int=\count268
+\l__fontspec_emdef_int=\count269
+\l__fontspec_strong_int=\count270
+\l__fontspec_strongdef_int=\count271
+\l__fontspec_tmpa_dim=\dimen140
+\l__fontspec_tmpb_dim=\dimen141
+\l__fontspec_tmpc_dim=\dimen142
+
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count272
+\float@exts=\toks19
+\float@box=\box52
+\@float@everytoks=\toks20
+\@floatcapt=\box53
+)
+(/usr/share/texmf-dist/tex/latex/cantarell/cantarell.sty
+Package: cantarell 2019/06/20 Style file for Cantarell.
+
+(/usr/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count273
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'cantarell-TLF' created for font
+(fontspec)             'Cantarell' with options
+(fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace=
+{el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{
+*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular}
+,ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold
+},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFon
+t={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},F
+ontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Monospaced,Lining},
+NFSSFamily=cantarell-TLF].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (el/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (el/sc) with NFSS spec.: 
+(fontspec)             - (el/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (el/scit) with NFSS spec.: 
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'cantarell-LF' created for font 'Cantarell'
+(fontspec)             with options
+(fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace=
+{el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{
+*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular}
+,ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold
+},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFon
+t={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},F
+ontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Proportional,Lining
+},NFSSFamily=cantarell-LF].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (el/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (el/sc) with NFSS spec.: 
+(fontspec)             - (el/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (el/scit) with NFSS spec.: 
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'cantarell-TOsF' created for font
+(fontspec)             'Cantarell' with options
+(fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace=
+{el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{
+*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular}
+,ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold
+},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFon
+t={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},F
+ontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Monospaced,OldStyle
+},NFSSFamily=cantarell-TOsF].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (el/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (el/sc) with NFSS spec.: 
+(fontspec)             - (el/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (el/scit) with NFSS spec.: 
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'cantarell-OsF' created for font
+(fontspec)             'Cantarell' with options
+(fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace=
+{el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{
+*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular}
+,ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold
+},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFon
+t={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},F
+ontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Proportional,OldSty
+le},NFSSFamily=cantarell-OsF].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (el/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (el/sc) with NFSS spec.: 
+(fontspec)             - (el/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (el/scit) with NFSS spec.: 
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'fca' created for font 'Cantarell' with
+(fontspec)             options
+(fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace=
+{el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{
+*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular}
+,ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold
+},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFon
+t={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},F
+ontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Monospaced,Lining},
+NFSSFamily=fca].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (el/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (el/sc) with NFSS spec.: 
+(fontspec)             - (el/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (el/scit) with NFSS spec.: 
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Thin scale = 1.
+
+luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Light scale = 1.
+
+luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Bold scale = 1.
+
+luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-ExtraBold scale = 1.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Cantarell-Regular scale = 1.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'Cantarell(0)' created for font 'Cantarell'
+(fontspec)             with options
+(fontspec)             [Ligatures=TeX,Extension=.otf,Ligatures={TeX,Common},Sca
+le=1,FontFace={el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},Fo
+ntFace={l}{n}{*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFo
+nt={*-Regular},ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace
+={b}{n}{*-Bold},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold}
+,BoldItalicFont={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{
+*-ExtraBold},FontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Monos
+paced,Lining}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (el/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (el/sc) with NFSS spec.: 
+(fontspec)             - (el/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (el/scit) with NFSS spec.: 
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;lan
+guage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;lang
+uage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn
+;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;l
+anguage=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 151.
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count274
+\Gm@cntv=\count275
+\c@Gm@tempcnt=\count276
+\Gm@bindingoffset=\dimen143
+\Gm@wd@mp=\dimen144
+\Gm@odd@mp=\dimen145
+\Gm@even@mp=\dimen146
+\Gm@layoutwidth=\dimen147
+\Gm@layoutheight=\dimen148
+\Gm@layouthoffset=\dimen149
+\Gm@layoutvoffset=\dimen150
+\Gm@dimlist=\toks23
+)
+(/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count277
+))
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks24
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen151
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen152
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count278
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count279
+\leftroot@=\count280
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count281
+\DOTSCASE@=\count282
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen153
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count283
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count284
+\dotsspace@=\muskip16
+\c@parentequation=\count285
+\dspbrk@lvl=\count286
+\tag@help=\toks26
+\row@=\count287
+\column@=\count288
+\maxfields@=\count289
+\andhelp@=\toks27
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
+\@envbody=\toks28
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks29
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen160
+\pgfutil@tempdimb=\dimen161
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 107.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.te
+x
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen164
+\pgf@y=\dimen165
+\pgf@xa=\dimen166
+\pgf@ya=\dimen167
+\pgf@xb=\dimen168
+\pgf@yb=\dimen169
+\pgf@xc=\dimen170
+\pgf@yc=\dimen171
+\pgf@xd=\dimen172
+\pgf@yd=\dimen173
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count290
+\c@pgf@countb=\count291
+\c@pgf@countc=\count292
+\c@pgf@countd=\count293
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count294
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count295
+\pgfsyssoftpath@bigbuffer@items=\count296
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen174
+\pgfmath@count=\count297
+\pgfmath@box=\box57
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
+.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count298
+))
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen175
+\pgf@picmaxx=\dimen176
+\pgf@picminy=\dimen177
+\pgf@picmaxy=\dimen178
+\pgf@pathminx=\dimen179
+\pgf@pathmaxx=\dimen180
+\pgf@pathminy=\dimen181
+\pgf@pathmaxy=\dimen182
+\pgf@xx=\dimen183
+\pgf@xy=\dimen184
+\pgf@yx=\dimen185
+\pgf@yy=\dimen186
+\pgf@zx=\dimen187
+\pgf@zy=\dimen188
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen189
+\pgf@path@lasty=\dimen190
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen191
+\pgf@shorten@start@additional=\dimen192
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count299
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen193
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen194
+\pgf@pt@y=\dimen195
+\pgf@pt@temp=\dimen196
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen197
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen198
+\pgf@sys@shading@range@num=\count300
+\pgf@shadingcount=\count301
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box61
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box62
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen199
+\pgf@nodesepend=\dimen256
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen257
+\pgffor@skip=\dimen258
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count302
+\pgfplotmarksize=\dimen259
+)
+\tikz@lastx=\dimen260
+\tikz@lasty=\dimen261
+\tikz@lastxsaved=\dimen262
+\tikz@lastysaved=\dimen263
+\tikz@lastmovetox=\dimen264
+\tikz@lastmovetoy=\dimen265
+\tikzleveldistance=\dimen266
+\tikzsiblingdistance=\dimen267
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count303
+\tikznumberofchildren=\count304
+\tikznumberofcurrentchild=\count305
+\tikz@fig@count=\count306
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count307
+\pgfmatrixcurrentcolumn=\count308
+\pgf@matrix@numberofcolumns=\count309
+)
+\tikz@expandcount=\count310
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
+
+(/usr/share/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+matrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+quotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen268
+\pgfarrowlength=\dimen269
+\pgfarrowwidth=\dimen270
+\pgfarrowlinewidth=\dimen271
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathreplacing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen272
+\pgfdecoratedremainingdistance=\dimen273
+\pgfdecoratedinputsegmentcompleteddistance=\dimen274
+\pgfdecoratedinputsegmentremainingdistance=\dimen275
+\pgf@decorate@distancetomove=\dimen276
+\pgf@decorate@repeatstate=\count311
+\pgfdecorationsegmentamplitude=\dimen277
+\pgfdecorationsegmentlength=\dimen278
+)
+\tikz@lib@dec@box=\box67
+)
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathreplacing.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+calc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+math.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+fpu.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
+\tikz@math@for@depth=\count312
+\tikz@math@dimen=\dimen279
+\tikz@math@toks=\toks42
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+backgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box68
+\pgf@layerboxsaved@background=\box69
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+arrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen280
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+positioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.text.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.text.code.tex
+\pgf@lib@dec@text@box=\box70
+)
+\tikz@lib@dec@te@box=\box71
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathmorphing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathmorphing.code.tex))
+(/usr/share/texmf-dist/tex/latex/mathastext/mathastext.sty
+Package: mathastext 2023/12/29 v1.3zb Use the text font in math mode (JFB)
+
+Package mathastext Info: Starting the math mode configuration.
+\mst@exists@muskip=\muskip17
+\mst@forall@muskip=\muskip18
+\mst@prime@muskip=\muskip19
+\mst@do@nonletters=\toks43
+\mst@do@easynonletters=\toks44
+\mst@do@az=\toks45
+\mst@do@AZ=\toks46
+\symmtoperatorfont=\mathgroup6
+\symmtletterfont=\mathgroup7
+(   mathastext:   ) punctuation: , . : ; and \colon
+(   mathastext:   ) \imath and \jmath 
+LaTeX Font Info:    Overwriting math alphabet `\Mathnormalbold' in version `nor
+mal'
+(Font)                  TU/Cantarell(0)/b/n --> TU/Cantarell(0)/b/n on input li
+ne 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathnormalbold' in version `bol
+d'
+(Font)                  TU/Cantarell(0)/b/n --> TU/Cantarell(0)/b/n on input li
+ne 2516.
+LaTeX Font Info:    Overwriting symbol font `mtletterfont' in version `normal'
+(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/m/n on input li
+ne 2516.
+LaTeX Font Info:    Overwriting symbol font `mtletterfont' in version `bold'
+(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/b/n on input li
+ne 2516.
+LaTeX Font Info:    Overwriting symbol font `mtoperatorfont' in version `normal
+'
+(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/m/n on input li
+ne 2516.
+LaTeX Font Info:    Overwriting symbol font `mtoperatorfont' in version `bold'
+(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/b/n on input li
+ne 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathbf' in version `normal'
+(Font)                  TU/Cantarell(0)/b/n --> TU/Cantarell(0)/b/n on input li
+ne 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathbf' in version `bold'
+(Font)                  TU/Cantarell(0)/b/n --> TU/Cantarell(0)/b/n on input li
+ne 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathit' in version `normal'
+(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/m/it on input 
+line 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathit' in version `bold'
+(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/b/it on input 
+line 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathsf' in version `normal'
+(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathsf' in version `bold'
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathtt' in version `normal'
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 2516.
+LaTeX Font Info:    Overwriting math alphabet `\Mathtt' in version `bold'
+(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 2516.
+(   mathastext:   ) Latin letters in the `normal', resp. `bold',
+(   mathastext:   ) math versions are now set up to use the fonts
+(   mathastext:   ) TU/Cantarell(0)/m/n, resp. TU/Cantarell(0)/b/n.
+(   mathastext:   ) Other characters (digits, ...) and \log-like names will be
+(   mathastext:   ) typeset with the n shape.
+(   mathastext:   ) \hbar
+(   mathastext:   ) \HUGE has been (re)-defined.
+(   mathastext:   ) mathastext has declared larger sizes for subscripts.
+(   mathastext:   ) To keep LaTeX defaults, use option `defaultmathsizes'.
+
+Package mathastext Info: Loading is complete.  You can now use \Mathastext to
+(mathastext)             modify the normal and bold math versions.  Use it
+(mathastext)             with optional argument or use \MTDeclareVersion to
+(mathastext)             declare additional math versions.
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box72
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+\tc@llx=\dimen281
+\tc@lly=\dimen282
+\tc@urx=\dimen283
+\tc@ury=\dimen284
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pgf.def
+File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
+)
+Package trimclip Info: No clipping driver 'tc-luatex.def' available.
+(trimclip)             Using fall-back PGF driver.
+)
+LaTeX Info: Redefining \Longrightarrow on input line 110.
+LaTeX Info: Redefining \Longleftarrow on input line 111.
+
+(/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
+\pgfplots@luabackend@table=\catcodetable14
+\t@pgfplots@toka=\toks47
+\t@pgfplots@tokb=\toks48
+\t@pgfplots@tokc=\toks49
+\pgfplots@tmpa=\dimen285
+\c@pgfplots@coordindex=\count313
+\c@pgfplots@scanlineindex=\count314
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_l
+oader.code.tex
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks50
+\t@pgf@tokb=\toks51
+\t@pgf@tokc=\toks52
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gfutil-common-lists.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibraryluamath.code
+.tex)
+Package pgfplots info on input line 290: luamath library shipped with pgf 3.1.1
+0 is up-to-date
+) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+Package pgfplots info on input line 82: Found new luatex: initializing lua comm
+ands instead of write18 (shell-escape)
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+ext.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.te
+x
+\c@pgfplotsarray@tmp=\count315
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.t
+ex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.t
+ex
+\c@pgfplotstable@counta=\count316
+\t@pgfplotstable@a=\toks53
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading
+.code.tex
+\c@pgfplotslibrarysurf@no=\count317
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
+pgfsys-luatex.def)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua
+.code.tex)
+\pgfplots@numplots=\count318
+\pgfplots@xmin@reg=\dimen286
+\pgfplots@xmax@reg=\dimen287
+\pgfplots@ymin@reg=\dimen288
+\pgfplots@ymax@reg=\dimen289
+\pgfplots@zmin@reg=\dimen290
+\pgfplots@zmax@reg=\dimen291
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+plotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box73
+\beforetitleunit=\skip53
+\aftertitleunit=\skip54
+\ttl@plus=\dimen292
+\ttl@minus=\dimen293
+\ttl@toksa=\toks54
+\titlewidth=\dimen294
+\titlewidthlast=\dimen295
+\titlewidthfirst=\dimen296
+)
+(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks55
+\thm@bodyfont=\toks56
+\thm@headfont=\toks57
+\thm@notefont=\toks58
+\thm@headpunct=\toks59
+\thm@preskip=\skip55
+\thm@postskip=\skip56
+\thm@headsep=\skip57
+\dth@everypar=\toks60
+)
+(/usr/share/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2023/05/04 v0.76
+\thmt@toks=\toks61
+\c@thmt@dummyctr=\count319
+
+(/usr/share/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2023/05/04 v0.76
+
+(/usr/share/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2023/05/04 v0.76
+\@parsespec=\toks62
+))
+(/usr/share/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2023/05/04 v0.76
+Package thm-kv Info: Theorem names will be uppercased on input line 42.
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
+)
+(/usr/share/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2023/05/04 v0.76
+
+(/usr/share/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2023/05/04 v0.76
+))
+(/usr/share/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2023/05/04 v0.76
+)
+(/usr/share/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2023/05/04 v0.76
+)
+(/usr/share/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2023/05/04 v0.76
+\thmt@style@headstyle=\toks63
+))
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+
+(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks64
+\verbatim@line=\toks65
+\verbatim@in@stream=\read3
+)
+(/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box74
+\tcb@upperbox=\box75
+\tcb@lowerbox=\box76
+\tcb@phantombox=\box77
+\c@tcbbreakpart=\count320
+\c@tcblayer=\count321
+\c@tcolorbox@number=\count322
+\l__tcobox_tmpa_box=\box78
+\l__tcobox_tmpa_dim=\dimen297
+\tcb@temp=\box79
+\tcb@temp=\box80
+\tcb@temp=\box81
+\tcb@temp=\box82
+)
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks66
+\labelindent=\skip58
+\enit@outerparindent=\dimen298
+\enit@toks=\toks67
+\enit@inbox=\box83
+\enit@count@id=\count323
+\enitdp@description=\count324
+)
+(/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip59
+\cftbeforetoctitleskip=\skip60
+\cftaftertoctitleskip=\skip61
+\cftbeforepartskip=\skip62
+\cftpartnumwidth=\skip63
+\cftpartindent=\skip64
+\cftbeforesecskip=\skip65
+\cftsecindent=\skip66
+\cftsecnumwidth=\skip67
+\cftbeforesubsecskip=\skip68
+\cftsubsecindent=\skip69
+\cftsubsecnumwidth=\skip70
+\cftbeforesubsubsecskip=\skip71
+\cftsubsubsecindent=\skip72
+\cftsubsubsecnumwidth=\skip73
+\cftbeforeparaskip=\skip74
+\cftparaindent=\skip75
+\cftparanumwidth=\skip76
+\cftbeforesubparaskip=\skip77
+\cftsubparaindent=\skip78
+\cftsubparanumwidth=\skip79
+\cftbeforeloftitleskip=\skip80
+\cftafterloftitleskip=\skip81
+\cftbeforefigskip=\skip82
+\cftfigindent=\skip83
+\cftfignumwidth=\skip84
+\c@lofdepth=\count325
+\c@lotdepth=\count326
+\cftbeforelottitleskip=\skip85
+\cftafterlottitleskip=\skip86
+\cftbeforetabskip=\skip87
+\cfttabindent=\skip88
+\cfttabnumwidth=\skip89
+
+
+Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
+ out. on input line 1156.
+
+) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks68
+))
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count327
+)
+\@linkdim=\dimen299
+\Hy@linkcounter=\count328
+\Hy@pagecounter=\count329
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count330
+
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count331
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip20
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen300
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count332
+\Field@Width=\dimen301
+\Fld@charsize=\dimen302
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count333
+\c@Item=\count334
+\c@Hfootnote=\count335
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-01-20 v7.01h Hyperref driver for luaTeX
+
+(/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count336
+\c@bookmark@seq@number=\count337
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip90
+)
+(/usr/share/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
+)
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
+(/usr/share/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box84
+\tcb@totalupperbox=\box85
+\tcb@totallowerbox=\box86
+)
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+(/usr/share/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(/usr/share/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(/usr/share/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box87
+))
+(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+))
+\c@tcb@cnt@definition=\count338
+ (/usr/share/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
+)
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+runsystem(uname -s > "wigilia04.w18")...executed.
+ (./wigilia04.w18)
+runsystem(rm -- "wigilia04.w18")...executed.
+)
+\c@svg@param@lastpage=\count339
+\svg@box=\box88
+\c@svg@param@currpage=\count340
+)
+(/usr/share/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2022-10-27 v1.5 Transparency with color stacks
+
+(/usr/share/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color
+ stack (HO)
+))
+(/usr/share/texmf-dist/tex/latex/emoji/emoji.sty
+Package: emoji 2021/07/17 v0.2.2 Emoji support in (Lua)LaTeX
+
+(/usr/share/texmf-dist/tex/latex/emoji/emoji-table.def
+File: emoji-table.def 2021/07/17 v0.2.2 Emojisupportin(Lua)LaTeX
+))
+(/usr/share/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(/usr/share/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks69
+\SOUL@lasttoken=\toks70
+\SOUL@syllable=\toks71
+\SOUL@cmds=\toks72
+\SOUL@buffer=\toks73
+\SOUL@token=\toks74
+\SOUL@syllgoal=\dimen303
+\SOUL@syllwidth=\dimen304
+\SOUL@charkern=\dimen305
+\SOUL@hyphkern=\dimen306
+\SOUL@dimen=\dimen307
+\SOUL@dimeni=\dimen308
+\SOUL@minus=\count341
+\SOUL@comma=\count342
+\SOUL@apo=\count343
+\SOUL@grave=\count344
+\SOUL@spaceskip=\skip91
+\SOUL@ttwidth=\dimen309
+\SOUL@uldp=\dimen310
+\SOUL@ulht=\dimen311
+))
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box89
+\sift@deathcycles=\count345
+\@vwid@loff=\dimen312
+\@vwid@roff=\dimen313
+)
+luaotfload | cache : Lookup cache loaded from /home/marudka/.texlive/texmf-var/l
+uatex-cache/generic/names/luaotfload-lookup-cache.luc.)
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count346
+\mult@box=\box90
+\multicol@leftmargin=\dimen314
+\c@unbalance=\count347
+\c@collectmore=\count348
+\doublecol@number=\count349
+\multicoltolerance=\count350
+\multicolpretolerance=\count351
+\full@width=\dimen315
+\page@free=\dimen316
+\premulticols=\dimen317
+\postmulticols=\dimen318
+\multicolsep=\skip92
+\multicolbaselineskip=\skip93
+\partial@page=\box91
+\last@line=\box92
+\mc@boxedresult=\box93
+\maxbalancingoverflow=\dimen319
+\mult@rightbox=\box94
+\mult@grightbox=\box95
+\mult@firstbox=\box96
+\mult@gfirstbox=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\c@minrows=\count352
+\c@columnbadness=\count353
+\c@finalcolumnbadness=\count354
+\last@try=\dimen320
+\multicolovershoot=\dimen321
+\multicolundershoot=\dimen322
+\mult@nat@firstbox=\box134
+\colbreak@box=\box135
+\mc@col@check@num=\count355
+)
+(/usr/share/texmf-dist/tex/latex/pst-func/pst-func.sty
+(/usr/share/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(/usr/share/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/share/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count356
+\pstFP@xia=\count357
+\pstFP@xib=\count358
+\pstFP@xfa=\count359
+\pstFP@xfb=\count360
+\pstFP@rega=\count361
+\pstFP@regb=\count362
+\pstFP@regs=\count363
+\pstFP@times=\count364
+)
+\psLoopIndex=\count365
+
+`PSTricks' v3.19c  <2024/02/02> (tvz,hv)
+\pst@dima=\dimen323
+\pst@dimb=\dimen324
+\pst@dimc=\dimen325
+\pst@dimd=\dimen326
+\pst@dimg=\dimen327
+\pst@dimh=\dimen328
+\pst@dimm=\dimen329
+\pst@dimn=\dimen330
+\pst@dimo=\dimen331
+\pst@dimp=\dimen332
+\pst@hbox=\box136
+\pst@ibox=\box137
+\pst@boxg=\box138
+\pst@cnta=\count366
+\pst@cntb=\count367
+\pst@cntc=\count368
+\pst@cntd=\count369
+\pst@cntg=\count370
+\pst@cnth=\count371
+\pst@cntm=\count372
+\pst@cntn=\count373
+\pst@cnto=\count374
+\pst@cntp=\count375
+\@zero=\count376
+\pst@toks=\toks75
+--- We are running lualatex with luapstricks ---
+Lua module: luapstricks 2023-05-23 v0.10 PSTricks backend for LuaLaTeX
+Lua function luaPST = 26
+Lua function luaPSTcolor = 27
+Lua function luaPSTbox = 28 (/usr/share/texmf-dist/tex/generic/pstricks/pstrick
+s-color.tex)
+\psunit=\dimen333
+\psxunit=\dimen334
+\psyunit=\dimen335
+\pst@C@@rType=\count377
+\pslinewidth=\dimen336
+\psk@startLW=\dimen337
+\psk@endLW=\dimen338
+
+(/usr/share/texmf-dist/tex/generic/pstricks/pstricks-arrows.tex
+\pshooklength=\dimen339
+\pshookwidth=\dimen340
+)
+\pst@customdefs=\toks76
+
+(/usr/share/texmf-dist/tex/generic/pstricks/pstricks-dots.tex)
+\pslinearc=\dimen341
+\pst@symbolStep=\dimen342
+\pst@symbolWidth=\dimen343
+\pst@symbolLinewidth=\dimen344
+\everypsbox=\toks77
+\psframesep=\dimen345
+\pslabelsep=\dimen346
+\sh@wgridXunit=\dimen347
+\sh@wgridYunit=\dimen348
+\pst@shift=\dimen349
+\ps@imagectr=\count378
+)
+File: pstricks.tex 2024/02/02 v3.19c `PSTricks' (tvz,hv)
+
+(/usr/share/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+Package: pst-func 2021/10/30 package wrapper for pst-func.tex (hv)
+
+(/usr/share/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+
+(/usr/share/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+)
+(/usr/share/texmf-dist/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+
+(/usr/share/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>
+\multido@count=\count379
+\multidocount=\count380
+\multido@stuff=\toks78
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
+
+(/usr/share/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+(/usr/share/texmf-dist/tex/generic/pst-tools/pst-tools.tex
+`PST-tools' v0.12, 2021/09/23 (hv)
+\randomi=\count381
+\ranval=\count382
+)
+(/usr/share/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+(/usr/share/texmf-dist/tex/generic/pst-node/pst-node.tex  v1.43, 2022/01/31
+\psrow=\count383
+\pscol=\count384
+\psmatrixcnt=\count385
+\psrowsep=\skip94
+\pscolsep=\skip95
+\pst@args=\count386
+\num@pts=\count387
+\pst@argcnt=\count388
+)
+(/usr/share/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
+`pst-arrow' v0.05, 2021/11/16 (dr,hv))
+(/usr/share/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+`PST-3d' v1.11, 2010/02/14 (tvz))
+(/usr/share/texmf-dist/tex/generic/pst-math/pst-math.tex
+`pst-math' v0.67 , (CJ,hv)) `pstricks-add' v3.94, 2023/04/17 (dr,hv)
+\psparallelogramsep=\dimen350
+\pst@cntC=\count389
+\pst@stepcount=\count390
+\chart@ColorIndex=\dimen351
+\chart@ColorStep=\dimen352
+\pst@chartHeight=\dimen353
+\pst@chartStackDepth=\dimen354
+\pst@chartStackWidth=\dimen355
+\chart@Toggle=\count391
+\psVectorCtr=\count392
+)
+ v1.94, 2022/11/21 (tvz,hv)
+\pstRadUnit=\dimen356
+\pstRadUnitInv=\dimen357
+\pst@linecnt=\count393
+\RCD@file=\read4
+\psxlabelsep=\dimen358
+\psylabelsep=\dimen359
+\psk@subticksize=\dimen360
+\pst@xticksizeA=\dimen361
+\pst@xticksizeB=\dimen362
+\pst@xticksizeC=\dimen363
+\pst@yticksizeA=\dimen364
+\pst@yticksizeB=\dimen365
+\pst@yticksizeC=\dimen366
+\@digitcounter=\count394
+\psk@llx=\dimen367
+\psk@lly=\dimen368
+\psk@urx=\dimen369
+\psk@ury=\dimen370
+\pst@xunit=\dimen371
+\pst@yunit=\dimen372
+)
+File: pst-plot.tex 2022/11/21 1.94 `pst-plot' (tvz,hv)
+)
+(/usr/share/texmf-dist/tex/latex/pst-math/pst-math.sty
+Package: pst-math 2023/07/03 v 0.67 package wrapper for PSTricks pst-math.tex
+
+(/usr/share/texmf-dist/tex/latex/pst-calculate/pst-calculate.sty
+Package: pst-calculate 2019/01/24 v. 0.02(Herbert Voss) Support for caculations
+ with floating point numbers.
+
+(/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count395
+\l__siunitx_number_exponent_fixed_int=\count396
+\l__siunitx_number_min_decimal_int=\count397
+\l__siunitx_number_min_integer_int=\count398
+\l__siunitx_number_round_precision_int=\count399
+\l__siunitx_number_lower_threshold_int=\count400
+\l__siunitx_number_upper_threshold_int=\count401
+\l__siunitx_number_group_first_int=\count402
+\l__siunitx_number_group_size_int=\count403
+\l__siunitx_number_group_minimum_int=\count404
+\l__siunitx_angle_tmp_dim=\dimen373
+\l__siunitx_angle_marker_box=\box139
+\l__siunitx_angle_unit_box=\box140
+\l__siunitx_compound_count_int=\count405
+
+(/usr/share/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+\l__siunitx_table_tmp_box=\box141
+\l__siunitx_table_tmp_dim=\dimen374
+\l__siunitx_table_column_width_dim=\dimen375
+\l__siunitx_table_integer_box=\box142
+\l__siunitx_table_decimal_box=\box143
+\l__siunitx_table_uncert_box=\box144
+\l__siunitx_table_before_box=\box145
+\l__siunitx_table_after_box=\box146
+\l__siunitx_table_before_dim=\dimen376
+\l__siunitx_table_carry_dim=\dimen377
+\l__siunitx_unit_tmp_int=\count406
+\l__siunitx_unit_position_int=\count407
+\l__siunitx_unit_total_int=\count408
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen378
+\ar@mcellbox=\box147
+\extrarowheight=\dimen379
+\NC@list=\toks79
+\extratabsurround=\skip96
+\backup@length=\skip97
+\ar@cellbox=\box148
+)))
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count409
+\xs_countb=\count410
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+(/usr/share/texmf-dist/tex/generic/pst-math/pst-math.tex)
+File: pst-math.tex 2022/11/21 v1.94 `PST-math' (hv)
+\c@Rand@No=\count411
+\c@Random@Left=\count412
+\c@Random@Right=\count413
+\c@Random@No@max=\count414
+)
+(/usr/share/texmf-dist/tex/latex/pst-tools/pst-tools.sty
+Package: pst-tools 2012/01/01 package wrapper for pst-tools.tex (hv)
+
+(/usr/share/texmf-dist/tex/generic/pst-tools/pst-tools.tex)
+File: pst-tools.tex 2022/11/21 v1.94 `PST-tools' (hv)
+)
+(/usr/share/texmf-dist/tex/latex/pstricks-add/pstricks-add.sty
+(/usr/share/texmf-dist/tex/latex/pst-node/pst-node.sty
+Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+
+(/usr/share/texmf-dist/tex/generic/pst-node/pst-node.tex)
+File: pst-node.tex 2022/11/21 1.94 `pst-node' (tvz,hv)
+)
+(/usr/share/texmf-dist/tex/latex/pst-3d/pst-3d.sty
+Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
+
+(/usr/share/texmf-dist/tex/generic/pst-3d/pst-3d.tex)
+File: pst-3d.tex 2022/11/21 v1.94 `PST-3d' (hv)
+)
+Package: pstricks-add 2021/09/10 v. 0.17 package wrapper for pstricks-add.tex (
+hv)
+
+(/usr/share/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex)
+File: pstricks-add.tex 2022/11/21 v1.94 `PSTricks-add' (hv)
+)
+(/usr/share/texmf-dist/tex/lualatex/luacode/luacode.sty
+Package: luacode 2012/01/23 v1.2a lua-in-tex helpers (mpg)
+
+(/usr/share/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(/usr/share/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count415
+)
+\CatcodeTableOther=\catcodetable15
+\CatcodeTableExpl=\catcodetable16
+)
+\luacode@lines=\toks80
+\luacode@table@soft=\catcodetable17
+)
+(/usr/share/texmf-dist/tex/generic/pst-func/pst-func.tex
+`PST-func' v1.02, 2023/04/14 (hv)
+\psk@zeroLineWidth=\dimen380
+)
+File: pst-func.tex 2023/04/14 v1.02 `PST-func' (hv)
+)
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 15.
+ (./wigilia04.aux)
+\openout1 = wigilia04.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+5.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 15.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 15.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 15.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 15.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 15.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 15.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 15.
+LaTeX Font Info:    Redeclaring math accent \check on input line 15.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 15.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 15.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 15.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 15.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 15.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Cantarell(0)/m/n on input line 15.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 15.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/Cantarell(0)/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/m/n on input li
+ne 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/Cantarell(0)/m/it on input line 15.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/Cantarell(0)/b/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/b/n on input li
+ne 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/Cantarell(0)/b/it on input line 15
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 15.
+\c@mv@tabular=\count416
+\c@mv@boldtabular=\count417
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78307pt, 71.1319pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69684pt
+* \textheight=702.78307pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count418
+\scratchdimen=\dimen381
+\scratchbox=\box149
+\nofMPsegments=\count419
+\nofMParguments=\count420
+\everyMPshowfont=\toks81
+\MPscratchCnt=\count421
+\MPscratchDim=\dimen382
+\MPnumerator=\count422
+\makeMPintoPDFobject=\count423
+\everyMPtoPDFconversion=\toks82
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 15.
+
+Package hyperref Info: Link coloring OFF on input line 15.
+(./wigilia04.out) (./wigilia04.out)
+\@outlinefile=\write4
+
+\openout4 = wigilia04.out
+
+Package fontspec Info: Font family 'NotoColorEmoji(0)' created for font 'Noto
+(fontspec)             Color Emoji' with options
+(fontspec)             [BoldFont={},ItalicFont={},SmallCapsFont={},Renderer=Har
+fBuzz].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:NotoColorEmoji:mode=harf;script=DFLT;language=d
+flt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+(/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
+lish.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 15.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 17.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 17.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 19.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.
+Extended graphic state modifications dropped since `pdfmanagement-testphase' is 
+not loaded.<./luatex.RcpLUS/1.png>] [3] (./wigilia04.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+Package rerunfilecheck Info: File `wigilia04.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 59229 strings out of 476447
+ 125086,2373549 words of node,token memory allocated
+ 784 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 19 attribute, 96 glue_spec
+, 19 attribute_list, 2 write nodes
+   avail lists: 1:1,2:1648,3:1259,4:270,5:486,6:51,7:5989,8:69,9:1199,10:13,11:1
+98
+ 79919 multiletter control sequences out of 65536+600000
+ 66 fonts using 9126127 bytes
+ 117i,9n,129p,1197b,1469s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></us
+r/share/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></usr/share
+/texmf-dist/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb>
+Output written on wigilia04.pdf (3 pages, 280533 bytes).
+
+PDF statistics: 88 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
+

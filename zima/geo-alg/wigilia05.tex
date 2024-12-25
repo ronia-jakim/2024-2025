@@ -1,0 +1,81 @@
+%! TeX program = lualatex
+\documentclass{article}
+
+\usepackage{../../zadania}
+
+\title{Lista 5\\{\large początki}}
+\author{Weronika Jakimowicz}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{problem}{1}
+  Dla $k_1,...,k_n\in\N_{>0}$ obliczyć
+  $$\dim_K\left[K[X_1,..., X_n]/(X_1^{k_1},..., X_n^{k_n})\right]$$
+\end{problem}
+
+Atiyah i MacDonald mówią, że {\bfseries jeśli $\boldsymbol{\phi:A\to B}$ jest surjekcją, to domknięty zbiór $\boldsymbol{V(\ker\phi)\subseteq \text{Spec}(A)}$ jest homeomorficzny ze $\boldsymbol{\text{Spec}(B)}$}. 
+
+Weźmy dowolny ideał pierwszy $\mathfrak{p}\in V(\ker\phi)$ i niech $xy\in \phi(\mathfrak{p})$. Z surjektywności $\phi$ znajdujemy $a,b\in A$ takie, że $\phi(a)=x$ oraz $\phi(b)=y$. Możemy też znaleźć $c\in \mathfrak{p}$ takie, że $\phi(c)=xy\in\phi(\mathfrak{p})$. Naszym celem jest włożenie $a$ lub $b$ do $\mathfrak{p}$.
+$$\phi(c)=xy=\phi(a)\phi(b),$$
+odejmując stronami mamy
+$$0=\phi(c)-\phi(a)\phi(b)=\phi(c-ab),$$
+co jest w jądrze $\phi$. Ale $\mathfrak{p}$ był ideałem zawierającym $\ker\phi$ (korzystam z definicji $V(E)=\{\mathfrak{q}\;:\;E\subseteq \mathfrak{q}\;\text{i }\mathfrak{q}\text{ pierwszy}\}$), czyli $c-ab\in\mathfrak{p}$ tak samo jak $c$. Czyli $-(c+(c-ab))=ab\in\mathfrak{p}$ i tutaj już mamy co chcieliśmy.
+
+Z drugiej strony, dowolny ideał pierwszy $\mathfrak{q}\in\Spec B$ cofa się przez $\phi$ do ideału pierwszego w $A$, bo $xy\in\phi^{-1}(\mathfrak{q})\implies \phi(xy)=\phi(x)\phi(y)\in\mathfrak{q}\implies x\in\phi^{-1}(\mathfrak{q})$ lub $y\in\phi^{-1}(\mathfrak{q})$. Ponieważ $0\in\mathfrak{q}$, to takie cofnięcie zawiera też jądro $\ker\phi$. Czyli $\phi^{-1}(\mathfrak{q})\in V(\ker\phi)$.
+\begin{center}
+  \begin{tikzcd}[column sep=large]
+    \Spec B\arrow[r, "\mathfrak{q}\mapsto \phi^{-1}(\mathfrak{q})"] \arrow[rr, bend right=20, "id" below] & V(\ker\phi) \arrow[r, "\mathfrak{p}\mapsto\phi(\mathfrak{p})"] & \Spec B
+  \end{tikzcd}
+\end{center}
+\begin{flushright}
+  \emoji{duck}
+\end{flushright}
+
+Mamy ładne ilorazowe odwzorowanie 
+$$K[X_1,..., X_n]\twoheadrightarrow K[X_1,...,X_n]/(X_1^{k_1},...,X_n^{k_n})$$
+którego jądro jest dość widoczne. Ideał pierwszy zawierający $(X_1^{k_1},..., X_n^{k_n})$ to $(X_1,...,X_n)$ i jest on zarazem ideałem maksymalnym w $K[X_1,..., X_n]$ (jak wydzielimy to znikają zmienne i mamy ciało).
+
+Czyli najdłuższy ciąg ideałów pierwszych w badanym pierścieniu ma długość $1$?
+
+
+
+% {\color{red}jeszcze nie wymyśliłam}
+%
+% Zacznijmy od prostszego przypadku, czyli $n=1$, wymazujemy wszystkie oznaczenia z treści i badamy
+% $$K[X]/(X^n).$$
+% Mamy surjekcję $\phi:K[X]\twoheadrightarrow K[X]/(X^n)$ i twierdzę, że {\bfseries jeśli $\boldsymbol{\ker\phi\subseteq \mathfrak{p}}$, gdzie $\boldsymbol{\mathfrak{p}\triangleleft K[X]}$ jest ideałem pierwszym, to $\boldsymbol{\phi(\mathfrak{p})}$ jest ideałem pierwszym w $\boldsymbol{K[X]/(X^n)}$} [Atiyah mówi to przez powiedzenie, że wtedy domknięty zbiór $V(\ker\phi)$ jest homeomorficzny ze $\text{Spec}(K[X](X^n)$].
+%
+% Małe $x\neq X$, tylko dowód jest ogólniejszy, ale nie chce mi się wymyślać pozostałych 20+ literek alfabetu. Niech $xy\in \phi(\mathfrak{p})$. Z surjektywności $\phi$ możemy wybrać $a,b\in K[X]$ takie, że $\phi(a)=x$ i $\phi(b)=y$. Wiemy, że istnieje $c\in \mathfrak{p}$ takie, że $\phi(c)=xy\in\phi(\mathfrak{p})$. Czyli
+% $$\phi(a)\phi(b)=xy=\phi(c)\in\phi(\mathfrak{p}).$$
+% $$0=\phi(c)-\phi(a)\phi(b)=\phi(c-ab)$$
+% jest w jądrze, które jest zawarte w ideale $\mathfrak{p}$. Skoro $c\in\mathfrak{p}$ oraz $c-ab\in\mathfrak{p}$, to również $(c-ab)+c\in\mathfrak{p}$, czyli $ab\in\mathfrak{p}$. Stąd $a\in\mathfrak{p}$ (albo $b$) i wtedy $x\in\phi(\mathfrak{p})$ i mamy udowodnioną pogrubioną tezę. \emoji{duck}
+%
+% To mi mówi, że $(X)/(X^n)$ jest ideałem pierwszym w $K[X]/(X^n)$, a Atiyaj podpowiada, że to jest ten jedyny ideał pierwszy. Czyli $\dim_K(K[X]/(X^n)=1$
+
+
+% Wykładniki zachowują się jak $\Z_n$ i normalnie w tym pierścieniu ideały pierwsze to pierwsze dzielniki $n$. Tylko tutaj raczej nie chcemy dostać zerowego wykładnika, co się dzieje jeśli podążymy za tą poszlaką. 
+
+% To liczymy $K[\Z_{k_1}\oplus \Z_{k_2}\oplus...\oplus \Z_{k_n}]$. 
+% Wykładnik zmiennej $X_i$ zachowuje się troszkę jak $\Z_{k_i}$. Tzn. $X_i^{k_i}=1\in k$. ($K[\Z_{k_1}\oplus \Z_{k_2}\oplus...\oplus \Z_{k_n}]$)
+%
+% Normalnie, w $\Z_{k_i}$ ideały są generowane przez dzielniki $k_i$, a ideały pierwsze - przez liczby pierwsze (dzielące $k_i$). Tylko one wtedy nie zahaczają o $1$, która tutaj odpowiada za $X_{i}^1$, a ideał pierwszy w badanym pierścieniu potrzebuje $X_i$.
+%
+% Z drugiej strony, nie możemy zostawić $X_i$ samego, bo szybko wpadniemy do ciała.
+
+\begin{problem}{2}
+  Niech $I, J\trianglelefteq R$ oraz $I\subseteq \sqrt{J}$. Udowodnić, że jeśli ideał $I$ jest skończenie generowany, to istnieje $n\in\N$ takie, że $I^n\subseteq J$.
+\end{problem}
+
+Niech $I$ będzie generowane przez $u_1$, ..., $u_k$. Niech $t_i\in\N_{>0}$ będą takie, że $u_i^{t_i}\in J$ (bo $I\subseteq \sqrt{J}$). Pewnie niezgrabnie można wziąć $N=t_1\cdot...\cdot t_n$.
+
+Ideał $I^N$ jest generowany przez $\langle u_1^{i_1}\cdot...\cdot u_n^{i_n}\;:\;\sum i_j=N\rangle$, bo każdy element to $\sum x_1\cdot...\cdot x_N$ dla $x_i\in I$ i one się rozpadają w kombinację liniową $u_i$.
+
+Każdy generator $I^N$ jest podzielny przez pewne $u_i^{t_i}$, bo tak duży wzięłam wykładnik $N$. Stąd każdy element $I^N$ jest generowany przez elementy z $J$, czyli $I^N\subseteq J$.
+
+% Dowolny element $I^N$ to rzecz typu $x=\sum x_{i_1}...x_{i_N}$, z czego każdy z $x_{i_j}$ jest kombinacją liniową $u_1$, ..., $u_n$. Czyli po rozpisaniu, będziemy mieli sumę sumy produktu (?) co najmniej $N$ sztuk $u_i$. Czyli coś, co należy do $J$.
+
+
+\end{document}

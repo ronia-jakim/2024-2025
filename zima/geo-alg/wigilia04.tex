@@ -1,0 +1,113 @@
+%! TeX program = lualatex
+\documentclass{article}
+
+\usepackage{../../zadania}
+
+\usepackage{multicol}
+
+\usepackage{pst-func}
+\psset{unit=2cm}
+
+\title{Lista 4\\{\large resztki}}
+\author{Weronika Jakimowicz}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{problem}{8}
+  Załóżmy, że $F, G\in K[X, Y]$ są nierozkładalne i że $F$ nie dzieli $G$. Niech $V=V(FG)\subseteq \mathbb{A}^2$ oraz $a\in V$ taki, że $F(a)=G(a)=0$. Udowodnić, że $a$ jest punktem osobliwym $V$.
+\end{problem}
+
+Pomysł:
+$$\frac{\partial}{\partial X}(FG)(X, Y)=G(X,Y)\frac{\partial}{\partial X}F(X,Y)+F(X,Y)\frac{\partial}{\partial X}G(X,Y)$$
+
+daje, że pochodna w $a$ jest zerem, bo $F(a)=G(a)=0$. Tak samo dla $\frac{\partial}{\partial Y}$
+
+\begin{problem}{9}
+  Niech $F\in K[X,Y]$ i $V=V(F)\subseteq\mathbb{A}^2$. Udowodnić, że
+  \begin{enumerate}
+    \item jeśli $F\notin K$, to $V$ nieskończony
+    \item jeśli $V(F, \frac{\partial F}{\partial X}, \frac{\partial F}{\partial Y})$ jest skończony, to $\sqrt{(F)}=(F)$ oraz $I(V)=(F)$.
+    \item jeśli $V(F, \frac{\partial F}{\partial X}, \frac{\partial F}{\partial Y})=\emptyset$, to $V$ jest gładką rozmaitością algebraiczną.
+  \end{enumerate}
+\end{problem}
+
+\begin{enumerate}
+  \item Łopatologicznie, to jeśli $F\notin K$, to dla dowolnego $a\in K$ $F(a, Y)\in K[Y]$ lub $F(X, a)\in K[X]$ i mogę przesuwać $a$, dostając nowe wielomianki.
+
+    Mniej łopatologicznie, mogę wziąć dowolny $(a, b)\in V(F)$. Wtedy $f_a(Y)=F(a, Y)$ jest wielomianem jednej zmiennej, który jeśli jest stały (a z racji, że $F(a,b)=0$ to musiałby być stale równy $0$), to daje nieskończenie wiele rozwiązań $F$. Zapisujemy więc
+    $$F(X, Y)=\sum \alpha_k(X)Y^k$$
+    i w ciekawszym casie któryś $\alpha_k(X)$ nie jest zerem, tylko wielomianem jednej zmiennej. Czyli ma skończenie wiele pierwiastków i nieskończenie wiele nie-pierwiastków, z których każde daje nam jakieś rozwiązanie $F(-, Y)$.
+  \item nie przemawia do mnie ten podpunkt
+  \item Tutaj po prostu nie mamy punktów osobliwych. Tzn. zbiór zer krzywej i zbiór zer jej pochodnych mają pusty przekrój. Tylko chyba powinnam zrobić większe kombinacje umysłowo-definicjowe. Tylko zaczęłam od \LaTeX-owania ostatniego zadania i odmawiam.
+
+    % Mniej łopatologicznie, jeśli $F(a,b)=0$, to $(X-a)$ oraz $(Y-b)$ dzielą $F$, czyli $F\in (X-a, Y-b)$, który jest ideałem maksymalnym potencjalnie różnym od $(F)$.
+\end{enumerate}
+
+\newpage
+
+\begin{problem}{10}
+  Załóżmy, że $\text{char}(K)\neq 2$. Dla poniższych $F\in K[X,Y]$, znaleźć punkty osobliwe $V(F)$ oraz dopasować krzywe $V(F)$ do poniższego obrazka.
+\end{problem}
+
+\begin{multicols}{2}
+
+Są dwa obrazki symetryczne względem prostej $y=x$, czyli podmiana $x$ na $y$ nie powinna zmienić równania i są to $y^6+x^6-xy$ oraz $y^4+x^4-x^2y-xy^2$. Jeden z tych obrazków nie ma równań gdy $x<0$ oraz $y<0$ i tak zachowa się pierwsze z równań, czyli mamy $y^6+x^6-xy$
+
+\begin{pspicture}(-1.5,-1.5)(1.75,1.75)
+    \psaxes{->}(0,0)(-1.25,-1.25)(1.25,1.25)[$x$,0][$y$,90]
+    \psplotImp[algebraic,linecolor=orange,stepFactor=0.3](-1.1,-1.1)(1.1,1.1){y^4+x^4-x^2*y-x*y^2}
+\end{pspicture}
+
+oraz $y^4+x^4-x^2y-y^2x$
+
+\begin{pspicture}(-1.5,-1.5)(1.75,1.75)
+    \psaxes{->}(0,0)(-1.25,-1.25)(1.25,1.25)[$x$,0][$y$,90]
+    \psplotImp[algebraic,linecolor=green,stepFactor=0.3](-1.1,-1.1)(1.1,1.1){y^6+x^6-x*y}
+\end{pspicture}
+
+Teraz zostały te, które są symetryczne względem $OX$. Ale tylko jedno z nich jest symetryczne względem $OY$, czyli $y^4+x^4-x^2$
+
+\begin{pspicture}(-1.5,-1.5)(1.75,1.75)
+    \psaxes{->}(0,0)(-1.25,-1.25)(1.25,1.25)[$x$,0][$y$,90]
+    \psplotImp[algebraic,linecolor=red,stepFactor=0.3](-1.1,-1.1)(1.1,1.1){y^4-x^2+x^4}
+\end{pspicture}
+
+więc zostaje $y^4+x^4+y^2-x^3$
+
+\begin{pspicture}(-1.5,-1.5)(1.75,1.75)
+    \psaxes{->}(0,0)(-1.25,-1.25)(1.25,1.25)[$x$,0][$y$,90]
+    \psplotImp[algebraic,linecolor=blue,stepFactor=0.3](-1.1,-1.1)(1.1,1.1){y^4+x^4+y^2-x^3}
+\end{pspicture}
+
+\end{multicols}
+
+To teraz punkty osobliwe, czyli takie, gdzie pochodne cząstkowe się zerują \emoji{collision}. Uwaga, będą kolory, ale idę od lewego górnego rysunku przeciwnie do ruchu wskazówek zegara.
+
+{\color{orange!60!black}
+  $$\frac{\partial}{\partial X}F=6X-Y$$
+  $$\frac{\partial}{\partial Y}F=6Y-X$$
+  oba równają się $0$, jeśli $X=Y=0$ ($Y=6X=6\cdot 6Y$)
+}
+
+{\color{green!60!black}
+  $$\frac{\partial}{\partial X}F=4X^3-2XY-Y^2=X^2(4X+1)-(Y+X)^2$$
+  $$\frac{\partial}{\partial Y}F=4Y^3-2XY-X^2=Y^2(4Y+1)-(X+Y)^2$$
+  % Mamy $(X+2)^2=(Y+2)^2$, czyli $X=Y$ (przecina krzywą tylko w $(0,0)$) lub $X=-Y-4$, z czego drugie rozwiązanie nie przecina oryginalnej krzywej.
+  Dostaję, że $X^2(4X+1)=Y^2(4Y+1)$, czyli $X=Y$ i wtedy oba są zerem.
+}
+
+{\color{red!60!black}
+  $$\frac{\partial}{\partial X}F=4X^3-2X^2=2X(2X^2-1)$$
+  $$\frac{\partial}{\partial Y}F=4Y^3$$
+  Druga różniczka jest zerem $\iff$ $Y=0$. Pierwsza jest zerem gdy $X=0$ lub $X=\pm \frac{1}{\sqrt{2}}$. $(0,0)$ oczywiście śmiga, natomiast $(\pm\frac{1}{\sqrt2},0)$ nie leży na muszce (krzywej).
+}
+
+{\color{blue!60!black}
+  $$\frac{\partial}{\partial X}F=4X^3-3X^2=X^2(4X-3)$$
+  $$\frac{\partial}{\partial Y}F=4Y^3+2Y=2Y(2Y^2+1)$$
+  Druga różniczka jest zerem tylko gdy $Y=0$, bo $2Y^2+1$ nie ma rozwiązań rzeczywistych. Pierwsze równanie daje nam z kolei $X=0$ lub $X=\frac{3}{4}$. Punkt $(0,0)$ śmiga, punkt $(\frac{3}{4}, 0)$ nie leży na krzywej.
+}
+
+\end{document}
