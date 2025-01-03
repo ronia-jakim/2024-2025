@@ -1,0 +1,44 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{triviaclass}
+
+\RequirePackage[T1]{fontenc}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\RequirePackage{varwidth}
+
+\RequirePackage{fontspec}
+\RequirePackage[default]{cantarell}
+
+\RequirePackage{geometry}
+\geometry{
+  paperwidth=15cm,
+  paperheight=15cm,
+  total={15cm,15cm}
+}
+
+
+\definecolor{back}{HTML}{294d47}
+
+\pagecolor{back}
+\pagestyle{empty}
+
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \thispagestyle{empty}
+  \vspace*{\fill}
+  \begin{center}
+    \begin{varwidth}{.5\paperwidth}\centering
+      {\LARGE\bfseries\color{white}\@title}\vskip4em
+
+      {\color{back}t}
+    \end{varwidth}
+  \end{center}
+  \vspace*{\fill}
+}
+\makeatother
+
+\ProcessOptions\relax
+
+\endinput
