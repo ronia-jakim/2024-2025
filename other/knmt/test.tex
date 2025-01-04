@@ -3,10 +3,190 @@
 
 \usepackage{triviaclass}
 
+\tikzset{
+  pics/torus/.style n args={3}{
+    code = {
+      \begin{scope}[
+          yscale=cos(#3),
+          outer torus/.style = {draw,line width/.expanded={\the\dimexpr2\pgflinewidth+#2*2},line join=round},
+          inner torus/.style = {draw=back,line width={#2*2}}
+        ]
+        \draw[outer torus] circle(#1);\draw[inner torus] circle(#1);
+        \draw[outer torus] (180:#1) arc (180:360:#1);\draw[inner torus,line cap=round] (180:#1) arc (180:360:#1);
+      \end{scope}
+    }
+  }
+}
+
 \title{Grupa podstawowa}
+\short{
+  Pozwala rozróżnić przestrzenie badając ile rożnych, czyli niedających się przekształcić w siebie bez rozcinania, pętli można w niej znaleźć. 
+  Na przykład 
+  $$\pi_1(S^1)=\Z,$$ 
+  bo mamy tylko jedną pętlę, którą możemy wielokrotnie nawijać na siebie.
+}
+\fields{topologia algebraiczna}
 
 \begin{document}
 
 \maketitle
+
+\begin{slide}
+  Grupę podstawową okręgu $S^1$ często ilustruje się helisą zawieszoną nad okręgiem. To, ile razy obejdziemy $S^1$ po sprężynce oznacza, który element grupy podstawowej reprezentujemy.
+  \bigskip
+
+\centering
+  \scalebox{.8}{\centering
+  \begin{tikzpicture}
+     \begin{axis}[
+        view={-20}{-20},
+        axis line style = {draw=none},
+        axis lines=middle,
+        height=12cm,
+        xtick=\empty,
+        ytick=\empty,
+        ztick=\empty,
+        clip=false,
+      ]
+      \addplot3+[domain=0:11*pi,samples=500,samples y=0,no marks,thick, subtitle] 
+        ({sin(deg(x))}, 
+        {cos(deg(x))}, 
+        {6*x/(pi)});
+
+      \addplot3+[domain=0:pi, samples=100, samples y = 0, no marks, ultra thick, accent] (
+          {sin(deg(x))},
+          {cos(deg(x))},
+          -.5
+        );
+      
+      \addplot3+[domain=0:pi, samples=100, no marks, samples y=0, ultra thick, accent] (
+          {sin(deg(pi+x))},
+          {cos(deg(pi+x))},
+          -.5
+        );
+    \end{axis}
+  \end{tikzpicture}
+}
+\end{slide}
+
+\begin{slide}
+  Niech $(X, x)$ będzie przestrzenią topologiczną z wyróżnionym punktem $x\in X$. Przez \buff{pętlę} na $(X, x)$ rozumiemy ciągłe odwzorowanie
+  $$\gamma:[0,1]\to (X, x)$$
+  takie, że $\gamma(0)=\gamma(1)=x$. 
+
+  Mając dwie pętle $\gamma_1$ i $\gamma_2$ możemy wyprodukować nową pętle, $\gamma_1\cdot\gamma_2$, która najpierw podróżuje trasą wyznaczoną przez $\gamma_1$, a potem przez $\gamma_2$. Czy umiesz wyrazić to wzorem?
+\bigskip 
+
+\begin{center}
+  \begin{tikzpicture}
+    \draw[ultra thick, orange, ->] (0,0) to[out=30, in=0] (0, 2);
+    \draw[ultra thick, orange] (0,2) to[out=180, in=150] (0,0);
+
+    \node at (1, 1) {{\color{orange}\boldmath $\gamma_1$}};
+    
+    \draw[ultra thick, blue, ->] (0,0) to[out=0, in=150] (1, -1);
+    \draw[ultra thick, blue] (1, -1) to[out=-30, in=90] (2, -1.5) to[out=-90, in=-90] (-1,-1) to[out=90, in=-150] (0,0);
+    
+    \node at (1, -.5) {{\color{blue}\boldmath $\gamma_2$}};
+    
+    \fill[accent] (0,0) circle (2pt);
+
+    \fill[orange] (3, 2) rectangle (3.1, -2.2);
+    \fill[blue] (3.5, 2) rectangle (3.6, -2.2);
+    \fill[orange] (4, 2) rectangle (4.1, -.1);
+    \fill[blue] (4, -.1) rectangle (4.1, -2.2);
+
+    \draw (2.5, 2)--(4.5, 2);
+    \node at (4.8, 2) {$0$};
+    
+    \draw (2.5, -2.2)--(4.5, -2.2);
+    \node at (4.8, -2.2) {$1$};
+
+    \draw[->, orange, thick] (3, 1.8) to[out=200, in=70] (.3, 2);
+    \draw[->, blue, thick] (3.5, -2) to[out=-90, in=-70] (1.8, -2);
+
+    \draw [decorate,decoration={brace,amplitude=5pt,raise=1ex}] (4.2,2) -- (4.2,-2.2) node[midway, xshift=3em]{{\boldmath$\color{orange}\gamma_1\color{accent}\cdot\color{blue}\gamma_2$}};
+  \end{tikzpicture}
+\end{center}
+\end{slide}
+
+\begin{slide}
+  Dwie pętle $\gamma_1$, $\gamma_2$ są \buff{homotopijne}, jeśli istnieje ciągłe odwzorowanie 
+  $$h:[0,1]\times[0,1]\to X$$
+  takie, że 
+  \begin{itemize}
+    \item $h(0,t)=h(1,t)=x$ dla wszystkich $t$ 
+    \item oraz $h(y, i)=\gamma_i(y)$ dla $i=0,1$. 
+  \end{itemize}
+  Pierwsza współrzędna homotopii opisuje położenie $y$ na pętli, a druga przekształcanie tej pętli w czasie $t$.
+  \bigskip
+
+  \begin{center}
+  \begin{tikzpicture}
+    \node at (0, 1.7) {{\boldmath$\color{orange}\gamma_1$}};
+    \node at (0, 4.3) {{\boldmath$\color{blue}\gamma_2$}};
+    \draw[orange, very thick] (0,0) to[out=0, in=0] (0, 2) to[out=180, in=180] (0,0);
+    
+    \draw[blue, very thick] (0,0) to[out=0, in=0] (0, 4) to[out=180, in=180] (0,0);
+
+    \foreach \r in {2.25, 2.5,..., 3.75} \draw[dashed] (0,0) to[out=0, in=0] (0, \r) to[out=180, in=180] (0,0);
+    
+    \fill[accent] (0,0) circle (2pt);
+  \end{tikzpicture}
+\end{center}
+\end{slide}
+
+\begin{slide}
+  Relacja homotopijności jest \buff{relacją równoważności pętli}. Dwie pętle są w tej samej klasie abstrakcji, jeśli \buff{jedną jesteśmy w stanie w ciągły sposób przekształcić w drugą}.
+  \bigskip
+
+  Możemy więc zdefiniować \buff{grupę podstawową $\pi_1(X, x)$} zbazowanej przestrzeni $(X, x)$ w formalny sposób jako \emph{grupę klas abstrakcji relacji homotopijnej równoważności pętli na przestrzeni $(X, x)$} z działaniem składania pętli.
+  \bigskip
+
+  \begin{center}
+    \begin{tikzpicture}
+      \pic{torus={1.5cm}{.4cm}{70}};
+
+      % \draw (0,0)--(0,-.55);
+      % \draw (1.9, 0)--(0,0);
+      % \draw (1.9, 0) to[out=200, in=0] (0, -.55) to[out=180, in=-20] (-1.9, 0);
+      \draw[green, thick] (-1.9, 0) arc (180:360:1.9 and .55);
+      \draw[green, dashed] (-1.9, 0) arc (180:0:1.9 and .55);
+      % \draw (0,0)--(.5, -.08);
+      % \draw (0,0)--(.5, -.91);
+      \draw[orange, thick] (.5, -.08)to[out=0, in=0](.5, -.905);
+      \draw[orange, dashed] (.5, -.08)to[out=180, in=180](.5, -.905);
+
+      \node at (-2.2, 0) {{\boldmath\color{green}$\gamma_1$}};
+      \node at (.5, -1.2) {{\boldmath\color{orange}$\gamma_2$}};
+
+      \node at (0, -2) {$\pi_1(\mathbb{T}^2)=\langle \gamma_1, \gamma_2\rangle\cong \Z^2$};
+
+      \begin{scope}[shift={(3.5, 0)}]
+        \draw (0,0) to[out=-90, in=180] 
+              (1, -1) to[out=0, in=180] 
+              (3, -.3) to[out=0, in=-120]
+              (3.6, 0) to[out=60, in=-20]
+              (3.3, .8) to[out=160, in=40]
+              (2, .65);
+        \draw(0,0) to[out=90, in=180]
+             (1, 1) to[out=0, in=180]
+             (3, .3) to[out=0, in=-20]
+             (2.9, .5) to[out=160, in=40]
+             (2.4, .45);
+
+           \filldraw[fill=back] (2.4, .45) to[out=210, in=-90] (2, .66); 
+           \draw[dashed] (2, .65) to[out=220, in=0] 
+             (1, 0) to[out=180, in=-60]
+             (.5, 0.3);
+           \draw[dashed] (2.4, .45) to[out=220, in=0] (1, -.4) to[out=180, in=60] (.5, -.4);
+           \draw (.5, -.4) to[out=180, in=180] (.5, .3) to[out=0, in=0] (.5, -.4);
+
+           \node at (1.5, -2) {$\pi_1(K)=\langle a,b\;|\;abab^{-1}\rangle\cong\Z\rtimes\Z$};
+      \end{scope}
+    \end{tikzpicture}
+
+  \end{center}
+\end{slide}
 
 \end{document}
