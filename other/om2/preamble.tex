@@ -1,0 +1,48 @@
+\usepackage[T1]{fontenc}
+
+\usepackage{fontspec}
+\usepackage[default]{cantarell}
+
+\usepackage[nolessnomore,noequal,noparenthesis,nospecials,noplusnominus,noexclam,italic]{mathastext}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{array}
+
+
+\usepackage{ntheorem}
+
+\theorembodyfont{\normalfont}
+\theoremseparator{.\hspace{0.5em}}
+\theorempreskip{}
+\theorempostskip{}
+
+\theorempostwork{\vspace*{4mm}}
+
+\newtheorem{zadanie}{Zadanie}
+
+
+\pagestyle{empty}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage[a4paper, total={170mm, 237mm}]{geometry}
+
+\usepackage{enumitem}
+
+\newcommand{\rozwiazanie}[1]{\slshape }%#1}
+
+\makeatletter
+\def\@maketitle{
+  \begin{center}
+    {\LARGE\@title}
+    \medskip 
+
+    \large\@author
+  \end{center}
+}
+\makeatother
+

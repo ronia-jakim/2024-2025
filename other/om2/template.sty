@@ -1,0 +1,159 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{template}
+
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+
+\RequirePackage{fontspec}
+
+\RequirePackage[default]{cantarell}
+
+
+\RequirePackage[
+  a4paper,
+  total={170mm, 247mm},
+  left=20mm,
+  top=25mm,
+  % showframe
+]{geometry}
+
+\RequirePackage[skip=3mm]{parskip}
+\renewcommand{\baselinestretch}{1.2}
+\selectfont
+
+
+\RequirePackage{amsfonts}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+
+\RequirePackage{tikz}
+\RequirePackage{tikz-cd}
+
+\RequirePackage{soul}
+
+\sethlcolor{green!15}
+
+\makeatletter
+\font\SOUL@tt="LMMono10-Regular"
+\setbox\z@\hbox{\SOUL@tt-}
+\SOUL@ttwidth\wd\z@ %
+\makeatother
+
+\newcommand{\buff}[1]{%
+  {\bfseries\color{green}#1}%
+}
+
+\RequirePackage[nolessnomore,noequal,noparenthesis,nospecials,noplusnominus,noexclam]{mathastext}
+
+\DeclareMathOperator{\Spec}{Spec}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\A}{\mathbb{A}}
+
+\newcommand{\rozwiazanie}[1]{{\color{green}\slshape#1}}
+
+\RequirePackage{xcolor}
+
+\definecolor{rosewater}{HTML}{dc8a78}
+\definecolor{flamingo}{HTML}{dd7878}
+\definecolor{pink}{HTML}{ea76cb}
+\definecolor{mauve}{HTML}{8839ef}
+\definecolor{red}{HTML}{d20f39}
+\definecolor{maroon}{HTML}{e64553}
+\definecolor{peach}{HTML}{fe640b}
+\definecolor{yellow}{HTML}{df8e1d}
+\definecolor{green}{HTML}{40a02b}
+\definecolor{teal}{HTML}{179299}
+\definecolor{sky}{HTML}{04a5e5}
+\definecolor{sapphire}{HTML}{209fb5}
+\definecolor{blue}{HTML}{1e66f5}
+\definecolor{lavender}{HTML}{7287fd}
+\definecolor{subtext2}{HTML}{4c4f69}
+\definecolor{subtext1}{HTML}{5c5f77}
+\definecolor{subtext0}{HTML}{6c6f85}
+\definecolor{overlay2}{HTML}{7c7f93}
+\definecolor{overlay1}{HTML}{8c8fa1}
+\definecolor{overlay0}{HTML}{9ca0b0}
+
+\definecolor{text}{HTML}{000000}
+\color{text}
+
+\RequirePackage{tcolorbox}
+
+\tcbuselibrary{theorems}
+\tcbuselibrary{breakable}
+\tcbuselibrary{skins}
+
+\tcbset{greenBox/.style={
+    fonttitle = \bfseries\large,
+    coltitle = green!50!black,
+    description color = green!50!black, 
+    description font = \bfseries\large,
+    colbacktitle = white, %green!40!black!75,
+    breakable, 
+    enhanced,
+    attach boxed title to top left = {
+      xshift=0.5cm, 
+      yshift=-\tcboxedtitleheight/2
+    },
+    boxed title style = {
+      boxrule=0pt,
+      colframe=white
+    },
+    top=6mm,
+    bottom=4mm,
+    colback=white,
+    frame hidden,
+    borderline={1pt}{0pt}{green!40},
+    arc=0mm,
+    after skip=5mm,
+    before skip=5mm
+  }
+}
+
+\NewTColorBox{mybox}{ O{red} m d"" !O{} }
+{
+  enhanced,
+  fonttitle = \bfseries\large,
+  coltitle = green!50!black,
+  description color = green!50!black, 
+  description font = \bfseries\large,
+  colbacktitle = white, %green!40!black!75,
+  breakable, 
+  enhanced,
+  attach boxed title to top left = {
+    xshift=0.5cm, 
+    yshift=-\tcboxedtitleheight/2
+  },
+  boxed title style = {
+    boxrule=0pt,
+    colframe=white
+  },
+  top=6mm,
+  bottom=4mm,
+  colback=white,
+  frame hidden,
+  borderline={1pt}{0pt}{green!40},
+  arc=0mm,
+  after skip=5mm,
+  before skip=5mm,
+  fonttitle=\bfseries,
+  title={#2}
+}
+
+\RequirePackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{zadanie}{Zadanie}
+
+\DeclareOption{bezRozw}{
+  \renewcommand{\rozwiazanie}[1]{}
+}
+
+\ProcessOptions\relax
+\endinput

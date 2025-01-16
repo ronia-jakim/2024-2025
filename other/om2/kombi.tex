@@ -1,0 +1,189 @@
+%! TeX program = lualatex
+\documentclass{article}
+
+\input{preamble.tex}
+
+\title{Kombinatoryka}
+\date{17.01.2025}
+\author{Weronika Jakimowicz}
+
+\begin{document}
+\fontsize{12pt}{18pt}\selectfont
+
+\maketitle\thispagestyle{empty}
+
+\begin{zadanie}
+  Niech $p_n=\binom{2n}{n}2^{-2n}$ oraz $s_n=\sum_{k=0}^n p_k$. Pokaż, że $s_n=(2n+1)p_n$. Który z ciągów, $\frac{s^2_n}{n}$ czy $\frac{s_n^2}{n+1}$, jest rosnący, a który malejący?
+\end{zadanie}
+
+\rozwiazanie{
+  $$p_0=1$$
+  $$p_1=\frac{1}{2}$$
+  $$p_2=\frac{2}{3}$$
+  $$s_0=p_0=1=(2\cdot 0+1)p_0$$
+  $$s_1=p_0+p_1=\frac{1}{2}+1=\frac{3}{2}=(2+1)p_1$$
+
+  Indukcja? 
+  \begin{align*}
+    s_{n+1}&=\sum_{k=0}^{n+1}p_k=\sum_{k=0}^np_k+p_{n+1}=\\ 
+           &=(2n+1)p_n+p_{n+1}=(2n+1)\binom{2n}{n}2^{-2n}+\binom{2n+2}{n+1}2^{-(2n+1)}=\\ 
+           &=2(n+1)\frac{(2n+2)(2n+1)}{2\cdot2(n+1)(n+1)}\binom{2n}{n}2^{-2n}+\binom{2n+2}{n+1}2^{-2(n+1)}=\\ 
+           &=2(n+1)\binom{2n+2}{n+1}2^{-2(n+1)}+\binom{2n+2}{n+1}2^{-2(n+1)}
+  \end{align*}
+
+  Ten z $n$ w mianowniku rośnie, a z $(n+1)$ - maleje.
+}
+
+\begin{zadanie}
+  Niech
+  $$P_n=\left\{(a_i)_{i=1}^{2n}\;:\;a_i=\pm1,\;\sum_{i=1}^{2n}a_i=0\right\}$$
+  Oblicz $|P_n|$
+\end{zadanie}
+
+\rozwiazanie{To nie poludzku napisana ilość ciągów długości $2n$ które sumują się do $0$. Czyli $\binom{2n}{n}$.}
+
+\begin{zadanie}
+  Niech $Z$ będzie zbiorem o $n$ elementach. Na ile sposobów można wybrać $A\subseteq B\subseteq Z$? Zakładamy, że każdy zbiór zawiera siebie i zbiór pusty.
+\end{zadanie}
+
+\rozwiazanie{Wybieramy najpierw $k$-elementowy $A$ na $\binom{n}{k}$ sposobów, a potem z reszty na $2^{n-k}$ dobieramy elementy do $B$. Całość to suma iloczynu i wychodzi ostatecznie $3^n$.}
+
+\begin{zadanie}
+  Pokaż, że $2^{2n}=\sum_{k=0}^n\binom{2n}{k}\binom{2(n-k)}{n-k}.$
+\end{zadanie}
+\rozwiazanie{Pokaż, że dla każdego ciągu $(c_i)_{i=1}^{2n}$ istnieje jedyne takie $0\leq k\leq n$, że $(c_i)_{i=1}^{2k}$ jest ciągiem $\pm1$ sumującym się do $0$ oraz $(c_{i-2k}^{2(n-k)}_{i=1}$ nie ma zerującego się podciągu}
+
+\begin{zadanie}
+  Na płaszczyźnie dany jest skończony zbiór punktów $Z$ o tej własności, że żadne dwie odległości punktów zbioru $Z$ nie są równe. Punkty $A$ i $B$ należące do $Z$ łączymy wtedy i tylko wtedy, gdy $A$ jest punktem najbliższym $B$ lub $B$ jest punktem najbliższym $A$. Udowodnić, że żaden punkt zbioru $Z$ nie będzie połączony z więcej niż pięcioma innymi.
+\end{zadanie}
+
+\rozwiazanie{
+  Kąt między dwoma takimi ziomkami jest większy niż $60^\circ$.
+}
+
+\begin{zadanie}
+  Płaszczyznę pokryto kołami o jednakowym promieniu w ten sposób, że środek każdego z tych kół nie należy do żadnego innego koła. Dowieść, że każdy punkt płaszczyzny należy do co najwyżej pięciu kół.
+\end{zadanie}
+
+\rozwiazanie{
+  Nie wprost - zakładamy, że punkt $A$ leży w kołach o środkach $O_1$, $O_2$, ..., $O_6$. Wtedy jeden z kątów $O_iAO_j$ ma nie więcej niż $60^\circ$, bo jakieś sześć się dodaje do $360$ - jak po równo rozłożymy, to mamy po $60$ na każdy.
+
+  Czyli mamy trójkąt $O_iAO_j$ w którym odcinek $O_iO_j$ nie jest najdłuższy (bo kąt naprzeciwko $\leq60$). Czyli BSO $O_iA\geq O_iO_j$ i mamy, że $O_j$ jest w okręgu o środku $O_i$.
+}
+
+\begin{zadanie}
+  Żaba skacze po stawie, na którym pływa $8$ liści ułożonych w okrąg. Na ile sposobów może przeskoczyć na najbardziej odległy od siebie liść w $2n$ skokach?
+\end{zadanie}
+
+\rozwiazanie{
+  Tak naprawdę możemy patrzeć na $n$ kroków i albo stoimy w miejscu, albo przemieszczamy o dwa (to sensowny krok). Rysujemy wtedy czworokąt i mamy cztery równania rekurencyjne, na ile sposobów możemy w $n$ kroków dostać się na każdy z tych czterech wierzchołków.
+}
+
+\begin{zadanie}
+  Udowodnić, że dla liczby naturalnej $n$ większej od $1$ następujące warunki są równoważne:
+  \begin{enumerate}[label=\alph*)]
+    \item $n$ jest liczbą parzystą
+    \item istnieje permutacja $(a_0, a_1, a_2,..., a_{n-1})$ zbioru $\{0,1,...,n-1\}$ o tej własności, że ciąg reszt z dzielenia przez $n$ liczb $a_0$, $a_0+a_1$, $a_0+a_1+a_2$,..., $a_0+a_1+...+a_{n-1}$ jest też permutacją tego zbioru.
+  \end{enumerate}
+\end{zadanie}
+
+\rozwiazanie{
+  $a\implies b$
+  $$a_i=\begin{cases}i&i\text{ nieparzyste}\\ n-i & i\text{ parzyste}\\0&i=0\end{cases}$$
+
+  \begin{align*}
+    \sum_{k=0}^{2i} a_k&=a_1+a_3+...+a_{2i-1}+a_2+a_4+...+a_{2i}=\\ 
+                       &= 1+3+...+(2i-1)+(n-2)+(n-4)+...+(n-2i)=\\ 
+                       &= 2+4+...+2i-i+n\cdot i-2-4-...-2i=i(n-1)
+  \end{align*}
+
+  \begin{align*}
+    \sum_{k=0}^{2i+1}a_k&=a_1+a_3+...+a_{2i+1}+a_2+a_4+...+a_{2i}=\\ 
+                        &= 1+3+...+(2i+1)+(n-2)+(n-4)+...+(n-2i)=\\ 
+                        &=2+4+...+2i+(2i+1)-i+n\cdot i-2-4-...-2i=\\ 
+                        &=i(n+1)+1
+  \end{align*}
+
+  $b\implies a$
+
+  Po pierwsze zauważamy, że musi być $a_0=0$, bo inaczej $\sum_{k=0}^ia_k=\sum_{k=0}^{i+1}a_k$ (jeśli $a_{i+1}=0$).
+
+  Dalej wiemy, że żadna z sum $\sum_{k=0}^ia_k$ nie może być podzielna przez $n$. Czyli w szczególności 
+  $$\sum_{k=0}^{n-1}a_k=\sum_{k=0}^{n-1}k=\frac{(n-1)n}{2}$$
+  nie może być podzielne przez $n$, czyli $\frac{n-1}{2}$ nie jest całkowite.
+}
+
+\begin{zadanie}
+  Ile najwięcej kawałków sera można uzyskać z pojedynczego grubego kawałka za pomocą $n$ cięć nożem? Zakładamy, że każde cięcie jest wyznaczone przez płaszczyznę przecinającą kawałek sera.
+\end{zadanie}
+
+\rozwiazanie{
+  Zaczynamy od rozwiązania 2D. 
+  $$L_n=\text{największa liczba obszarów na które }n\text{ prostych dzieli płaszczyznę}$$
+  Rysując $n$-tą prostą przetniemy $(n-1)$ prostych, które do tej pory narysowaliśmy. W ten sposób tworzymy $n$ nowych obszarów. Czyli mamy 
+  $$L_n=L_{n-1}+n=n+(n-1)+L_{n-2}=...=n+(n-1)+...+1+L_0=\frac{n(n+1)}{2}+1$$
+  
+  Teraz przechodzimy do 3D i oznaczamy zależność $P_n$. $n$-ta płaszczyzna przecina poprzednie $(n-1)$ i tym samym tworzy $(n-1)$ prostych. Nad każdym regionem płaszczyzny wisi nowy obszar przestrzeni 3D, czyli relacja to 
+  $$P_n=P_{n-1}+L_{n-1}.$$
+  Jak rozwiążemy tę rekurencję, to dostajemy $\frac{n^3+5n+6}{6}$.
+}
+
+
+\begin{zadanie}
+  W turnieju szachowym uczestniczy $2n$ zawodników, przy czym każdych dwóch spośród nich rozgrywa między sobą co najwyżej jedną partię. Dowieść, że taki przebieg rozgrywek, w którym żadna trójka uczestników nie rozgrywa trzech partii między sobą jest możliwy wtedy i tylko wtedy, gdy liczba wszystkich partii rozegranych w turnieju nie przekracza $n^2$.
+\end{zadanie}
+
+\rozwiazanie{
+  Żadna trójka uczestników $\iff$ liczba wszystkich partii nie przekracza $n^2$.
+
+  $\impliedby$ Dzielimy pysiów na dwa rozłączne zbiory, wtedy mamy $n^2$ parowań między tymi zbiorami. Wtedy każdy gra co najwyżej jedną rundę ze sobą i nie ma trójek.
+
+  $\implies$ indukcja po $n$. Gdy $n=2$ to mamy $4$ uczestników. Pierwszy mecz to dowolne pary, przegrani grają ze sobą tak samo jak wygrani. Mamy $4$ rozgrywki i śmiga.
+
+  Mamy teraz $2(n+1)$ uczestników. Dwóch, $X$ oraz $Y$, oddzielamy i pozostałych $2n$ potrafimy rozegrać tak jak trzeba, czyli mamy nie więcej niż $n^2$ meczów. Oczywiście, $X$ gra z $Y$. Gdyby ilość meczów rozegranych przez $X$ oraz $Y$ z pozostałymi przekraczała $2n$, to wtedy oboje zagraliby z kimś razem. 
+}
+
+\begin{zadanie}
+  Każdemu wierzchołkowi sześcianu przyporządkowano liczbę $1$ lub $-1$, a każdej ścianie - iloczyn liczb przyporządkowanych wierzchołkom tej ściany. Wyznaczyć zbiór wartości, które może przyjąć suma $14$ liczb przyporządkowanych ścianom i wierzchołkom.
+\end{zadanie}
+
+\rozwiazanie{tutaj dzbanie https://archom.ptm.org.pl/?q=node/554 }
+
+\begin{zadanie}
+  Ile jest połączeń w pary wierzchołków wypukłego $2k$-kąta tak, by odpowiadające mu przekątne (lub boki) nie przecinały się.
+\end{zadanie}
+
+\rozwiazanie{
+  to liczba catalana jest
+  $$C_k=\binom{2k}{k}-\binom{2k}{k-1}$$
+  czy też 
+  $$C_k=\sum_i\binom{k}{2i}C_i2^{n-2i}$$
+  $$C_k=\sum_{i=0}^{k-1}C_iC_{k-i}$$
+  wybieramy wierzchołek, łączymy go z czymś i liczymy na lewo i na prawo od tej przekątnej.
+}
+
+\begin{zadanie}
+  Niech $n=p_1^{n_1}p_2^{n_2}\cdot\dots\cdot p_s^{n_2}$, $\phi$ będzie funkcją Eulera i 
+  $$\psi(n)=\text{lcm}(\phi(p_1^{n_1}),\phi(p_2^{n_2}), ...,\phi(p_s^{n_2})).$$
+  Udowodnij, że dla $a$ względnie pierwszego z $n$ zachodzi $n|a^{\psi(n)}-1$.
+\end{zadanie}
+
+\rozwiazanie{
+  Mamy $\phi(p_i^{n_i})=p_i^{n_i}-p_i^{n_i-1}$, bo wykluczamy wszystkie możliwe wartości gcd. I teraz pewnie chcemy wykorzystać fakt, że jeśli $a$ jest względnie pierwsze z $n$, to $a^{\phi(n)}-1$ jest podzielne przez $n$. Jest też fakt, że $\phi(mn)=\phi(m)\phi(n)\cdot{gcd}{\phi(gcd)}$, które się z kolei udowadnia $\phi(n)=n\prod (1-\frac{1}{p_i})$ dla $p_i$ w rozkładzie $n$.
+}
+
+\begin{zadanie}
+  Na polach szachownicy $n\times n$ rozmieszczono $n^2$ różnych liczb całkowitych, po jednej na każdym polu. W każdej kolumnie pole z największą liczbą pomalowano na czerwono. Zbiór $n$ pól szachownicy nazwiemy dopuszczalnym, jeżeli żadne dwa z tych pól nie znajdują się w tym samum wierszu ani w tej samej kolumnie. Spośród wszystkich zbiorów dopuszczalnych wybrano zbiór, dla którego suma liczb umieszczonych na jego polach jest największa. Wykazać, że w tak wybranym zbiorze jest czerwone pole.
+\end{zadanie}
+
+\rozwiazanie{nie chce mi sie pisac https://archom.ptm.org.pl/?q=node/391 }
+
+\begin{zadanie}
+  Dane są karty $3$ pola na $3$. W każdym z pól możemy zrobić dziurkę. Karty są na tyle symetryczne, że możemy je obracać wokół środka i odwracać na drugą stronę nie wiedząc potem w jakiej pozycji były one na początku. Pokaż, że istnieje $8$ rozróżnialnych kart $3\times 3$ z dwoma dziurkami. Narysuj te karty.
+\end{zadanie}
+
+\rozwiazanie{
+  Można to zrobić Korzystając z liczby orbit etc. Tzn. $|X/G|=\frac{1}{|G|}\sum_{g\in G}|X^g|$ czyli ilość orbit to $\frac{1}{|G|}$ suma ilości elementów niezmienniczych na każdy z elementów grupy.
+}
+
+\end{document}
