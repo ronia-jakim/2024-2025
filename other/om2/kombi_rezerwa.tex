@@ -1,0 +1,35 @@
+%! TeX program = lualatex
+\documentclass{article}
+
+\input{preamble.tex}
+
+\title{Kombinatoryczna rezerwa}
+\date{17.01.2025}
+\author{Weronika Jakimowicz}
+
+\begin{document}
+\fontsize{12pt}{18pt}\selectfont
+
+\maketitle\thispagestyle{empty}
+
+\begin{zadanie}
+  Karty są ponumerowane od $1$ do $n$ i ułożone w rzędzie długości $n\geq 5$. W jednym kroku możemy wybrać dowolny blok kolejnych kart, których liczby są w rosnącym lub malejącym porządku i obrócić ten blok Np. dla $n=9$ ułożenie 9 1 \underline{6 5 3} 2 7 4 8 może zostać zamienione w 9 1 \underline{3 5 6} 2 7 4 8. Pokaż, że w co najwyżej $2n-6$ ruchach można ułożyć te $n$ kart tak, że ich liczby są ustawione rosnąco lub malejąco.
+\end{zadanie}
+
+\rozwiazanie{
+  Indukcja? Załóżmy, że mamy permutację zaczynającą się od $k$. W $2(n-1)+6$ krokach umiemy ją ustawić w (k, 1, 2, ..., n) lub (k, n, n-1, n-2, ..., 1). Pierwszy z nich potrafimy w jednym kroku zmienić w (k, k-1, k-2, ..., 1, k+1, k+2, ..., n) a drugi w (k, k+1, k+2, ..., n-1, n, k-1, ..., 1)
+
+  Jeszcze jeden krok naprawia porządek, czyli mamy $2(n-1)+6+2$ i wystarczy pokazać przypadek bazowy, czyli $n=5$.
+}
+
+\begin{zadanie}
+  $n$ uczniów jest ustawionych w okręgu. Ich wysokości to $h_1<h_2<...<h_n$, numerowanych zgodnie z ruchem wskazówek zegara. Jeśli student wzrostu $h_k$ stoi bezpośrednio za studentem wzrostu $h_{k-2}$ lub mniej, to mogą oni zamienić się miejscami. Pokaż, że takich zamian możliwych jest co najwyżej $\binom{n}{3}$.
+\end{zadanie}
+
+\rozwiazanie{
+  Niech $s_k$ będzie liczbą możliwych przestawień student wysokości $k$ zmieni się z kimś krótszym. Oczywiście $s_1=s_2=0$. Myślimy teraz ile jest osób między $k$-tym a $k-1$ studentem wzrostu nie więcej niż $h_{k-2}$. Oczywiście jest tego $(k-2)$ sztuki (jeśli wszyscy tam stoją). Ta liczba zmniejsza się o $1$ przy każdej zmianie studenta $k$ i wzrasta, gdy $k-1$ uczeń się zmienia. Jeśli ktoś wyższy od $k$ lub $k-1$ się zmieni z nimi, to ta liczba osób krótszych się nie zmienia.
+
+  Stąd $s_k-s_{k-1}$ jest ilością studentów krótszych od $k-2$ między $k$tym a $k-1$szym. Stąd $s_k-s_{k-1}\leq k-2$. Można pokazać, że $s_k\leq \binom{k-1}{2}$ i jak to zsumujemy to dostajemy $\binom{n}{3}$ (trójkąt pascala).
+}
+
+\end{document}
