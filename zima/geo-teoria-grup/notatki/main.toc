@@ -23,5 +23,6 @@
 \contentsline {subsection}{\numberline {2.}Abstrakcyjne funkcje wzrostu}{30}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {3.}Tempo wzrostu grupy}{30}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {4.}Grupy o wzroście wielomianowym}{33}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {5.}Związek ze wzrostem objętości}{35}{subsection.2.5.5}%
-\contentsline {section}{\numberline {04.12.2024}To be named 2}{36}{section.2.6}%
+\contentsline {section}{\numberline {20.12.2024}Metryka Riemanna}{35}{section.2.6}%
+\contentsline {subsection}{\numberline {1.}Związek ze wzrostem objętości}{35}{subsection.2.6.1}%
+\contentsline {section}{\numberline {04.12.2024}To be named 2}{37}{section.2.7}%

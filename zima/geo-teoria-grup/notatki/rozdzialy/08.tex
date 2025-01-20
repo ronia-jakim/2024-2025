@@ -1,0 +1,41 @@
+\section{20.12.2024}{Metryka Riemanna}
+
+\subsection{Związek ze wzrostem objętości}
+
+\begin{definition}{}{}
+  Niech $M$ będzie zupełną rozmaitościa z metryką Riemanna $g$, która indukuje metrykę $d_g$ i miarę objętości $\vol_g$.
+
+  \buff{Funkcja wzrostu objętości} (volume growth) na rozmaitości $M$ względem punktu bazowego $p\in M$ to funkcja $\beta_g^{M,p}:\R_{\geq 0}\to \R_{\geq0}$ zadana przez 
+  % $$r\overset{\mapsto}{\beta_{g}^{M,p}} \vol_g(B_r(p)), $$
+  $$\beta_g^{M,p}(r)=\vol_g(B_r(p))$$
+  
+  gdzie $B_r(p)$ to kula względem metryki $d_g$.
+\end{definition}
+
+\begin{lemma}{Milnor-\v{S}varc}{}
+  Niech $M$ będzie zamkniętą, spójną rozmaitością Riemannowską i niech $\widetilde{M}$ będzie jej nakryciem uniwersalnym z indukowaną metryką $\widetilde{g}$. Wówczas dowolna funkcja wzrostu objętości $\beta_{\widetilde{g}}^{\widetilde{M},p}$ na $\widetilde{M}$ jest quasi-równoważna z funkcją wzrostu $\beta_{\pi_1 M}$ grupy podstawowej $\pi_1M$.
+\end{lemma}
+
+\begin{example}
+  Niech $M=\mathbb{T}^2=S^1\times S^1$ ze standardową metryką produktową. Wówczas $(\widetilde{M}, \widetilde{g})=\R^2$ oraz $\pi_1M=\Z^2$. Obie funkcje wzrostu są tutaj kwadratowe.
+\end{example}
+
+\begin{proof}
+  Zacznijmy od kilku stwierdzeń
+  \begin{itemize}
+    \item grupa podstawowa zamkniętej rozmaitości jest skończenie generowalna
+    \item oraz działa na nakryciu uniwersalnym (przez deck-transformacje) $\pi_1 M\acts\widetilde{M}$.
+  \end{itemize}
+  Niech teraz $S=\{s_1,...,s_n\}$ będzie skończonym układem generatorów $\pi_1M$ i $p\in\widetilde{M}$ będzie dowolnym punktem. \buff{Promień injektywności} $M$ definiujemy jako
+  $$\text{injrad}(M, g):=\frac{1}{2}\inf \{|\gamma|_g\;:\;\gamma\text{ - gładka, homotopijnie nietrywialna pętla w }M\}.$$
+  Dla rozmaitości zamkniętych jest to zawsze liczba dodatnia. 
+
+  W takim razie dla $0<\epsilon<\text{injrad}(M, g)$ mamy rozłączne kule w $\widetilde{M}$
+  $$B_\epsilon(p)\cap B_\epsilon(\gamma\cdot p)=\emptyset$$
+  dla dowolnego $\gamma\in\pi_1(M)-\{1\}$. W nakryciu jeśli mamy krzywą $c$ łączącą $p$ z $\gamma\cdot p$ to długość odpowiadającej jej pętli w $M$ $\pi(c)\geq\text{injrad}(M, g)$. Czyli długość samego $c$ też jest większa niż $\text{injrad}(M, g)$ a więc kule o mniejszym promieniu są rozłączne.
+
+  Niech teraz $D:=\max\{d_{\widetilde{g}}(p, s\cdot p)\;:\;s\in S\}<\infty$. Można pokazać, że dla każdego $\gamma\in\pi_1M$ zachodzi
+  $$d_{\widetilde{g}}(p, \gamma\cdot p)\leq D|g|_S.$$
+  To oznacza, że dla dowolnego $m\geq 0$ kula $B_{Dm}(p)$ zawiera wszystkie punkty $\gamma\cdot p$ takie, że $|\gamma|_S\leq m$. Czyli jeśli dodamy do promienia $\epsilon>0$, to kula $B_{Dm+\epsilon}(p)$ zawiera te punkty $\gamma\cdot p$ jak i ich małe otoczenia $B_\epsilon(\gamma\cdot p)=\gamma\cdot B_\epsilon(p)$.
+\end{proof}
+
