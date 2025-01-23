@@ -23,6 +23,7 @@
 \contentsline {subsection}{\numberline {2.}Abstrakcyjne funkcje wzrostu}{30}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {3.}Tempo wzrostu grupy}{30}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {4.}Grupy o wzroście wielomianowym}{33}{subsection.2.5.4}%
-\contentsline {section}{\numberline {20.12.2024}Metryka Riemanna}{35}{section.2.6}%
-\contentsline {subsection}{\numberline {1.}Związek ze wzrostem objętości}{35}{subsection.2.6.1}%
-\contentsline {section}{\numberline {04.12.2024}To be named 2}{37}{section.2.7}%
+\contentsline {section}{\numberline {20.12.2024}Funkcja wzrostu i metryka Riemanna}{35}{section.2.6}%
+\contentsline {section}{\numberline {04.12.2024}Wymiar homologiczny, $\asdim \mathbb {Z}^n=\asdim \mathbb {R}^n= n$}{38}{section.2.7}%
+\contentsline {subsection}{\numberline {1.}Wymiar asymptotyczny}{38}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.}Dowód homologiczny}{39}{subsection.2.7.2}%

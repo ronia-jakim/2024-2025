@@ -1,6 +1,6 @@
-\section{20.12.2024}{Metryka Riemanna}
+\section{20.12.2024}{Funkcja wzrostu i metryka Riemanna}
 
-\subsection{Związek ze wzrostem objętości}
+% \subsection{Związek ze wzrostem objętości}
 
 \begin{definition}{}{}
   Niech $M$ będzie zupełną rozmaitościa z metryką Riemanna $g$, która indukuje metrykę $d_g$ i miarę objętości $\vol_g$.
@@ -37,5 +37,34 @@
   Niech teraz $D:=\max\{d_{\widetilde{g}}(p, s\cdot p)\;:\;s\in S\}<\infty$. Można pokazać, że dla każdego $\gamma\in\pi_1M$ zachodzi
   $$d_{\widetilde{g}}(p, \gamma\cdot p)\leq D|g|_S.$$
   To oznacza, że dla dowolnego $m\geq 0$ kula $B_{Dm}(p)$ zawiera wszystkie punkty $\gamma\cdot p$ takie, że $|\gamma|_S\leq m$. Czyli jeśli dodamy do promienia $\epsilon>0$, to kula $B_{Dm+\epsilon}(p)$ zawiera te punkty $\gamma\cdot p$ jak i ich małe otoczenia $B_\epsilon(\gamma\cdot p)=\gamma\cdot B_\epsilon(p)$.
+
+  Zatem 
+  $$\vol_{\widetilde{g}}(B_{Dm+\epsilon}(p))\geq \beta_{\pi_1M, S}(m)\cdot\vol_g(B_\epsilon(p))$$
+  $$\beta_{\pi_1M,S}(m)\leq\frac{1}{\vol_g(B_\epsilon(p))}\cdot \vol_{\widetilde{g}}(B_{Dm+\epsilon}(p))$$
+  Co oznacza, że funkcja objętości $\vol_{\widetilde{g}}$ quasi-dominuje funkcję wzrostu $\beta_{\pi_1M,S}$.
+  \bigskip
+
+  Dowód odwrotnej quasi-dominacji zaczynamy od przypomnienia, że działanie $\pi_1M\acts \widetilde{M}$ jest kozwarte. Niech $D>0$ będzie takie, że 
+  $$\bigcup_{\gamma\in\pi_1M}\gamma\cdot B_D(p)=\widetilde{M}\quad\left[=\bigcup_{\gamma\in\pi_1M}B_D(\gamma\cdot p)\right]$$
+  Dla dowolnego $r>0$ kula $B_r(p)$ zawiera się w sumie kul $B_D(\gamma\cdot p)$ dla których $d(p, \gamma\cdot p)\leq r+D$:
+  $$ B_r(p)\subseteq \bigcup\left\{ B_D(\gamma\cdot p)\;:\;d(p, \gamma\cdot p)\leq r+D \right\} $$
+
+  Lemat Milnora-\v{S}varca \ref{lmm:M-S lemma} mówi, że odwzorowanie
+  \begin{center}
+    \begin{tikzcd}
+      \pi_1M\ni \gamma\arrow[r, mapsto] & \gamma\cdot p\in(\widetilde{M}, d_{\widetilde{g}})
+    \end{tikzcd}
+  \end{center}
+  jest quasi-izometrią. Niech $(L,C)$ będą stałymi z definicji q.i., czyli 
+  $$d(p,\gamma\cdot p)\geq \frac{1}{C}|g|_S-L.$$
+  Wtedy zbiór 
+  $$\{\gamma\in\pi_1M\;:\;d(p,\gamma\cdot p)\leq r+D\}$$
+  zawiera się w zbiorze
+  $$\{\gamma\in\pi_1M\;:\;|g|_S\leq C(r+D+L)\}.$$
+  W takim razie
+  $$\vol_g(B_r(p))\leq\beta_{\pi_1M,S}(C\cdot r+C(D+L))\cdot \vol_g(B_D(p)),$$
+  a więc funkcja wzrostu objętości jest quasi-zdominowana przez funkcję wzrostu $\beta_{\pi_1M,S}$ grupy $\pi_1M$.
 \end{proof}
+
+Funkcje wzrostu objętości w rozmaitościach $\widetilde{M}$ o ujemnej krzywiźnie są wykładnicze, zaś w rozmaitościach o nieujemnej są quasi-zdominowane przez wielomiany stopnia $\dim(M)$. Wynik Milnora kładł nacisk na własności wzrostu grup podstawowych $\pi_1M$ - traktowany jako analog wcześniej znanego faktu, że grupy podstawowe rozmaitości o dodatniej krzywiźnie są skończone.
 
