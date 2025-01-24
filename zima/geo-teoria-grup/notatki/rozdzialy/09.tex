@@ -1,4 +1,4 @@
-\section{04.12.2024}{Wymiar homologiczny, $\asdim \Z^n=\asdim\R^n= n$}
+\section{04.12.2024}{Wymiar asymptotyczny oraz dowód $\asdim \Z^n=\asdim\R^n= n$}
 
 Niech $X$ będzie zwartą przestrzenią metryczną. Definiujemy wówczas \buff{wymiar $\dim X$} jako najmniejsze $n$ takie, że dla każdego $\epsilon>0$ istnieje skończone pokrycie $U_\epsilon$ przestrzeni $X$ otwartymi zbiorami o średnicy $<\epsilon$ takie, że każdy $x\in X$ należy do $\leq (n+1)$ zbiorów z $U_\epsilon$.
 
@@ -64,36 +64,53 @@ Metoda homologiczna będzie polegała na:
 
 Określamy w oczywisty sposób $q$-wymiarowe $\epsilon$-łańcuchy, brzegowanie oraz $\epsilon$-homologie $H_q^\epsilon(X)$ [teoria homologii Alexandrowa].
 
-Dla $\epsilon$-łańcucha $U$ w $X$ definiujemy nośnik $supp(U)$ jako zbiór wszystkich wierzchołków we wszystkich $\epsilon$-sympleksach z $U$ (mających niezerowy współczynnik).
+Dla $\epsilon$-łańcucha $U$ w $X$ definiujemy \buff{nośnik $\supp(U)$} jako zbiór wszystkich wierzchołków we wszystkich $\epsilon$-sympleksach z $U$ (mających niezerowy współczynnik).
 
-Dla $\epsilon$-cyklu $z$, jego $\epsilon$-wypełnieniem nazywamy dowolny $\epsilon$-łańcuch $w$ taki, że $\partial w=z$.
+Dla $\epsilon$-cyklu $z$, jego \buff{$\epsilon$-wypełnieniem} nazywamy dowolny $\epsilon$-łańcuch $w$ taki, że $\partial w=z$.
 
 
-%% OBRAZEK ZE JEST KWADRAT JAKO Z I JAK GO WYPELNIMY TROJKACIKAMI TO CALOSC JEST W TAKIE, ZE \PARTIAL W=Z
-\begin{center}
-  \begin{tikzpicture}
-    \foreach \x in {0,..., 7} {
-      \fill (\x, 0) circle (2pt);
-      \fill (\x, 7) circle (2pt);
-      \fill(0, \x) circle (2pt);
-      \fill(7, \x) circle (2pt);
-    }
 
-  \end{tikzpicture}
-\end{center}
-
-\begin{definition}{}{}
   $\asdim_h(X)\leq p$ gdy dla każdego $\nu>0$ istnieje $\alpha>0$ (zależna tylko od $X$ i $\nu$) taka, że dla $q\geq p$ dowolny $q$-wymiarowy $\nu$-cykl $\phi$, $\nu$-homologicznie trywialny w $X$, jest także $\alpha$-homologicznie trywialny w swoim nośniku $supp(\phi)$.
 
   $\asdim_h(X)\geq n$ gdy istnieje $\nu$ takie, że dla każdego $\alpha$ istnieje $(n-1)$-wymiarowy $\nu$-cykl $\nu$-homologii $\phi$ trywialny w $X$ oraz $\alpha$-homologicznie nietrywialny w swoim nośniku.
 
-  $\asdim_h(X)=\min \{p\;:\;\asdim_h(X)\leq p\}$
+\begin{definition}{asymptotyczny wymiar homologiczny}{}
+  $$\asdim_h(X)=\min \{p\;:\;\asdim_h(X)\leq p\}$$
 \end{definition}
+% \end{definition}
 
-Można pokazać, że $\asdim_h$ jest niezmiennikiem q.i..
+Można pokazać, że \buff{$\asdim_h$ jest niezmiennikiem q.i.}.
 
 % \subsection{Szkic dowodu, że $\asdim_h(\Z^n)=\asdmin_h(\R^n)\geq n$}
 
+\begin{lemma}{}{}
+  $$\asdim_h(\Z^n)=\asdim_h(\R^n)\geq n$$
+\end{lemma}
+
+\begin{proof}
+%% OBRAZEK ZE JEST KWADRAT JAKO Z I JAK GO WYPELNIMY TROJKACIKAMI TO CALOSC JEST W TAKIE, ZE \PARTIAL W=Z
+  Niech $\phi$ będzie $(n-1)$-wymiarowym $r$-cyklem, który jest $r$-homologicznie trywialny w $\R^n$. Na obrazku niżej jest taki cykl narysowany dla $r=1$.
+  \begin{center}
+    \begin{tikzpicture}
+      \foreach \x in {0,..., 7} {
+        \fill (\x, 0) circle (2pt);
+        \fill (\x, 7) circle (2pt);
+        \fill(0, \x) circle (2pt);
+        \fill(7, \x) circle (2pt);
+
+        \draw (0,\x)--(7, \x);
+        \draw (\x, 0)--(\x, 7);
+
+        \draw (0, \x)--(\x, 0);
+      }
+      \foreach \x in {1, ..., 7} \draw (7, \x)--(\x, 7);
+
+    \end{tikzpicture}
+  \end{center}
+
+  Niech $\alpha\in\R$ będzie dowolne. Twierdzimy, że \textbf{$\phi$ jest $\alpha$-homologicznie nietrywialny w swoim oteczniu}.
+  {\large\color{red}NIE ROZUMIEM DOWODU CLAIMU I CO SIE DZIEJE NA OBRAZKU}
+\end{proof}
 
 \begin{theorem}{}{}
   $$\asdim_h(\Z^n)=\asdim_h(\R^n)\geq n$$
