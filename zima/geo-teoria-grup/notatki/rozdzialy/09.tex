@@ -85,6 +85,7 @@ Można pokazać, że \buff{$\asdim_h$ jest niezmiennikiem q.i.}.
 
 \begin{lemma}{}{}
   $$\asdim_h(\Z^n)=\asdim_h(\R^n)\geq n$$
+  % \color{red}Jeśli $\phi$ jest $(n-1)$-wymiarowym $r$-cyklem, który jest $r$-homologicznie trywialny w $\R^n$, to istnieje $\alpha$ taki, że ???
 \end{lemma}
 
 \begin{proof}
@@ -111,18 +112,79 @@ Można pokazać, że \buff{$\asdim_h$ jest niezmiennikiem q.i.}.
   Niech $\alpha\in\R$ będzie dowolne. Twierdzimy, że \textbf{$\phi$ jest $\alpha$-homologicznie nietrywialny w swoim oteczniu}.
   {\large\color{red}NIE ROZUMIEM DOWODU CLAIMU I CO SIE DZIEJE NA OBRAZKU}
 \end{proof}
-
-\begin{theorem}{}{}
-  $$\asdim_h(\Z^n)=\asdim_h(\R^n)\geq n$$
-\end{theorem}
-
-{\large\color{red}TUTAJ ZDJECIA JAKIES CZY COS}
+%
+% \begin{theorem}{}{}
+%   $$\asdim_h(\Z^n)=\asdim_h(\R^n)\geq n$$
+% \end{theorem}
 
 \begin{theorem}{}{}
   $$\asdim(X)\geq\asdim_h(X)$$
 \end{theorem}
 
+\begin{proof}
+  Załóżmy, że $\asdim X=p$. Naszym celem jest pokazanie, że $\asdim_h X\leq p$. 
 
+  Ustalmy $r>0$. Wtedy dla pewnego $q\geq p$ niech $\phi$ będzie $q$ wymiarowym $r$-cyklem $r$-homologicznie trywialnym w $X$. Niech $\mathcal{U}_r$ będzie pokryciem $X$ zbiorami o średnicach $\leq R$ takich, że dowolna kula $B_r(x)$ przecina co najwyżej $(p+1)$ zbiorów z $\mathcal{U}_r$. 
 
+  Rozważmy \buff{$r$-nerw $N$} dla $\mathcal{U}_r$, czyli kompleks taki, że
+  \begin{itemize}
+    \item $V(N)=\mathcal{U}_r$ wierzchołki odpowiadają zbiorom pokrycia
+    \item $U_1,...,U_m\in \mathcal{U}_r$ rozpinają sympleks w $N$ gdy istnieje kula $B_r(x)$ przecinająca $U_1,..., U_m$
+    \item $N$ jest $p$-wymiarowym kompleksem symplicjalnym.
+  \end{itemize}
 
+  Chcemy teraz przypisać punktom $X$ zbioru z $\mathcal{U}$ i vice versa. Dla każdego $x\in X$ wybierzmy $U_x\in \mathcal{U}_r$ taki, że $x\in U_x$ oraz dla każdego $U\in \mathcal{U}_r$ wybierzmy reprezentanta $z_U\in X$ taki, że $z_U\in U$.
+
+  Przyporządkowanie $x\mapsto U_x$ zmienia $\phi$ na symplicjalny $q$-wymiarowy cykl $\phi_N$ w $N$ symplicjalnie homologiczny zeru. Ponieważ w $N$ nie ma $(q+1)$-sympleksów, to $\phi_N=0$ jako łańcuch.
+
+  Przekształcenie $x\mapsto z_{U_x}$ (złożenie $x\mapsto U_x\mapsto z_{U_x}$) przekształca $\phi$ w $q$-wymiarowy $(r+2R)$-cykl $\phi'$ $(r+2R)$-homologiczny z wyjściowym $\phi$ przez produktowy $(q+1)$ łańcuch $w$. Ponieważ krokiem pośrednim między $\phi$ a $\phi'$ jest $\phi_N=0$, to również $\phi'=0$. W takim razie $w$ jest $(r+2R)$-wypełnieniem $\phi$ o wierzchołkach oddalonych o nie więcej niż $R$ od $\supp\phi$.
+
+  Wierzchołki z łańcucha $w$ leżące poza $\supp\phi$ przesuwamy o nie więcej niż $R$ tak, aby były w $\supp\phi$, dzięki czemu otrzymujemy $(r+4R)$-wypełnienie $\phi$ w $\supp\phi$. W takim razie dla $\alpha=r+4R$ $\phi$ jest $\alpha$-homologicznie trywialny w swoim nośniku. Stąd $\asdim_h(X)\leq p=\asdim(X)$.
+\end{proof}
+
+Dostajemy więc 
+$$n\geq \asdim(\Z^n)\geq \asdim_h(\Z^n)\geq n$$
+czyli $\asdim(\Z^n)=n$.
+
+\subsection{Zgrubna (coarse) niezmienniczość wymiaru asymptotycznego}
+
+\begin{definition}{zgrubne zanurzenie}{}
+  Odwzorowanie 
+  $$f:(X, d_X)\to (Y, d_Y)$$ 
+  jest \buff{zgrubnym zanurzeniem} (coarse embedding), jeśli istnieją dwie funkcje 
+  $$\lambda,\mu:\R_+\to \R_+,$$
+  które rozbiegają
+  $$\lim_{t\to\infty}\lambda(t)=\infty=\lim_{t\to\infty}\mu(t)$$
+  oraz dla dowolnych $x,y\in X$ mamy
+  $$\lambda(d_X(x,y))\leq d_Y(f(x),f(y))\leq \mu(d_X(x,y)).$$
+\end{definition}
+
+Ponadto powiemy, że $f$ jest \buff{zgrubną równoważnością}, jeśli istnieje $L>0$ takie, że $f(x)$ jest $L$-siecią w $(Y, d_Y)$. Równoważnie: istnieje zgrubne zanurzenie $g:Y\to X$ takie, że $f\circ g$ oraz $g\circ f$ są w skończonym dystansie od identyczności.
+
+\begin{example}[m]
+  \item Niech $H\leq G$ będzie skończoną podgrupą w skończenie generowanej grupie z generatorami $T\subseteq S$. Metryki $d_T$ oraz $d_S|_H$ na $H$ są zgrubnie równoważne.
+  \item Dla przeliczalnie generowanej grupy $(G,S)$ przypisujemy wagi dążące do $\infty$ jej generatorom. Wówczas dowolne dwie ważone metryki słów na $G$ są zgrubnie równoważne.
+\end{example}
+
+\begin{fact}{}{}
+  Wymiar asymptotyczny jest niezmiennikiem zgrubnej równoważności przestrzeni metrycznych.
+\end{fact}
+
+\begin{enumerate}
+  \item Jeśli $X$ posiada zgrubne włożenie w $Y$ to $\asdim(X)\leq\asdim(Y)$.
+  \item Jeśli $H\leq G$ oraz $H,G$ to skończenie generowane grupy to $\asdim(H)\leq \asdim(G)$
+  \item Istnieje naturalne pojęcie $\asdim(G)$ dla przeliczalnie generowalnych grup $G$.
+\end{enumerate}
+
+\subsection{Przykład użycia zgrubnej równoważności}
+
+$$Nil=\left\{ \begin{bmatrix}1&a&b\\0&1&c\\0&0&1\end{bmatrix}\;:\;a,b,c\in\Z \right\}-\Z^2\ltimes_Z\Z$$
+$$A=\begin{bmatrix}1&1&\\0&1\end{bmatrix}$$
+
+Grupy $Nil$ oraz $\Z^3$ nie są quasi-izometryczne, ale są zgrubnie równoważne poprzez funkcję
+$$f:\Z^3\to Nil$$
+$$f(a,b,c)=(a,b,c),$$
+gdyż dla $x=(a,b,c)$ oraz $y=(a',b',c')$ mamy
+$$d_{Nil}(x,y)\leq d_{\Z^3}(x,y)\leq(d_{Nil}(x,y))^2,$$
+stąd $\asdim(Nil)=\asdim(\Z^3)=3$.
 

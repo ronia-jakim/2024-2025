@@ -27,3 +27,7 @@
 \contentsline {section}{\numberline {04.12.2024}Wymiar asymptotyczny oraz dowód $\asdim \mathbb {Z}^n=\asdim \mathbb {R}^n= n$}{38}{section.2.7}%
 \contentsline {subsection}{\numberline {1.}Wymiar asymptotyczny}{38}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.}Dowód homologiczny}{39}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {3.}Zgrubna (coarse) niezmienniczość wymiaru asymptotycznego}{41}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {4.}Przykład użycia zgrubnej równoważności}{42}{subsection.2.7.4}%
+\contentsline {chapter}{\numberline {3}Hiperboliczność}{43}{chapter.3}%
+\contentsline {section}{\numberline {11.12.2024}Przestrzenie hiperboliczne}{43}{section.3.1}%

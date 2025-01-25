@@ -368,6 +368,7 @@ INPUT ./rozdzialy/06.aux
 INPUT ./rozdzialy/07.aux
 INPUT ./rozdzialy/08.aux
 INPUT ./rozdzialy/09.aux
+INPUT ./rozdzialy/10.aux
 OUTPUT main.aux
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/ts1cmr.fd
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/context/base/mkii/supp-pdf.mkii
@@ -411,8 +412,8 @@ INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-fin
 OUTPUT main.toc
 OUTPUT rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/01_cayley.tex
-OUTPUT luatex.qIOghY/1.png
-INPUT ./luatex.qIOghY/1.png
+OUTPUT luatex.WM896x/1.png
+INPUT ./luatex.WM896x/1.png
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
 OUTPUT rozdzialy/03.aux
@@ -453,6 +454,8 @@ INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-fin
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/cm/cmr17.tfm
+OUTPUT rozdzialy/10.aux
+INPUT ./rozdzialy/10.tex
 INPUT ./main.aux
 INPUT ./rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/02.aux
@@ -463,6 +466,7 @@ INPUT ./rozdzialy/06.aux
 INPUT ./rozdzialy/07.aux
 INPUT ./rozdzialy/08.aux
 INPUT ./rozdzialy/09.aux
+INPUT ./rozdzialy/10.aux
 INPUT ./main.out
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
