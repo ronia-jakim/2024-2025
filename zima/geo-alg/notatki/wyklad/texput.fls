@@ -1,0 +1,3 @@
+PWD /home/maruda/Documents/2024-2025/zima/geo-alg/notatki/wyklad
+INPUT /nix/store/vwv57nhj45xqmv91cxf042mqkl8psab0-texlive-combined-full-2023-final/share/texmf-var/web2c/luahbtex/lualatex.fmt
+OUTPUT texput.log

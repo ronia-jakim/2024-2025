@@ -2,7 +2,7 @@
 \documentclass[twoside, a4paper, 12pt]{book}
 
 \title{Algebraic geometry}
-\author{\color{subtext1}Weronika Jakimowicz}
+\author{\color{subtext1}a desperate attempt to avoid failure}
 \date{}
 
 \usepackage[pl, dates]{../../../../template}
@@ -12,8 +12,9 @@
 \maketitle
 \thispagestyle{empty}
 \setcounter{page}{0}
+%
+% \tableofcontents
 
-\tableofcontents
 \mainmatter
 
 \pagestyle{fancy}
@@ -22,8 +23,263 @@
 % \include{./rozdzialy/01_schemes/01_schemes.tex} 
 
 
-\include{czesci/01_wstep.tex}
+% \include{czesci/01_wstep.tex}
+%
+% \include{czesci/02.tex}
 
-\include{czesci/02.tex}
+\chapter{Blitzkrieg z GA}
+
+\section{}{Noetherowskość, wymiary}
+
+For any $A\subseteq K[\overline{X}]$ we define
+$$V(A)=\{\overline{x}\in K^n\;:\;\forall\;F\in A\;F(\overline{x})=0\}.$$
+Let $I,J\trianglelefteq K[\overline{X}]$. Then
+\begin{itemize}
+  \item $A_0\subseteq A_1\implies V(A_1)\subseteq V(A_0)$
+  \item $V(\bigcup A_i)=\bigcap V(A_i)$
+  \item $V(I\cap J)=V(IJ)=V(I)\cup V(J)$
+  \item $V(I+J)=V(I)\cap V(J)$
+\end{itemize}
+
+For any $A\subseteq K[\overline{X}]$ there is a finite $A_0\subseteq A$ such that $V(A)=V(A_0)$ (by the Hilbert's basis theorem).
+
+\begin{definition}{Noetherian ...}{}
+  A topological space $X$ is called \buff{Noetherian} if any descending chain of closed subsets of $X$ stabilizes. Meanwhile, a ring is Noetherian if any ascending chain of ideals stabilizes.
+\end{definition}
+
+\begin{definition}{irreducible space}{}
+  A space $X$ is irreducible if it is not a non-trivial union of its two closed subseteq, i.e. for any $Y_1,Y_2\subseteq X$ closed $X=Y_1\cup Y_2$ then $X=Y_1$ or $Y_2$.
+\end{definition}
+
+If $X$ is a Noetherian space then
+\begin{itemize}
+  \item $X=X_1\cup...\cup X_k$ for some $X_1,...,X_k\subseteq X$ irreducible such that $X_i\not\subseteq X_j$ for $i\neq j$
+  \item this sequence is unique up to permutation of indices
+\end{itemize}
+
+An affinie algebraic set $V(A)$ is \buff{affine variety} if it is irreducble as a topological space with the Zariski topology.
+
+\begin{definition}{dimension}{}
+  $\dim(X)=n$ if there is a strictly decreasing sequence of irreducible closed subsets of $X$ such that 
+  $$X_n\subsetneq X_{n-1}\subsetneq...\subsetneq X_0\subseteq X$$
+\end{definition}
+
+For $V\subseteq \mathbb{A}^n$ we define the \buff{affine coordinate ring of $V$} as
+$$K[v]:=\{f\in \Func(V,K)\;:\;\exists F\in K[\overline{X}]\;:F|_V=f\}$$
+$K(V)$ is the field of fractions of $K[V]$, called \buff{the field of rational functions on $V$}.
+
+The \buff{ideal of $V$} is defined as 
+$$\ker\left(K[\overline{X}]\ni F\mapsto F|_V\in K[V]\right)$$
+which is the same as
+$$I(V)=\{F\in K[\overline{X}]\;:\;\forall\;\overline{x}\in V\;F(\overline{x})=0\}.$$
+The \buff{Zariski closure} of $V_0$ is the set $V(I(V_0))$.
+
+\begin{theorem}{Hillbert's Nullstellensatz}{}
+  \begin{description}
+    \item[weak] $I\trianglelefteq K[\overline{X}]\;\land;I\neq K[\overline{X}]\implies V(I)\neq\emptyset$
+    \item[strong/regular] $I\trianglelefteq K[\overline{X}]\implies I(V(I))=\sqrt{I}$
+  \end{description}
+\end{theorem}
+
+If $V\subseteq \mathbb{A}^n$ is Zariski closed, then the following are equivalent
+\begin{enumerate}
+  \item $V$ is irreducible
+  \item $I(V)$ is prime
+  \item $\exists P\trianglelefteq K[\overline{X}]$ prime such that $V=V(P)$ !!the field $K$ needs to be algebraically closed!!
+  \item $K[V]$ is a domain
+\end{enumerate}
+
+\begin{theorem}{}{}
+  If $F\in K[\overline{X}]$ is irreducible, then $V(F)$ is an affine variety.
+\end{theorem}
+
+Let $V\subseteq\mathbb{A}^n$ be an affine algebraic set. Then there is a bijection between $\begin{matrix}\text{radical}\\\text{prime}\end{matrix}$ ideals of $K[V]$ and the set of Zariski $\begin{matrix}\text{closed}\\\text{irreducible closed}\end{matrix}$ subsets of $V$.
+
+\begin{definition}{Krull dimension}{}
+  For a ring $R$ we define its Krull dimension $\dim(R)$ as the supremum $k\in\N$ such that there is a strictly increasing (or decreasing) sequence of prime ideals
+  $$P_0\subsetneq P_1\subsetneq ...\subsetneq P_k$$
+  of $R$.
+\end{definition}
+{\large\boldmath$$\color{blue}\dim(V)=\dim(K[V])$$}
+
+\begin{theorem}{}{}
+  Let $R$ be a finitely generated $K$-algebra which is a domain. Then
+  $$\dim(R)=\text{trdeg}_K(R_0)$$
+  the dimension of $R$ is equal to the transcendental degree of the field of fractions of $R$ over $K$.
+\end{theorem}
+
+If $R=K[V]$ then $R_0=K(V)$ and the above statement holds.
+
+\section{}{Kategoryje}
+
+Let $V\subseteq \mathbb{A}^n$ and $W\subseteq \mathbb{A}^m$ be affine algebraic sets. Then $\phi:V\to W$ is a \buff{morphism} if there are $f_1,...,f_m\in K[V]$ such that
+$$\phi(v)=(f_1(v),...,f_m(v)).$$
+
+For such a morphism we define
+$$\phi^*:K[W]\to K[V]$$
+$$\phi^*(f)=f\circ \phi.$$
+\begin{enumerate}
+  \item The mapping $\phi\mapsto \phi^*$ is an isomorphism between the set of morphisms $V\to W$ and the set of morphisms $K[W]$ to $K[V]$.
+  \item Any finitely generated $K$-algebra $R$ which is reduced (no nilpotent elements) is isomorphic over $V$ to $K[V]$ for some affine algebraic $V$.
+\end{enumerate}
+
+{\color{blue}\large\boldmath
+$$V\cong W\iff K[V]\cong_K K[W]$$
+}
+
+For $f\in K(V)$, the \buff{domain} of $f$, $\dom f$, is the set of points $v\in V$ such that there are $f_1, f_2\in K[V]$, $f=\frac{f_1}{f_2}$ and $f_2(v)\neq0$.
+
+\begin{definition}{}{}
+  Let $f\in K(V)$ and $v\in V$.
+  \begin{enumerate}
+    \item $f$ is regular at $v$ if $v\in \dom f$
+    \item $\Oo_{V,v}:=\{f\in K(V)\;:\;v\in \dom f\}$
+    \item $f$ is regular if $f$ is regular at each $v\in V$, i.e. $\dom f=V$.
+  \end{enumerate}
+\end{definition}
+
+\begin{fact}{}{}
+  For any $v\in V$
+  $$\Oo_{V,v}=K[V]_{I_V(v)}=\{\frac{a}{b}\;:\;a\in K[V],b\in K[V]-I_V(v)\}$$
+\end{fact}
+
+Denote by
+$$\mm_{V,v}\trianglelefteq \Oo_{V,v}$$
+the maximal ideal of $\Oo_{V,v}$.
+
+$f$ is regular $\iff$ $f\in K[V]$
+
+\begin{lemma}{}{}
+  For a morphism $\phi:V\to W$ its dual $\phi^*$ is a monomorphism $\iff$ $\phi$ is \buff{dominant}, i.e. $\phi(V)$ is Zariski dense in $W$ (is an epimorphism in its category).
+\end{lemma}
+
+A function $\phi:U\subseteq V\to W$ is a \buff{rational function} between $V$ and $W$ if there are $f_1,..., f_m\in K(V)$ such that 
+$$U=\dom f_1\cap...\cap \dom f_m$$
+and for all $v\in U$ there is $\phi(v)=(f_1(v),..., f_m(v))$.
+
+$\phi:V\dasharrow W$ denotes a \buff{dominant rational function} from $V$ to $W$.
+
+For any field extension $K\subseteq L$ such that $L$ is finitely generated over $K$ there is an affine variety $V$ such that $L\cong_K K(V)$.
+
+\textbf{The category of affine varieties and dominant rational maps is \emph{entiequivalent} or \emph{dually equivalent} to the category of finitely generated field extensions of $K$}.
+
+\section{}{Smooooth \emph{like the fur of a newborn goat}}
+
+Let $R$ be a ring. The map $\partial R\to R$ is called a \buff{derivation} on $R$ if for all $a,b\in R$ 
+$$\partial(a+b)=\partial(a)+\partial(b)$$
+$$\partial(ab)=\partial(a)b+a\partial(b).$$
+
+The \buff{Jacobian matrix} of $\overline{F}=(F_1,...,F_m)$, $F_i\in K[\overline{X}]$ is 
+$$J_{\overline{F}}:=\begin{pmatrix}\frac{\partial F_1}{\partial X_1} & \dots & \frac{\partial F_1}{\partial X_n}\\\vdots & \ddots & \vdots \\ \frac{\partial F_m}{\partial X_1}&\dots &\frac{\partial F_m}{\partial X_n}\end{pmatrix}$$
+
+\begin{fact}{}{}
+  If $(G_1,..., G_k)=I=(F_1,..., F_m)\trianglelefteq K[\overline{X}]$ and $v\in V(I)$, then 
+  $$\rank(J_{\overline{G}}(v))=\rank(J_{\overline{F}}(v)).$$
+\end{fact}
+
+\begin{definition}{non-singular variety}{}
+  Let $V\subseteq\A^n$ and $F_1,..., F_m\in I(V)=(F_1,..., F_m)$. We say that $a\in V$ is a \buff{non-singular} or smooth point of $V$ if 
+  $$\rank(J_{\overline{F}}(a))=n-\dim(V).$$
+  We say that $V$ is a non-singular variety or a smooth variety if $V$ is irreducible and all points of $V$ are smooth.
+\end{definition}
+
+$F\in K[X,Y]$ and $V=V(F)\subseteq \A^2$
+\begin{enumerate}
+  \item $F\notin K\implies |V|=\infty$
+  \item $|V(F, \frac{\partial F}{\partial X}, \frac{\partial F}{\partial Y})|<\infty\implies\sqrt{(F)}=(F)\;\land\;I(V)=(F)$
+  \item $V(F, \frac{\partial F}{\partial X}, \frac{\partial F}{\partial Y})=\emptyset \implies V$ is smooth 
+\end{enumerate}
+
+\begin{lemma}{}{}
+  A point $a\in V$ is smooth $\iff$ $\dim_K(I_V(a)/I_V(a)^2)=\dim(V)$.
+
+  If $V$ is an affine variety and $a\in V$, then we have
+  $$I_V(a)/I_V(a)^2\cong_K\mm_{V,a}/\mm_{V,a}^2$$
+\end{lemma}
+
+% $(R, \mm)$ is a DVR and $r\in R$. 
+
+A Noetherian local ring $(R, \mm)$ is \buff{regular} if $\dim(R)=\dim_{R/\mm}(\mm/\mm^2)$.
+
+The $K$-vector space $\mm_{V,a}/\mm_{V,a}^2$ is the \buff{cotangent space} of $V$ at $a$. The dual space is the \acc{tangent space}.
+
+\section{}{DVR}
+
+A local ring $(R,\mm)$ is a \buff{discrete valuation ring} if
+\begin{enumerate}
+  \item $R$ is Noetherian domain
+  \item $R$ is not a field
+  \item $\mm$ is principal (generated by a single element)
+\end{enumerate}
+
+In any Noetherian domain $R$ and any $I\triangleleft R$ we have
+$$\bigcup_{n\geq 1}I^n=\{0\}.$$
+
+{\color{blue}\large\bfseries\centering Any DVR is PID (the generator of $\mm$ is the uniformizing parameter)}
+
+Let $R$ be a UFD, $r\in R$ irreducible and $R_0$ be the field of fractions of $R$. Define
+$$v_r:R_0^*\to \Z$$
+$$v_r(r^n\frac{a}{b})=n,\quad r\not| a,\;r\not| b.$$
+We call $v_r$ the \buff{r-addic valuation} on $R_0$.
+
+\begin{fact}{}{}
+  $R$, $r$, $R_0$ and $v_r$ as above. Then for all $\alpha, \beta\in R_0^*$
+  \begin{enumerate}
+    \item $\alpha+\beta\in R_0^*\implies v_r(\alpha+\beta)\geq \min\{v_r(\alpha), v_r(\beta)\}$
+    \item $v_r(\alpha\beta)=v_r(\alpha)+v_r(\beta)$
+    \item $v_r(R_0^*)=\Z$
+  \end{enumerate}
+\end{fact}
+
+For any irreducible $r,s\in R$ if $(r)=(s)$ then $v_r=v_s$.
+
+\begin{definition}{discrete valuation}{}
+  Let $L$ be a field. Any function $v:L^*\to \Z$ satisfying 1-3 from the fact above is called a \buff{(discrete) valuation} on $L$. For any valuation $v:L^*\to\Z$ 
+  \begin{itemize}
+    \item $\Oo_v:=\{\alpha\in L^*\;:\; v(\alpha)\geq 0\}\cup \{0\}$ -> \acc{valuation ring} of $v$
+    \item $\mm_v:=\{\alpha\in L^*\;:\; v(\alpha)>0\}\cup \{0\}$ -> \acc{valuation ideal} of $v$
+  \end{itemize}
+\end{definition}
+
+For a valuation $v:L^*\to \Z$, $(\Oo_v,\mm_n)$ is a DVR.
+
+\begin{theorem}{}{}
+  Let $C$ be an affine curve and $a\in C$. Then $a$ is smooth $\iff$ $(\Oo_{C,a},\mm_{C,a})$ is a DVR.
+\end{theorem}
+
+\begin{definition}{}{}
+  Let $C$ be an affine curve and $a\in C$ be a smooth point
+  \begin{enumerate}
+    \item a uniformizing parameter $f\in\Oo_{C,a}$ is a \buff{local parameter} for $C$ at $a$
+    \item the unique valuation on $K(C)$ given by $(\Oo_{C,a},\mm_{C,a})$ is denoted $\ord_a$
+    \item for $f\in K(C)-\{0\}$ and $n\in\N_{>0}$
+      \begin{itemize}
+        \item $\ord_a(f) =n\implies $ $f$ has a zero at $a$ of order $n$
+        \item $\ord_a(f)=-n\implies$ $r$ has a pole at $a$ of order $n$
+      \end{itemize}
+  \end{enumerate}
+\end{definition}
+$$\ord_a(f)=\dim_K(\Oo_{C,a}/f\Oo_{C,a})$$
+$$\dim_K(K[X]/(F))=\sum_{a\in V(F)}\ord_a(F)$$
+
+\begin{definition}{intersection number}{}
+  The intersection number of $F$ and $G$ at $a=(x,y)\in \A^2$ is
+  $$I(a, F\cap G):=\dim_K(\Oo/(F,G)\Oo),$$
+  where 
+  $$\Oo:=K[X,Y]_{(X-x, Y-y)}=K[X,Y]_{I(a)}=\Oo_{\A^2,a}$$
+
+  For curves $C_1, C_2$ such that $F=I(C_1)$ and $G=I(C_2)$ we define $I(a, C_1\cap C_2):=I(a, F\cap G)$.
+\end{definition}
+
+$$I(a, F\cap G)>0\iff a\in V(F,G)$$
+$$|V(F,G)|<\infty\implies I(a, F\cap G)<\infty$$
+\begin{center}
+  $F$ irreducible and $a\in V(F)$ smooth then 
+  $$I(a, F\cap G)=\ord_a(G|_{V(F)}).$$
+\end{center}
+
+26/43
+
+
 
 \end{document}
