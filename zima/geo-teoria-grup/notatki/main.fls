@@ -412,8 +412,8 @@ INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-fin
 OUTPUT main.toc
 OUTPUT rozdzialy/01_cayley.aux
 INPUT ./rozdzialy/01_cayley.tex
-OUTPUT luatex.WM896x/1.png
-INPUT ./luatex.WM896x/1.png
+OUTPUT luatex.OT1UDA/1.png
+INPUT ./luatex.OT1UDA/1.png
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
 OUTPUT rozdzialy/03.aux

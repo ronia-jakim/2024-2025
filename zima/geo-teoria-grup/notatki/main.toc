@@ -31,3 +31,4 @@
 \contentsline {subsection}{\numberline {4.}Przykład użycia zgrubnej równoważności}{42}{subsection.2.7.4}%
 \contentsline {chapter}{\numberline {3}Hiperboliczność}{43}{chapter.3}%
 \contentsline {section}{\numberline {11.12.2024}Przestrzenie hiperboliczne}{43}{section.3.1}%
+\contentsline {subsection}{\numberline {1.}Brzeg Gromova}{45}{subsection.3.1.1}%

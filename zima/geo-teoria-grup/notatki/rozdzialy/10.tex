@@ -139,4 +139,56 @@ Niehiperboliczne są grupy
 
 \end{proof}
 
+\subsection{Brzeg Gromova}
+
+Przypomnijmy, że promienie geodezyjne w $X$ o początku w $x_0$ to były izometryczne odwzorowania $\rho:[0,\infty)\to X$ takie, że $\rho(0)=x_0$.
+
+Na geodezyjnej przestrzeni hiperbolicznej $X$ dwa promienie geodezyjne o wspólnym początku
+\begin{itemize}
+  \item są $\delta$-blisko siebie
+    \begin{center}
+      \begin{tikzpicture}
+        \fill (0,0) circle (2pt);
+        \draw (0,0) to[out=30, in=180] (1, .3) to[out=0, in=180] (3, -.1) to[out=0, in=180] (4, .3);
+        \draw (0,0) to[out=-60, in=180] (1.5, 0) to[out=0, in=180] (4, .2);
+      \end{tikzpicture}
+    \end{center}
+  \item albo od pewnego momentu uciekają od siebie do nieskończoności.
+    \begin{center}
+      \begin{tikzpicture}
+        \fill (-1,-1) circle (2pt);
+        \draw (-1,-1) to[out=20, in=120] (2.4, 0.1) to[out=-60, in=120] (3, -1);
+        \draw (-1,-1) to[out=40, in=-60] (1.4, 1.7) to[out=120, in=-60] (.7, 3);
+
+        \draw[dashed] (.9, 3)--(3.2, -1);
+
+        \node at (2.2, -.1) {$\rho_1$};
+        \node at (1, 1.8) {$\rho_2$};
+        \node at (2,2) {$\xi$};
+      \end{tikzpicture}
+    \end{center}
+    $\xi$ na rysunku wyżej jest dwustronnie nieskończoną geodezyjną w $X$ taką, że $(\rho_1, \rho_2, \xi)$ jest $\delta$-szczupły. Wtedy \acc{produkt Gromova} jest w przybliżeniu $\langle \rho_1, \rho_2\rangle\approx d(x_0,\xi)$.
+\end{itemize}
+
+\begin{definition}{}{}
+  Oznaczmy przez $\partial_\infty X$ zbiór promieni geodezyjnych o początku w punkcie $a$ wydzielony przez relację $\delta$-bliskości. Definiujemy na nim metrykę jako
+  $$d_\infty([\rho_1], [\rho_2])\approx a^{-\langle \rho_1, \rho_2\rangle}$$
+  dla odpowiedniego $a>1$.
+\end{definition}
+
+\begin{theorem}{}{}
+  \begin{enumerate}
+    \item $\partial_\infty X$ jako przestrzeń topologiczna nie zalęzy od wyboru $x_0$ oraz $a$
+    \item Jeśli $f:X\to Y$ jest q.i. geodezyjnych przestrzeni metrycznych hiperbolicznych, to indukuje homeomorfizm $\widetilde{f}:\partial _\infty X\to \partial_\infty Y$
+    \item Jeśli $f:X\to Y$ jest w.i. włożeniem, to indukuje $\widetilde{f}:\partial_\infty X\to \partial_\infty Y$ włożenie topologiczne.
+  \end{enumerate}
+\end{theorem}
+
+\begin{example}[m]
+  \item $\partial_\infty \Hh^2=S^1$, a także $\partial_\infty \Hh^n\cong S^{n-1}$
+  \item Jeśli $M$ jest $n$-wymiarową rozmaitością o ujemnej krzywiźnie, to $\partial_\infty(\widetilde{M})=\partial_\infty\pi_1M\cong S^{n-1}$
+\end{example}
+
+
+
 
