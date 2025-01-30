@@ -32,3 +32,5 @@
 \contentsline {chapter}{\numberline {3}Hiperboliczność}{43}{chapter.3}%
 \contentsline {section}{\numberline {11.12.2024}Przestrzenie hiperboliczne}{43}{section.3.1}%
 \contentsline {subsection}{\numberline {1.}Brzeg Gromova}{45}{subsection.3.1.1}%
+\contentsline {section}{\numberline {18.12.2024}Końce a brzeg grupy hiberbolicznej}{48}{section.3.2}%
+\contentsline {section}{\numberline {08.01.2025}Brzeg Gromova $\partial G$ grupy hiperbolicznej $G$ o nieskończenie wielu końcach.}{49}{section.3.3}%
