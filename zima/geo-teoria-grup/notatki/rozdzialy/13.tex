@@ -1,0 +1,34 @@
+\section{15.01.2025}{Eksponencjalna rozbieżnośc, q.i.-niezmienniczość hiperboliczności i stabilność quasi-geodezyjnych}
+
+Na płaszczyźnie hiperbolicznej $\Hyp^2$ długość okręgu rośnie eksponencjalnie wraz ze wzrostem promienia $r$:
+$$|O_r|=2\pi\sin(r)=2\pi \frac{e^r-e^{-r}}{2}$$
+Odpowiedniki i ogólnienie tej własności znajdziemy dla dowolnej $\delta$-hiperbolicznej przestrzeni geodezyjnej $X$.
+
+\begin{lemma}{}{}
+  Niech $p$ będzie krzywą długości $|p|$ łączącą punkty $a$ i $b$ w geodezyjnej $\delta$-hiperbolicznej przestrzeni $X$ i niech $[a,b]$ będzie dowolną geodezyjną od $a$ do $b$. Wówczas $[a,b]\subseteq N_D(p)$, gdzie $D=\delta(\log_2|p|+1)+1$.
+\end{lemma}
+
+Jest to nieprawda na płaszczyźnie euklidesowej, np w sytucaji gdy mamy półokrąg o promieniu $R\to\infty$ łączący te punkty
+{\color{red}tutaj powinien być rysunek}
+
+\begin{conclusion}{}{}
+Dla $\delta$-hiperbolicznej przestrzeni geodezyjnej i dowolnych dwóch $x,y\in X$ połączonych geodezyjną $[x,y]$ istnieją stałe $c>0$ oraz $a>1$ (zależne tylko od $\delta$) takie, że dla punktu $z\in[x,y]$ i dowolnego $r\leq \min[d(z,x),d(z,y)]$ dowolna prostowalna krzywa $p$ w $X$ o końcach $x$ i $y$ przebiegająca poza otwartą kulą $B_r(z)$ ma długość $|p|\geq c\cdot a^r$. 
+\end{conclusion}
+
+\begin{lemma}{}{}
+  Dla dowolnych $\delta\geq0$, $\lambda\geq1$ oraz $L\geq0$ istnieje $D=D(\delta, \lambda,L)$ takie, że dla dowolnej $(\lambda,L)$-quasi-geodezyjnej krzywej $p$ o końcach $a$, $b$ w $\delta$-hiperbolicznej przestrzeni $X$ i dla dowolnej geodezyjnej $[a,b]$ w $X$ mamy $[a,b]\subseteq N_D(p)$.
+\end{lemma}
+
+Jeszcze raz: własność ta nie zachodzi na płaszczyźnie euklidesowej.
+
+\begin{lemma}{}{}
+  Niech $f:[0,d]\to X$ będzie $(C,L)$-q.i. włożeniem w geodezyjną przestrzeń $X$. Wówczas istnieje $(C, 2C(C+L))$-quasi-geodezyjna $q$ o końcach $f(0)$ i $f(d)$ taka, że $q\subseteq N_{2C+2L}(f([0,d]))$ oraz $f([0,d])\subseteq N_{C+L}(q)$.
+\end{lemma}
+
+\begin{theorem}{}{}
+  Niech $f:X\to Y$ będzie $(C,L)$-quasi-izometrią, a $g:Y\to X$ q.i. do niej odwrotną taką, że $\|gf-id_X\|\leq C$. Wówczas, jeśli $Y$ jest $\delta$-hiperboliczna, to $X$ jest $\delta'$-hiperboliczna dla $\delta'=\delta'(\delta, L, C)$. Podobnie jak w lemacie wyżej.
+\end{theorem}
+
+
+
+

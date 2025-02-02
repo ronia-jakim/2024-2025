@@ -1,4 +1,4 @@
-\section{08.01.2025}{Brzeg Gromova $\partial G$ grupy hiperbolicznej $G$ o nieskończenie wielu końcach.}
+\section{08.01.2025}{Brzeg Gromova grupy hiperbolicznej o nieskończenie wielu końcach.}
 
 Do tej pory dowiedzieliśmy się, że
 \begin{itemize}
@@ -36,12 +36,30 @@ Dla każdej kopii $C_0$ grafu $C(G,S)$ w $C$ promienie geodezyjne o początku w 
   \end{enumerate}
 \end{definition}
 
+\begin{fact}{}{}
+  \begin{enumerate}
+    \item Gęsty amalgamat układu złożonego z jednej $1$-punktowej przestrzeni to zbiór Cantora
+    \item Dla dowolnego skończonego układu $X_1$,..., $X_k$ niepustych zwartych przestrzeni metrycznych, ich gęsty amalgamat istnieje i jest jednoznaczny z dokładnością do homeomorfizmu.
+  \end{enumerate}
+\end{fact}
 
+Amalgamat przestrzeni $X_1$, ..., $X_k$ oznaczamy $\color{blue} \amalg (X_1,...,X_k)$.
 
+\begin{lemma}
+  Niech $G,H$ będą nieskończonymi hiperbolicznymi grupami takimi, że $\partial G\neq \emptyset$ i $\partial H\neq\emptyset$. Wówczas
+  $$\partial (G\ast H)\cong \amalg(\partial G, \partial H) $$
+\end{lemma}
 
+Jeśli grupa $G$ ma nieskończenie wiele końców, to zgodnie z twierdzeniem Stallingsa, rozkłada się (nietrywialnie) nad skończoną podgrupą w produkt wolny z amalgamacją lub w HNN-rozszerzenie.
 
+Gdy $\Gamma$ jest hiperboliczna, to faktory powyższego rozkładu też są hiperboliczne i jeśli któryś ma nieskończenie wiele końców, to można go ponownie rozłożyć.
 
+Z twierdzenia Dunwoody iterowanie rozkładów nad skończonymi podgrupami jak wyżej zawsze się kończy, a te końcowe faktory są albo skończone, albo o jednym końcu.
 
+Niech $H_1,...,H_k$ będzie układem terminalnych (nieskończonych) faktorów rozkładu $\Gamma$ nad skończonymi podgrupami. Wówczas
+$$\partial\Gamma\cong\amalg(\partial H_1,...,\partial H_k)$$
+łącznie z przypadkiem $\partial\Gamma=\amalg\emptyset=\text{zbiór Cantora}$, gdy $k=0$.
+W takiej sytuacji kopie $\partial H_i$ w $\partial \Gamma$ są komponentami spójności $\partial\Gamma$, a ponadto jest jeszcze dużo $1$-punktowych komponent spójności.
 
 
 

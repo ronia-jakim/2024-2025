@@ -11,6 +11,10 @@
 
 \usepackage{halloweenmath}
 
+\let\oldamalg\amalg
+\renewcommand{\amalg}{\widetilde{\oldamalg}}
+
+
 \begin{document}
 \frontmatter 
 \maketitle
@@ -45,5 +49,7 @@
 \include{rozdzialy/11.tex}
 
 \include{rozdzialy/12.tex}
+
+\include{rozdzialy/13.tex}
 
 \end{document}
