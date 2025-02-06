@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {0.1}Homologie}{1}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Mayer-Vietoris}{1}{subsection.0.1.1}%
+\contentsline {section}{\numberline {0.2}Cohomologie}{1}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Definicje}{1}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}Universal Coefficient Theorem}{1}{subsection.0.2.2}%
