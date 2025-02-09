@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  25 JAN 2025 22:45
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  9 FEB 2025 19:48
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -1068,8 +1068,8 @@ File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
 Package trimclip Info: No clipping driver 'tc-luatex.def' available.
 (trimclip)             Using fall-back PGF driver.
 )
-LaTeX Info: Redefining \Longrightarrow on input line 124.
-LaTeX Info: Redefining \Longleftarrow on input line 125.
+LaTeX Info: Redefining \Longrightarrow on input line 125.
+LaTeX Info: Redefining \Longleftarrow on input line 126.
  (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip53
@@ -1750,30 +1750,46 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[7] (./main.aux)
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[9] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AA8AC221A34FFD986A8713146C9C3BB2;745.
+(rerunfilecheck)             Checksum: 0331176958F617DB0B0AC02C806580A8;902.
 )
 
 Here is how much of LuaTeX's memory you used:
- 51041 strings out of 476447
+ 51062 strings out of 476447
  125086,1977958 words of node,token memory allocated
- 835 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 39 attribute, 92 glue_spec, 39 attribute_list, 2 write nodes
-   avail lists: 1:2,2:3019,3:1494,4:230,5:198,6:58,7:3758,8:49,9:1123,10:7,11:144
- 71881 multiletter control sequences out of 65536+600000
- 106 fonts using 14131671 bytes
+ 859 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 45 attribute, 92 glue_spec, 45 attribute_list, 2 write nodes
+   avail lists: 1:2,2:3471,3:1854,4:268,5:201,6:61,7:4015,8:49,9:1123,10:7,11:144
+ 71894 multiletter control sequences out of 65536+600000
+ 106 fonts using 14254551 bytes
  117i,13n,129p,1192b,1449s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/euler/eufm10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/symbols/msam10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/a
 msfonts/symbols/msbm10.pfb>
-Output written on main.pdf (9 pages, 152044 bytes).
+Output written on main.pdf (11 pages, 165495 bytes).
 
-PDF statistics: 189 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 208 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 62 named destinations out of 1000 (max. 131072)
+ 64 words of extra memory for PDF output out of 10000 (max. 100000000)
 

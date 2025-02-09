@@ -278,7 +278,66 @@ $$|V(F,G)|<\infty\implies I(a, F\cap G)<\infty$$
   $$I(a, F\cap G)=\ord_a(G|_{V(F)}).$$
 \end{center}
 
-26/43
+$$I(a, F\cap G)=I(a, F\cap (G+HF). G,F,H\in K[X,Y]$$
+$$I(a, F\cap GH)=I(a, F\cap G)+I(a, F\cap H)$$
+$$I(a, F\cap G)>0\iff a\in V(F, G)$$
+
+
+$L_X=V(Y)$, $L_Y=V(Y)$, $C_1=V(Y^2-x^3)$, $C_2=V(Y-X^3)$
+\begin{itemize}
+  \item $I(0, L_X\cap C_1)=\ord_0((Y^2-X^3)|L_X)=3$
+  \item $I(0, L_Y\cap C_1)=\ord_0((Y^2-X^3)|L_Y)=2$
+  \item $I(0, L_X\cap C_2)=\ord_0((Y-X^3)|L_X)=3$
+  \item $I(0, L_X\cap C_2)=\ord_0((Y-X^3)|L_Y)=1$
+\end{itemize}
+
+\begin{definition}{}{}
+  $C$ - a plane curve, $a\in\A^2$
+
+  \begin{itemize}
+    \item $L\subseteq \A^2$ \buff{line} if $\exists \alpha, \beta, \gamma\in K$ such that $L=V(\alpha X+\beta Y+\gamma)$ and $(\alpha, \beta)\neq(0,0)$
+    \item $L\subseteq\A^2$ is \buff{tangent} to $C$ at $a$ if $I(a, L\cap C)>1$
+    \item $T_aC$ is the union of all tangent lines to $C$ at $a$
+  \end{itemize}
+\end{definition}
+
+\begin{lemma}{}{}
+  $R$ - ring, $P\trianglelefteq R$ prime, $e\in R-P$ idempotent divisible by every element of $R-P$
+
+  $\phi: R\to R_P$ induces an isomorphism of rings $eR\cong R_P$ preserving the unit elements.
+\end{lemma}
+
+\begin{theorem}{}{}
+  $V=V(F,G)$ is finite
+  $$\dim_K(K[X,Y]/(F,G))=\sum_{a\in V}I(a, F\cap G)$$
+\end{theorem}
+
+\textbf{poprosić o notatki?}
+
+\section{}{Projektywizujem siem}
+
+If $x=[a_1:...:a_{n+1}]\in\Proj^n$, then $a_1,..., a_{n+1}$ are called the \buff{projective} or \buff{homogenous coordinates} of $x$.
+
+\begin{definition}{homogenous polynomial}{}
+  $d, k, d_1,..., d_k\in\N$ and $H\in K[X_1,..., X_k]$
+  
+  \begin{itemize}
+    \item $H=aX_1^{d_1}...X_k^{d_k}$ is a monomial $\implies$ $\deg H=d_1+...+d_k$
+    \item $H$ is \buff{homogenous polynomial of degree} $d$ if $H$ is a sum of monomials of degree $d$
+  \end{itemize}
+\end{definition}
+
+$H$ of degree $d$ is homogenous $\iff$ $\forall \lambda\in K$ $H(\lambda X_1,..., \lambda X_k)=\lambda^dH$.
+
+\begin{definition}{projective algebraic}{}
+  $V\subseteq \Proj ^n$ is a \buff{projective algebraic} set if there are homogenous polynomials $F_1,..., F_k\in K[X_1,..., X_{n+1}]$ such that 
+  $$V=\{x\in\Proj^n\;:\;F_1(x)=0,..., F_k(x)=0\}$$
+\end{definition}
+
+A line in $\Proj^2$ is a subset $V$ such that there exists $(\alpha,\beta,\gamma)\in K^3-\{0\}$ such tat 
+$$V=\{[a:b:c]\;:\;\alpha a+\beta b+\gamma c=0\}.$$
+
+33
 
 
 
