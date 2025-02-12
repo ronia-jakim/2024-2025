@@ -334,11 +334,131 @@ $H$ of degree $d$ is homogenous $\iff$ $\forall \lambda\in K$ $H(\lambda X_1,...
   $$V=\{x\in\Proj^n\;:\;F_1(x)=0,..., F_k(x)=0\}$$
 \end{definition}
 
+$$\psi_i:\A^n\to \Proj^n$$
+$$\psi_i(a_1,..., a_n)=[a_1:...:a_{i-1}:1:a_i:...:a_n]$$
+$$U_i=\{[a_1:...:a_{n+1}\in\Proj^n\;:\;a_i\neq0\}$$
+
 A line in $\Proj^2$ is a subset $V$ such that there exists $(\alpha,\beta,\gamma)\in K^3-\{0\}$ such tat 
 $$V=\{[a:b:c]\;:\;\alpha a+\beta b+\gamma c=0\}.$$
 
-33
+\begin{enumerate}
+  \item $\Proj^n$ with topology defined by closed algebraic subsets is a Noetherian topological space
+  \item $F_1,...,F_k\in K[X_1,..., X_{n+1}]$, $V=\{x\in\Proj^n\;:\;F_1(x)=0,..., F_k(x)=0\}$
+    $$\psi^{-1}(V)=V(F_1|_{X_i=1},..., F_k|_{X_i=1})$$
+    $F_j|_{X_i=1}$ is called the \buff{dehomogenization} of $H$ with respect to $X_i$. Denote it by $\widetilde{F}_j$
+  \item $W=V(H_1,..., H_l)\subseteq\A^n$, then
+    $$U_i\cap \{x\in\Proj^n\;:\;\widetilde{H}_1(x)=0,...,\widetilde{H}_l(x)=0\}=\psi_i(W)$$
+    denote the $\{x\;:\;\widetilde{H}_i(x)=0\}$ by $W^*$.
+  \item For closed $V\subseteq\A^n$ we have 
+    \begin{itemize}
+      \item $\dim V=\dim V^*$, 
+      \item $V$ irreducible $\iff$ $V^*$ irreducible
+    \end{itemize}
+  \item $W\subseteq \Proj^n$ irreducible, $W\cap U_i\neq\emptyset$, then $W$ is the Zariski closure of $W\cap U_i$ 
+\end{enumerate}
 
+\begin{definition}{}{}
+  \buff{Projective variety} is an irreducible projective algebraic set.
+\end{definition}
+
+Any projective plane curve can be expressed as $V=\{x\in\Proj^2\;:\;F(x)=0\}$ for some $F\in K[X,Y,Z]$.
+{}
+A point $x\in V$ is \buff{smooth} if there is $i\leq n$ such that $x\in U_i$ and $\psi_i^{-1}(x)$ is a smooth point of the affine variety $\psi_i^{-1}(V)$. A point is \buff{singular} if it is not smooth.
+
+\section{}{Bezout theorem, czyli intersection nr, divisors}
+
+\begin{definition}{intersection number}{}
+  $x\in\Proj^2$, $F,H,G\in K[X,Y, Z]$ are homogenous
+  \begin{itemize}
+    \item $i$ such that $x\in U_i$ 
+      $$I(x, F\cap H)=I(\psi_i^{-1}(x), (F|_{X_i=1})\cap (H|_{X_i=1}))$$
+      is the \buff{intersection number}
+    \item $F$, $H$ irreducible, $V,W\subseteq\Proj^2$ projective plane curves
+      $$V=\{x\in\Proj^2\;:\;F(x)=0\}$$
+      $$W=\{x\in\Proj^2\;:\;H(x)=0\}$$
+      $$I(x, V\cap G)=I(x, F\cap G)$$
+      $$I(x, W\cap V)=I(x, F\cap G)$$
+  \end{itemize}
+\end{definition}
+
+\begin{theorem}{}{}
+  $F,H\in K[X,Y,Z]$ homogenous such that 
+  $$V=\{x\in \Proj^2\;:\;F(x)=0, H(x)=0\}$$
+  is finite. Then
+  $$\sum_{x\in V}I(x, F\cap H)=\deg(F)\deg(H)$$
+\end{theorem}
+
+The group of divisors on $V$ $\Div(V)$ is the free Abelian group with basis $V$, $\Z[V]$.
+\begin{definition}{intersection divisor}{}
+  Let $F\in K[X,Y,Z]$ be homogenous with finite $\{x\;:\;F(x)=0\}$. The \buff{intersection divisor} of $F$ is
+  $$V\cdot F=\sum_{x\in V}I(x, V\cap F)\cdot x\in Div(V).$$
+\end{definition}
+
+For $D=n_1x_1+...+n_kx_k\in \Div(V)$ we define $\deg(D)=n_1+...+n_k$.
+
+\section{}{Elliptic curves}
+
+\begin{definition}{}{}
+  An \buff{elliptic curve} is a pair $(C, O)$ such that $C$ is a projective plane curve of degree $3$ and $O\in C$
+\end{definition}
+
+We aim to show that there is a natural commutative group structure on $C$ such that $O$ becomes the neutral element.
+
+\begin{lemma}{}{}
+  For any $x,y\in C$ there is a unique line $L$ in $\Proj^2$ and unique $z\in C$ such that 
+  $$C\cdot L=x+y+z\in Div(C)$$
+\end{lemma}
+
+$$\phi:C\times C\to C$$
+$\phi(x, y)=z$ $\iff$ there is a line $L$ such that
+$$C\cdot L=x+y+z.$$
+For $x,y,z\in C$ we have $\phi(x,y)=\phi(y,x)$
+$$\phi(x,y)=z\iff \phi(y,z)=x\iff \phi(z, x)=y.$$
+so this is almost a group action but lacks the neutral element.
+
+\begin{theorem}{}{}
+  $(C, \oplus, O)$ is a \buff{commutative group}, where the multiplication is defined
+  $$x\oplus y=\phi(O, \phi(x,y)).$$
+\end{theorem}
+
+\begin{definition}{}{}
+  $D,D'\in\Div(C)$
+  $$D=\sum_{P\in C}n_PP$$
+  $$D'=\sum_{P\in C}n_P'P$$
+  we write $D\leq D'$ if $\forall\;P\in C$ $n_P\leq n_P'$.
+\end{definition}
+
+\begin{theorem}{}{}
+  $F,G\in K[X,Y,Z]$ homogenous such that each has finitely many zeros on $C$ and
+  $$\forall x\in C\;I(x, C\cap F)\geq I(x, C\cap G)$$
+  Then there exists homogenous $H\in K[X,Y,Z]$ 
+  $$C\cdot F=C\cdot G+C\cdot H$$
+\end{theorem}
+
+Using assumptions from the theorem:
+\begin{itemize}
+  \item $$C\cdot(FG)=C\cdot F+C\cdot G$$
+  \item If $C\cdot F=x_1+...+x_s+y$ and $C\cdot G=x_1+...+x_s+z$, then $y=z$.
+\end{itemize}
+
+\begin{theorem}{}{}
+  $$(C, \oplus, O_1)\cong (C, \oplus, O_2)$$
+\end{theorem}
+
+\begin{definition}{inflection point}{}
+  $x\in C$ is \buff{inflection point} if
+  $$I(x, C\cap T_xC)>2$$
+\end{definition}
+
+For an elliptic curve $C$ the following are equivalent
+\begin{itemize}
+  \item $x$ - inflection point
+  \item $I(X, C\cap T_xC)=3$
+  \item $\phi(x,x)=x$
+\end{itemize}
+
+$\char K\neq 3\implies $ there are $9$ inflection points on $C$
 
 
 \end{document}
+
