@@ -1,2 +1,4 @@
 \contentsline {chapter}{\numberline {1}Początek końca}{1}{chapter.1}%
-\contentsline {section}{\numberline {24.02.2025}uno}{1}{section.1.1}%
+\contentsline {section}{\numberline {24.02.2025}Podstawowe definicje}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.}Przykłady kategorii}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {2.}Funktory}{2}{subsection.1.1.2}%

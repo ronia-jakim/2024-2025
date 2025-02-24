@@ -368,7 +368,7 @@ OUTPUT main.pdf
 INPUT ./main.out
 OUTPUT main.out
 INPUT /home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/notocoloremoji.luc
-INPUT /home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/hb/5020cc5d392f65f032589f341e2df63d821ea2bef9df49bcdcb6f9db503620e3.luc
+INPUT /home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/hb/cb093a89cafadeb102d803c3dffc2a0f1a2cae97bb8a533342bc8421d1d26b7e.luc
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/cm/cmmi10.tfm
@@ -403,3 +403,8 @@ INPUT ./rozdzialy/01.tex
 INPUT ./main.aux
 INPUT ./rozdzialy/01.aux
 INPUT ./main.out
+INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

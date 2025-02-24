@@ -1,3 +1,101 @@
 \chapter{Początek końca}
 
-\section{24.02.2025}{uno}
+W 1945 Eilenberg oraz Mac Lane napisali książkę "General theory of natural equivalences". Jest to powszechnie uznawane jako początek ery abstrakcyjnego nonsenu.
+
+\section{24.02.2025}{Podstawowe definicje}
+
+\subsection{Przykłady kategorii}
+
+\begin{definition}{kategoria}{}
+  Kategoria (lokalnie mała) $\Cc$ składa się z:
+  \begin{itemize}
+    \item obiektów $\Ob(\Cc)$
+    \item oraz zbiorów morfizmów dla wszystkich par $A,B\in\Ob(\Cc)$ oznaczanego $\Cc(A, B)=\Hom_\Cc(A, B)$, które spełniają:
+      \begin{itemize}
+        \item $id_X\in\Cc(X, X)$
+        \item składają się w dobry sposób, tzn. mamy dobrze określone odwzorowanie
+          $$\Cc(A, B)\times\Cc(B, C)\to \Cc(A, C),$$
+          które jest łączne.
+      \end{itemize}
+  \end{itemize}
+\end{definition}
+
+Powiemy, że kategoria jest \buff{mała}, jeśli jej obiekty są zbiorem, a nie klasą. 
+
+Dla wygody oznaczymy
+$$\Cc_0:=\Ob(\Cc)$$
+a jako $\Cc_1$ będziemy rozumieć wszystkie morfizmy w kategorii $\Cc$.
+
+Rozważmy kilka prostych przykładów kategorii.
+
+\begin{example}[m]
+  \item Kategoria $Set$, której obiekty $Set_0$ to wszystkie zbiory, a $Set_1$ to funkcje między zbiorami z normalnym składaniem funkcji.
+  \item $Set_*$ to kategoria zbazowanych zbiorów, tzn. jej obiektami są pary $(X, x_0)$, gdzie $X$ to zbiór, a $x_0\in X$. Morfizmy muszą wtedy zachowywać wyróżniony punkt: $f:(X, x_0)\to (Y, y_0)$, $f(x_0)=y_0$.
+  \item $Top$ to kategoria, której obiekty to przestrzenie topologiczne, a $Top_1$ to funkcje ciągłe między nimi.
+  \item $Toph$ to kategoria przestrzeni topologicznych, w której morfizmy to klasy homotopii odwzorowań między przestrzeniami. To znaczy, jeśli $X,Y\in\Ob(Toph)$ oraz $f_0,f_1:X\to Y$ jest ciągłym odwzorowaniem, dla którego istnieje ciągłe przekształcenie
+    $$F:X\times[0,1]\to Y$$
+    takie, że $F(x, 0)=f_0(x)$ oraz $F(x, 1)=f_1(x)$, to $f_0=f_1$ jako morfizm w kategorii $Toph$.
+
+    Pozostaje sprawdzić, że jeśli $f$, $f'$ oraz $g$, $g'$ to pary homotopijnie równoważnych odwzorowań, to wówczas $f\circ g$ jest homotopijnie równoważne $f'\circ g'$.
+  \item Kategoria $Hask$, której obiekty to typy w Haskelly, a morfizmy to klasy programów.
+  \item Kategoria relacji $Rel$, w której obiektami $Rel_0$ są zbiory, a morfizmami są podzbiory produktu, tzn. $Rel(X, Y)$ zawiera wszystkie $S\subseteq X\times Y$. Wówczas składanie $S\subseteq X\times Y$ oraz $R\subseteq Y\times Z$ definiujemy jako zbiór
+    $$S\circ R=\{(x, z)\;:\;(\exists\;y\in Y)\;xRy\;\land\;ySz\},$$
+    gdzie $xRy$ oznacza, że $(x,y)\in R$. Złożenie to działa jak połączenie dwóch relacji spójnikiem "i".
+  \item Niech $R$ będzie tranzytywną i zwrotną relacją na zbiorze $X$. Definiujemy wtedy kategorię $\Cc$ o obiektach $\Cc_0=X$ będących elementami zbioru $X$, a morfizmy między $a,b\in X$ to zbiór $1$-elementowy $\Cc(a, b)=\{\star\}$, gdy $xRy$ jest prawdą lub zbiór pustym w przeciwnym wypadku.
+
+    Szczególnym przypadkiem tej kategorii jest topologia na przestrzeni topologicznej, gdzie relacja $R$ to zawieranie zbiorów otwartych.
+  \item Graf skierowany tworzy kategorię, której obiektami są jego wierzchołki, a morfizmy to zorientowane ścieżki.
+\end{example}
+
+\subsection{Funktory}
+
+\begin{definition}{funktor}{}
+  Funktor $F$ między kategoriamii $\Cc$ a $\Dd$
+  \begin{itemize}
+    \item każdemu obiektowi $X$ kategorii $\Cc$ przypisuje obiekt $F(X)$ kategorii $\Dd$
+    \item każdemu morfizmowi $\phi\in\Cc(X, Y)$ przypisuje morfizm $F(\phi):F(X)\to F(Y)$ w kategorii $\Dd$ taki, że 
+      \begin{itemize}
+        \item $F(\psi\circ\phi)=F(\psi)\circ F(\phi)$
+        \item $F(id_X)=id_{F(X)}$
+      \end{itemize}
+  \end{itemize}
+\end{definition}
+
+\begin{example}{}{}
+  $Ab:Gr\to Ab$ to funktor między kategorią wszystkich grup a kategorią grup abelowych, który grupie $G$ przypisuje jej abelianizację $Ab(G)=G/[G,G]=G^{ab}$.
+\end{example}
+
+\begin{definition}{kategoria odwrotna}{}
+  Przez \textbf{kategorię odwrotną} do kategorii $\Cc$ rozumiemy kategorię $\Cc^{op}$, której
+  \begin{itemize}
+    \item obiekty to obiekty oryginalnej kategorii: $\Ob(\Cc^{op})=\Ob(\Cc)$
+    \item morfizmy $\Cc(X, Y)$ "odwracają się" $\Cc^{op}(Y, X)$.
+  \end{itemize}
+\end{definition}
+%
+% Istnieje funktor między kategorią a kategorią do niej odwrotną.
+
+Mówimy, że funktor $F:\Cc\to \Dd$ jest \textbf{kowariantny}, a funktor $F:\Cc\to\Dd^{op}$ \text{kontrawariantny}.
+
+Zdefiniujmy teraz \buff{kategorię funktorów} między kategoriami $\Cc$ a $\Dd$, $Fun(\Cc, \Dd)$, której obiekty to wszystkie funktory $F:\Cc\to\Dd$, a morfizmy to $\phi$ takie, że dla dowolnych $X, Y\in\Ob\Cc$ oraz $f:X\to Y$ komutuje diagram
+\begin{center}
+  \begin{tikzcd}
+    F(X)\arrow[r, "\phi_X"] \arrow[d, "F(f)" left] & G(X)\arrow[d, "G(f)"] \\
+    F(Y)\arrow[r, "\phi_Y"] & G(Y)
+  \end{tikzcd}
+\end{center}
+Zbiór morfizmów w tej kategorii oznaczymy $\Nat(F, G)$ - \buff{naturalne przekształcenia} funktora $F$ w funktor $G$.
+
+\begin{example}
+  Cup product na kohomologiach $\cup:H^m(X)\otimes H^n(X)\to H^{m+n}(X)$ jest naturalnym przekształceniem między funktorami $H^m(-)\otimes H^n(-)$ i $H^{m+n}(-)$.
+\end{example}
+
+\begin{definition}{równoważność kategorii}{}
+  Powiemy, że kategorie $\Cc$ i $\Dd$ są \buff{równoważne}, jeśli istnieją funktory $F:\Cc\to\Dd$ oraz $G:\Dd\to\Cc$ takie, że złożenie $F\circ G$ jest naturalnie izomorficzne do $Id_{\Dd}$, a $G\circ F$ - do $Id_{\Cc}$.
+\end{definition}
+
+\begin{example}
+  Kategoria skończenie wymiarowych przestrzeni wektorowych nad ciałem $k$, $Vect_{k}^{fin}$, jest równoważna kategorii skończenie wymiarowych macierzy nad ciałem $k$, $Mat^{fin}(k)$.
+\end{example}
+
+

@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1739360073.16989 "main.tex" "main.pdf" "main" 1739360076.53842 2
+["lualatex"] 1739382924.07289 "main.tex" "main.pdf" "main" 1739382927.13007 0
   "../../../../template.sty" 1739358726.0772 11203 6e2c0a3e08e332f2d9c0935a677d79f9 ""
   "/home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/hb/cb093a89cafadeb102d803c3dffc2a0f1a2cae97bb8a533342bc8421d1d26b7e.luc" 1737719149.90178 124341 4308c4e34020d98d6427d542efac80f3 ""
   "/home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/cantarell-bold.luc" 1736427759.71079 173137 d1cd73a5b6a0ad74eb829d2302b29393 ""
@@ -358,9 +358,9 @@
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/luatex/luaotfload/luaotfload.lua" 1 13565 50482dad4c221a79dbdbb982122baf8c ""
   "/nix/store/vwv57nhj45xqmv91cxf042mqkl8psab0-texlive-combined-full-2023-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5467763 77543e102942fb8ccaad6f92de0d9c00 ""
   "/nix/store/vwv57nhj45xqmv91cxf042mqkl8psab0-texlive-combined-full-2023-final/share/texmf-var/web2c/luahbtex/lualatex.fmt" 1 12274533 553be551f688c88b6910a8e628252a9a ""
-  "main.aux" 1739360076.28688 1301 7524ca9e434efd3589d3609d08aca07e "lualatex"
-  "main.out" 1739360076.28688 1338 1aaa08bba3c60a58dd9bdf12c803fb80 "lualatex"
-  "main.tex" 1739360072.92497 18141 00dea9b8926193c9037adabc765570b3 ""
+  "main.aux" 1739382926.88035 1301 7524ca9e434efd3589d3609d08aca07e "lualatex"
+  "main.out" 1739382926.88035 1338 1aaa08bba3c60a58dd9bdf12c803fb80 "lualatex"
+  "main.tex" 1739382922.12644 18182 76aef7dc0c32d90e053da567705d9538 ""
   (generated)
   "main.aux"
   "main.log"
