@@ -1,0 +1,131 @@
+\section{25.02.2025}{cos}
+
+\begin{definition}{obiekt początkowy i końcowy}{}
+  Powiemy, że obiekt $C\in \Cc_0$ jest \buff{początkowy}, jeśli dla każdego $D\in\Cc_0$ istnieje dokładnie jeden morfizm $C\to D$, $|\Cc(C, D)|=1$. Analogicznie definiujemy \buff{obiekt końcowy} $C$: $\forall\;D\in\Cc_0\;|\Cc(D, C)|=1$.
+\end{definition}
+
+\begin{example}[m]
+  \item W kategorii, której obiektami jest odcinek $\Cc_0=[0,1]$, a morfizmy to relacja $\leq$ obiektem początkowym jest $0$, a końcowym - $1$.
+  \item W kategorii zbiorów obiektem początkowym jest $\emptyset$, a obiektem końcowym jest singleton.
+  \item W $Gr$ grupa trywialna jest zarówno obiektem początkowym jak i końcowym.
+  \item Kategoria, która ma dwa obiekty bez morfizmów między nimi nie ma obiektu końcowego ani początkowego.
+\end{example}
+
+Niech $F:\mathcal{I}\to \Cc$ będzie funktorem, gdzie o kategorii $\mathcal{I}$ myślimy jako o kategorii indeksów. Przez $\Cc^{\mathcal{I}}$ oznaczmy kategorię wszystkich takich funktorów. 
+Istnieje stały funktor, tzn. taki, że $C(i)=C$ dla każdego $i\in\mathcal{I}_0$ oraz $C(f)=id_C$ dla każdego morfizmu.
+
+Budujemy kategorię, której 
+\begin{itemize}
+  \item obiekty to wszystkie naturalne przekształcenia funktora $F$ w funktory stałe $C$ $F\implies C$, 
+  \item a morfizmy to strzałki takie, że diagram
+    \begin{center}
+      \begin{tikzcd}
+        C\arrow[rr] & & D\\ 
+                    & F\arrow[ur, Rightarrow]\arrow[ul, Rightarrow]
+      \end{tikzcd}
+    \end{center}
+    komutuje.
+\end{itemize}
+
+\begin{definition}{granica funktora}{}
+  \buff{Granicą} funktora $F$, $\lim F$, nazywamy obiekt początkowy w wyżej zdefiniowanej kategorii naturalnych przekształceń. \buff{Granica odwrotna} to wtedy obiekt końcowy $\varprojlim F$.
+\end{definition}
+
+{\color{red}tutaj jest zdjecie
+
+przyklad dla kategorii zbiorów
+
+ja chyba chce wziąć dwuelementową kategorię $\mathcal{I}$ i tutaj policzyć, jeśli $F(1)=G$, a $F(2)=H$.
+}
+  
+Rozważmy kategorię $\mathcal{I}$, która ma dwa obiekty $\mathcal{I}_0=\{0,1\}$. Niech $F:\mathcal{I}\to \Cc$ będzie funktorem, dla którego $F(0)=a$, a $F(1)=b$. Niech $\phi$ oraz $\psi$ będzie parą naturalnych przekształceń, dla których
+\begin{center}
+  \begin{tikzcd}
+    F(0) \arrow[r, "\phi_0"] \arrow[dr, "\psi_0"] & c\arrow[d, "f"]\\
+    F(1)\arrow[ur, "\phi_1"] \arrow[r, "\psi_1"] & d
+  \end{tikzcd}
+\end{center}
+
+\begin{example}[m]
+\item 
+
+
+  \item Rozważmy kategorię grup. 
+    \begin{center}
+      \begin{tikzcd}
+          & F\arrow[dd, dashed]\arrow[dl]\arrow[dr]  \\ 
+        G & & H\\ 
+          & G\times H
+      \end{tikzcd}
+    \end{center}
+    \begin{center}
+      \begin{tikzcd}
+          & F \\ 
+        G\arrow[ur] & & H\arrow[ul]\\ 
+                    & G\ast H \arrow[uu] 
+      \end{tikzcd}
+    \end{center}
+  \item Niech $F:\mathcal{I}\to (P, \leq)$ z dwuobiektowej kategorii $\mathcal{I}$ w zbiór uporządkowany.
+\end{example}
+
+kategoria nieskończenie wiele elementów, ale bez strzałek (jako $\mathcal{I}$)
+ 
+
+Niech $C$ oraz $C'$ będą granicami tego samego funktora. Z definicji mamy
+\begin{center}
+  \begin{tikzcd}[column sep=large, row sep=large]
+    & F(i)\arrow[dr, "\phi_i"]\arrow[d, "\psi_i"]\arrow[dl, "\phi_i" above left] \\ 
+    C & C'\arrow[l, "\exists g" above] & C\arrow[ll, bend left=20, "id"] \arrow[l, "\exists f" above]
+  \end{tikzcd}
+\end{center}
+
+tutaj liczby p-adyczne
+
+ekwalizator, koekwalizator
+
+\begin{definition}{surjekcja, epimorfizm}{}
+  Jeśli kategoria ma obiekt początkowy równy obiektowi końcowemu...
+\end{definition}
+
+\buff{Monoid} $(M, \star, 1)$ to struktura algebraiczna z binarną operacją oraz elementem neutralnym. Dodatkowo, komutować ma diagram 
+\begin{center}
+  \begin{tikzcd}
+    M^3\arrow[r, "\star\times id"]\arrow[d, "id\times\star" left] & M^2\arrow[d, "\star"]\\ 
+    M^2\arrow[r, "\star"] & M
+  \end{tikzcd}
+\end{center}
+co znaczy, że działanie jest łączne.
+
+\begin{definition}{obiekt monoidalny, kategoria monoidalna}{}
+  Niech $\Cc$ będzie kategorią z produktem i elementem początkowym. Niech $M\in \Cc$ będzie obiektem, dla którego mamy $\mu:M^2\to M$ oraz $\epsilon: \{1\}\to M$ takie, że komutują diagramy
+  \begin{center}
+    \begin{tikzcd}[row sep=large, column sep=large]
+      M^3\arrow[r, "\mu\times id"]\arrow[d, "id\times \mu" left] & M^2\arrow[d, "\mu"]\\ 
+      M^2\arrow[r, "\mu" below] & M
+    \end{tikzcd}
+  \end{center}
+  \begin{center}
+    \begin{tikzcd}[row sep=large, column sep=large]
+      M\arrow[r, "\epsilon\times id"]\arrow[d, "id\times \epsilon" left]\arrow[dr, "=" above right] & M^2\arrow[d, "\mu"]\\ 
+      M^2\arrow[r, "\mu" below] & M
+    \end{tikzcd}
+  \end{center}
+  Wtedy $M$ jest \buff{obiektem monoidalnym}.
+  
+  Obiekt monoidalny w kategorii $Cat$ nazywa się \buff{kategorią monoidalną}.
+\end{definition}
+
+\begin{example}[m]
+\item Dowolna kategoria $\Cc$ z koproduktem i elementem końcowym jest kategorią monoidalna.
+\item Kategoria endofunktorów ma strukturę monoidalną. To znaczy, jeśli mamy dwa endofunktory $F, G\in End(\Cc)$, to potrafimy je złożyć w dobry sposób.
+
+  Funktor $T\in Func(\Cc)$ oraz dwa naturalne przekształcenia $\mu:T^2\to T$, $\epsilon: Id\to T$, nazywa się \buff{monadą}.
+\end{example}
+
+Czy $S^n\vee S^n$ to produkt czy produkt w kategorii $Toph_\star$. tutaj jakies zdjecie
+
+
+
+
+
+
