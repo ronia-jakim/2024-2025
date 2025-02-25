@@ -1,0 +1,38 @@
+%! TeX program = lualatex
+\documentclass[twoside, a4paper, 12pt]{book}
+
+\title{Geometria różniczkowa}
+\author{\color{subtext1}Weronika Jakimowicz}
+\date{Lato 2024/25}
+
+\usepackage[dates, pl]{../../../template}
+
+% \fancyfoot[CE, CO]{}
+% \fancyfoot[LE, RO]{\color{overlay2}\thepage}
+%
+% \fancyhead[RE, LO]{$ \quad $\color{subtext1}koneser kategorii $ \quad $}
+% \fancyhead[LE, RO]{$ \quad $\color{green!40!subtext2}\bfseries\htitle $ \quad $}
+%
+% \fancypagestyle{plain}{%
+%   \fancyhf{}%
+%   \fancyfoot[CE, CO]{}
+%   \fancyfoot[LE, RO]{\color{overlay2}\thepage}
+%
+%   \fancyhead[RE, LO]{$ \quad $\color{subtext1}abstrakcyjne smaczki $ \quad $}
+%   \fancyhead[LE, RO]{$ \quad $\color{green!40!subtext2}\bfseries\htitle $ \quad $}
+% }
+
+\begin{document}
+\frontmatter 
+\maketitle
+\thispagestyle{empty}
+\setcounter{page}{0}
+
+\tableofcontents
+\mainmatter
+
+\pagestyle{fancy}
+
+\include{rozdzialy/01.tex}
+
+\end{document}
