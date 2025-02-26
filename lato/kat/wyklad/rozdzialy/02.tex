@@ -16,19 +16,48 @@ Istnieje stały funktor, tzn. taki, że $C(i)=C$ dla każdego $i\in\mathcal{I}_0
 
 Budujemy kategorię, której 
 \begin{itemize}
-  \item obiekty to wszystkie naturalne przekształcenia funktora $F$ w funktory stałe $C$ $F\implies C$, 
-  \item a morfizmy to strzałki takie, że diagram
+  \item obiekty to wszystkie naturalne przekształcenia funktora $F$ w funktory stałe $C$, $\phi:F\implies C$, czyli komutujące diagramy (kostożki) 
+    \begin{center}
+      \begin{tikzcd}
+        F(i)\arrow[rr, "F(f)"]\arrow[dr, "\phi_i" below left] & & F(j)\arrow[dl, "\phi_j"]\\ 
+                                                  & C
+      \end{tikzcd}
+    \end{center}
+  \item a morfizmy to strzałki $C\to D$ takie, że diagram
     \begin{center}
       \begin{tikzcd}
         C\arrow[rr] & & D\\ 
-                    & F\arrow[ur, Rightarrow]\arrow[ul, Rightarrow]
+                    & F\arrow[ur, Rightarrow, blue, "\phi" below right]\arrow[ul, Rightarrow, orange, "\psi" below left]
       \end{tikzcd}
     \end{center}
     komutuje.
 \end{itemize}
 
+Diagram wyżej można rozpisać jako:
+\begin{center}
+  \begin{tikzcd}[column sep=large]
+    & F(i)\arrow[d] \arrow[ddl, "\phi_i" above left, blue]\arrow[ddr, "\psi_i" above right, orange] \\ 
+    & F(j)\arrow[dl, "\phi_j" above, blue]\arrow[dr, "\psi_j" above, orange]\\ 
+    D & & C\arrow[ll]
+  \end{tikzcd}
+\end{center}
+
+\begin{definition}{kogranica funktora}{}
+  \buff{Kogranicą} (\acc{granica prosta}) funktora $F$, $\varinjlim F$, nazywamy obiekt początkowy w wyżej zdefiniowanej kategorii naturalnych przekształceń. 
+  % \buff{Granica} (\acc{granica odwrotna}) to wtedy obiekt końcowy powyższej kategorii ze wszystkimi strzałkami zdualizowanymi $\varprojlim F$.
+\end{definition}
+
+Diagram wyżej możemy zdualizować i zamiast rozpatrywać naturalne przekształcenia $\phi:F\implies C$ możemy rozważyć naturalne przekształcenia $\phi:C\implies F$, czyli diagramy (stożki)
+\begin{center}
+  \begin{tikzcd}
+    & C \arrow[dl, "\phi_i" above left] \arrow[dr, "\phi_j" above right]\\ 
+    F(i)\arrow[rr, "F(f)" below] & & F(j)
+  \end{tikzcd}
+\end{center}
+z morfizmami definiowanymi analogicznie. 
+
 \begin{definition}{granica funktora}{}
-  \buff{Granicą} funktora $F$, $\lim F$, nazywamy obiekt początkowy w wyżej zdefiniowanej kategorii naturalnych przekształceń. \buff{Granica odwrotna} to wtedy obiekt końcowy $\varprojlim F$.
+  \buff{Granica} (\acc{granica odwrotna}) to obiekt końcowy powyższej kategorii stożków, $\varprojlim F$.
 \end{definition}
 
 {\color{red}tutaj jest zdjecie

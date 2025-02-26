@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1740488301.27097 "main.tex" "main.pdf" "main" 1740488307.85963 0
+["lualatex"] 1740560001.87935 "main.tex" "main.pdf" "main" 1740560006.90587 0
   "../../../template.sty" 1740482315.88063 11357 d026bc3486afc86d08e4cd55edd1d88f ""
   "/home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/hb/5020cc5d392f65f032589f341e2df63d821ea2bef9df49bcdcb6f9db503620e3.luc" 1737661884.11608 128415 e4d192abc326a4dc4f50ff596b3217bc ""
   "/home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/cantarell-bold.luc" 1737098194.69573 173137 d1cd73a5b6a0ad74eb829d2302b29393 ""
@@ -343,14 +343,14 @@
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/luatex/luaotfload/luaotfload.lua" 1 13565 50482dad4c221a79dbdbb982122baf8c ""
   "/nix/store/vwv57nhj45xqmv91cxf042mqkl8psab0-texlive-combined-full-2023-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5467763 77543e102942fb8ccaad6f92de0d9c00 ""
   "/nix/store/vwv57nhj45xqmv91cxf042mqkl8psab0-texlive-combined-full-2023-final/share/texmf-var/web2c/luahbtex/lualatex.fmt" 1 12274533 553be551f688c88b6910a8e628252a9a ""
-  "main.aux" 1740488307.32186 308 8e7f3e8c8c03dbd1240de36edacc4108 "lualatex"
-  "main.out" 1740488307.32386 611 b35b6d58937a68ac24466dd74a8e81b7 "lualatex"
+  "main.aux" 1740560006.51061 309 53f47e7a57bd8f88eedfaee614c0fd91 "lualatex"
+  "main.out" 1740560006.51161 611 b35b6d58937a68ac24466dd74a8e81b7 "lualatex"
   "main.tex" 1740482348.01799 910 ef0a58bdb282dd9069feab281cb2e855 ""
-  "main.toc" 1740488307.32386 391 8e35e28adf3943096e8398e3af52b1d5 "lualatex"
-  "rozdzialy/01.aux" 1740488305.85183 1565 16ba50bdf22645ce3b82797368155012 "lualatex"
+  "main.toc" 1740560006.51161 391 8e35e28adf3943096e8398e3af52b1d5 "lualatex"
+  "rozdzialy/01.aux" 1740560005.15391 1565 16ba50bdf22645ce3b82797368155012 "lualatex"
   "rozdzialy/01.tex" 1740482315.87963 5743 39afc9ee2460ef436b788f1710824bb6 ""
-  "rozdzialy/02.aux" 1740488307.32086 1116 3931f4535225913c565ec222535e1f15 "lualatex"
-  "rozdzialy/02.tex" 1740488300.54672 5349 16c7be10bac10307d513006e4e51bf0b ""
+  "rozdzialy/02.aux" 1740560006.50961 1116 86e124d105e98f03f5c7f6160437ab48 "lualatex"
+  "rozdzialy/02.tex" 1740560001.00983 6703 c35ab806f47a6e59e3c539322893acea ""
   (generated)
   "main.aux"
   "main.log"

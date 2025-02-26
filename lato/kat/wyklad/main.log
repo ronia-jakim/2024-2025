@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  25 FEB 2025 13:58
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  26 FEB 2025 09:53
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -1733,6 +1733,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/sl' in size <12> not available
+(Font)              Font shape `TU/Cantarell(0)/m/it' tried instead on input line 46.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 46.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1743,7 +1748,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[6])
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -1751,7 +1759,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[7] (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux))
+[7])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[8] (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1761,19 +1777,19 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 51560 strings out of 476447
+ 51689 strings out of 476447
  125086,1977958 words of node,token memory allocated
  741 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 14 attribute, 92 glue_spec, 14 attribute_list, 4 write nodes
-   avail lists: 1:2,2:3957,3:2051,4:232,5:98,6:60,7:4965,8:26,9:1124,10:8,11:218
- 72370 multiletter control sequences out of 65536+600000
- 76 fonts using 11330759 bytes
+   avail lists: 1:2,2:5418,3:2207,4:232,5:98,6:60,7:4965,8:26,9:1319,10:8,11:218
+ 72497 multiletter control sequences out of 65536+600000
+ 76 fonts using 11571399 bytes
  117i,16n,129p,1192b,1667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (9 pages, 110708 bytes).
+Output written on main.pdf (10 pages, 116353 bytes).
 
-PDF statistics: 150 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 131072)
+PDF statistics: 155 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 131072)
  56 words of extra memory for PDF output out of 10000 (max. 100000000)
 
