@@ -60,18 +60,26 @@ z morfizmami definiowanymi analogicznie.
   \buff{Granica} (\acc{granica odwrotna}) to obiekt końcowy powyższej kategorii stożków, $\varprojlim F$.
 \end{definition}
 
-{\color{red}tutaj jest zdjecie
-
-przyklad dla kategorii zbiorów
-
-ja chyba chce wziąć dwuelementową kategorię $\mathcal{I}$ i tutaj policzyć, jeśli $F(1)=G$, a $F(2)=H$.
-}
-  
-Rozważmy kategorię $\mathcal{I}$, która ma dwa obiekty $\mathcal{I}_0=\{0,1\}$. Niech $F:\mathcal{I}\to \Cc$ będzie funktorem, dla którego $F(0)=a$, a $F(1)=b$. Niech $\phi$ oraz $\psi$ będzie parą naturalnych przekształceń, dla których
+% {\color{red}tutaj jest zdjecie
+%
+% przyklad dla kategorii zbiorów
+%
+% ja chyba chce wziąć dwuelementową kategorię $\mathcal{I}$ i tutaj policzyć, jeśli $F(1)=G$, a $F(2)=H$.
+% }
+%
+Rozważmy kategorię $\mathcal{I}$, która ma dwa obiekty $\mathcal{I}_0=\{0,1\}$. Niech $F:\mathcal{I}\to Set$ będzie funktorem, dla którego $F(0)=A$, a $F(1)=B$. Niech $\phi$ oraz $\psi$ będzie parą naturalnych przekształceń, dla których
 \begin{center}
-  \begin{tikzcd}
-    F(0) \arrow[r, "\phi_0"] \arrow[dr, "\psi_0"] & c\arrow[d, "f"]\\
-    F(1)\arrow[ur, "\phi_1"] \arrow[r, "\psi_1"] & d
+  \begin{tikzcd}[column sep=large, row sep=large]
+     & \varinjlim F\arrow[dl, "\phi_0" above left] \arrow[dr, "\phi_1"] \\ 
+    F(0)=A & D \arrow[l, "\psi_0"] \arrow[r, "\psi_1" below right] \arrow[u, "\exists!", dashed] & F(1)=B
+  \end{tikzcd}
+\end{center}
+gdzie pionowa strzałka istnieje i jest jedyna, bo $\varinjlim F$ to obiekt końcowy. Podobnie zachowuje się $A\oplus B$:
+\begin{center}
+  \begin{tikzcd}[column sep=large, row sep=large]
+     & A\oplus B\arrow[dl, "\pi_A" above left] \arrow[dr, "\pi_B"] \\ 
+    F(0)=A & & F(1)=B \\ 
+           & D\arrow[ul, "\psi_0"] \arrow[ur, "\psi_1" below right] \arrow[uu, "{\scriptstyle d\mapsto \psi_0(d)\oplus \psi_1(d)}", sloped, dashed] & F(1)=B
   \end{tikzcd}
 \end{center}
 
