@@ -12,7 +12,7 @@
 \end{example}
 
 Niech $F:\mathcal{I}\to \Cc$ będzie funktorem, gdzie o kategorii $\mathcal{I}$ myślimy jako o kategorii indeksów. Przez $\Cc^{\mathcal{I}}$ oznaczmy kategorię wszystkich takich funktorów. 
-Istnieje stały funktor, tzn. taki, że $C(i)=C$ dla każdego $i\in\mathcal{I}_0$ oraz $C(f)=id_C$ dla każdego morfizmu.
+Powiemy, że funktor $C$ jest stały, jeżeli $C(i)=C$ dla każdego $i\in\mathcal{I}_0$ oraz $C(f)=id_C$ dla każdego morfizmu.
 
 Budujemy kategorię, której 
 \begin{itemize}
@@ -54,7 +54,7 @@ Diagram wyżej możemy zdualizować i zamiast rozpatrywać naturalne przekształ
     F(i)\arrow[rr, "F(f)" below] & & F(j)
   \end{tikzcd}
 \end{center}
-z morfizmami definiowanymi analogicznie. 
+z morfizmami {definiowanymi analogicznie. 
 
 \begin{definition}{granica funktora}{}
   \buff{Granica} (\acc{granica odwrotna}) to obiekt końcowy powyższej kategorii stożków, $\varprojlim F$.
@@ -71,37 +71,42 @@ Rozważmy kategorię $\mathcal{I}$, która ma dwa obiekty $\mathcal{I}_0=\{0,1\}
 \begin{center}
   \begin{tikzcd}[column sep=large, row sep=large]
      & \varinjlim F\arrow[dl, "\phi_0" above left] \arrow[dr, "\phi_1"] \\ 
-    F(0)=A & D \arrow[l, "\psi_0"] \arrow[r, "\psi_1" below right] \arrow[u, "\exists!", dashed] & F(1)=B
+    F(0)=A & D \arrow[l, "\psi_0"] \arrow[r, "\psi_1" below right] \arrow[u, "\exists!f", dashed] & F(1)=B
   \end{tikzcd}
 \end{center}
-gdzie pionowa strzałka istnieje i jest jedyna, bo $\varinjlim F$ to obiekt końcowy. Podobnie zachowuje się $A\oplus B$:
+gdzie pionowa strzałka istnieje i jest jedyna, bo $\varinjlim F$ to obiekt końcowy. Jeśli weźmiemy $\varinjlim F=A\times B$, a $\phi_0=\pi_A$ oraz $\phi_1=\pi_B$ będą rzutami i $f(d)=(\psi_0(d), \phi_1(d))$, to diagram nadal jest prawdziwy. 
+
+Granica odwrotna tego samego funktora, to z kolei suma rozłączna $A\sqcup B$, bo diagram
 \begin{center}
   \begin{tikzcd}[column sep=large, row sep=large]
-     & A\oplus B\arrow[dl, "\pi_A" above left] \arrow[dr, "\pi_B"] \\ 
-    F(0)=A & & F(1)=B \\ 
-           & D\arrow[ul, "\psi_0"] \arrow[ur, "\psi_1" below right] \arrow[uu, "{\scriptstyle d\mapsto \psi_0(d)\oplus \psi_1(d)}", sloped, dashed] & F(1)=B
+    F(0)=A\arrow[r, "\psi_0"]\arrow[dr, "\phi_0=i_A" below left] & D & F(1)=B\arrow[l, "\psi_1" above]\arrow[dl, "\phi_1=i_B"]\\ 
+                                                       & \varprojlim F= A\sqcup B \arrow[u, dashed, "\exists!f"]
   \end{tikzcd}
 \end{center}
+gdzie $f(x)=\phi_0(x),$ jeśli $x\in A$ oraz $f(x)=\psi_1(x)$ jeśli $x\in B$, komutuje.
+
+\begin{definition}{(ko)produkt}{}
+  \buff{Produktem} obiektów $A$ i $B$ kategorii $\Cc$ nazywamy granicę prostą (kogranicę) funktora $F:\mathcal{I}\to \Cc$ dla $\mathcal{I}$ oraz $F$ jak wyżej.
+
+  \buff{Koproduktem} obiektów $A$ i $B$ kategorii $\Cc$ nazywamy granicę odwrotną (granicę) funktora $F:\mathcal{I}\to\Cc$
+\end{definition}
 
 \begin{example}[m]
-\item 
-
-
-  \item Rozważmy kategorię grup. 
+  \item W kategorii grup produkt to iloczyn kartezjański dwóch grup, tak jak w kategorii zbiorów, tj. dla grup $A,G,H$ komutuje diagram
     \begin{center}
-      \begin{tikzcd}
-          & F\arrow[dd, dashed]\arrow[dl]\arrow[dr]  \\ 
-        G & & H\\ 
-          & G\times H
+      \begin{tikzcd}[column sep=large, row sep=large]
+        & G\times H\arrow[dl, "\pi_G" above left]\arrow[dr, "\pi_H"]\\ 
+        G & A\arrow[l, "g"]\arrow[r, "h"]\arrow[u, "g\times h" below] & H
       \end{tikzcd}
     \end{center}
-    \begin{center}
-      \begin{tikzcd}
-          & F \\ 
-        G\arrow[ur] & & H\arrow[ul]\\ 
-                    & G\ast H \arrow[uu] 
-      \end{tikzcd}
-    \end{center}
+    Koprodukt to z kolei produkt wolny tych dwóch grup:
+\begin{center}
+  \begin{tikzcd}[column sep=large, row sep=large]
+    G\arrow[r, "g"]\arrow[dr, "i_G" below left] & A & H\arrow[l, "h" above]\arrow[dl, "i_H"]\\ 
+                                                       & H\ast G \arrow[u, dashed, "\exists!f"]
+  \end{tikzcd}
+\end{center}
+gdzie $f$ nakłada na litery słów $G\ast H$ pochodzące z $G$ morfizm $g$, a na litery pochodzące z $H$ - morfizm $h$.
   \item Niech $F:\mathcal{I}\to (P, \leq)$ z dwuobiektowej kategorii $\mathcal{I}$ w zbiór uporządkowany.
 \end{example}
 
