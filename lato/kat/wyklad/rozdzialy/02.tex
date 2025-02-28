@@ -1,4 +1,6 @@
-\section{25.02.2025}{cos}
+\section{25.02.2025}{Produkty i koprodukty kategorii}
+
+\subsection{O obiektach początkowych i końcowych słów kilka}
 
 \begin{definition}{obiekt początkowy i końcowy}{}
   Powiemy, że obiekt $C\in \Cc_0$ jest \buff{początkowy}, jeśli dla każdego $D\in\Cc_0$ istnieje dokładnie jeden morfizm $C\to D$, $|\Cc(C, D)|=1$. Analogicznie definiujemy \buff{obiekt końcowy} $C$: $\forall\;D\in\Cc_0\;|\Cc(D, C)|=1$.
@@ -10,6 +12,23 @@
   \item W $Gr$ grupa trywialna jest zarówno obiektem początkowym jak i końcowym.
   \item Kategoria, która ma dwa obiekty bez morfizmów między nimi nie ma obiektu końcowego ani początkowego.
 \end{example}
+
+\begin{fact}{}{}
+  Obiekty końcowe i początkowe, jeśli istnieją, to są jedyne z dokładnością do izomorfizmu.
+\end{fact}
+
+\begin{proof}
+  Niech $C$ i $C'$ będą obiektami końcowymi kategorii $\Cc$. Wiemy, że $\Cc(C, C)=\{id_C\}$, czyli komutujący diagram
+  \begin{center}
+    \begin{tikzcd}
+      C \arrow[rr, "id_C"]\arrow[dr, "\exists!f" below left] & & C\\ 
+                           & C'\arrow[ur, "\exists!g" below right]
+    \end{tikzcd}
+  \end{center}
+  daje $g\circ f=id_C$. Analogiczny diagram daje $f\circ g=id_{C'}$. Stąd $f$ i $g$ to para wzajemnie odwrotnych izomorfizmów między $C$ i $C'$
+\end{proof}
+
+\subsection{(Ko)granice funktorów a (ko)produtky}
 
 Niech $F:\mathcal{I}\to \Cc$ będzie funktorem, gdzie o kategorii $\mathcal{I}$ myślimy jako o kategorii indeksów. Przez $\Cc^{\mathcal{I}}$ oznaczmy kategorię wszystkich takich funktorów. 
 Powiemy, że funktor $C$ jest stały, jeżeli $C(i)=C$ dla każdego $i\in\mathcal{I}_0$ oraz $C(f)=id_C$ dla każdego morfizmu.
@@ -107,27 +126,63 @@ gdzie $f(x)=\phi_0(x),$ jeśli $x\in A$ oraz $f(x)=\psi_1(x)$ jeśli $x\in B$, k
   \end{tikzcd}
 \end{center}
 gdzie $f$ nakłada na litery słów $G\ast H$ pochodzące z $G$ morfizm $g$, a na litery pochodzące z $H$ - morfizm $h$.
-  \item Niech $F:\mathcal{I}\to (P, \leq)$ z dwuobiektowej kategorii $\mathcal{I}$ w zbiór uporządkowany.
+  \item Niech $F:\mathcal{I}\to (P, \leq)$ z dwuobiektowej kategorii $\mathcal{I}$ w zbiór uporządkowany. Wtedy jeśli mamy diagram 
+    \begin{center}
+      \begin{tikzcd}
+         & \varinjlim F\arrow[dr]\arrow[dl] \\ 
+        F(0)=a & d \arrow[l]\arrow[r]\arrow[dashed, u] & F(1)=b
+      \end{tikzcd}
+    \end{center}
+    to znaczy, że $d\leq a$, $d\leq b$ oraz $d\leq \varinjlim{F}$. Żeby więc miało to sens dla dowolnego $d\leq a,b$ to $\varinjlim F=\inf\{a,b\}$. Analogicznie dostajemy, że $\varprojlim F=\sup\{a,b\}$.
+
+  \item Jeśli $\mathcal{I}$ jest kategorią o nieskończenie wielu obiektach bez morfizmów między różnymi obiektami, a $F:\mathcal{I}\to Set$ jest funktorem w kategorię zbiorów, to wówczas kogranicą tego funktora jest nieskończony iloczyn kartezjański $\prod_{i\in\mathcal{I}_0}F(i)$, a granicą - nieskończona suma rozłączna $\bigsqcup_{i\in\mathcal{I}_0}F(i)$.
 \end{example}
 
-kategoria nieskończenie wiele elementów, ale bez strzałek (jako $\mathcal{I}$)
- 
+% kategoria nieskończenie wiele elementów, ale bez strzałek (jako $\mathcal{I}$)
+ % Niech $C$ oraz $C'$ będą kogranicami tego samego funktora. Z definicji mamy
+% \begin{center}
+%   \begin{tikzcd}[column sep=large, row sep=large]
+%     & F(i)\arrow[dr, "\phi_i"]\arrow[d, "\psi_i"]\arrow[dl, "\phi_i" above left] \\ 
+%     C & C'\arrow[l, "\exists g" above] & C\arrow[ll, bend left=20, "id"] \arrow[l, "\exists f" above]
+%   \end{tikzcd}
+% \end{center}
 
-Niech $C$ oraz $C'$ będą granicami tego samego funktora. Z definicji mamy
-\begin{center}
-  \begin{tikzcd}[column sep=large, row sep=large]
-    & F(i)\arrow[dr, "\phi_i"]\arrow[d, "\psi_i"]\arrow[dl, "\phi_i" above left] \\ 
-    C & C'\arrow[l, "\exists g" above] & C\arrow[ll, bend left=20, "id"] \arrow[l, "\exists f" above]
-  \end{tikzcd}
-\end{center}
+\begin{fact}{}{}
+  Granica i kogranica funktora, jeśli istnieje, to jest jedyna z dokładnością do izomorfizmu. Stąd również produkty i koprodukty są unikalne.
+\end{fact}
 
-tutaj liczby p-adyczne
+\begin{proof}
+  Wynika z uniwersalności obiektów końcowych i początkowych.
+\end{proof}
 
-ekwalizator, koekwalizator
+% tutaj liczby p-adyczne
+% ekwalizator, koekwalizator
+%
+% \begin{definition}{surjekcja, epimorfizm}{}
+%   Jeśli kategoria ma obiekt początkowy równy obiektowi końcowemu...
+% \end{definition}
 
-\begin{definition}{surjekcja, epimorfizm}{}
-  Jeśli kategoria ma obiekt początkowy równy obiektowi końcowemu...
-\end{definition}
+\begin{example}
+  Rozważmy funktor $F:\mathcal{I}^{op}\to Grp$, gdzie $\mathcal{I}=(\N, \leq)$ taki, że dla każdych $i,j\in\N$, $i\leq j$ mamy
+  \begin{center}
+    \begin{tikzcd}[column sep=large]
+      F(j)=\Z/p^j\Z\arrow[r, "F(i\to j)=q"] & F(i)=\Z/p^i\Z
+    \end{tikzcd}
+  \end{center}
+  gdzie $q$ to morfizm ilorazowy.
+
+  Liczby $p$-adyczne to rozszerzenie liczb wymiernych różne od liczb rzeczywistych i zespolonych. Całkowite liczby $p$-adyczne to szeregi
+  $$\sum_{i=k}^\infty a_ip^i,$$
+  gdzie $k\in\N$ oraz $0\leq a_i < p$. Okazuje się, że całkowite liczby $p$-adyczne, $\Z_p$, można zdefiniować jako granicę funktora $F$:
+  \begin{center}
+    \begin{tikzcd}
+      & & \Z_p \arrow[dll]\arrow[dl]\arrow[d]\arrow[drr]\arrow[drrr] \\ 
+      ...\arrow[r] & \Z/p^n\Z\arrow[r] & \Z/p^{n-1}\Z\arrow[r] & ... \arrow[r]& \Z/p^2\arrow[r] & \Z/p\Z
+    \end{tikzcd}
+  \end{center}
+\end{example}
+
+\subsection{Obiekty i kategorie monoidalne}
 
 \buff{Monoid} $(M, \star, 1)$ to struktura algebraiczna z binarną operacją oraz elementem neutralnym. Dodatkowo, komutować ma diagram 
 \begin{center}
@@ -158,13 +213,13 @@ co znaczy, że działanie jest łączne.
 \end{definition}
 
 \begin{example}[m]
-\item Dowolna kategoria $\Cc$ z koproduktem i elementem końcowym jest kategorią monoidalna.
+\item Dowolna kategoria $\Cc$ z koproduktem i obiektem końcowym jest kategorią monoidalna.
 \item Kategoria endofunktorów ma strukturę monoidalną. To znaczy, jeśli mamy dwa endofunktory $F, G\in End(\Cc)$, to potrafimy je złożyć w dobry sposób.
 
   Funktor $T\in Func(\Cc)$ oraz dwa naturalne przekształcenia $\mu:T^2\to T$, $\epsilon: Id\to T$, nazywa się \buff{monadą}.
 \end{example}
 
-Czy $S^n\vee S^n$ to produkt czy produkt w kategorii $Toph_\star$. tutaj jakies zdjecie
+% Czy $S^n\vee S^n$ to produkt czy produkt w kategorii $Toph_\star$. tutaj jakies zdjecie
 
 
 

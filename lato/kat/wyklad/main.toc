@@ -2,4 +2,7 @@
 \contentsline {section}{\numberline {24.02.2025}Podstawowe definicje}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.}Przykłady kategorii}{1}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {2.}Funktory}{2}{subsection.1.1.2}%
-\contentsline {section}{\numberline {25.02.2025}cos}{5}{section.1.2}%
+\contentsline {section}{\numberline {25.02.2025}Produkty i koprodukty kategorii}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.}O obiektach początkowych i końcowych słów kilka}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {2.}(Ko)granice funktorów a (ko)produtky}{6}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {3.}Obiekty i kategorie monoidalne}{9}{subsection.1.2.3}%

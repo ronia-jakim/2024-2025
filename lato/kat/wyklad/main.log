@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  27 FEB 2025 21:42
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  28 FEB 2025 13:29
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -1718,6 +1718,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4]
 \openout2 = rozdzialy/02.aux
  (./rozdzialy/02.tex
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1732,11 +1737,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-]
+<./luatex.n3b8IX/1.png>]
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/Cantarell(0)/m/it' tried instead on input line 46.
+(Font)              Font shape `TU/Cantarell(0)/m/it' tried instead on input line 65.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 46.
+(Font)              scaled to size 12.0pt on input line 65.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1749,6 +1754,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [6]
+Underfull \hbox (badness 1077) in paragraph at lines 138--139
+\TU/Cantarell(0)/m/n/12 różnymi obiek-tami, a $\mst@mathfont F \OT1/cmr/m/n/12 : \OMS/cmsy/m/n/12 I ! \mst@mathfont Set$ \TU/Cantarell(0)/m/n/12 jest funk-torem w kat-e-gorię zbiorów,
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 138--139
+\TU/Cantarell(0)/m/n/12 to wówczas ko-granicą tego funk-tora jest nieskońc-zony iloczyn kartez-jański
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1759,7 +1774,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[7])
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -1767,33 +1790,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[8] (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux))
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[9]
+Underfull \hbox (badness 2726) in paragraph at lines 216--217
+[]\TU/Cantarell(0)/m/n/12 Dowolna kat-e-go-ria $\OMS/cmsy/m/n/12 C$ \TU/Cantarell(0)/m/n/12 z ko-pro-duk-tem i obiek-tem koń-cowym jest kat-e-gorią
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[10] (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B35B6D58937A68AC24466DD74A8E81B7;611.
+(rerunfilecheck)             Checksum: CFF33821BF14AB8C84B228F2F38CE771;1571.
 )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 57 ({)
+### simple group (level 1) entered at line 76 ({)
 ### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 51737 strings out of 476447
+ 51897 strings out of 476447
  125086,1977958 words of node,token memory allocated
- 741 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 14 attribute, 92 glue_spec, 14 attribute_list, 4 write nodes
-   avail lists: 1:2,2:4808,3:2202,4:232,5:121,6:60,7:5277,8:26,9:1392,10:8,11:218
- 72545 multiletter control sequences out of 65536+600000
- 76 fonts using 11710119 bytes
- 117i,26n,129p,1192b,1669s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (10 pages, 121600 bytes).
+ 760 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 15 attribute, 95 glue_spec, 15 attribute_list, 4 write nodes
+   avail lists: 1:2,2:6089,3:2280,4:232,5:144,6:60,7:6412,8:26,9:1513,10:8,11:218
+ 72698 multiletter control sequences out of 65536+600000
+ 77 fonts using 12840207 bytes
+ 117i,27n,129p,1192b,1749s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (12 pages, 158068 bytes).
 
-PDF statistics: 155 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 197 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 131072)
+ 80 words of extra memory for PDF output out of 10000 (max. 100000000)
 
