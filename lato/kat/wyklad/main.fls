@@ -403,8 +403,8 @@ OUTPUT rozdzialy/01.aux
 INPUT ./rozdzialy/01.tex
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
-OUTPUT luatex.n3b8IX/1.png
-INPUT ./luatex.n3b8IX/1.png
+OUTPUT luatex.Jpqi5h/1.png
+INPUT ./luatex.Jpqi5h/1.png
 INPUT ./main.aux
 INPUT ./rozdzialy/01.aux
 INPUT ./rozdzialy/02.aux
