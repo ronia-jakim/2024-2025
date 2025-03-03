@@ -370,7 +370,7 @@ OUTPUT main.pdf
 INPUT ./main.out
 OUTPUT main.out
 INPUT /home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/notocoloremoji.luc
-INPUT /home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/hb/cb093a89cafadeb102d803c3dffc2a0f1a2cae97bb8a533342bc8421d1d26b7e.luc
+INPUT /home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/hb/5020cc5d392f65f032589f341e2df63d821ea2bef9df49bcdcb6f9db503620e3.luc
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/tfm/public/cm/cmmi10.tfm
@@ -404,8 +404,8 @@ OUTPUT rozdzialy/01.aux
 INPUT ./rozdzialy/01.tex
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
-OUTPUT luatex.hcFhVN/1.png
-INPUT ./luatex.hcFhVN/1.png
+OUTPUT luatex.KXThCN/1.png
+INPUT ./luatex.KXThCN/1.png
 OUTPUT rozdzialy/03.aux
 INPUT ./rozdzialy/03.tex
 INPUT ./main.aux

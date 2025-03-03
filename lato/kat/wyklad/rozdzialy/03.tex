@@ -34,59 +34,71 @@ $$Set(-, U(-))\cong Vect_k(k[-], -)$$
     jako doklejenie $\Z$, $L(S)=\Z\oplus S$ z działaniem $(n, s)(n', s')=(nn', ns'+ss'+n's)$, wtedy $(1, 0_S)$ jest jedynka w nowym pierścieniu. Pozostaje przyjrzeć się co się dzieje z morfizmami, skoro
     $$Rng(S, RT)\cong Ring(LS, T).$$
     Dowolny morfizm $\phi:S\to RT$ wystarczy, że trzyma element neutralny ze względu na dodawanie i jest addytywny. Możemy go rozszerzyć na morfizm, który całą pierwszą współrzędną $LS=\Z\oplus S$ posyła w $1_T\in T$, a drugą zgodnie z $\phi$. W drugą stronę wystarczy obciąć morfizm do drugiej współrzędnej.
-  \item Niech $\Delta:Set\to Set\times Set$ będzie funktorem takim, że  $\Delta(C)=(C, C)$. Zaczniemy od szukania funktora dołączonego do niego z lewej strony, czyli $L:Set\times Set\to Set$ takiego, że
-    % $$\Hom(L(X\times Y), Z)\cong \Hom((X, Y), \Delta(Z)),$$
-    % gdzie $\Hom$ to zbiory morfizmów w odpowiednich kategoriach. $L(X, Y)=X\times Y\in Set$. Wtedy dowolną funkcję $(X, Y)\to Z$ możemy przedstawić jako funkcję z $X\times Y$ i vice versa.
-    "The limit functor is right adjoint to the diagonal functor, colimit is the left adjoint"
+  \item Niech $\Delta:Set\to Set\times Set$ będzie funktorem takim, że  $\Delta(C)=(C, C)$. Zaczniemy od szukania funktora dołączonego do niego z prawej strony, czyli $R:Set\times Set\to Set$ takiego, że 
+    $$\Hom(X, R(Y,Z))\cong\Hom(\Delta(X), (Y,Z)).$$
+    Od razu narzuca się $R(Y,Z)=Y\times Z$, czyli zlepiamy współrzędne $\Delta(X)$ w jedną. Przypomnijmy, że iloczyn kartezjański w kategorii zbiorów jest produktem.
+
+    Funktor lewo dołączony musi zatem spełniać
+    $$\Hom(L(X,Y), Z)\cong \Hom((X,Y),\Delta(Z)),$$
+    czyli dowolną funkcję $(X, Y)\to (Z, Z)$ musimy umieć zapisać jako funkcję z pojedynczego zbioru, którym będzie suma rozłączna $L(X,Y)=X\sqcup Y$, czyli koprodukt w kategorii zbiorów. 
+
+    Historia funktora $\Delta$ uogalnia się na dowolną kategorię, w której są produkty i koprodukty:
+    $$\text{koprodukt}\dashv \Delta\dashv \text{produkt}$$
+  \item Ustalmy zbiór $Y\in Set_0$ i niech $R:Set\to Set$ będzie funktorem, który zbiorowi $X$ przypisuje wszystkie funkcje z $Y$ w ten zbiór, $R(X)=Set(Y,X)$. Chcemy znaleźć funktor lewo dołączony $L:Set\to Set$ do $R$. Patrzymy na morfizmy i mamy
+    $$Set(L(X), Z)\cong Set(X, \underbrace{Set(Y,Z)}_{R(Z)})$$
+    zbiór po prawej to funkcje z $X$ w funkcje z $Y$ w $Z$. Można to przedstawić jako funkcje $X\times Y\to Z$, czyli $LX=X\times Y$.
+
+    Technika tłumaczenia funkcji o więcej niż jednym argumencie na sekwencję funkcji nazywamy \acc{currying}.
+  \item Analogicznie jak w poprzednim przykładzie, niech $R$ będzie pierścieniem (przemiennym z jedynką), $W$ $R$-modułem i $R$ funktorem $R:RMod\to RMod$ takim, że $R(U)=\Hom_R(W, U)$ będzie zbiorem homomorfizmów $R$-modułów. Funktorem lewo-dołączonym do $R$ będzie wtedy $L(V)=V\otimes W$:
+    $$RMod(V, \Hom_R(W, U))\cong RMod(V\otimes W, U).$$
+    \textbf{Uwaga:} tensor produkt zwykle nie ma funktora lewo do siebie dołączonego.
+  \item Założmy, że kategoria $\Cc$ ma produkty i ustalmy $X\in \Cc$. Rozważmy funktor $L:\Cc\to \Cc$, $L(Y)=Y\times X$. Jeśli kategoria $\Cc$ posiada obiekty eksponencjalne, czyli wiemy jak uogólnić na nią przestrzeń funkcji $X\to Y$ (oznaczane $Y^X$), to funktorem prawo dołączonym do $L$ jest właśnie funktor przypisujący obiektowi $Y$ jego eksponens $Y^X$,
+    $$\Cc(Y, Z^X)\cong \Cc(Y\times X, Z).$$
+    Przykładem takiej kategorii są przestrzenie "core-compact".
 \end{enumerate}
-\bigskip
 
-% $Set_*$ i $Set$: trzeba dokleić punkt bazowy sumą rozłączną (to lewy)
-
-% Pierścienie z $1$ a po prostu pierścieniami: doklejam $\Z$.
-
-Teraz $\Delta:Set\to Set\times Set$, lewy dołączony to suma rozłączna, a prawy to iloczyn kartezjański; morał: koprodukt jest dołączony z prawej do $\Delta$, a $\Delta$ z prawej do produktu
-
-Teraz $Set\to Set$ taki, że $X\mapsto Set(Y, X)$ morfizmy idące w ten obiekt. Wtedy lewo-dołączony to produkt $Set(L(X)=X\times Y, Z)\cong Set(X, Set(Y, Z))$; na II nazwą to Currying
+W ramach kontrprzykładu rozważmy funktor zapominania $U:FinGrp\to FinSet$, i załóżmy, że $L:FinSet\to FinGrp$ jest jego funktorem lewo dołączonym. Niech $p$ będzie taką liczbą pierwszą, że $p>|L(1)|$ (wystarczy, że są względnie pierwsze). Wtedy
+$$FinSet(1, U(\Z_p))\cong FinGrp(L(1), \Z_p)$$
+gdzie po lewej zbiór ma $|\Z_p|=p$ różnych funkcji z singletona w zbiór elementów grupy $\Z_p$, a po prawej mamy jedynie trywialny morfizm, bo żaden element $L(1)$ nie ma rzędu podzielnego przez $p$, czyli nie może przejść w żaden nietrywialny element $\Z_p$.
 
 
-Tensor produkt: jako o $R-Mod(V, Hom_R(W, U))\cong R-Mod(L(V), U)$, wtedy lewy funktor dołączony to $V\otimes W$; zwykle iloczyn tensorowy nie ma do siebie lewo dolaczonego
+% Mamy funktor zapominania $U:FinGrp\to FinSet$, który nie ma lewego funktora dołączonego, bo $FinSet(1, U(G))$, to jeśli mamy $FinGrp(L(1), G)$, bierzemy $p>|L(1)|$ liczbę pierwszą i jako $G=\Z_p$. To wtedy mamy tylko trywialny mofizm $L(1)\to G$, a w zbiorach jest ich dużo.
 
-Mamy funktor zapominania $U:FinGrp\to FinSet$, który nie ma lewego funktora dołączonego, bo $FinSet(1, U(G))$, to jeśli mamy $FinGrp(L(1), G)$, bierzemy $p>|L(1)|$ liczbę pierwszą i jako $G=\Z_p$. To wtedy mamy tylko trywialny mofizm $L(1)\to G$, a w zbiorach jest ich dużo.
+% Załóżmy, że $\Cc$ ma produkty. funktor prawo dołączony do $-\times X$ jest funktorem eksponencjalnym $-^Y$, o ile istnieje. Core-compact spaces ma obiekty eksponencjalnie, jest tu podzbiór "lokalnie zwarte przestrzenie Hausdorffa" ($X^Y$ z topologią zwarto-otwarta: baza otoczeń indukowana przez $K\subseteq Y$ zwarty, $U\susbeteq X$ otwarty $V_{K,U}=\{f:f(K)\subseteq U\}$)
 
-Załóżmy, że $\Cc$ ma produkty. funktor prawo dołączony do $-\times X$ jest funktorem eksponencjalnym $-^Y$, o ile istnieje. Core-compact spaces ma obiekty eksponencjalnie, jest tu podzbiór "lokalnie zwarte przestrzenie Hausdorffa" ($X^Y$ z topologią zwarto-otwarta: baza otoczeń indukowana przez $K\subseteq Y$ zwarty, $U\susbeteq X$ otwarty $V_{K,U}=\{f:f(K)\subseteq U\}$)
+\subsection{Druga definicja}
 
-\subsection{Definicja bez użycia zbiorów}
-
-\begin{definition}{}{}
-$\epsilon:LR\implies 1$ to counit, $\eta:1\implies RL$ to unit
-  
+\begin{definition}{funktory dołączone (naturalne transformacje)}{}
+  Rozważmy parę funktorów
   \begin{center}
     \begin{tikzcd}
-      L\arrow[r, Rightarrow, "1_L\neta"]\arrow[dr, "1_L", Rightarrow] & LRL\arrow[d, Rightarrow, "\epsilon 1_L"]\\ 
-                                         & L
+      \Cc\arrow[r, "L", bend left=20] & \Dd\arrow[l, "R", bend left=20].
     \end{tikzcd}
   \end{center}
+  Powiemy, że $L$ jest lewo dołączony do $R$ i na odwrót, jeśli istnieją dwie natrualne transformacje
+  $$\epsilon:LR\implies 1_{\Dd} \quad \eta:1_\Cc\implies RL$$
+  takie, że komutują diagramy
   \begin{center}
     \begin{tikzcd}
-      R\arrow[r, Rightarrow, "\neta1_R"]\arrow[dr, "1_R", Rightarrow] & RLR\arrow[d, Rightarrow, "1_R\epsilon"]\\ 
-                                         & R
+      L\arrow[r, Rightarrow, "1_L\neta"]\arrow[dr, "1_L" below left, Rightarrow] & LRL\arrow[d, Rightarrow, "\epsilon 1_L"] & & R\arrow[r, "1_R" above, Rightarrow] \arrow[dr, "1_R" below left, Rightarrow] & RLR\arrow[d, "1_R\epsilon" right, Rightarrow]\\ 
+                                                                                 & L & & & R
     \end{tikzcd}
   \end{center}
+  $\eta$ nazywamy \acc{unit}, a $\epsilon$ to \acc{counit}.
 \end{definition}
 
-$k[-]=L:Set\to Vect$ i $U=R:Vect\to Set$ to funktor zapominania; wtedy $RL$ to zbiór kombinacji formalnych kombinacji liniowych, czyli dla każdego $X\to RL(X)$ jest włożenie. W drugą stronę $k[V]\to V$ też działa
-
-Tutaj jeszcze raz powtórzyć przykłady z wcześniej
-
-
-\begin{theorem}{}{}
-  Obie definicje są równoważne
-\end{theorem}
-
-\begin{proof}
-  dowód strona 124 w emily
-\end{proof}
+% $k[-]=L:Set\to Vect$ i $U=R:Vect\to Set$ to funktor zapominania; wtedy $RL$ to zbiór kombinacji formalnych kombinacji liniowych, czyli dla każdego $X\to RL(X)$ jest włożenie. W drugą stronę $k[V]\to V$ też działa
+%
+% Tutaj jeszcze raz powtórzyć przykłady z wcześniej
+%
+%
+% \begin{theorem}{}{}
+%   Obie definicje są równoważne
+% \end{theorem}
+%
+% \begin{proof}
+%   dowód strona 124 w emily
+% \end{proof}
 
 
 
