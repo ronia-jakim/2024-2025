@@ -1,0 +1,62 @@
+\section{03.03.2025}{}
+
+% \subsection{}
+
+Odwzorowanie na bazie $B\to V$ daje liniowe odwzorowanie $k[B]\to V$. Można to abstrakcyjnie wyrazić jako relację między morfizmami w kategorii zbiorów między zbiorem $B$ a $U(V)$, gdzie $U:Vect\to Set$ to funktor zapominania, a morfizmami w kategorii przestrzeni wektorowych, $Vect_k(k[B], V)$. To znaczy, chcemy izomorfizm
+$$Set(-, U(-))\cong Vect_k(k[-], -)$$
+
+\begin{definition}{funktory dołączone}{}
+  Powiemy, że $L:\Cc\to \Dd$ i $R:\Dd\to \Cc$ są parą funktorów \buff{dołączonych}, $L\dashv R$, jeśli funktory
+  $$\Cc(-, R-), \Dd(L-, -):\Cc^{op}\times\Dd\to Set,$$
+  są naturalnie izomorficzne.
+\end{definition}
+
+$Set_*$ i $Set$: trzeba dokleić punkt bazowy sumą rozłączną (to lewy)
+
+Pierścienie z $1$ a po prostu pierścieniami: doklejam $\Z$.
+
+Teraz $\Delta:Set\to Set\times Set$, lewy dołączony to suma rozłączna, a prawy to iloczyn kartezjański; morał: koprodukt jest dołączony z prawej do $\Delta$, a $\Delta$ z prawej do produktu
+
+Teraz $Set\to Set$ taki, że $X\mapsto Set(Y, X)$ morfizmy idące w ten obiekt. Wtedy lewo-dołączony to produkt $Set(L(X)=X\times Y, Z)\cong Set(X, Set(Y, Z))$; na II nazwą to Currying
+
+
+Tensor produkt: jako o $R-Mod(V, Hom_R(W, U))\cong R-Mod(L(V), U)$, wtedy lewy funktor dołączony to $V\otimes W$; zwykle iloczyn tensorowy nie ma do siebie lewo dolaczonego
+
+Mamy funktor zapominania $U:FinGrp\to FinSet$, który nie ma lewego funktora dołączonego, bo $FinSet(1, U(G))$, to jeśli mamy $FinGrp(L(1), G)$, bierzemy $p>|L(1)|$ liczbę pierwszą i jako $G=\Z_p$. To wtedy mamy tylko trywialny mofizm $L(1)\to G$, a w zbiorach jest ich dużo.
+
+Załóżmy, że $\Cc$ ma produkty. funktor prawo dołączony do $-\times X$ jest funktorem eksponencjalnym $-^Y$, o ile istnieje. Core-compact spaces ma obiekty eksponencjalnie, jest tu podzbiór "lokalnie zwarte przestrzenie Hausdorffa" ($X^Y$ z topologią zwarto-otwarta: baza otoczeń indukowana przez $K\subseteq Y$ zwarty, $U\susbeteq X$ otwarty $V_{K,U}=\{f:f(K)\subseteq U\}$)
+
+\subsection{Definicja bez użycia zbiorów}
+
+\begin{definition}{}{}
+$\epsilon:LR\implies 1$ to counit, $\eta:1\implies RL$ to unit
+  
+  \begin{center}
+    \begin{tikzcd}
+      L\arrow[r, Rightarrow, "1_L\neta"]\arrow[dr, "1_L", Rightarrow] & LRL\arrow[d, Rightarrow, "\epsilon 1_L"]\\ 
+                                         & L
+    \end{tikzcd}
+  \end{center}
+  \begin{center}
+    \begin{tikzcd}
+      R\arrow[r, Rightarrow, "\neta1_R"]\arrow[dr, "1_R", Rightarrow] & RLR\arrow[d, Rightarrow, "1_R\epsilon"]\\ 
+                                         & R
+    \end{tikzcd}
+  \end{center}
+\end{definition}
+
+$k[-]=L:Set\to Vect$ i $U=R:Vect\to Set$ to funktor zapominania; wtedy $RL$ to zbiór kombinacji formalnych kombinacji liniowych, czyli dla każdego $X\to RL(X)$ jest włożenie. W drugą stronę $k[V]\to V$ też działa
+
+Tutaj jeszcze raz powtórzyć przykłady z wcześniej
+
+
+\begin{theorem}{}{}
+  Obie definicje są równoważne
+\end{theorem}
+
+\begin{proof}
+  dowód strona 124 w emily
+\end{proof}
+
+
+

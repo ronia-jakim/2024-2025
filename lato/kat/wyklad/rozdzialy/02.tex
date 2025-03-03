@@ -180,6 +180,9 @@ gdzie $f$ nakłada na litery słów $G\ast H$ pochodzące z $G$ morfizm $g$, a n
       ...\arrow[r] & \Z/p^n\Z\arrow[r] & \Z/p^{n-1}\Z\arrow[r] & ... \arrow[r]& \Z/p^2\arrow[r] & \Z/p\Z
     \end{tikzcd}
   \end{center}
+  Granica prosta takiego funktora jest trywialna, ale możemy rozważyć inny funktor,z kategorii $\Z$ z porządkiem, tzn: $G:\Z\to Grp$ taki, że $G(n)=\Z/p^n\Z$, natomiast strzałkę $n+1\to n$ przekształcamy na odwzorowanie
+  $$\Z/p^n\Z\ni x\mapsto p\cdot x\in \Z/p^{n+1}\Z.$$
+  Wtedy granicą prostą $G$ jest $C_{p^\infty}$ - pierwiastki $p^n$-tego stopnia z $1$, dla dowolnego $n$. 
 \end{example}
 
 \subsection{Obiekty i kategorie monoidalne}
