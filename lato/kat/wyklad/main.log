@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  3 MAR 2025 11:43
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  3 MAR 2025 15:47
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -1737,7 +1737,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-<./luatex.kUOX2E/1.png>]
+<./luatex.hcFhVN/1.png>]
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/sl' in size <12> not available
 (Font)              Font shape `TU/Cantarell(0)/m/it' tried instead on input line 65.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
@@ -1817,41 +1817,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [10]
 \openout2 = rozdzialy/03.aux
  (./rozdzialy/03.tex
-./rozdzialy/03.tex:27: Undefined control sequence.
-l.27 ...ana przez $K\subseteq Y$ zwarty, $U\susbeteq
-                                                   X$ otwarty $V_{K,U}=\{f:f...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./rozdzialy/03.tex:38: Undefined control sequence.
-\pgf@let@token ...rams/.cd,every label,]{1_L\neta 
-                                                  }
-l.38     \end{tikzcd}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./rozdzialy/03.tex:44: Undefined control sequence.
-\pgf@let@token ...iagrams/.cd,every label,]{\neta 
-                                                  1_R}
-l.44     \end{tikzcd}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
@@ -1864,7 +1829,50 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+./rozdzialy/03.tex:56: Undefined control sequence.
+l.56 ...ana przez $K\subseteq Y$ zwarty, $U\susbeteq
+                                                   X$ otwarty $V_{K,U}=\{f:f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rozdzialy/03.tex:67: Undefined control sequence.
+\pgf@let@token ...rams/.cd,every label,]{1_L\neta 
+                                                  }
+l.67     \end{tikzcd}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rozdzialy/03.tex:73: Undefined control sequence.
+\pgf@let@token ...iagrams/.cd,every label,]{\neta 
+                                                  1_R}
+l.73     \end{tikzcd}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \vbox (badness 1033) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
@@ -1876,13 +1884,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[12] (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux))
+[13] (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4E51A39E5E5FA53009E6955B875E05FA;1834.
+(rerunfilecheck)             Checksum: EC89462C0F302AB9BF34731675851ACC;2448.
 )
 (\end occurred inside a group at level 1)
 
@@ -1890,19 +1898,19 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 ### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 52027 strings out of 476447
+ 52034 strings out of 476447
  125086,1977958 words of node,token memory allocated
- 772 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 18 attribute, 95 glue_spec, 18 attribute_list, 4 write nodes
-   avail lists: 1:2,2:6083,3:2280,4:232,5:144,6:60,7:6412,8:36,9:1513,10:8,11:218
- 72800 multiletter control sequences out of 65536+600000
- 77 fonts using 13193647 bytes
+ 800 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 25 attribute, 95 glue_spec, 25 attribute_list, 4 write nodes
+   avail lists: 1:2,2:6069,3:2280,4:232,5:145,6:60,7:6412,8:36,9:1513,10:8,11:218
+ 72801 multiletter control sequences out of 65536+600000
+ 77 fonts using 13155087 bytes
  117i,27n,129p,1192b,1749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (14 pages, 172293 bytes).
+Output written on main.pdf (15 pages, 179121 bytes).
 
-PDF statistics: 218 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 131072)
- 96 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 235 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 62 named destinations out of 1000 (max. 131072)
+ 112 words of extra memory for PDF output out of 10000 (max. 100000000)
 

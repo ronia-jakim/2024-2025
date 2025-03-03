@@ -6,5 +6,7 @@
 \contentsline {subsection}{\numberline {1.}O obiektach początkowych i końcowych słów kilka}{5}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {2.}(Ko)granice funktorów a (ko)produtky}{6}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {3.}Obiekty i kategorie monoidalne}{9}{subsection.1.2.3}%
-\contentsline {section}{\numberline {03.03.2025}}{11}{section.1.3}%
-\contentsline {subsection}{\numberline {1.}Definicja bez użycia zbiorów}{12}{subsection.1.3.1}%
+\contentsline {section}{\numberline {03.03.2025}Funktory dołączone}{11}{section.1.3}%
+\contentsline {subsection}{\numberline {1.}Motywacja abstrakcyjnego nonsensu}{11}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {2.}Dużo przykładów funktorów dołączonych}{11}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {3.}Definicja bez użycia zbiorów}{13}{subsection.1.3.3}%

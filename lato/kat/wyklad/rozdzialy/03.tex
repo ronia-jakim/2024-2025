@@ -1,19 +1,48 @@
-\section{03.03.2025}{}
+\section{03.03.2025}{Funktory dołączone}
 
-% \subsection{}
+\subsection{Motywacja abstrakcyjnego nonsensu}
 
-Odwzorowanie na bazie $B\to V$ daje liniowe odwzorowanie $k[B]\to V$. Można to abstrakcyjnie wyrazić jako relację między morfizmami w kategorii zbiorów między zbiorem $B$ a $U(V)$, gdzie $U:Vect\to Set$ to funktor zapominania, a morfizmami w kategorii przestrzeni wektorowych, $Vect_k(k[B], V)$. To znaczy, chcemy izomorfizm
+Niech $V$ będzie przestrzenią wektorową nad ciałem $k$, a $B$ wybraną jej bazą. Dowolne odwzorowanie $B\to V$ możemy rozszerzyć na odwzorowanie liniowe $k[B]=V\to V$. To znaczy, mamy izomorfizm zbiorów
+$$Hom(B, V)\cong Hom(V, V).$$
+W języku abstrakcyjnego nonsensu możemy zdefiniować dwa funktory, 
+$$Set(-, U(-)):Set^{op}\times Vect_k^{fin}\to Set$$
+$$Vect_k(k[-], -):Set^{op}\times Vect_k^{fin}\to Set,$$
+gdzie $U:Vect_k^{fin}\to Set$ to funktor zapominający strukturę przestrzeni wektorowej, między którymi istnieją naturalne izomorfizmy.
+% Odwzorowanie na bazie $B\to V$ daje liniowe odwzorowanie $k[B]\to V$. Można to abstrakcyjnie wyrazić jako relację między morfizmami w kategorii zbiorów między zbiorem $B$ a $U(V)$, gdzie $U:Vect\to Set$ to funktor zapominania, a morfizmami w kategorii przestrzeni wektorowych, $Vect_k(k[B], V)$. To znaczy, chcemy izomorfizm
 $$Set(-, U(-))\cong Vect_k(k[-], -)$$
 
 \begin{definition}{funktory dołączone}{}
-  Powiemy, że $L:\Cc\to \Dd$ i $R:\Dd\to \Cc$ są parą funktorów \buff{dołączonych}, $L\dashv R$, jeśli funktory
-  $$\Cc(-, R-), \Dd(L-, -):\Cc^{op}\times\Dd\to Set,$$
-  są naturalnie izomorficzne.
+  Niech $L:\Cc\to\Dd$ oraz $R:\Dd\to \Cc$ będą funktorami. Powiemy, że $L$ jest \buff{lewo dołączony} do funktora $R$, a $R$ \buff{prawo dołączony} do $L$, jeśli funktory
+  $$\Cc(-, R-), \Dd(L-, -):\Cc^{op}\times \Dd\to Set$$
+  są naturalnie izomorficzne. Taką parę funktorów dołączonych oznaczamy $\color{green}L\dashv R$.
+  % Powiemy, że $L:\Cc\to \Dd$ i $R:\Dd\to \Cc$ są parą funktorów \buff{dołączonych}, $L\dashv R$, jeśli funktory
+  % $$\Cc(-, R-), \Dd(L-, -):\Cc^{op}\times\Dd\to Set,$$
+  % są naturalnie izomorficzne.
 \end{definition}
 
-$Set_*$ i $Set$: trzeba dokleić punkt bazowy sumą rozłączną (to lewy)
+\subsection{Dużo przykładów funktorów dołączonych}
 
-Pierścienie z $1$ a po prostu pierścieniami: doklejam $\Z$.
+\begin{enumerate}
+  \item Niech $R:Set_*\to Set$ będzie funktorem z kategorii zbiorów zbazowanych w kategorię zbiorów, który zapomina o punkcie bazowym. Chcemy teraz znaleźć funktor $L:Set\to Set_*$, który będzie do niego lewo dołączony. Niech $L(X)=X\cup\{X\}$ (lub bardziej obrazowo: $X\sqcup\{*\}$), gdzie $y_0$ poślemy na $\{X\}$, to znaczy doklejamy do $X$ singleton i staje się on punktem wyróżnionym. 
+
+    Oba funktory są różnowartościowe na obiektach, więc wystarczy przekonać się, że
+    $$Set_*(LX, (Y, y_0))\cong Set(X, R(Y, y_0))$$
+    jest izomorfizmem. Dowolna funkcja $X\to Y$ rozszerza się przez posłanie $\{X\}\mapsto y_0$ na funkcję $(X, \{X\})\to (Y, y_0)$.
+    % Biorąc dowolną funkcję $f:X\to Y$, rozszerzamy ją na $Lf:(X, \{X\})\to (Y, y_0)$ tak, że $Lf\restriction X=f$ i $Lf(\{X\})=y_0$. Wtedy $RLf$ to $Lf$ obcięte do $X$, czyli $f$. W drugą stronę, dowolna funkcja $g:LX\to (Y, y_0)$, $g(\{X\})=y_0$, obcina się do funkcji $Rg:X\to Y$, którą następnie możemy ponownie rozszerzyć tak, że $LRg=g$.
+  \item Podobna sytuacja ma miejsce, kiedy szukamy lewo dołączony funktor do $R:Ring\to Rng$ między kategorią pierścieni z jedynką, a wszystkimi pierścieniami. Definiujemy funktor 
+    $$L:Rng\to Ring$$
+    jako doklejenie $\Z$, $L(S)=\Z\oplus S$ z działaniem $(n, s)(n', s')=(nn', ns'+ss'+n's)$, wtedy $(1, 0_S)$ jest jedynka w nowym pierścieniu. Pozostaje przyjrzeć się co się dzieje z morfizmami, skoro
+    $$Rng(S, RT)\cong Ring(LS, T).$$
+    Dowolny morfizm $\phi:S\to RT$ wystarczy, że trzyma element neutralny ze względu na dodawanie i jest addytywny. Możemy go rozszerzyć na morfizm, który całą pierwszą współrzędną $LS=\Z\oplus S$ posyła w $1_T\in T$, a drugą zgodnie z $\phi$. W drugą stronę wystarczy obciąć morfizm do drugiej współrzędnej.
+  \item Niech $\Delta:Set\to Set\times Set$ będzie funktorem takim, że  $\Delta(C)=(C, C)$. Zaczniemy od szukania funktora dołączonego do niego z lewej strony, czyli $L:Set\times Set\to Set$ takiego, że
+    $$\Hom(L(X\times Y), Z)\cong \Hom((X, Y), \Delta(Z)),$$
+    gdzie $\Hom$ to zbiory morfizmów w odpowiednich kategoriach. $L(X, Y)=X\times Y\in Set$. Wtedy dowolną funkcję $(X, Y)\to Z$ możemy przedstawić jako funkcję z $X\times Y$ i vice versa.
+\end{enumerate}
+\bigskip
+
+% $Set_*$ i $Set$: trzeba dokleić punkt bazowy sumą rozłączną (to lewy)
+
+% Pierścienie z $1$ a po prostu pierścieniami: doklejam $\Z$.
 
 Teraz $\Delta:Set\to Set\times Set$, lewy dołączony to suma rozłączna, a prawy to iloczyn kartezjański; morał: koprodukt jest dołączony z prawej do $\Delta$, a $\Delta$ z prawej do produktu
 
