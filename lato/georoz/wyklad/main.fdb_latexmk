@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1740495766.16832 "main.tex" "main.pdf" "main" 1740495771.27946 2
+["lualatex"] 1741260708.50775 "main.tex" "main.pdf" "main" 1741260712.42652 2
   "../../../template.sty" 1740482315.88063 11357 d026bc3486afc86d08e4cd55edd1d88f ""
   "/home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/hb/5020cc5d392f65f032589f341e2df63d821ea2bef9df49bcdcb6f9db503620e3.luc" 1737661884.11608 128415 e4d192abc326a4dc4f50ff596b3217bc ""
   "/home/maruda/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/cantarell-bold.luc" 1737098194.69573 173137 d1cd73a5b6a0ad74eb829d2302b29393 ""
@@ -36,6 +36,7 @@
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/context/base/mkii/supp-pdf.mkii" 1 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/bigintcalc/bigintcalc.sty" 1 40635 c40361e206be584d448876bba8a64a3b ""
@@ -345,12 +346,14 @@
   "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/luatex/luaotfload/luaotfload.lua" 1 13565 50482dad4c221a79dbdbb982122baf8c ""
   "/nix/store/vwv57nhj45xqmv91cxf042mqkl8psab0-texlive-combined-full-2023-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5467763 77543e102942fb8ccaad6f92de0d9c00 ""
   "/nix/store/vwv57nhj45xqmv91cxf042mqkl8psab0-texlive-combined-full-2023-final/share/texmf-var/web2c/luahbtex/lualatex.fmt" 1 12274533 553be551f688c88b6910a8e628252a9a ""
-  "main.aux" 1740495770.67531 282 106ade1b8c3fad4a9118e89758dcaf9e "lualatex"
-  "main.out" 1740495770.67631 409 db548bb88aa4fb1a6983002d682adeb5 "lualatex"
-  "main.tex" 1740489496.57401 912 7e71b10af1d0a2f76870d5bb3647f855 ""
-  "main.toc" 1740495770.67731 240 11eeeb1f48458806f2ba92c3c2d28989 "lualatex"
-  "rozdzialy/01.aux" 1740495770.67431 1443 15aaa8fcc2fd50b9d25af1bc888fef1c "lualatex"
+  "main.aux" 1741260712.01116 308 8e7f3e8c8c03dbd1240de36edacc4108 "lualatex"
+  "main.out" 1741260712.01216 455 6da00adfb557e1f4dab1abace354d78b "lualatex"
+  "main.tex" 1741260139.25559 940 9fbea642501c713b6cb2f28021053f7c ""
+  "main.toc" 1741260712.01216 307 38e8bc166ada0c407407bc8989c7323e "lualatex"
+  "rozdzialy/01.aux" 1741260711.89222 1443 15aaa8fcc2fd50b9d25af1bc888fef1c "lualatex"
   "rozdzialy/01.tex" 1740495765.85593 8240 33273e94e7eabf85aed1f62da926a773 ""
+  "rozdzialy/02.aux" 1741260712.01016 1113 7e5e4bc2201a86a453da726d13f38bf5 "lualatex"
+  "rozdzialy/02.tex" 1741260706.85732 637 187d21903985f47e57f5c91724870536 ""
   (generated)
   "main.aux"
   "main.log"
@@ -358,4 +361,5 @@
   "main.pdf"
   "main.toc"
   "rozdzialy/01.aux"
+  "rozdzialy/02.aux"
   (rewritten before read)
