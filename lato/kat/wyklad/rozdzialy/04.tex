@@ -1,0 +1,204 @@
+\section{10.03.2025}{Funktory dołączone własności}
+
+\subsection{Dowód równoważności}
+
+\begin{theorem}{}{}
+  Dwie definicje funktorów dołączonych z poprzedniego wykładu są równoważne, tzn. naturalne transformacje $H$, $E$
+  \begin{center}
+    \begin{tikzcd}
+      \Dd(L-,-)\arrow[Rightarrow, r, bend right=20, "H" below] & \Cc(-, R-)\arrow[l, Rightarrow, bend right=20, "E" above]
+    \end{tikzcd}
+  \end{center}
+  istnieją $\iff$ istnieją dwie naturalne transformacje $\epsilon:LR\to 1_\Dd$ oraz $\eta:1_\Cc\to RL$ dla których komutują diagramy
+  \begin{center}
+    \begin{tikzcd}
+      L\arrow[r, Rightarrow, "1_L\eta"]\arrow[dr, "1_L" below left, Rightarrow] & LRL\arrow[d, Rightarrow, "\epsilon 1_L"] & & R\arrow[r, "\eta1_R" above, Rightarrow] \arrow[dr, "1_R" below left, Rightarrow] & RLR\arrow[d, "1_R\epsilon" right, Rightarrow]\\ 
+                                                                                 & L & & & R
+    \end{tikzcd}
+  \end{center}
+\end{theorem}
+
+\begin{proof}
+  Niech $f:c'\to c$ będzie morfizmem w $\Dd$, a $g:d'\to d$ - morfizmem w $\Cc$.
+  % $\implies$
+
+  % Niech $f:c'\to c$ będzie morfizmeme w $\Dd$, a $g:d'\to d$ - morfizmem w $\Cc$. Niech $\phi\in \Dd(Lc, d)$, wtedy mamy diagram
+  % \begin{center}
+  %   \begin{tikzcd}
+  %     Lc' \arrow[r, "Lf" above] & Lc \arrow[d, "\phi" right] \\ 
+  %     d' & d\arrow[l, "g" below] \\ 
+  %     Rd' & Rd\arrow[l, "Rg" below]
+  %   \end{tikzcd}
+  % \end{center}
+  Zacznijmy od zdefiniowania szukanych przekształceń naturalnych na obiektach. Niech $\eta_c$
+  \begin{center}
+    \begin{tikzcd}[row sep=small]
+      \Dd(Lc, Lc)\arrow[r, "H_{c, Lc}"] & \Cc(c, RLc)\\ 
+      1_{Lc}\arrow[r] & \eta_c=H(1_{Lc})
+    \end{tikzcd}
+  \end{center}
+  a $\epsilon_d$ definiujemy analogicznie używając $E$.
+
+  W drugą stronę, $H(\phi)$ definiujemy mając $\eta$ oraz $\epsilon$. Dla $\phi:Lc\to d$ definiujemy
+  $$H(\phi):=R\phi\circ\eta_c,$$
+  które bierze coś z $c$ i oddaje $RLc$. Z drugiej strony bierzemy $\psi: c\to Rd$
+  $$E(\psi):=\epsilon_{d}\circ L\psi.$$
+
+  $\implies$
+
+  Zakładamy, że $H$ i $E$ są naturalne i pokazujemy naturalność $\eta$, czyli komutowanie diagramu
+  \begin{center}
+    \begin{tikzcd}[column sep=large, row sep=large]
+      RL(c')\arrow[d, "RL(f)" left] & \arrow[l, "\eta_{c'}" above] 1_\Cc(c')\arrow[d, "1_\Cc(f)"]\\ 
+      RL(c) & 1_\Cc(c) \arrow[l, "\eta_{c}"]\\ 
+    \end{tikzcd}
+  \end{center}
+
+  \begin{align*}
+    RLf\circ \eta_{c'}&\overset{\text{def. }\eta}{=}RLf\circ H(1_{Lc'})=\\ 
+                      &\overset{\text{funktorialność }H}{=}H(Lf\circ 1_{Lc'})=\\ 
+                      &= H(1_{Lc}\circ Lf)=\\ 
+                      &=H(1_{Lc})\circ f=\\ 
+                      &\overset{\text{def. }\eta}{=}\eta_c\circ f.
+  \end{align*}
+  Analogicznie należy sprawdzić naturalność $\epsilon$.
+
+  Pozostaje jeszcze udowodnić, że zdefiniowane przez nas $\eta$ i $\epsilon$ spełnia warunek trójkąta w definicji, tzn. komutują diagramy
+  \begin{center}
+    \begin{tikzcd}
+      L\arrow[r, orange, Rightarrow, "1_L\eta"]\arrow[dr, "1_L" below left, Rightarrow] & LRL\arrow[d, Rightarrow, blue, "\epsilon 1_L"] & & R\arrow[r, "\eta1_R" above, Rightarrow] \arrow[dr, "1_R" below left, Rightarrow] & RLR\arrow[d, "1_R\epsilon" right, Rightarrow]\\ 
+                                                                                 & L & & & R
+    \end{tikzcd}
+  \end{center}
+  Ograniczymy się do sprawdzenia lewego diagramu. 
+  \begin{center}
+    \begin{tikzcd}
+      Lc\arrow[r, "L(\eta_c)"]\arrow[dr, "1_{Lc}" below left] & LRLc\arrow[d, "\epsilon_{Lc}"] \\ 
+                               & Lc
+    \end{tikzcd}
+  \end{center}
+  $$\epsilon_{Lc}L(\eta_c)=E(1_{RLc})L(\eta_c)=E(1_{RLc}\eta_c)=EH(1_{Lc})=1_{Lc}$$
+
+  % {\color{red} należy jeszcze pokazać trójkąty}
+
+  % {\color{red} tutaj pokazać, że $H$ jest naturalne}
+  $\impliedby$
+
+  Wychodzimy teraz z założenia, że $\eta:1_\Cc\implies RL$ i $\epsilon:LR\implies 1_\Dd$ to naturalne przekształcenia, czyli z komutowania diagramów
+  \begin{center}
+    \begin{tikzcd}
+      c'\arrow[d, "f" left]\arrow[r, "\eta_{c'}"] & RLc'\arrow[d, "RLf"] & & d\arrow[d, "g" left] & LRd\arrow[d, "LRg"]\arrow[l, "\epsilon_d" above]\\ 
+      c\arrow[r, "\eta_c" below] & RLc & & d' & LRd'\arrow[l, "\eta_{d'}"]
+    \end{tikzcd}
+  \end{center}
+  dostajemy równości
+  $$RLf\circ \eta_{c'}=\eta_c\circ f$$
+  $$g\circ \epsilon_d=\epsilon_{d'}\circ LR g.$$
+  Powinniśmy najpierw pokazać, że $H$ i $E$ są naturalne. Zrobimy to tylko dla $H$. Interesuje nas diagram
+  \begin{center}
+    \begin{tikzcd}[column sep=large, row sep=large]
+      \Dd(Lc, d)\arrow[d, "(Lf; g)" left]\arrow[r, "H_{c;d}" above] & \Cc(c, Rd) \arrow[d, "(f; Rg)"]\\ 
+      \Dd(Lc', d')\arrow[r, "H_{c';d'}" below] & \Cc(c', Rd')
+    \end{tikzcd}
+  \end{center}
+
+  $$EH(\phi)=E(R\phi\circ \eta)=E(R\phi)E(\eta)=\epsilon LR\phi \epsilon L\eta$$
+\end{proof}
+
+\begin{thedobrze orem}{}{}
+  Istnieje bijekcja między zbiorem par naturalnych przekształceń $(H, E)$ oraz $(\eta, \epsilon)$.
+\end{theorem}
+
+\begin{proof}
+ojesu galu
+\end{proof}
+
+\subsection{Funktory dołączone a granice}
+
+\begin{theorem}{}{}
+  Niech $L\dashv R$ będzie parą funktorów dołączonych. Wtedy $L$ zachowuje granice proste, a $R$ - granice odwrotne.
+\end{theorem}
+
+Przypomnijmy że kogranica (granica prosta) funktora $f:\mathcal{I}\to\Cc$ spełnia dla każdego $g$ diagram
+\begin{center}
+  \begin{tikzcd}
+    f_i\arrow[rr, "\alpha" above]\arrow[dr, "L\phi_i" below left]\arrow[ddr, bend right=30, "\psi_i" below left] & & f_j\arrow[dl, "\phi_j" below right]\arrow[ddl, "\psi_j" below right, bend left=30]\\ 
+                                                                                                 & \varinjlim f\arrow[d, dashed, "\exists!"]\\ 
+    & g
+  \end{tikzcd}
+\end{center}
+
+\begin{proof}
+  Pokażemy tylko, że lewo dołączony funktor zachowuje kogranice, tj. dla dowolnego $d\in \Dd$ zachodzi diagram
+  \begin{center}
+    \begin{tikzcd}
+      Lf_i\arrow[rr, "L\alpha" above]\arrow[dr, "L\phi_i" below left]\arrow[ddr, bend right=30, "\psi_i" below left] & & Lf_j\arrow[dl, "L\phi_j" below right]\arrow[ddl, "\psi_j" below right, bend left=30]\\  
+                                                                                                                         & L\varinjlim f\arrow[d, dashed, "\exists!"]\\ 
+                                                                                                                         & d
+    \end{tikzcd}
+  \end{center}
+
+  Z uniwersalnej własności kogranicy mamy diagram
+  \begin{center}
+    \begin{tikzcd}
+      f_i\arrow[rr, "\alpha" above]\arrow[dr, "L\phi_i" below left]\arrow[ddr, bend right=30, "\theta_i" below left] & & f_j\arrow[dl, "\phi_j" below right]\arrow[ddl, "\theta_j" below right, bend left=30]\\ 
+                                                                                                   & \varinjlim f\arrow[d, dashed, "\exists!u"]\\ 
+      & Rd
+    \end{tikzcd}
+  \end{center}
+  Nakładamy na niego funktor $L$. Potrzebujemy też strzałek $L\eta_i:Lf_i\to LRLf_i$ przychodzących z naturalnej transformacji $\eta: 1_\Cc\implies RL$. Dodatkowo wiemy, że $\epsilon_d:Lrd\to d$ istnieje i jest w dodatku jedyne. Mamy więc diagram
+  \begin{center}
+    \begin{tikzcd}[
+      column sep=large, row sep=large, every matrix/.append style={name=mymatrix}
+      ]
+      & Lf_i
+      \arrow[rr, "L\alpha"]\arrow[dl, "L\eta_i" above left]\arrow[dr, "L\phi_i" below left]
+      \arrow[ddr, bend right=30, "L\theta_i" left] 
+      \arrow[thick, "\psi_i", dddr, green, rounded corners, to path={
+        (\tikztostart.south)
+        --(mymatrix-2-1.east)
+        to[bend right=20] (mymatrix-3-3.north west)
+        -- ([xshift=-.5em]mymatrix-4-3.west)
+        |- ([xshift=-.2em]mymatrix-4-3)
+      }]
+      & & Lf_j\arrow[dl, "L\phi_j" below right]\arrow[dr, "L\eta_j" above right] 
+      \arrow[ddl, bend left=30, "L\theta_j" right] 
+      \arrow[thick, "\psi_j" above, dddl, green, rounded corners, to path={
+        (\tikztostart.south)
+        --(mymatrix-2-5.west)
+        to[bend left=20] (mymatrix-3-3.north east)
+        -- ([xshift=.5em]mymatrix-4-3.east)
+        |- ([xshift=.2em]mymatrix-4-3)
+      }]
+      \\ 
+      LRLf_i\arrow[drr, "LR\psi_i" below left, bend right=20] & & L\varinjlim f\arrow[d, "\exists! Lu", dashed] & & LRLf_j \arrow[dll, "LR\psi_j" below right, bend left=20] \\ 
+             & & LRd \arrow[d, "\exists!\epsilon_d"] \\ 
+             & & d
+    \end{tikzcd}
+  \end{center}
+  w którym długie zielone strzałki są konsekwencją złożenia $\epsilon_d\circ LR\psi_i=\psi_i$. Dostajemy więc $\epsilon_d\circ Lu$ jako jedyną strzałkę $L\varinjlim f\to d$ komutującą z $\psi_i$ oraz $\psi_j$.
+
+
+  % Chcemy pokazać, że diagram z definicji granicy po nałożeniu funktora $L$,
+  % \begin{center}
+  %   \begin{tikzcd}
+  %     Lf_i\arrow[r, "L\phi_i" above] \arrow[dr] & L\varinjlim f\arrow[d, "\exists!", dashed] \\ 
+  %                                  & Lg
+  %   \end{tikzcd}
+  % \end{center}
+  % jest nadal prawdziwy.
+  %
+  % \begin{center}
+  %   \begin{tikzcd}[row sep=large, column sep=large]
+  %     f_i\arrow[r, "\phi_i" above]\arrow[d] & \varinjlim f\arrow[d] \arrow[dd, dashed, bend left=30, "\phi_\infty" right]\\ 
+  %     RL f_i\arrow[r, "RL\phi_i" above]\arrow[dr, "R\phi_i" below left] & RL\varinjlim f  \\ 
+  %                                       & Rg
+  %   \end{tikzcd}
+  % \end{center}
+\end{proof}
+
+tutaj cos o kojadrze jak mamy funkcje w przestrzeniach wektorowych
+
+Z JAKIEGOS POWODU TUTAJ POWINNISMY  DAC DEFINICJE MODULU PROJEKTYWNEGO
+
+twierdzenie: każdy moduł wkłada się w pewien moduł injektywny

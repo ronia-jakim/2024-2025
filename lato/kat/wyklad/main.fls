@@ -358,6 +358,7 @@ INPUT ./main.aux
 INPUT ./rozdzialy/01.aux
 INPUT ./rozdzialy/02.aux
 INPUT ./rozdzialy/03.aux
+INPUT ./rozdzialy/04.aux
 OUTPUT main.aux
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/ts1cmr.fd
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/context/base/mkii/supp-pdf.mkii
@@ -404,14 +405,17 @@ OUTPUT rozdzialy/01.aux
 INPUT ./rozdzialy/01.tex
 OUTPUT rozdzialy/02.aux
 INPUT ./rozdzialy/02.tex
-OUTPUT luatex.KXThCN/1.png
-INPUT ./luatex.KXThCN/1.png
+OUTPUT luatex.k5f5wN/1.png
+INPUT ./luatex.k5f5wN/1.png
 OUTPUT rozdzialy/03.aux
 INPUT ./rozdzialy/03.tex
+OUTPUT rozdzialy/04.aux
+INPUT ./rozdzialy/04.tex
 INPUT ./main.aux
 INPUT ./rozdzialy/01.aux
 INPUT ./rozdzialy/02.aux
 INPUT ./rozdzialy/03.aux
+INPUT ./rozdzialy/04.aux
 INPUT ./main.out
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
