@@ -110,7 +110,7 @@
 \end{theorem}
 
 \begin{proof}
-ojesu galu
+  \color{red}TO DO
 \end{proof}
 
 \subsection{Funktory dołączone a granice}
@@ -197,8 +197,59 @@ Przypomnijmy że kogranica (granica prosta) funktora $f:\mathcal{I}\to\Cc$ speł
   % \end{center}
 \end{proof}
 
-tutaj cos o kojadrze jak mamy funkcje w przestrzeniach wektorowych
+% tutaj cos o kojadrze jak mamy funkcje w przestrzeniach wektorowych
 
-Z JAKIEGOS POWODU TUTAJ POWINNISMY  DAC DEFINICJE MODULU PROJEKTYWNEGO
+\subsection{Moduły}
 
-twierdzenie: każdy moduł wkłada się w pewien moduł injektywny
+Jeśli $R$ jest pierścieniem z $1$, to powiemy, że $M$ jest $R$-modułem, jeśli
+\begin{itemize}
+  \item $(M, +)$, jest grupą abelową
+  \item oraz $R$ działa na $M$ tak, że 
+    $$1x=x,\quad rsx=r(sx)$$
+    $$(r+s)(x+y)=(r+s)x+(r+s)y=rx+sx+ry+sy$$
+\end{itemize}
+
+Grupy abelowe to $\Z$-moduły. Przestrzenie liniowe nad ciałem $k$ to $k$-moduły.
+
+\begin{definition}{moduł projektywny}{}
+  Mówimy, że $R$-moduł $P$ w kategorii $R$-modułów jest projektywny, jeśli dla każdego surjektywnego homomorfizmu $f:N\twoheadrightarrow M$ oraz każdego homomorfizmu $g:P\to M$ istnieje homomorfizm modułów $h:P\to N$ taki, że $fh=p$. Innymi słowy, komutuje diagram
+  \begin{center}
+    \begin{tikzcd}
+      & N\arrow[d, twoheadrightarrow, "f"]\\ 
+      P\arrow[ur, dashed, "\exists\;h"]\arrow[r, "g" below] & M
+    \end{tikzcd}
+  \end{center}
+\end{definition}
+
+\begin{example}[m]
+  Dla każdego $R$ oraz $n$ wolny moduł $R^n$ jest modułem projektywnym. Niech $x_1,..., x_n$ będą generatorami $R^n$. Dla każdego $i$ wybieramy jeden element $n_i\in f^{-1}(g(x_i))$. Definiujemy $h(x_i)=n_i$.
+\end{example}
+
+Argument z przykładu uogólnia się na stwierdzenie, że każdy moduł jest \textbf{obrazem pewnego modułu projektywnego}.
+
+Dualnie definiujemy moduły injektywne.
+
+\begin{definition}{moduł injektywny}{}
+  Dla każdego injektywnego $f:M\to N$ oraz dla każdego $g:M\to Q$ istnieje $h:N\to Q$ takie, że komutuje diagram
+  \begin{center}
+    \begin{tikzcd}
+      M\arrow[r, "f" above, hookrightarrow]\arrow[d, "g" left] & N\arrow[dl, "\exists\;h" below right, dashed]\\ 
+      Q
+    \end{tikzcd}
+  \end{center}
+\end{definition}
+
+\begin{example}
+Liczby wymierne $\Q$ są injektywnym $\Z$-modułem.
+\end{example}
+
+\begin{theorem}{}{}
+  Dla każdego $R$-modułu $M$ istnieje injektywny moduł $Q$ taki, że $M\hookrightarrow Q$.
+\end{theorem}
+
+\begin{proof}
+  \color{red} ja tego nie znam?
+\end{proof}
+
+
+

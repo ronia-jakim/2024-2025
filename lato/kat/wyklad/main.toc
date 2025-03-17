@@ -13,3 +13,4 @@
 \contentsline {section}{\numberline {10.03.2025}Funktory dołączone własności}{14}{section.1.4}%
 \contentsline {subsection}{\numberline {1.}Dowód równoważności}{14}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {2.}Funktory dołączone a granice}{16}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {3.}Moduły}{18}{subsection.1.4.3}%
