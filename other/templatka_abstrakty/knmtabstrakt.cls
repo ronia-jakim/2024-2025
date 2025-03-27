@@ -25,6 +25,8 @@
 \newcommand\R{\mathbb{R}}
 \newcommand\N{\mathbb{N}}
 
+\def\podziekowania{Serdecznie zapraszam!}
+
 \makeatletter
 \newcommand\godzina[1]{\def\@godzina{#1}}
 \newcommand\sala[1]{\def\@sala{#1}}
@@ -68,7 +70,7 @@
 \AtEndDocument{
 \vspace*{5ex}
 \begin{flushright}
-\large{\sc Serdecznie zapraszam!}
+\large{\sc \podziekowania}
 \end{flushright}
 }
 

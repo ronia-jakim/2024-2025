@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "48825cfcd8a8e9ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd10da4006c5123f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7750c0af5b0feb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Część Pierwsza/Języki regularne.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Języki regularne"
+            }
+          },
+          {
+            "id": "ef70e6c3d2149fc6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "e71833c1ef2be0c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Część Pierwsza/zadania/Zadanie 6. double pump.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Zadanie 6. double pump"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f5252b2d38e4ef16",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ba74ef713d9a639",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30795094755079ae",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cc2133ed61c2334e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8e61a1fd82c8711d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265.5
+  },
+  "right": {
+    "id": "7320b33b3c8f431d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d38e739e015e024",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5d41b78bddeaa13",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "e0b1749dca0f3b7e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "aebd55113fc2961b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c90202d227938491",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d7750c0af5b0feb5",
+  "lastOpenFiles": [
+    "Pasted image 20250323201429.png",
+    "Część Pierwsza/Języki regularne.md",
+    "Część Pierwsza/zadania/Zadanie 6. double pump.md",
+    "Część Pierwsza/zadania/Zadanie 5. pump up the jam.md",
+    "Część Pierwsza/zadania/Zadanie 4. PID.md",
+    "Część Pierwsza/zadania/egzamin 2022.md",
+    "Część Pierwsza/zadania/Zadanie 1. CW DFA.md",
+    "Część Pierwsza/zadania/Zadanie 3. nieregularność.md",
+    "Część Pierwsza/Deterministyczne Automaty Skończone.md",
+    "Część Pierwsza/zadania/Zadanie 2. DFA.md",
+    "zadanie 2 graf.png.png",
+    "Część Pierwsza/Niedeterministyczne Automaty Skończone NFA.md",
+    "zadanie 2 zbior graf.png.png",
+    "zadanie 2 zbior.png.png",
+    "Pasted image 20250323180629.png",
+    "NFASimpleExample.svg.png",
+    "NFASimpleExample.svg 1.png",
+    "Pasted image 20250323163449.png",
+    "Część Pierwsza/zadania",
+    "Część Pierwsza/Deterministyczne Automaty Skończone",
+    "Część Pierwsza",
+    "Welcome.md"
+  ]
+}
