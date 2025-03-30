@@ -8,6 +8,16 @@
 
 \subsection{Co to właściwie ta monada?}
 
+W programowaniu: sposób na nałożenie funkcji na wartość w opakowaniu. W OCamlu jest definiowana jako
+
+\begin{lstlisting}[language=caml]
+module type Monad = sig
+  type 'a t
+  val return : 'a -> 'a t
+  val bind : 'a t -> ('a -> 'b t) -> 'b t
+end
+\end{lstlisting}
+
 \begin{definition}{monada}{}
   Monada na kategorii $\Cc$ składa się z
   \begin{itemize}
@@ -75,7 +85,29 @@ tutaj o przestrzeniach afinicznych jako o intuicji
   \end{itemize}
 \end{definition}
 
+tutaj trochę przykładów
 
+\begin{lemma}{}{}
+  Dla każdej monady $(T,\eta, \mu)$ na kategorii $\Cc$ istnieje para funktorów sprzężonych 
+  \begin{center}
+    \begin{tikzcd}
+      \Cc\arrow[r, "L" above, bend left=20] & \Cc^T\arrow[l, bend left=20, "R" below] 
+    \end{tikzcd}
+  \end{center}
+  która indukuje monadę $(T,\eta,\mu)$.
+\end{lemma}
+
+\begin{proof}
+  ja kiedyś będę miała czas w życiu
+\end{proof}
+
+\begin{definition}{}{}
+  Niech $\Cc$ będzie kategorią z monadą $(T, \eta, \mu)$. Wtedy \buff{kategorią Kleislego}, oznaczane $\Cc_T$, na $\Cc$ nazwiemy kategorię której
+  \begin{itemize}
+    \item obiekty są obiektami z $\Cc$ 
+    \item morfizmy z $A$ do $B$ w $\Cc_T$, oznaczane $A\rightsquigarrow B$, jest morfizmem $A\to TB$ w kategorii $\Cc$.
+  \end{itemize}
+\end{definition}
 
 o konstrukcji (trojce) Kleisego
 
