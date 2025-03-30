@@ -15,3 +15,5 @@
 \contentsline {subsection}{\numberline {2.}Funktory dołączone a granice}{16}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {3.}Moduły}{18}{subsection.1.4.3}%
 \contentsline {section}{\numberline {17.03.2025}Pierwsza nieobecność}{20}{section.1.5}%
+\contentsline {subsection}{\numberline {1.}Co to właściwie ta monada?}{20}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {2.}Konstruowanie funktorów sprzężonych z monad}{21}{subsection.1.5.2}%

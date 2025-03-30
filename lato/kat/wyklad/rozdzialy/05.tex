@@ -1,14 +1,83 @@
 \section{17.03.2025}{Pierwsza nieobecność}
 
-\begin{adjustwidth}{90pt}{0pt}
+\begin{adjustwidth}{200pt}{0pt}
 \begin{flushright}\slshape
   A monad is just a monoid in the category of endofunctors, what's the problem
 \end{flushright}
 \end{adjustwidth}
 
-o monadach z przykladami
+\subsection{Co to właściwie ta monada?}
+
+\begin{definition}{monada}{}
+  Monada na kategorii $\Cc$ składa się z
+  \begin{itemize}
+    \item endofunktora $T:\Cc\to\Cc$,
+    \item naturalnej transformacji $\eta:1_\Cc\to T$ (unit z funktorów dołączonych),
+    \item naturalnej transformacji $\mu:T^2\to T$, która definiuje mnożenie na funktorze $T$
+  \end{itemize}
+  takich, że poniższe diagramy komutują w kategorii $\Cc^\Cc$
+  \begin{center}
+    \begin{tikzcd}[column sep=large, row sep=large]
+      T^3\arrow[r, Rightarrow, "T\mu"] \arrow[d, Rightarrow, "\mu T"] & T^2\arrow[d, Rightarrow, "\mu"] & & T\arrow[r, "\eta T", Rightarrow] \arrow[dr, "1_T", Rightarrow] & T^2 \arrow[d, "\mu", Rightarrow] & T\arrow[l, Rightarrow, "T\eta"]\arrow[dl, "1_T", Rightarrow]  \\
+      T^2\arrow[r, Rightarrow, "\mu"] & T & & & T
+    \end{tikzcd}
+  \end{center}
+\end{definition}
+
+Diagramy te są bardzo podobne do tych, które pojawiły się przy definiowaniu obiektu monoidalnego [\ref{deff:obiekt monoidalny}]. Nie jest to przypadkiem: monady są obiektem monoidalnym w kategorii endofunktorów $\Cc^\Cc$ z binarnym działaniem $\Cc^\Cc\times\Cc^\Cc\to \Cc^\Cc$ będącym składaniem funktorów.
+
+\begin{example}
+  Rozważmy parę funktorów sprzężonych znaną z poprzednich wykładów
+  \begin{center}
+    \begin{tikzcd}
+      Set\arrow[r, "F" above] & Ab\arrow[l, "U" below]
+    \end{tikzcd}
+  \end{center}
+  gdzie $F$ to funktor rozpinający wolną grupę abelową o generatorach równych zbiorowi, a $U$ zapomina strukturę grupy. Niech $\eta:1_{Set}\implies UF$ oraz $\epsilon:FY\implies 1_{Ab}$ będą unitem oraz counitem z definicji gunktorów sprzężonych.
+
+  Widzimy tutaj endofunktor $UF$ oraz naturalną transformację $\eta$ jak z definicji monady. Potrzebujemy jeszcze mnożenia na $UF$.
+
+  Naturalne przekształcenie $\epsilon:FU\implies 1_{Ab}$ na dowolnej grupie $A$ jest homomorfizmem ewaluującym formalną sumę jej elementów (obiekt z $FUA$) jako właściwy element grupy $A$. Możemy ten homomorfizm wyrazić jako funkcję, podkładając funktory $U$ i $F$ z odpowiednich stron, tzn. rozważając złożenie
+  $$U\epsilon F:UFUF\to UF.$$
+  Jest to brakujący w definicji monady sposób mnożenia na funktorze.
+\end{example}
+
+\begin{lemma}{}{}
+  Każda para $L\vdash R$ funktorów sprzężonych zadaje monadę, gdzie
+  \begin{itemize}
+    \item $RL$ jest endofunktorem $T$,
+    \item unit z definicji pary funktorów sprzężonych $\eta:1_\Cc\to RL$ jest unitem z definicji monady,
+    \item counit z nałożonymi funktorami, $R\epsilon L:RLRL\implies RL$ jest mnożeniem $\mu:T^2\to T$.
+  \end{itemize}
+\end{lemma}
+
+\subsection{Konstruowanie funktorów sprzężonych z monad}
+
+tutaj o przestrzeniach afinicznych jako o intuicji
+
+\begin{definition}{Eilenberg-Moore}{}
+  Niech $\Cc$ będzie kategorią, a $(T,\eta,\mu)$ monadą na niej. Definiujemy kategorię \buff{Eilenberga-Moore'a} dla $T$ (kategorię $T$-algebra), oznaczaną jako $\boldsymbol{\Cc^T}$, jako kategorię której
+  \begin{itemize}
+    \item obiekty to pary $A\in\Cc$, $a:TA\to A$ dla których komutują diagramy w $\Cc$
+      \begin{center}
+        \begin{tikzcd}
+          A\arrow[r, "\eta_A" above]\arrow[dr, "1_A" below left] & TA & & T^2A\arrow[r, "\mu_A" above]\arrow[d, "Ta" left] & TA\arrow[d, "a" right] \\ 
+                                                                 & A & & TA \arrow[r, "a" below] & A
+        \end{tikzcd}
+      \end{center}
+    \item {\color{red} morfizmy $f:(A, a)\to (B, b)$ są mapami $f:A\to B$ w $\Cc$ takie, że komutuje diagram }
+      \begin{center}
+        \begin{tikzcd}
+          TA\arrow[r, "Tf" above] \arrow[d, "a" left] & TB\arrow[d, "b" right] \\ 
+          A\arrow[r, "f" below] & B
+        \end{tikzcd}
+      \end{center}
+  \end{itemize}
+\end{definition}
+
+
+
 o konstrukcji (trojce) Kleisego
-monadach zadawanych przez funktory dolaczone
 
 
 
