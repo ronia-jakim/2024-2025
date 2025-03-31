@@ -62,45 +62,6 @@ Diagramy te są bardzo podobne do tych, które pojawiły się przy definiowaniu 
 \end{lemma}
 
 \subsection{Konstruowanie funktorów sprzężonych z monad}
-
-tutaj o przestrzeniach afinicznych jako o intuicji
-
-\begin{definition}{Eilenberg-Moore}{}
-  Niech $\Cc$ będzie kategorią, a $(T,\eta,\mu)$ monadą na niej. Definiujemy kategorię \buff{Eilenberga-Moore'a} dla $T$ (kategorię $T$-algebra), oznaczaną jako $\boldsymbol{\Cc^T}$, jako kategorię której
-  \begin{itemize}
-    \item obiekty to pary $A\in\Cc$, $a:TA\to A$ dla których komutują diagramy w $\Cc$
-      \begin{center}
-        \begin{tikzcd}
-          A\arrow[r, "\eta_A" above]\arrow[dr, "1_A" below left] & TA & & T^2A\arrow[r, "\mu_A" above]\arrow[d, "Ta" left] & TA\arrow[d, "a" right] \\ 
-                                                                 & A & & TA \arrow[r, "a" below] & A
-        \end{tikzcd}
-      \end{center}
-    \item {\color{red} morfizmy $f:(A, a)\to (B, b)$ są mapami $f:A\to B$ w $\Cc$ takie, że komutuje diagram }
-      \begin{center}
-        \begin{tikzcd}
-          TA\arrow[r, "Tf" above] \arrow[d, "a" left] & TB\arrow[d, "b" right] \\ 
-          A\arrow[r, "f" below] & B
-        \end{tikzcd}
-      \end{center}
-  \end{itemize}
-\end{definition}
-
-tutaj trochę przykładów
-
-\begin{lemma}{}{}
-  Dla każdej monady $(T,\eta, \mu)$ na kategorii $\Cc$ istnieje para funktorów sprzężonych 
-  \begin{center}
-    \begin{tikzcd}
-      \Cc\arrow[r, "L" above, bend left=20] & \Cc^T\arrow[l, bend left=20, "R" below] 
-    \end{tikzcd}
-  \end{center}
-  która indukuje monadę $(T,\eta,\mu)$.
-\end{lemma}
-
-\begin{proof}
-  ja kiedyś będę miała czas w życiu
-\end{proof}
-
 \begin{definition}{}{}
   Niech $\Cc$ będzie kategorią z monadą $(T, \eta, \mu)$. Wtedy \buff{kategorią Kleislego}, oznaczane $\Cc_T$, na $\Cc$ nazwiemy kategorię której
   \begin{itemize}
@@ -108,6 +69,10 @@ tutaj trochę przykładów
     \item morfizmy z $A$ do $B$ w $\Cc_T$, oznaczane $A\rightsquigarrow B$, jest morfizmem $A\to TB$ w kategorii $\Cc$.
   \end{itemize}
 \end{definition}
+
+\begin{lemma}{}{}
+  to do: łączność w $\Cc_T$ z emily
+\end{lemma}
 
 o konstrukcji (trojce) Kleisego
 

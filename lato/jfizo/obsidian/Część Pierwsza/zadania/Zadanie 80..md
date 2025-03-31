@@ -13,7 +13,7 @@ Podobnie jak w 78.a., tylko kiedy chcemy zwolnić żuczka to zamiast kroić kraw
 Zacznijmy od spisania tego przyśpieszania
 $$A'=(\Sigma, Q\times[3]\cup\{\heartsuit, \spadesuit\}, \heartsuit, S, Z, \delta')$$
 
-Dla każdej krotki $([q,\varepsilon,S],[p,W])$ działamy w obrębie jednej warstwy, czyli
+Dla każdej krotki $([q,\varepsilon,S],[p,W])$ działamy w obrębie jednej warstw  y, czyli
 $$([(q,i),\varepsilon,S],[(p,i), W])$$
 Z kolei dla wszystkich innych krotek $([q,a,S],[p,W])$ z pierwotnego automatu tworzymy reguły w nowym automacie:
 - $i\leq 1$ (czyli jesteśmy na jednej z trzech górnych warstw)

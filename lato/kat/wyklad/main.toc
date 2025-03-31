@@ -17,3 +17,6 @@
 \contentsline {section}{\numberline {17.03.2025}Pierwsza nieobecność}{20}{section.1.5}%
 \contentsline {subsection}{\numberline {1.}Co to właściwie ta monada?}{20}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {2.}Konstruowanie funktorów sprzężonych z monad}{21}{subsection.1.5.2}%
+\contentsline {section}{\numberline {24.03.2025}Druga nieobecność}{22}{section.1.6}%
+\contentsline {section}{\numberline {31.03.2025}we back in business}{24}{section.1.7}%
+\contentsline {subsection}{\numberline {1.}Diagramy strunowe [string diagrams]}{24}{subsection.1.7.1}%

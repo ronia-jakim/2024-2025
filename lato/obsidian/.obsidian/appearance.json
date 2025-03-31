@@ -1,3 +1,5 @@
 {
-  "cssTheme": "Everforest Enchanted"
+  "cssTheme": "Everforest Enchanted",
+  "theme": "moonstone",
+  "accentColor": "#66c29a"
 }
