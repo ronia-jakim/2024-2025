@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Measures on topological spaces/list 3/exercies 2.md",
+                "file": "Measures on topological spaces/list 3/exercise 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "exercies 2"
+              "title": "exercise 8"
             }
           }
         ],
@@ -73,7 +73,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Przeglądarka plików"
+              "title": "Files"
             }
           },
           {
@@ -189,19 +189,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Otwórz okno szybkiego wyboru": false,
-      "graph:Otwórz graf": false,
-      "canvas:Stwórz nową tablicę": false,
-      "daily-notes:Otwórz codzienną notatkę": false,
-      "templates:Wstaw szablon": false,
-      "command-palette:Otwórz listę poleceń": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "8772f8a260d60b71",
   "lastOpenFiles": [
+    "Measures on topological spaces/list 3/exercies 2.md",
+    "Measures on topological spaces/list 3/exercise 8.md",
     "Measures on topological spaces/lista4/homework.md",
     "Measures on topological spaces/list 3/exercise 6.md",
-    "Measures on topological spaces/list 3/exercies 2.md",
     "Measures on topological spaces/list 3/exercise 4.md",
     "Measures on topological spaces/list 2/exercise B.md",
     "Measures on topological spaces/list 2",
