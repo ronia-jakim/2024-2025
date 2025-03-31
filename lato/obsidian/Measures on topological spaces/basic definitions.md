@@ -1,0 +1,1 @@
+Given the space $X$, write $\mathbb{P}(X)$ (or as Plebanek - $P(X)$) for the family of all probability measures defined on $Bor(X)$. 
