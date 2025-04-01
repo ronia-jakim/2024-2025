@@ -2,21 +2,63 @@
 
 \begin{adjustwidth}{200pt}{0pt}
 \begin{flushright}\slshape
-  A monad is just a monoid in the category of endofunctors, what's the problem
+  A monad is just a monoid in the category of endofunctors, what's the problem?
 \end{flushright}
 \end{adjustwidth}
 
-\subsection{Co to właściwie ta monada?}
+\subsection{Po co właściwie te monady?}
 
-W programowaniu: sposób na nałożenie funkcji na wartość w opakowaniu. W OCamlu jest definiowana jako
+W programowaniu monady są używane do modelowania "robienia czegoś więcej" jako efektu działania funkcji. W OCamlu (autorka notatek dostaje oczopląsu na widok Haskella) jest definiowana jako
 
-\begin{lstlisting}[language=caml]
+\begin{lstlisting}
 module type Monad = sig
   type 'a t
   val return : 'a -> 'a t
   val bind : 'a t -> ('a -> 'b t) -> 'b t
 end
 \end{lstlisting}
+Przykładem namacalnej monady jest tzw. monada Maybe, która opakowuje dane w pudełko, tym samym pozwalając zwracać pudełka puste. 
+
+Powiedzmy, że potrzebujemy znaleźć element maksymalny listy, czyli \lstinline{maxElem : int list -> int}. Co, jeśli nasza lista jest pusta? Możemy opakować zwracaną wartość i zmienić ją w \lstinline{int option}. Wtedy w wypadku pustej listy zwracamy \lstinline{None}. 
+
+\begin{lstlisting}
+let maxElem (x : int list) : int option = 
+  match x with 
+  | [] -> None 
+  | x::xs -> 
+    match maxElem(xs) with 
+    | None -> Some x
+    | Some y -> Some max(x, y)
+\end{lstlisting}
+
+Pojawia się kolejny problem: zmiana zwracanego typu z \lstinline{int} na \lstinline{int option} nie pozwala nam dodawać elementów maksymalnych z różnych list, ani (po napisaniu \lstinline{minElem}) odjąć od elementu maksymalnego elementu minimalnego. Potrzebujemy więc w elegancki sposób zmienić również operacje arytmetyczne. Zacznijmy od zdefiniowania funkcji potrzebnych w monadzie.
+
+\begin{lstlisting}
+type 'a t = a' option
+
+let return (x : int) : int option = 
+  Some x
+
+let bind (x : int option) (op : int -> int option) : int option = 
+  match x with 
+  | None -> None
+  | Some a -> op a
+\end{lstlisting}
+
+Funkcja \lstinline{return} nie robi nic poza opakowaniem \lstinline{int} w \lstinline{int option}, natomiast funkcja \lstinline{bind} wyjmuje \lstinline{int} z pudełka i dopiero wtedy nakłada funkcję i pakuje z powrotem do pudła. Dla przykładu napiszemy tylko nową implementację dodawania, która będzie teraz pobierać dwa argumenty typu \lstinline{int option} i zwracać \lstinline{int option}.
+
+\begin{lstlisting}
+let ( + ) : (x : int option) (y : int option) : int option = 
+  bind ( x, fun a -> bind(y, fun b -> Some(a+b)) )
+\end{lstlisting}
+
+Możemy teraz odpalić
+\begin{lstlisting}
+maxElem([1; 4; 45]) + maxElem([44; -10; 9])
+\end{lstlisting}
+i na konsoli zobaczymy \lstinline{Some 69}.
+
+\subsection{Definicja i przykłady}
 
 \begin{definition}{monada}{}
   Monada na kategorii $\Cc$ składa się z
@@ -28,16 +70,16 @@ end
   takich, że poniższe diagramy komutują w kategorii $\Cc^\Cc$
   \begin{center}
     \begin{tikzcd}[column sep=large, row sep=large]
-      T^3\arrow[r, Rightarrow, "T\mu"] \arrow[d, Rightarrow, "\mu T"] & T^2\arrow[d, Rightarrow, "\mu"] & & T\arrow[r, "\eta T", Rightarrow] \arrow[dr, "1_T", Rightarrow] & T^2 \arrow[d, "\mu", Rightarrow] & T\arrow[l, Rightarrow, "T\eta"]\arrow[dl, "1_T", Rightarrow]  \\
-      T^2\arrow[r, Rightarrow, "\mu"] & T & & & T
+      T^3\arrow[r, Rightarrow, "T\mu"] \arrow[d, Rightarrow, "\mu T" left] & T^2\arrow[d, Rightarrow, "\mu"] & & T\arrow[r, "\eta T", Rightarrow] \arrow[dr, "1_T" below left, Rightarrow] & T^2 \arrow[d, "\mu" right, Rightarrow] & T\arrow[l, Rightarrow, "T\eta" above]\arrow[dl, "1_T", Rightarrow]  \\
+      T^2\arrow[r, Rightarrow, "\mu" below] & T & & & T
     \end{tikzcd}
   \end{center}
 \end{definition}
 
-Diagramy te są bardzo podobne do tych, które pojawiły się przy definiowaniu obiektu monoidalnego [\ref{deff:obiekt monoidalny}]. Nie jest to przypadkiem: monady są obiektem monoidalnym w kategorii endofunktorów $\Cc^\Cc$ z binarnym działaniem $\Cc^\Cc\times\Cc^\Cc\to \Cc^\Cc$ będącym składaniem funktorów.
+Diagramy te są bardzo podobne do tych, które pojawiły się przy definiowaniu obiektu monoidalnego [\ref{def:obiekt monoidalny}]. Nie jest to przypadkiem: monady są obiektem monoidalnym w kategorii endofunktorów $\Cc^\Cc$ z binarnym działaniem $\Cc^\Cc\times\Cc^\Cc\to \Cc^\Cc$ będącym składaniem funktorów.
 
-\begin{example}
-  Rozważmy parę funktorów sprzężonych znaną z poprzednich wykładów
+\begin{example}[m]
+  \item Rozważmy parę funktorów sprzężonych znaną z poprzednich wykładów
   \begin{center}
     \begin{tikzcd}
       Set\arrow[r, "F" above] & Ab\arrow[l, "U" below]
@@ -49,7 +91,9 @@ Diagramy te są bardzo podobne do tych, które pojawiły się przy definiowaniu 
 
   Naturalne przekształcenie $\epsilon:FU\implies 1_{Ab}$ na dowolnej grupie $A$ jest homomorfizmem ewaluującym formalną sumę jej elementów (obiekt z $FUA$) jako właściwy element grupy $A$. Możemy ten homomorfizm wyrazić jako funkcję, podkładając funktory $U$ i $F$ z odpowiednich stron, tzn. rozważając złożenie
   $$U\epsilon F:UFUF\to UF.$$
-  Jest to brakujący w definicji monady sposób mnożenia na funktorze.
+  Jest to występujący w definicji monady sposób mnożenia funktorów.
+\item W przykładzie z funkcją \lstinline{maxElem}, endofunktorem $T$ jest zmiana typów \lstinline{int -> int option}. Naturalnym przekształceniem $\eta:1_\Cc\to T$ jest funkcja \lstinline{return}, a funkcja \lstinline{bind} mówi nam jak nałożyć funkcję \lstinline{int -> int option} na element typu \lstinline{int option}, czyli element poddany już działaniu endofunktora $T$.
+\item Rozważmy kategorię $Set$ i funktor $T:Set\to Set$, $T(X)=X\cup\{X\}$. Przypomnijmy, że jest to funktor będący złożeniem zapominającego funktora z kategorii zbiorów z wyróżnionym punktem z funktorem do niego dołączonym. $\eta:1_{Set}\to T$ posyła elementy $X$ w elementy $X$, tj. singleton $\{X\}$ nie jest w obrazie. $\mu_X:T^2X\to TX$ pośle elementy $X$ w $X$, a zbiory $\{X\}$ oraz $\{X\cup\{X\}$ w singleton $\{X\}$. Czy widzisz podobieństwo z przykładem wyżej? 
 \end{example}
 
 \begin{lemma}{}{}
@@ -66,17 +110,47 @@ Diagramy te są bardzo podobne do tych, które pojawiły się przy definiowaniu 
   Niech $\Cc$ będzie kategorią z monadą $(T, \eta, \mu)$. Wtedy \buff{kategorią Kleislego}, oznaczane $\Cc_T$, na $\Cc$ nazwiemy kategorię której
   \begin{itemize}
     \item obiekty są obiektami z $\Cc$ 
-    \item morfizmy z $A$ do $B$ w $\Cc_T$, oznaczane $A\rightsquigarrow B$, jest morfizmem $A\to TB$ w kategorii $\Cc$.
+    \item morfizmy z $A$ do $B$ w $\Cc_T$, oznaczane (niekoniecznie konsekwentnie) $A\rightsquigarrow B$, jest morfizmem $A\to TB$ w kategorii $\Cc$.
   \end{itemize}
+  Identyczność $id_A:A\rightsquigarrow A$ definiujemy, posiłkując się monadą, jako $\eta_A:A\to TA$. Złożenie morfizmów $f:A\rightsquigarrow B$ oraz $g:B\rightsquigarrow C$ to z kolei
+  \begin{center}
+    \begin{tikzcd}
+      A\arrow[r, "f"] & TB \arrow[r, "Tg"] & T^2C\arrow[r, "\mu_C"] & TC
+    \end{tikzcd}
+  \end{center}
 \end{definition}
 
 \begin{lemma}{}{}
-  to do: łączność w $\Cc_T$ z emily
+  Składanie morfizmów w kategorii $\Cc_T$ jest łączne.
 \end{lemma}
 
-o konstrukcji (trojce) Kleisego
+\begin{proof}
+  Niech $f:A\rightsquigarrow B$, $g:B\rightsquigarrow C$ oraz $h:C\rightsquigarrow D$ będą morfizmami w kategorii $\Cc_T$. Chcemy pokazać, że $h\circ (g\circ f)=(h\circ g)\circ f$. Z definicji wiemy, że $h\circ g=\mu_D\circ Th\circ g$, ale ponieważ podkładamy pod to $f$, to musimy nałożyć na niego funktor $T$. Mamy diagram 
+  \begin{center}
+    \begin{tikzcd}[column sep=large]
+      A\arrow[r, "f"]\arrow[d, "=", leftrightarrow, sloped] & TB\arrow[r, "Tg"]\arrow[d, "=", leftrightarrow, sloped] & T^2C\arrow[r, "\mu_C", orange]\arrow[d, "=", leftrightarrow, sloped] & TC\arrow[r, "Th", orange]\arrow[d, phantom, "?"] & T^2D\arrow[d, "=", leftrightarrow, sloped] \arrow[r, "\mu_D"] & TD\arrow[d, "=", leftrightarrow, sloped] & h\circ(g\circ f)\\ 
+      A\arrow[r, "f" below] & TB\arrow[r, "Tg" below] & T^2C\arrow[r, "T^2h" below, orange] & T^3D\arrow[r, "T\mu_D=\mu_{TD}" below, orange] & T^2D \arrow[r, "\mu_D" below] & TD & (h\circ g)\circ f
+    \end{tikzcd}
+  \end{center}
+  Punktem zapalnym jest $?$ w diagramie. Jeśli ten prostokąt komutuje, to koniec. 
 
+  Z naturalności $\mu:T^2\to T$ dostajemy komutujący diagram
+  \begin{center}
+    \begin{tikzcd}[column sep=large, row sep=large]
+      T^2C\arrow[r, "T^2h"]\arrow[d, "\mu_{C}" left] & T^3D=T^2(TD)\arrow[d, "\mu_{TD}" right]\\ 
+      TC\arrow[r, "Th" below]  & T(TD)=T^2D
+    \end{tikzcd}
+  \end{center}
+  czyli 
+  $$\mu_{TD}T^2h=TH\mu_C,$$
+  co daje nam równość przejścia po pomarańczowych strzałkach na górze (prawa strona równości) i na dole (lewa strona równości).
+\end{proof}
 
+\begin{example}
+  Dla monady $T:Set\to Set$, $T(X)=X\cup\{X\}$ z przykładów wyżej, kategoria Kleisliego zawiera jako obiekty wszystkie zbiory. Morfizmy $A\rightsquigarrow B$ posyłają część elementów $A$ w "kosmos", czyli singleton $\{B\}$. Są to funkcje częsciowe! Czyli $Set_T=Set^\delta$ jest kategorią zbiorów z funkcjami częsciowymi.
+\end{example}
+
+% o konstrukcji (trojce) Kleisego
 
 
 

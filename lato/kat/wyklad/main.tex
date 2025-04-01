@@ -25,6 +25,30 @@
 \usepackage{changepage}
 \usepackage{listings}
 
+\usepackage{microtype}
+
+\tcbuselibrary{listings}
+
+\lstset{
+  language=caml,
+  frameshape={RYR}{Y}{Y}{RYR},
+  rulecolor=\color{yellow!3},
+  breaklines=true,
+	backgroundcolor=\color{yellow!4},
+	basicstyle=\color{text}\ttfamily, % any text
+	stringstyle=\color{orange},
+	% identifierstyle=\color{blue}, % just about anything that isn't a directive, comment, string or known type
+	commentstyle=\color{subtext0},
+	% directivestyle=\color{teal}, % preprocessor commands
+	% listings doesn't differentiate between types and keywords (e.g. int vs return)
+	% use the user types color
+	keywordstyle=\bfseries\color{green},
+	keywordstyle={[2]\color{red}}, % you'll need to define these or use a custom language
+	tabsize=4
+}
+
+% \includeonly{rozdzialy/05.tex}
+
 \begin{document}
 \frontmatter 
 \maketitle
@@ -46,10 +70,14 @@
 
 \include{rozdzialy/05.tex}
 
-\include{rozdzialy/06.tex}
+\section{24.03.2025}{Coming soon}
+\section{31.03.2025}{Coming soon}
+\section{01.04.2025}{Galo-żart}
 
-\include{rozdzialy/07.tex}
-
-\include{rozdzialy/08.tex}
+% \include{rozdzialy/06.tex}
+%
+% \include{rozdzialy/07.tex}
+%
+% \include{rozdzialy/08.tex}
   
 \end{document}

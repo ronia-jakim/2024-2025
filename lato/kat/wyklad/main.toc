@@ -10,14 +10,14 @@
 \contentsline {subsection}{\numberline {1.}Motywacja abstrakcyjnego nonsensu}{11}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {2.}Dużo przykładów funktorów dołączonych}{11}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {3.}Druga definicja}{13}{subsection.1.3.3}%
-\contentsline {section}{\numberline {10.03.2025}Funktory dołączone własności}{14}{section.1.4}%
+\contentsline {section}{\numberline {10.03.2025}Funktory dołączone własności [wieczny WIP]}{14}{section.1.4}%
 \contentsline {subsection}{\numberline {1.}Dowód równoważności}{14}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {2.}Funktory dołączone a granice}{16}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {3.}Moduły}{18}{subsection.1.4.3}%
 \contentsline {section}{\numberline {17.03.2025}Pierwsza nieobecność}{20}{section.1.5}%
-\contentsline {subsection}{\numberline {1.}Co to właściwie ta monada?}{20}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {2.}Konstruowanie funktorów sprzężonych z monad}{21}{subsection.1.5.2}%
-\contentsline {section}{\numberline {24.03.2025}Druga nieobecność}{22}{section.1.6}%
-\contentsline {section}{\numberline {31.03.2025}we back in business}{24}{section.1.7}%
-\contentsline {subsection}{\numberline {1.}Diagramy strunowe [string diagrams]}{24}{subsection.1.7.1}%
-\contentsline {section}{\numberline {01.04.2025}humpty dumpty}{26}{section.1.8}%
+\contentsline {subsection}{\numberline {1.}Po co właściwie te monady?}{20}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {2.}Definicja i przykłady}{21}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {3.}Konstruowanie funktorów sprzężonych z monad}{23}{subsection.1.5.3}%
+\contentsline {section}{\numberline {24.03.2025}Coming soon}{25}{section.1.6}%
+\contentsline {section}{\numberline {31.03.2025}Coming soon}{25}{section.1.7}%
+\contentsline {section}{\numberline {01.04.2025}Galo-żart}{25}{section.1.8}%
