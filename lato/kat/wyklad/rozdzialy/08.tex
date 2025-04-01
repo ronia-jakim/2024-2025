@@ -1,0 +1,75 @@
+\section{01.04.2025}{humpty dumpty}
+
+$\mathcal{P}:Set\to Set$
+
+$X\to \mathcal{P}(X)$
+
+$\eta(x)=\{x\}$
+
+$\mu_x:\mathcal{P}\mathcal{P}(X)\to \mathcal{P}$
+
+$\mu_x(\mathcal{A})=\bigcup\mathcal{A}$
+
+Liczymy teraz $Set_\mathcal{P}$, a potem $Set^\mathcal{P}$
+
+$Set(X, \mathcal{P}(Y)=\mathcal{P}(X\times Y)$
+
+$X\to \mathcal{P}(Y)$
+
+$X\to \mathcal{P}(Y)\to\mathcal{P}^2Z\to\mathcal{P}Z$
+
+$C=\{(x, z)\;:\;\exists y\;(x,y)\in A,(y,z)\in B\}$
+
+$C=AB$, bo $xCz\iff \exists y\;xAyBz$
+
+$\theta(\bigcup \mathcal{A})=\theta(\{\theta(A)\;:\;A\in\mathcal{A}),\quad \theta(\{x\})=x$
+$$a\leq b\iff \theta(\{a,b\})=b$$
+1. $a\leq a$
+2. $a\leq b\leq c\implies a\leq c$
+$$\theta(\{a, c\})=\theta(\{\theta(\{a\}, \theta\{b,c\}\})=\theta(\{a,b,c\})=\theta(\{\theta\{a,b\}, \theta\{c\}\})=\theta(\{b, c\})=c$$
+3. $\theta(A)\geq A$
+
+Niech $a\in A$, $\theta(\{a, \theta\{A\}\})=\theta(a\cup A)=\theta(A)$
+
+4. $b\geq A\implies b\geq \theta(A)$
+
+$$\theta(\{\theta\{b\}, \theta\{A\}\})=\theta(b\cup A)=\theta(\bigcup \{b, a\})=\theta(\theta\{b\})=b$$
+
+$\bigwedge X$ to najmniejsze ograniczenie górne (ang. meet)
+
+\begin{center}
+  \begin{tikzcd}
+    \mathcal{P}(X)\arrow[d, "\bigwedge"] \arrow[r, "\mathcal{P}(f)"] & \mathcal{P}(Y)\arrow[d, "\bigwedge"] \\ 
+    X\arrow[r, "f"] & Y
+  \end{tikzcd}
+\end{center}
+
+Funktor zapominania i rozpinania grupy wolnej $Set$, $Ab$ i bierzemy $T=UF$ i mówimy, że o kategorii Kleislego myślimy jako o wolnych modułów abelowych.
+
+tutaj zdjecie koloroffe, on tam definiował funktor monadyczny
+
+definiujemy przestrzeń afiniczną przy pomocy algebr Eilenberga-Moore'a
+
+Mamy $Aff_k:Set\to Set$, zbiorowi przyporządkowuje skończone kombinacje afiniczne
+$$Aff_k(X)=\{\sum a_xx\;:\;a=0\;p.w.\;\sum a_x=1\}$$
+
+$\eta$ robi $X\ni x\mapsto \sum \delta_{x,y}y$
+
+$\mu$ to "wrzuć współczynniki pod jedną sumę"
+
+kategoria korespondencji = kategoria Kleisliegomonady monady zbioru potęgoweg (continuation monad)
+
+tutaj jak to działa w programowaniu funkcyjnym
+
+$\Dd$ jest pełną podkategorią $\Cc$ i włożenie ma prawy dołączony
+
+$\Dd$ grupy abelowe beztorsyjne, $\Cc$ wszystkie grupy abelowe
+
+
+\begin{fact}{}{}
+  Niech $\Dd\subseteq\Cc$ będzie pełną podkategorią i $L\Cc\to \Dd$ będzie lewym dołączonym do włożenia jest monadycznym dołączeniem
+\end{fact}
+
+
+
+

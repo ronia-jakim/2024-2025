@@ -20,3 +20,4 @@
 \contentsline {section}{\numberline {24.03.2025}Druga nieobecność}{22}{section.1.6}%
 \contentsline {section}{\numberline {31.03.2025}we back in business}{24}{section.1.7}%
 \contentsline {subsection}{\numberline {1.}Diagramy strunowe [string diagrams]}{24}{subsection.1.7.1}%
+\contentsline {section}{\numberline {01.04.2025}humpty dumpty}{26}{section.1.8}%
