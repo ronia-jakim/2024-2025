@@ -24,6 +24,8 @@ I know that a function is measurable if preimage of every Borel set is also Bore
 - and relative complement.
 In $[0,1]$ it should be enough to take any $[p, q)$?  ??????
 
+Balls + preimage of open sets is borel
+
 $$g\circ s(y)=g(\inf\{x\in K\;:\;g(x)=y\})=y?$$
 I think to show this I have to prove that $\{x\in K\;:\;g(x)=y\}$ is a closed set? Which is true if singletons are closed in $L$ cause $\{x\in K\;:\;g(x)=y\}=g^{-1}(\{y\})$. Since this is a closed set in a metrizable space, limit of every converging sequence is contained in this set (if it exists, of course).
 
