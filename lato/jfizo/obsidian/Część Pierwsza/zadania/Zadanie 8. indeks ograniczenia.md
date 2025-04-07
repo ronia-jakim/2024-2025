@@ -11,4 +11,13 @@
 Chcemy pokazać, że $\sim_L$ skleja więcej niż $\sim_L^{inf}$. Dla słów $w\sim_L^{inf}$ wystarczy brać $y=\varepsilon$, a $x$ pozostawić dowolny. 
 
 2\. 
-Z poprzedniego zadania wiemy, że $i_L$ to liczba stanów w automacie rozpoznającym $L$. O liczbie $i_L^{i_L}$ możemy więc myśleć jako o liczbie funkcji $Q\to Q$.
+Z poprzedniego zadania wiemy, że $i_L$ to liczba stanów w automacie rozpoznającym $L$. O liczbie $i_L^{i_L}$ możemy więc myśleć jako o liczbie funkcji $Q\to Q$. 
+
+Niech $w$ będzie dowolnym słowem. Możemy potraktować je jako funkcję 
+$$w:Q\to Q$$
+$$w(p)=\delta(w, p)$$
+która przyjmuje stan $p$ i zwraca stan, w jakim skończymy, jeśli zaczniemy w $p$ i przejdziemy od tego miejsca słowem $w$. 
+
+Takich różnych funkcji może być co najwyżej $|Q|^{|Q|}$. 
+
+Jeśli dwa słowa $w_1\sim_L^{inf}w_2$ są w relacji, to definiują tę samą funkcję $Q^Q$: zmieniając słowo $y$ możemy dostać dowolny stan $Q$, który potem wkładamy do funkcji $w_i$. Ponieważ potem idąc słowem $x$ lądujemy zawsze w tym samym słowem, to właśnie działanie funkcji $w_i$ na stanie $\delta(y, q_0)$ jest takie samo dla obu słowo-funkcji.

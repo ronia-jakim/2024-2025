@@ -4,49 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "b2fb9a18df493b1b",
+        "id": "61fc299d27b66566",
         "type": "tabs",
         "children": [
           {
-            "id": "e102a4dd141cc74b",
+            "id": "e7c40ee02aed047a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Część Pierwsza/Context Free Grammar (gramatyki bezkontekstowe).md",
+                "file": "Część Pierwsza/zadania/egzaminy/egzamin 2022.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Context Free Grammar (gramatyki bezkontekstowe)"
+              "title": "egzamin 2022"
             }
           },
           {
-            "id": "a850dd7bc00be7fb",
+            "id": "5f352de24508663d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Część Druga/zadania/zadanie 93.md",
+                "file": "Część Pierwsza/zadania/egzaminy/egzamin 2022.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zadanie 93"
-            }
-          },
-          {
-            "id": "ae84e582bc07c37f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Część Pierwsza/zadania/lista zadan.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "lista zadan"
+              "title": "egzamin 2022"
             }
           }
         ],
@@ -194,20 +180,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a850dd7bc00be7fb",
+  "active": "5f352de24508663d",
   "lastOpenFiles": [
+    "Część Pierwsza/zadania/egzaminy/DUPA.md",
+    "Część Pierwsza/Deterministyczne Automaty Skończone.md",
+    "Część Pierwsza/Context Free Grammar (gramatyki bezkontekstowe).md",
+    "Część Pierwsza/zadania/egzaminy/egzamin 2022.md",
+    "Część Pierwsza/Niedeterministyczne Automaty Skończone NFA.md",
+    "Część Pierwsza/zadania/Zadanie 61..md",
+    "Część Pierwsza/zadania/Zadanie 60.md",
+    "Część Pierwsza/zadania/Zadanie 58..md",
+    "Część Pierwsza/zadania/Zadanie 8. indeks ograniczenia.md",
+    "Część Pierwsza/zadania/Zadanie 9..md",
+    "Część Pierwsza/zadania/lista zadan.md",
+    "Część Druga/zadania/zadanie 93.md",
     "Część Druga/zadania/zadanie 91.md",
     "Część Druga/zadania/zadanie 94.md",
-    "Część Druga/zadania/zadanie 93.md",
     "Część Druga/zadania/zadanie 89.md",
     "Część Druga/zadania/zadanie 90.md",
     "Część Druga/zadania/zadanie 86.md",
     "Część Druga/zadania/zadanie 92.md",
-    "Część Pierwsza/zadania/egzaminy/egzamin 2022.md",
-    "Część Pierwsza/zadania/Zadanie 8..md",
-    "Część Pierwsza/zadania/lista zadan.md",
     "Część Pierwsza/zadania/Zadanie 7. twierdzenie o indeksie.md",
-    "Część Pierwsza/Context Free Grammar (gramatyki bezkontekstowe).md",
     "Część Pierwsza/Języki regularne.md",
     "Część Pierwsza/img/NFASimpleExample.svg.png",
     "Część Pierwsza/img/Pasted image 20250329124259.png",
@@ -223,13 +216,6 @@
     "Untitled",
     "Część Druga",
     "Część Pierwsza/zadania/Zadanie 82..md",
-    "Część Pierwsza/zadania/Zadanie 80..md",
-    "Część Pierwsza/zadania/Zadanie 58..md",
-    "Część Pierwsza/zadania/Zadanie 78..md",
-    "Część Pierwsza/zadania/Zadanie 61..md",
-    "Część Pierwsza/zadania/Zadanie 60.md",
-    "uwagi.md",
-    "Część Pierwsza/Deterministyczne Automaty Skończone.md",
     "Pasted image 20250323201429.png",
     "zadanie 2 graf.png.png",
     "zadanie 2 zbior graf.png.png",
