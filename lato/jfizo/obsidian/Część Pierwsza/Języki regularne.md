@@ -21,3 +21,4 @@ zasada szufladkowa i DFA
 lemat o pompowaniu
 - [[Zadanie 5. pump up the jam]]
 - [[Zadanie 6. double pump]]
+twierdzenie o indeksie [[Zadanie 7. twierdzenie o indeksie]]
