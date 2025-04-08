@@ -15,3 +15,14 @@ Niech $A=(Q, q_0, \Sigma, \delta, F)$ będzie dowolnym automatem NFA. Będziemy 
 - $q_0'=\{q_0\}$
 - $F'=\{B\subseteq Q\;:\;B\cap F\neq \emptyset\}$ to wszystkie podzbiory $Q$ zahaczających o stany akceptujące
 - $\delta'(B, a)=\{q\in Q\;:\;(\exists\;p\in B)\;\delta(p, a, q)\}$ czyli dla dowolnego podzbioru $B\subseteq Q$ krawędź etykietowana literką $a$ to wielki worek do którego wsypujemy wszystkie końce krawędzi $a$ wychodzące z $B$ w oryginalnym NFA.
+
+## operacje na NFA
+
+Niech $A$, $B$ będą automatami NFA takimi, że $|A|=n$, $|B|=m$
+
+| operacja  | ilość stanów automatu |
+| --------- | --------------------- |
+| $A\cup B$ | $O(n + m)$            |
+| $A\cap B$ | $O(n\cdot m)$         |
+| $A^c$     | $O(2^n)$              |
+| $A^R$     | $O(n)$                |

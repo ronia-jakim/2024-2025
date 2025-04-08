@@ -13,3 +13,20 @@ Dla automatu $A=(Q,q_0,\Sigma,\delta,F)$ przez $L_A$ rozumiemy język rozpoznawa
 $$L_A=\{w\in\Sigma^*\;:\;\hat{\delta}(q_0, w)\in F\}$$
 
 <b style="color: rgb(146, 208, 80)">Język regularny</b> to język, dla którego istnieje automat DFA rozpoznający go.
+
+## operacje na DFA
+
+Niech $A$, $B$ będą automatami DFA takimi, że $|A|=n$, $|B|=m$
+
+| operacja  | ilość stanów automatu |
+| --------- | --------------------- |
+| $A\cup B$ | $O(n\cdot m)$         |
+| $A\cap B$ | $O(n\cdot m)$         |
+| $A^c$     | $O(n)$                |
+| $A^R$     | $O(2^n)$              |
+
+>[!tip] hipoteza Cernego
+>Dla danego skończonego DFA $A=(\Sigma, Q, q_0, F, \delta)$ i zbioru $S\subseteq Q$ oznaczmy
+>$$sync(S)=\{w\in\Sigma^*\;:\;(\forall\;q,q'\in S)\;\delta(q, w)=\delta(q', w)\}.$$
+>Hipoteza mówi, że jeśli zbiór $sync(Q)$ jest niepusty, to zawiera on jakieś słowo o długości nie większej niż $(|Q|-1)^2$.  
+

@@ -1,0 +1,3 @@
+przekrajanie wyrażeń regularnych potrafi wykładniczo skrócić wyrażenie
+> Zadanie 15. Dodanie do definicji wyrażeń regularnych pozwolenia na użycie symbolu $\bigcap$ oznaczającego przekrój języków nie umożliwia reprezentowania nowych zbiorów, wyrażenia jednak stają się krótsze. Udowodnij, że użycie $\bigcap$ może wykładniczo skrócić wyrażenie. 
+> *Wskazówka: rozważyć język składający się z jednego słowa $(...((a_0a_1)^2a_2)^2...)^2$*

@@ -60,6 +60,14 @@ Intuicja dowodu i lematu:
 
 $\delta$ wie gdzie skończyliśmy w $Q$, wie jaką teraz chcemy krawędzią z $\Sigma\cup\{\varepsilon\}$ przejść i co z $S$ jest na górze stosu. Ściąga tę ostatnią rzecz ze stosu (chyba, że to $Z$) i na nią patrzy. Na podstawie tego przechodzimy do $Q$ i nawlekamy nowe rzeczy na stos. Czyli jeden element ze stosu może nam obrodzić w więcej elementów wrzucanych na stos.
 
+#### przykład automatu ze stosem
+
+Język palindromów parzystych jest rozpoznawany automatem ze stosem o funkcji przejścia
+- $\delta([q_1, B, A], [q_1, AB])$ -> jeśli ostatnią rzeczą na stosie jest $A$, a teraz wczytujesz $B$, to wrzuć na stos $AB$ i wczytuj dalej
+- $\delta([q_1,\varepsilon, A], [q_2, A])$ -> zgadujemy, że jesteśmy w środku słowa i przełączamy się z dorzucania na stos (stan $q_1$) na zdejmowanie ze stosu (stan $q_2$)
+- $\delta([q_2, A, A], [q_2, \varepsilon])$ jeśli na stosie jest to samo co wczytuję, to zdejmuję ze stosu i wczytuję dalej
+- wpp. wybuchnij żuczka
+
 > [!info] uwaga
 > Niedeterministyczne automaty ze stosem są równoważne gramatykom bezkontekstowym
 

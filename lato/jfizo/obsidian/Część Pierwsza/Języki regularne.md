@@ -11,6 +11,10 @@ Języki regularne posiadają [[Deterministyczne Automaty Skończone|DFA]] lub [[
 > 	c. gwiazdkę Kllene'go
 > ^klasajezykowregularnych
 
+> [!info] twierdzenie o indeksie
+> Niech $L$ będzie językiem nad alfabetem $\Sigma$. Definiujemy relację równoważności na $\Sigma^*$
+> $$w\sim_L v\iff (\forall\;x\in \Sigma^*)\;wx\in L\iff vx\in L.$$
+> Liczba klas abstrakcji tej relacji to ilość stanów w minimalnym DFA rozpoznającym język $L$. 
 
 
 ## metody uwalania regularności
