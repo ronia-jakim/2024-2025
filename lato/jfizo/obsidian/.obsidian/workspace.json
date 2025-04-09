@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "right": {
     "id": "7320b33b3c8f431d",
@@ -183,11 +182,11 @@
   },
   "active": "e7c40ee02aed047a",
   "lastOpenFiles": [
-    "Część Pierwsza/Niedeterministyczne Automaty Skończone NFA.md",
+    "Część Pierwsza/zadania/egzaminy/egzamin 2022.md",
     "Część Pierwsza/zadania/egzaminy/egzamin 2020.md",
+    "Część Pierwsza/Niedeterministyczne Automaty Skończone NFA.md",
     "Część Pierwsza/zadania/egzaminy/egzamin 2021.md",
     "Część Pierwsza/Context Free Grammar (gramatyki bezkontekstowe).md",
-    "Część Pierwsza/zadania/egzaminy/egzamin 2022.md",
     "Część Pierwsza/Transducery.md",
     "Część Pierwsza/zadania/Zadanie 41..md",
     "Część Pierwsza/Deterministyczne Automaty Skończone.md",
