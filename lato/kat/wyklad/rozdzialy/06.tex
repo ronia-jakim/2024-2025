@@ -1,48 +1,75 @@
 \section{24.03.2025}{Druga nieobecność}
 
-tutaj o przestrzeniach afinicznych jako o intuicji
+% tutaj o przestrzeniach afinicznych jako o intuicji
 
-\begin{definition}{Eilenberg-Moore [kategora algebr]}{}
-  Niech $\Cc$ będzie kategorią, a $(T,\eta,\mu)$ monadą na niej. Definiujemy kategorię \buff{Eilenberga-Moore'a} dla $T$ (kategorię $T$-algebra), oznaczaną jako $\boldsymbol{\alg_T}$, jako kategorię której
-  \begin{itemize}
-    \item obiekty to pary $(\theta, a)$, $a\in\Cc$, $\theta:Ta\to a$ dla których komutują diagramy w $\Cc$
+{\color{red}tutaj kiedyś będzie wzmianka o modułach}
+
+% Moduł nad pierścieniem $R$ to zbiór w którym zdefiniowane jest dodawanie elementów oraz mnożenie przez skalary z $R$. Mając więc dowolny zbiór $M$ możemy zdefiniować $TM$ jako zbiór wszystkich formalnych kombinacji liniowych elementów z $M$ o współczynnikach w $R$. $\eta_M:M\to TM$ niech przypisuje elementowi $m$ jego samego traktowanego jako kombinację liniową, a $\mu_M:T(TM)\to TM$ niech "wypłaszcza" podwójną sumę w pojedynczą sumę. Pozostaje zdefiniować ewaluowanie sumy jako $ev:TM\to M$. 
+
+\begin{definition}{kategoria algebr}{}
+  Niech $(T, \eta, \mu)$ będzie monadą na kategorii $\Cc$. Definiujemy wtedy \buff{kateogrię algebr} na $T$, oznaczane $\alg_T$, jako kategorię której
+  \begin{description}[labelindent=5mm]
+    \item[obiekty] to pary $(\theta, c)$, gdzie $\theta: Tc\to c$
+    \item[morfizmy] $\alg_T((\theta, c), (\theta', c'))$ to odwzorowania $f\in \Cc(c, c')$ takie, że komutuje diagram
       \begin{center}
         \begin{tikzcd}
-          a\arrow[r, "\eta_a" above]\arrow[dr, "1_a" below left] & Ta & & T^2a\arrow[r, "\mu_a" above]\arrow[d, "Ta" left] & Ta\arrow[d, "a" right] \\ 
-                                                                 & A & & TA \arrow[r, "a" below] & A
+          Tc\arrow[r, "Tf"]\arrow[d, "\theta"] & Tc'\arrow[d, "\theta'"] \\ 
+          c\arrow[r, "f"] & c'
         \end{tikzcd}
       \end{center}
-    \item morfizmy $f:(\theta, a)\to (\phi, b)$ są mapami $f:a\to b$ w $\Cc$ takie, że komutuje diagram
+  \end{description}
+\end{definition}
+
+Naturalnie, pytamy o istnienie obiektów początkowych i końcowych w tej kategorii.
+
+\begin{example}
+  Niech $T\equiv c$ będzie funktorem stałym. Wtedy $(\theta, x)$ jest obiektem początkowym, jeśli dla każdego $(\psi, y)$ jest dokładnie jeden komutujący diagram 
+  \begin{center}
+    \begin{tikzcd}[column sep=large, row sep=large]
+      Tx=c\arrow[r, "Tf=id_c"]\arrow[d, "\theta" left] & c=Ty\arrow[d, "\psi"]\\ 
+      x\arrow[r, "f" below] & y
+    \end{tikzcd}
+  \end{center}
+  czyli $\psi=f\circ\theta$. Możemy wywnioskować, że $(\theta, x)=(id_c, c)$ i wtedy dla każdego innego $(\psi, y)$ będzie jedyny morfizm $f=\psi$ spełniający diagram.
+\end{example}
+
+\subsection{Kategoria Eilenberga-Moore'a}
+
+\begin{definition}{Eilenberg-Moore}{}
+  Kategoria \buff{Eilenberga-Moore'a} dla $T$ (kategorię $T$-algebra), oznaczaną jako $\Cc^T\subseteq\alg_T$, jest podkategorią $\alg_T$ w której
+  \begin{description}[labelindent=5mm]
+    \item[obiekty] to pary $(\theta, a)$, $a\in\Cc$, $\theta:Ta\to a$ dla których komutują diagramy w $\Cc$
+      \begin{center}
+        \begin{tikzcd}
+          a\arrow[r, "\eta_a" above]\arrow[dr, "1_a" below left] & Ta\arrow[d, "\theta"] & & T^2a\arrow[r, "\mu_a" above]\arrow[d, "Ta" left] & Ta\arrow[d, "\theta" right] \\ 
+                                                                 & a & & Ta \arrow[r, "\theta" below] & a
+        \end{tikzcd}
+      \end{center}
+    \item[morfizmy] $f:(\theta, a)\to (\phi, b)$ są mapami $f:a\to b$ w $\Cc$ takie, że komutuje diagram
       \begin{center}
         \begin{tikzcd}
           Ta\arrow[r, "Tf" above] \arrow[d, "\theta" left] & Tb\arrow[d, "\phi" right] \\ 
           a\arrow[r, "f" below] & b
         \end{tikzcd}
       \end{center}
-  \end{itemize}
+  \end{description}
 \end{definition}
 
-\begin{example}[m]
-\item Niech $T=c$ będzie funktorem stałym. Pokażemy, że obiektem początkowym w kategorii $\alg_T$ jest para $(id_c, c)$. Niech $(\theta, x)$ będzie dowolnym obiektem $\alg_T$. Mamy wtedy diagram
-  \begin{center}
-    \begin{tikzcd}[column sep=large, row sep=large]
-      Tc=c \arrow[r, "T\theta'=id_c"]\arrow[d, "id_c" left] & Tx=c\arrow[d, "\theta" right] \\ 
-      c\arrow[r, dashed, "\exists!\theta'=\theta" below] & x
-    \end{tikzcd}
-  \end{center}
-\end{example}
 
-\begin{lemma}{}{}
-  Dla każdej monady $(T,\eta, \mu)$ na kategorii $\Cc$ istnieje para funktorów sprzężonych 
-  \begin{center}
-    \begin{tikzcd}
-      \Cc\arrow[r, "L" above, bend left=20] & \alg_T\arrow[l, bend left=20, "R" below] 
-    \end{tikzcd}
-  \end{center}
-  która indukuje monadę $(T,\eta,\mu)$.
-\end{lemma}
 
-\begin{proof}
-  ja kiedyś będę miała czas w życiu
-\end{proof}
 
+
+% \begin{lemma}{}{}
+%   Dla każdej monady $(T,\eta, \mu)$ na kategorii $\Cc$ istnieje para funktorów sprzężonych 
+%   \begin{center}
+%     \begin{tikzcd}
+%       \Cc\arrow[r, "L" above, bend left=20] & \alg_T\arrow[l, bend left=20, "R" below] 
+%     \end{tikzcd}
+%   \end{center}
+%   która indukuje monadę $(T,\eta,\mu)$.
+% \end{lemma}
+%
+% \begin{proof}
+%   ja kiedyś będę miała czas w życiu
+% \end{proof}
+%
