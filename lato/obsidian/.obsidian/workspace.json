@@ -4,67 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "3b93e88b0f408ccc",
+        "id": "55d8c125bde4fafa",
         "type": "tabs",
         "children": [
           {
-            "id": "298347b4207a9a7c",
+            "id": "921b5f325e35e3ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Measures on topological spaces/list 3/exercise 6.md",
+                "file": "Measures on topological spaces/basic definitions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "exercise 6"
-            }
-          },
-          {
-            "id": "30ce5042b30edd1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Measures on topological spaces/list 3/exercise 3.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "exercise 3"
-            }
-          },
-          {
-            "id": "8772f8a260d60b71",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kombinatoryczna teoria grup/lista2/zadanie 13..md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "zadanie 13."
-            }
-          },
-          {
-            "id": "64f32d3def548faa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kombinatoryczna teoria grup/lista3/zadanie 1..md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "zadanie 1."
+              "title": "basic definitions"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b67f1c63e67b8d41",
@@ -212,10 +168,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "64f32d3def548faa",
+  "active": "921b5f325e35e3ca",
   "lastOpenFiles": [
-    "Kombinatoryczna teoria grup/lista2/zadanie 13..md",
+    "Measures on topological spaces/list 1/exercise 1.md",
+    "Measures on topological spaces/Untitled",
+    "Measures on topological spaces/list 1",
     "Kombinatoryczna teoria grup/lista3/zadanie 1..md",
+    "Kombinatoryczna teoria grup/lista2/zadanie 13..md",
     "Kombinatoryczna teoria grup/lista3",
     "Kombinatoryczna teoria grup/lista2/zadanie 12..md",
     "Kombinatoryczna teoria grup/lista1/zadanie 9.md",
@@ -243,7 +202,6 @@
     "Kombinatoryczna teoria grup",
     "Measures on topological spaces/list 3.md",
     "Measures on topological spaces/list 3",
-    "Measures on topological spaces",
     "Welcome.md"
   ]
 }
