@@ -11,5 +11,12 @@
 
 Np. jeśli chcemy udowodnić, że $B$ jest nierekurencyjny, to możemy wziąć $A=K$ i napisać funkcję $\mathbb{N}\to \mathbb{N}$ redukujące $B$ do patrzenia na $K$. 
 
->[!info] 
+>[!info] Uwaga
 >Redukcja jest relacją równoważności zachowującą rekurencyjność (przeliczalną). Dodatkowo, zbiory rekurencyjne są w jednej klasie abstrakcji.
+
+>[!tip] $K$ jest zupełny
+>Zbiór
+>$$K=\{n\;:\;\phi_n(n)\in \mathbb{N}\}$$
+>jest **zupełny** w klasie zbiorów rekurencyjnie przeliczalnych ze względu na całkowite redukcje rekurencyjne, tzn. 
+>$$(\forall\;B\text{ rekurencyjnie przeliczalnego})\;B\leq K.$$
+

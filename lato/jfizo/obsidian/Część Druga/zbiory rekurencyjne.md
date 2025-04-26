@@ -86,3 +86,13 @@ $$\phi(n)=\begin{cases}1&\psi(n)=0\\\perp & \psi(n)=1\end{cases}$$
 Wtedy $\phi$ ma pewien numer, powiedzmy $k$. Co się dzieje dla $\psi(k)$?
 - $\psi(k)=1$, co znaczy, że $\phi(k)=1$, ale to jest sprzeczne z definicja $\phi$, bo jeśli $\psi(k)=1$, to $\phi$ miało się pętlić
 - $\psi(k)=0$, co znaczy, że $\phi(k)=0$, ale wtedy powinniśmy mieć $\psi(k)=1$.
+
+> [!tip] zbiór ekstensjonalny
+> Powiemy, że $A\subseteq\mathbb{N}$ jest **ekstensjonalny**, jeśli
+> $$(\forall\;i\in A, j\not\in A)(\exists n)\;\phi_i(n)\neq \phi_j(n).$$
+
+Równoważnie możemy zdefiniować ekstensjonalne $A$ warunkiem
+$$(\forall\;i,j\in\mathbb{N})\;\phi_i=\phi_j\implies (i\in A\iff j\in A)$$
+
+>[!info] twierdzenie Rice'a
+>Żaden nietrywialny zbiór ekstensjonalny nie jest rekurencyjny.

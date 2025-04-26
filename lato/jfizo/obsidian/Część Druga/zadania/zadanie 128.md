@@ -1,0 +1,1 @@
+>Dla danej liczby naturalnej $n$ przez $kcomp(n)$ oznaczamy liczbę znaków najkrótszego programu w MUJP, który (nie wczytując żadnych danych) wypisze na wyjściu $n$. Czy funkcja $kcomp$ jest rekurencyjna?
