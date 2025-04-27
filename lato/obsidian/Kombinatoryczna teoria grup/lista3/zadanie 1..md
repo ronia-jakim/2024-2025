@@ -14,7 +14,7 @@ Zakładamy teraz, że wszystkie przekroje co najwyżej $n$ drzew spełniających
 Z obserwacji 1 wynika, że $T_i\cap T_{n+1}$ jest zawsze drzewem, i jest ich $n$ sztuk. 
 Chcemy użyć przypadku trzech drzew dla
 $$T_i\cap T_{n+1},\quad T_j\cap T_{n+1},\quad T_{n+1}$$
-gdzie $i<j<n+1$, żeby upewnić się, że moje nowe drzewa $T_i'=T_i\cap T_{n+1}$ spełniają warunek zadania, tzn. $T_i'\cap T_j'\neq\emptyset$.
+gdzie $i<j<n+1$, żeby upewnić się, że moje nowe drzewa $T_i'=T_i\cap T_{n+1}$ spełniają warunek zadania, tzn. $T_i'\cap T_j'\neq\emptyset$ (bo z przypadku $n=3$ wynika, że $T_i\cap T_j\cap T_{n+1}\neq\emptyset$).
 Mam teraz $n$ drzew $T_i'$, które mają niepuste przekroje i mogę do nich użyć tezy indukcyjnej, żeby powiedzieć, że
 $$\emptyset\neq \bigcap_{i\leq n} T_i'=\bigcap_{i\leq n}[T_i\cap T_{n+1}]=\bigcap_{i\leq n+1}T_i.$$
 ![[duck.png|100]]
