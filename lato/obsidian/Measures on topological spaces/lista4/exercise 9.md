@@ -16,3 +16,5 @@ $$\int_0^1a_i\chi_{[s_i,t_i]}d\mu_n=\int_0^1a_i\chi_{[0, t_i]}d\mu_n-\int_0^1a_i
 Implication $\implies$ is quite trivial. So the tricky part is to show $\impliedby$
 
 Can I just use Stone-Weierstrass and approximate any continuous $g$ by polynomials?
+
+Does 2. hold? probably no? if i take $\mu=\lambda$, $\mu_n=\lambda|(\frac{1}{n}, 1)\cdot \frac{n}{n-1}$ and then function $\frac{1}{x}$? 

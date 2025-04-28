@@ -1,4 +1,4 @@
-\section{24.03.2025}{Druga nieobecność}
+\section{24.03.2025}{Kategoria algebr i Eilenberga-Moore'a}
 
 % tutaj o przestrzeniach afinicznych jako o intuicji
 
@@ -55,21 +55,62 @@ Naturalnie, pytamy o istnienie obiektów początkowych i końcowych w tej katego
   \end{description}
 \end{definition}
 
+Chcemy teraz pokazać, że dla dowolnej monady możemy stworzyć parę funktorów sprzężonych. 
+
+\begin{lemma}{}{}
+  Istnieją funktory
+  \begin{center}
+    \begin{tikzcd}
+      \Cc\arrow[r, "L"] & \Cc_T\arrow[r, "J"] & \Cc^T\arrow[r, "R"] & \Cc_T
+    \end{tikzcd}
+  \end{center}
+  takie, że $RJL=T$.
+\end{lemma}
+
+\begin{proof}
+  Zaczynamy od zdefiniowania wszystkich funktorów.
+
+  $$L:\Cc\to\Cc_T$$
+  $$L(c)=c,\quad L(f)=\eta\circ f$$
+  
+  Wypada sprawdzić, czy $\eta\circ(gf)=L(gf)=L(g)L(f)=(\eta\circ g)\circ(\eta\circ f)$, czyli czy komutuje największy prostokąt w diagramie
+  \begin{center}
+    \begin{tikzcd}[column sep=large, row sep=large]
+      c\arrow[r, "f"]\arrow[d, "=", sloped] & c'\arrow[r, "g"]\arrow[d, "\eta"] & c''\arrow[r, "\eta"]\arrow[d, "T(\eta)\circ\eta?"] & Tc''\arrow[d, "=", sloped]\\ 
+      c\arrow[r, "\eta\circ f" below] & Tc'\arrow[r, "\begin{matrix}T(\eta\circ g)=\\=T(\eta)\circ T(g)\end{matrix}" below] & T^2c''\arrow[r, "\mu_{c''}" below] & Tc''
+    \end{tikzcd}
+  \end{center}
+
+  $$J:\Cc_T\to\Cc^T$$
+  $$\color{red}J(c)=(Tc, \mu\circ\eta),\quad J(f:c\to Tc')=\mu \circ Tf:Tc\to Tc'$$
+
+  $$R:\Cc^T\to \Cc$$
+  $$R(c, \theta)=c,\quad R(f:(c, \theta)\to(c',\theta'))=f:c\to c'$$
+
+  Tutaj składanie działa bez problemów, bo $f$ było morfizmem w $\Cc$.
+
+  Teraz pokażemy, że $RJL=T$. Dla obiektów mamy:
+  $$RJL(c)=RJ(c)=R(Tc)=Tc,$$
+  a dla dowolnego morfizmu $f:c\to c'$
+  $$RJL(f)=RJ(\eta\circ f)=R(\mu\circ T(\eta\circ f))=R(\mu\circ T(\eta)\circ Tf)=R(1_T\circ Tf)=R(Tf)=Tf.$$
+
+  \emph{Pozostawiam ten dowód jako pomnik dla oryginalnego stwierdzenia, że $RJ$ i $L$ oraz $R$ i $JL$ to dwie pary funktorów dołączonych.}
+\end{proof}
+
+\begin{theorem}{}{}
+  Dla dowolnej pary funktorów sprzężonych \begin{tikzcd}\Cc\arrow[r, bend left=20, "L" above] & \Dd\arrow[l, bend left=20, "R" below]\end{tikzcd} indukujących monadę $(T,\eta,\mu)$ istnieją jedyne funktory $J$ i $K$
+  \begin{center}
+    \begin{tikzcd}[column sep=6em, row sep=6em]
+      \Cc_T\arrow[r, dashed, "\exists!J" above]\arrow[dr, yshift=2pt, xshift=5pt, "R_T"] & \Dd\arrow[r, "\exists!L" above, dashed]\arrow[d, "R" {yshift=1.5ex} right, xshift=5pt, shorten >=1.5ex] & \Cc^T\arrow[dl, "R^T" above left, xshift=-5pt, yshift=2pt]\\ 
+                                                                                         & \Cc\arrow[u, "L" left, xshift=-5pt, yshift=1.5ex, shorten >=1.5ex]\arrow[ur, "L^T" below right, xshift=5pt, yshift=-2pt]\arrow[ul, "L_T" below left, xshift=-5pt, yshift=-2pt]
+    \end{tikzcd}
+  \end{center}
+  takie, że prawy i lewy trójkąt komutuje.
+\end{theorem}
+
+\begin{proof}
+  Emily Proposition 5.2.12.
+\end{proof}
 
 
 
-
-% \begin{lemma}{}{}
-%   Dla każdej monady $(T,\eta, \mu)$ na kategorii $\Cc$ istnieje para funktorów sprzężonych 
-%   \begin{center}
-%     \begin{tikzcd}
-%       \Cc\arrow[r, "L" above, bend left=20] & \alg_T\arrow[l, bend left=20, "R" below] 
-%     \end{tikzcd}
-%   \end{center}
-%   która indukuje monadę $(T,\eta,\mu)$.
-% \end{lemma}
-%
-% \begin{proof}
-%   ja kiedyś będę miała czas w życiu
-% \end{proof}
-%

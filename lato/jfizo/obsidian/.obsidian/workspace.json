@@ -13,24 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Część Druga/zadania/zadanie 121 (maszyna Minsky'ego).md",
-                "mode": "source",
+                "file": "Część Druga/zadania/zadanie 139.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "zadanie 121 (maszyna Minsky'ego)"
-            }
-          },
-          {
-            "id": "6737759351921605",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
+              "title": "zadanie 139"
             }
           },
           {
@@ -47,8 +35,7 @@
               "title": "maszyna Turinga"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -193,16 +180,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6737759351921605",
+  "active": "b2065305eae9fd61",
   "lastOpenFiles": [
-    "Część Druga/zadania/zadanie 125.md",
-    "Część Druga/maszyna Turinga.md",
-    "Część Druga/zadania/zadanie 121 (maszyna Minsky'ego).md",
-    "Część Druga/zadania/zadanie 139.md",
-    "Część Druga/zadania/zadanie 138.md",
     "Część Druga/zadania/zadanie 129.md",
-    "Część Druga/zadania/zadanie 128.md",
     "Część Druga/zadania/zadanie 126.md",
+    "Część Druga/zadania/zadanie 125.md",
+    "Część Druga/zadania/zadanie 121 (maszyna Minsky'ego).md",
+    "Część Druga/zadania/zadanie 138.md",
+    "Część Druga/zadania/zadanie 139.md",
+    "Część Druga/zadania/zadanie 128.md",
+    "Część Druga/maszyna Turinga.md",
     "Część Druga/funkcje rekurencyjne.md",
     "Część Druga/zbiory rekurencyjne.md",
     "Część Pierwsza/zadania/egzaminy/egzamin 2020.md",

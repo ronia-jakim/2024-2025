@@ -14,13 +14,12 @@
 \contentsline {subsection}{\numberline {1.}Dowód równoważności}{14}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {2.}Funktory dołączone a granice}{16}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {3.}Moduły}{18}{subsection.1.4.3}%
-\contentsline {section}{\numberline {17.03.2025}Pierwsza nieobecność}{20}{section.1.5}%
+\contentsline {section}{\numberline {17.03.2025}Kategoria Kleislego}{20}{section.1.5}%
 \contentsline {subsection}{\numberline {1.}Po co właściwie te monady?}{20}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {2.}Definicja i przykłady}{21}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {2.}Definicja i przykłady monad}{21}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {3.}Konstruowanie funktorów sprzężonych z monad}{23}{subsection.1.5.3}%
-\contentsline {section}{\numberline {24.03.2025}Druga nieobecność}{25}{section.1.6}%
+\contentsline {section}{\numberline {24.03.2025}Kategoria algebr i Eilenberga-Moore'a}{25}{section.1.6}%
 \contentsline {subsection}{\numberline {1.}Kategoria Eilenberga-Moore'a}{25}{subsection.1.6.1}%
-\contentsline {section}{\numberline {31.03.2025}we back in business}{27}{section.1.7}%
-\contentsline {subsection}{\numberline {1.}Diagramy strunowe [string diagrams]}{27}{subsection.1.7.1}%
-\contentsline {section}{\numberline {01.04.2025}humpty dumpty}{29}{section.1.8}%
-\contentsline {section}{\numberline {07.04.2025}}{31}{section.1.9}%
+\contentsline {section}{\numberline {31.03.2025}we back in business}{28}{section.1.7}%
+\contentsline {subsection}{\numberline {1.}Diagramy strunowe [string diagrams]}{28}{subsection.1.7.1}%
+\contentsline {section}{\numberline {01.04.2025}humpty dumpty}{30}{section.1.8}%

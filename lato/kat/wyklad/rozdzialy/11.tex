@@ -1,0 +1,67 @@
+\section{28.04.2025}
+
+Gal poprawia to, co bredził przed świętami.
+
+Mieliśmy funktor $R:\Dd\to\Cc$, chcemy pokazać, że istnieje coś, że
+$$\forall\;c\in\Cc_0\exists\{f_i:c\to R_{d_i}\}\;\forall\;f:c\to Rd\;f=Rg\circ f_i$$
+udało nam się pokazać, że w kategorii comma $\xi=c\downarrow R$ jest obiekt $i$ taki, że $\forall\;e\in\xi_0\;\xi(i,e)\neq\emptyset$. Zabrakło pokazania, że ten zbiór jest jednoelementowy. Potrzebujemy, że $\xi$ jest zupełne, ale to zostawiamy jako zadanie.
+
+Pokażemy, że 
+$$0\to i\xrightarrow{\xi(i,i)} i$$
+jest $\varinjlim$ {\color{red}(strzałka powinna być w lewo)}. To znaczy, że $0$ jest obiektem początkowym.
+
+$\xi(0,e)\neq \emptyset$
+
+\begin{tikzcd}
+  0\arrow[r, "\exists\;v"] & u\arrow[r, "s"] & \xi, \arrow[r, "w"] & 0\arrow[r, "f", yshift=1em] \arrow[r, "g", yshift=-1em] & 0
+\end{tikzcd}
+
+Skoro $u:0\to i$ jest ekwalizatorem, to $(uws)u=1_iu=u1_0$, stąd $u1_0=u(wsu)$. {\color{red}tutaj wogóle zdjęcie, bo mi się nie chce diagramu robić}. Skoro $u:0\to 1$ jest ekwalizatorem, to jest monomorfizmem, tzn. $wsu=1_0$. $w$ jest epi, więc
+$$fw=gw\implies f=fwsu=gwsu=g$$
+
+Każda ciągła bijekcja między zwartymi przestrzeniami jest homeomorfizmem. Gal coś w Emily przeczytał i będzie to krytykował.
+\begin{fact}{}{}
+  Startujemy z monady $(\Cc, T, \mu,\eta)$ i ona daję dołączone funktory $R^T:\Cc^T\to (\Cc, t, \mu, \nu)$. 
+  $$R^t(Tc\xrightarrow{\theta}c)=c$$
+  o a tutaj kwadracik cały XD drugie zdjęcie.
+
+  Jeśli $R^T(f)$ jest izomorfizmem, to $f$ też nim był.
+\end{fact}
+
+\begin{definition}{}{}
+  Funktor $F$ taki, że jeśli $F(g)$ jest izomorfizmem $\implies$ $g$ jest izomorfizmem nazywa się \buff{konserwatywnymi}.
+\end{definition}
+
+\begin{proof}
+  \begin{center}
+    \begin{tikzcd}
+      Tc\arrow[r, "Tf"]\arrow[d, "\theta"] & Tc'\arrow[r, "Tg"]\arrow[d, "\theta'"] & Tc\arrow[d, "\theta"]\\ 
+      c\arrow[r, "f"] & c'\arrow[r, "g"] & c
+    \end{tikzcd}
+  \end{center}
+  chcemy pokazać, że prawy kwadrat też komutuje, tj. jest morfizmem w kategorii Eilenberga-Moore'a. I to szybko idzie, więc zostawiam jako ćwiczenie dla przyszłej mnie lub czytelnika.
+
+  Mamy $R:\Dd\to\Cc$, które ma lewy funktor dokładny. Kiedy $F:\Dd\to \Cc^T$ takie, że $F(d)=Rd$ algebre zadaną przez $R\epsilon_d$, ma $G:\Cc^T\to\Dd$ takie, że $FG$ i $GF$ są naturalnie izomorficzne z identycznością.
+
+  Emily rzuca tutaj jakieś zaklęcia, których Gal nie chce tłumaczyć, po czym mówi, że jest warunek do sprawdzenia (ma łatwiejszą dostateczną wersję, której gal bez kartki nam nie powie).
+\end{proof}
+
+Funktory zapominania tak działają i stąd jeśli odwzorowanie liniowe jest bijekcją, to jest też izomorfizmem. To trzeba doczytać u Emily jak nic.
+
+za dwa tygodnie coś o kategorii homotopijnej, czyli ostatni rozdział.
+
+\begin{example}
+  Popatrzmy na przykład - funktor $F:cHaus\to Set$. Możemy go przeprowadzić przez $Top_{3\frac{1}{2}}$. Tam mamy funtor zapominania $Top\to Set$, do którego dołączony jest funktor przypisujący zbiorowi topologię dyskretną. Taką dyskretną przestrzeń można przepuścić przez uzwarcenie Cecha-Stone'a, dzięki czemu lądujemy w $cHaus$.
+
+  Ultrafiltr na $X$ to rodzina podzbiorów $\mathcal{U}$ spełniająca
+  \begin{enumerate}
+    \item $A\subseteq B\in\mathcal{U}\implies B\in\mathcal{U}$
+    \item $A,B\in\mathcal{U}\implies A\cap B\in\mathcal{U}$
+    \item $A\notin \mathcal{U}\iff A^c\in\mathcal{U}$ (wtedy pusty zbiór nie należy)
+  \end{enumerate}
+  Przykładami ultrafiltrów są ultrafiltry główne, czyli dla $x\in X$ rodzina zbiorów $\mathcal{U}_x=\{A\subseteq X\;:\;x\in A\}$. W naturalnej topologii zbiór ultrafiltrów jest zwarty.
+
+  Otrzymujemy monadę $(Set, T, \mu , x\mapsto \mathcal{U}_x)$, gdzie $T$ przypisuje $X$ ultrafiltry na $X$, a $\mu$ bierze ultrafiltr na ultrafiltrach $\Omega$ i przyporządkowuje mu zwykły ultrafiltr $\{A\in X\;:\;\{\mathcal{U}\;:\;A\in \mathcal{U}\}\in\Omega\}$.
+\end{example}
+
+
