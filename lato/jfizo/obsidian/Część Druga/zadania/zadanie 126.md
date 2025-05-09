@@ -3,7 +3,7 @@
 >$w\to_Pv$ $\iff$ istnieje para $(a, b)\in P$ taka, że $w=ax$ i $v=xb$, gdzie $x$ jest pewnym słowem
 >
 >Niech $\xrightarrow{*}_P$ będzie przechodznim domknięciem $\to_P$
-> Czy problem: *dane $P$, $x$, $y$, czy $x\xrightarrow{*}_Pv$ jest rozstrzygalny?*
+> Czy problem: dane $P$, $x$, $y$, czy $x\xrightarrow{*}_Pv$ jest rozstrzygalny?
 
 Pokażemy, że $ST\leq P$, czyli problem redukuje się do SemiThuego.
 

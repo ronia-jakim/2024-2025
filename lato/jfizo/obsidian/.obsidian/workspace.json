@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Część Druga/zadania/zadanie 139.md",
-                "mode": "preview",
+                "file": "Część Druga/zadania/zadanie 114.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "zadanie 139"
+              "title": "zadanie 114"
             }
           },
           {
@@ -33,6 +33,26 @@
               },
               "icon": "lucide-file",
               "title": "maszyna Turinga"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7e8b1ecd1731f5e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "473a5feafac6095e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Część Druga/zadania/zadanie 141.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "zadanie 141"
             }
           }
         ]
@@ -182,16 +202,27 @@
   },
   "active": "b2065305eae9fd61",
   "lastOpenFiles": [
-    "Część Druga/zadania/zadanie 129.md",
+    "Część Druga/zadania/zadanie 141.md",
+    "Część Druga/funkcje rekurencyjne.md",
+    "Część Druga/zadania/zadanie 114.md",
+    "Część Druga/zadania/zadanie 123.md",
+    "Część Druga/zadania/zadanie 124.md",
+    "Część Druga/zadania/zadanie 144.md",
+    "Pasted image 20250509152331.png",
+    "Część Druga/zbiory rekurencyjne.md",
+    "Część Druga/zadania/zadanie 122.md",
+    "Pasted image 20250509142611.png",
+    "Część Druga/zadania/zadanie 127.md",
+    "Część Druga/zadania/zadanie 137.md",
     "Część Druga/zadania/zadanie 126.md",
     "Część Druga/zadania/zadanie 125.md",
+    "Część Druga/zadania/zadanie 94.md",
     "Część Druga/zadania/zadanie 121 (maszyna Minsky'ego).md",
+    "Część Druga/maszyna Turinga.md",
     "Część Druga/zadania/zadanie 138.md",
     "Część Druga/zadania/zadanie 139.md",
     "Część Druga/zadania/zadanie 128.md",
-    "Część Druga/maszyna Turinga.md",
-    "Część Druga/funkcje rekurencyjne.md",
-    "Część Druga/zbiory rekurencyjne.md",
+    "Część Druga/zadania/zadanie 129.md",
     "Część Pierwsza/zadania/egzaminy/egzamin 2020.md",
     "Część Pierwsza/zadania/egzaminy/egzamin 2022.md",
     "Część Pierwsza/Niedeterministyczne Automaty Skończone NFA.md",
@@ -199,15 +230,6 @@
     "Część Pierwsza/Context Free Grammar (gramatyki bezkontekstowe).md",
     "Część Pierwsza/Transducery.md",
     "Część Pierwsza/zadania/Zadanie 41..md",
-    "Część Pierwsza/Deterministyczne Automaty Skończone.md",
-    "Część Pierwsza/Wyrażenia regularne.md",
-    "Część Pierwsza/Języki regularne.md",
-    "Część Pierwsza/zadania/egzaminy/DUPA.md",
-    "Część Pierwsza/zadania/Zadanie 61..md",
-    "Część Pierwsza/zadania/Zadanie 60.md",
-    "Część Pierwsza/zadania/Zadanie 58..md",
-    "Część Pierwsza/zadania/Zadanie 8. indeks ograniczenia.md",
-    "Część Pierwsza/zadania/Zadanie 9..md",
     "Część Pierwsza/img/NFASimpleExample.svg.png",
     "Część Pierwsza/img/Pasted image 20250329124259.png",
     "Część Pierwsza/img",
@@ -221,8 +243,6 @@
     "zadanie 2 zbior graf.png.png",
     "zadanie 2 zbior.png.png",
     "Pasted image 20250323180629.png",
-    "NFASimpleExample.svg 1.png",
-    "Pasted image 20250323163449.png",
     "Część Pierwsza/zadania",
     "Część Pierwsza/Deterministyczne Automaty Skończone",
     "Część Pierwsza"
