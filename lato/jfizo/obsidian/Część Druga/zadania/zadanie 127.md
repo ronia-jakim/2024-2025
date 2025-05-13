@@ -9,5 +9,5 @@ $p=15\cdot p_1...p_n,$
 na podstawie $N\mod p$ widzę, który stos jest pusty, który nie i w którym stanie jestem. To mi daje $\delta$, na przykład
 
 $\delta(q_m, 0, 1)=\delta(q_l, 1^\alpha, -1)$, tj. na pierwszy stos dokładam $\alpha$ razy, a z drugiego stosu zdejmuję.
-$a_k=p_l\cdot 2^\alpha$
-$b_k=p_m\cdot 3$
+$a_k=p_l\cdot 3^\alpha$
+$b_k=p_m\cdot 5$
