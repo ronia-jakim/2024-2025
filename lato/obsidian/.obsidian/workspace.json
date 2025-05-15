@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kombinatoryczna teoria grup/lista3/zadanie 8.md",
+                "file": "Measures on topological spaces/notes/03. separable metrizable spaces.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zadanie 8"
+              "title": "03. separable metrizable spaces"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b67f1c63e67b8d41",
@@ -171,12 +170,12 @@
   },
   "active": "921b5f325e35e3ca",
   "lastOpenFiles": [
-    "Measures on topological spaces/notes/03. separable metrizable spaces.md",
     "Kombinatoryczna teoria grup/lista3/zadanie 8.md",
     "Measures on topological spaces/notes/02. cantor set.md",
     "Measures on topological spaces/notes/01. Vitali and Lesbegue.md",
     "Measures on topological spaces/notes/04. Measures and functions.md",
     "Measures on topological spaces/lista4/exercise 9.md",
+    "Measures on topological spaces/notes/03. separable metrizable spaces.md",
     "Measures on topological spaces/list 3/exercise 8.md",
     "Kombinatoryczna teoria grup/lista3/zadanie 1..md",
     "Measures on topological spaces/lista4/homework.md",
