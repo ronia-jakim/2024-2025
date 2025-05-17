@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lista zagadnień.md",
+                "file": "Kombinatoryczna teoria grup/lista3/zadanie 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lista zagadnień"
+              "title": "zadanie 8"
             }
           }
         ],
@@ -185,8 +185,8 @@
   },
   "active": "579f0c32172277f5",
   "lastOpenFiles": [
-    "Measures on topological spaces/notes/03. separable metrizable spaces.md",
     "lista zagadnień.md",
+    "Measures on topological spaces/notes/03. separable metrizable spaces.md",
     "torus action",
     "Kombinatoryczna teoria grup/lista3/zadanie 8.md",
     "Measures on topological spaces/notes/02. cantor set.md",
