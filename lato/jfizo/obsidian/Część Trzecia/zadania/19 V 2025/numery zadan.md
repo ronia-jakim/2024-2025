@@ -1,0 +1,10 @@
+- [x] [[zadanie 151]]
+- [x] [[zadanie 152]]
+- [x] [[zadanie 153]]
+- [x] [[zadanie 154]]
+- [x] [[zadanie 155]]
+- [x] [[zadanie 156]]
+- [x] [[zadanie 157]] 2
+- [x] [[zadanie 158]]
+- [ ] [[zadanie 197]] 2
+- [ ] [[zadanie 198]] 
