@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "torus action and characterisitc classes/03. On L-classes for singular varieties.md",
+                "file": "torus action and characterisitc classes/11. A new tool for GKM spaces and their Gromov–Witten invariants.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03. On L-classes for singular varieties"
+              "title": "11. A new tool for GKM spaces and their Gromov–Witten invariants"
             }
           }
         ]
@@ -170,8 +170,14 @@
   },
   "active": "2c70ba8f9c4e264d",
   "lastOpenFiles": [
-    "torus action and characterisitc classes/02. Higher singularities of local complete intersections via characteristic classes.md",
+    "torus action and characterisitc classes/10. Plücker formulas and motivic Chern classes of coincident root loci.md",
+    "torus action and characterisitc classes/11. A new tool for GKM spaces and their Gromov–Witten invariants.md",
+    "torus action and characterisitc classes/09. A quantum localization theorem for Grassmannians.md",
+    "torus action and characterisitc classes/08. The Stiefel–Whitney homology class for a category.md",
+    "torus action and characterisitc classes/05. Elliptic Cohomology and Torus Action.md",
+    "torus action and characterisitc classes/04. Rationally Elliptic Algebraic Varieties and Singularities.md",
     "torus action and characterisitc classes/03. On L-classes for singular varieties.md",
+    "torus action and characterisitc classes/02. Higher singularities of local complete intersections via characteristic classes.md",
     "torus action and characterisitc classes/01. Hard Lefschetz and Hodge Riemann for polytopes.md",
     "torus action and characterisitc classes",
     "Kombinatoryczna teoria grup/lista3/zadanie 8.md",
@@ -197,12 +203,6 @@
     "Kombinatoryczna teoria grup/lista2/zadanie 12..md",
     "Kombinatoryczna teoria grup/lista1/zadanie 9.md",
     "Kombinatoryczna teoria grup/lista1",
-    "Kombinatoryczna teoria grup/lista2/zadanie 14.md",
-    "Kombinatoryczna teoria grup/lista2/zadanie 15.md",
-    "Kombinatoryczna teoria grup/lista2/zadanie 5.md",
-    "Measures on topological spaces/list 3/exercise 5.md",
-    "Measures on topological spaces/list 3/exercise 6.md",
-    "Measures on topological spaces/list 3/exercies 2.md",
     "Measures on topological spaces/list 2",
     "Measures on topological spaces/lista3",
     "Measures on topological spaces/lista4",
