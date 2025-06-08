@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a0dfc368e0b97d35",
+        "id": "bdd26ff0072ed8a6",
         "type": "tabs",
         "children": [
           {
-            "id": "2c70ba8f9c4e264d",
+            "id": "bfc49e2249c722fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "torus action and characterisitc classes/11. A new tool for GKM spaces and their Gromov–Witten invariants.md",
+                "file": "torus action and characterisitc classes/15..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11. A new tool for GKM spaces and their Gromov–Witten invariants"
+              "title": "15."
             }
           }
         ]
@@ -168,11 +168,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2c70ba8f9c4e264d",
+  "active": "bfc49e2249c722fa",
   "lastOpenFiles": [
-    "torus action and characterisitc classes/10. Plücker formulas and motivic Chern classes of coincident root loci.md",
-    "torus action and characterisitc classes/11. A new tool for GKM spaces and their Gromov–Witten invariants.md",
+    "torus action and characterisitc classes/12. Pipe dreams, lower-upper varieties and Schwartz-MacPherson classes.md",
+    "torus action and characterisitc classes/15..md",
+    "torus action and characterisitc classes/13. Some pipe dream formulae with closed curves.md",
+    "torus action and characterisitc classes/lista zagadnień.md",
+    "torus action and characterisitc classes/moment map i czemu Hamiltonian daje mi formę symplektyczną.md",
     "torus action and characterisitc classes/09. A quantum localization theorem for Grassmannians.md",
+    "torus action and characterisitc classes/11. A new tool for GKM spaces and their Gromov–Witten invariants.md",
+    "torus action and characterisitc classes/10. Plücker formulas and motivic Chern classes of coincident root loci.md",
     "torus action and characterisitc classes/08. The Stiefel–Whitney homology class for a category.md",
     "torus action and characterisitc classes/05. Elliptic Cohomology and Torus Action.md",
     "torus action and characterisitc classes/04. Rationally Elliptic Algebraic Varieties and Singularities.md",
@@ -181,7 +186,6 @@
     "torus action and characterisitc classes/01. Hard Lefschetz and Hodge Riemann for polytopes.md",
     "torus action and characterisitc classes",
     "Kombinatoryczna teoria grup/lista3/zadanie 8.md",
-    "torus action and characterisitc classes/lista zagadnień.md",
     "torus action and characterisitc classes/cohomologie ekwiwariantne.md",
     "Measures on topological spaces/notes/03. separable metrizable spaces.md",
     "torus action",
@@ -196,12 +200,8 @@
     "Kombinatoryczna teoria grup/lista3/zadanie 2..md",
     "Kombinatoryczna teoria grup/definicje.md",
     "Kombinatoryczna teoria grup/duck.png",
-    "Measures on topological spaces/list 1/exercise 1.md",
     "Measures on topological spaces/list 1",
-    "Kombinatoryczna teoria grup/lista2/zadanie 13..md",
     "Kombinatoryczna teoria grup/lista3",
-    "Kombinatoryczna teoria grup/lista2/zadanie 12..md",
-    "Kombinatoryczna teoria grup/lista1/zadanie 9.md",
     "Kombinatoryczna teoria grup/lista1",
     "Measures on topological spaces/list 2",
     "Measures on topological spaces/lista3",
