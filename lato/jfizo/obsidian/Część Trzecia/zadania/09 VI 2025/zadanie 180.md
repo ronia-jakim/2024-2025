@@ -1,0 +1,7 @@
+> Pokaż, że jeśli $P\neq NP$, to $\sigma(G)$ nie może być aproksymowana z dokładnościa do stałej multiplikatywnej przez żaden wielomianowy algorytm. Inaczej: po uruchomieniu tego algorytmu nie zwróci mi pokrycia cyklowego o mocy nie większej niż $c\sigma(G)$
+
+Załóżmy nie wprost, że się tak da. Korzystając z algorytmu z poprzedniego zadania pokażemy, że wtedy da się rozwiązać problem istnienia cyklu Hamiltona w czasie wielomianowym.
+
+Niech naszym algorytmem będzie modyfikacja algorytmu z poprzedniego zadania, która teraz dla grafu o jednym cyklu zwraca $\leq c$ cyklów go pokrywających. 
+
+Mając graf $G$ zrobimy teraz baaardzo długi ciąg wind, bo pomiędzy $c$ piętrami. Jeśli teraz  na którymś piętrze mam cykl, który zjeżdża w dół przy pomocy $k$ wind, to sprawia on, że nie możemy już dostać się na ani jedno z $k+1$ pięter, czyli wszystkie nieskrajne piętra muszą zostać pokryte. Ich jest $k-1$ sztuk. Ale jeśli ten cykl pokrywa to piętro, na które zjechał to jesteśmy w domu, bo wystarczy się do niego obciąć. Stąd mogę założyć, że zużywamy cykl na każde z pięter, obok których mój cykl przejechał. Czyli byliśmy na $k+1$ piętrach i wykorzystaliśmy $k+1$ cykli, sprawiając, że zostaje nam tylko $c-k-1$ pięter i wind do obskoczenia za pomocą $c-k-1$ cykli. To pokazuje, że potrzebujemy jeden cykl na piętro, czyli jeden zjeżdżający cykl musi pokrywać swoje oryginalne piętro.

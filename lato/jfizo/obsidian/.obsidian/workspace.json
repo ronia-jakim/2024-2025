@@ -13,21 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Część Trzecia/zadania/19 V 2025/numery zadan.md",
+                "file": "Część Trzecia/zadania/09 VI 2025/zadanie 180.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "numery zadan"
+              "title": "zadanie 180"
             }
           },
           {
-            "id": "f63e061b6ce6c287",
+            "id": "820d6a380084fae7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Część Trzecia/zadania/19 V 2025/numery zadan.md",
+                "file": "Część Trzecia/zadania/09 VI 2025/numery zadan.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,7 +35,8 @@
               "title": "numery zadan"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,39 +181,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b2065305eae9fd61",
+  "active": "820d6a380084fae7",
   "lastOpenFiles": [
-    "Część Trzecia/zadania/19 V 2025/zadanie 157.md",
-    "Część Trzecia/zadania/19 V 2025/numery zadan.md",
+    "Część Trzecia/zadania/09 VI 2025/zadanie 180.md",
+    "Część Trzecia/zadania/09 VI 2025/numery zadan.md",
+    "Część Trzecia/zadania/09 VI 2025/zadanie 179.md",
+    "Część Trzecia/zadania/09 VI 2025/Pasted image 20250608131013.png",
+    "Część Trzecia/zadania/09 VI 2025/zadanie 178.md",
+    "Część Trzecia/zadania/09 VI 2025/zadanie 177.md",
+    "Część Trzecia/NP.md",
+    "Część Trzecia/P.md",
+    "Część Trzecia/zadania/09 VI 2025/zadanie 172.md",
+    "Część Trzecia/zadania/19 V 2025/zadanie 158.md",
     "Część Trzecia/zadania/19 V 2025/zadanie 198.md",
     "Część Trzecia/zadania/19 V 2025/zadanie 197.md",
-    "Część Trzecia/zadania/19 V 2025/zadanie 158.md",
-    "Część Trzecia/zadania/19 V 2025/zadanie 156.md",
-    "Część Trzecia/zadania/19 V 2025/zadanie 155.md",
-    "Część Trzecia/zadania/19 V 2025/zadanie 154.md",
+    "Część Trzecia/zadania/19 V 2025/zadanie 157.md",
     "Część Trzecia/zadania/19 V 2025/zadanie 153.md",
     "Część Trzecia/zadania/19 V 2025/zadanie 152.md",
     "Część Trzecia/zadania/19 V 2025/zadanie 151.md",
-    "Część Trzecia/NP.md",
+    "Część Trzecia/zadania/19 V 2025/zadanie 156.md",
+    "Część Trzecia/zadania/19 V 2025/zadanie 155.md",
+    "Część Trzecia/zadania/19 V 2025/zadanie 154.md",
+    "Część Trzecia/zadania/19 V 2025/numery zadan.md",
+    "Część Druga/zadania/zadanie 91.md",
+    "Część Trzecia/zadania/09 VI 2025",
+    "Część Druga/zadania/zadanie 90.md",
+    "Część Druga/zadania/zadanie 89.md",
+    "Część Druga/zadania/zadanie 87.md",
+    "Część Druga/zadania/zadanie 86.md",
+    "Część Druga/egzamin/2021.md",
+    "Część Druga/egzamin/2022.md",
+    "Część Druga/egzamin",
     "Część Trzecia/zadania/19 V 2025",
     "Część Trzecia/zadania",
-    "Część Trzecia/P.md",
-    "Untitled.md",
-    "Część Druga/zadania/zadanie 141.md",
     "Część Trzecia",
-    "Część Druga/zadania/zadanie 114.md",
-    "Część Druga/zadania/zadanie 127.md",
-    "Część Druga/zadania/zadanie 144.md",
-    "Część Druga/zadania/zadanie 122.md",
-    "Część Druga/zadania/zadanie 124.md",
-    "Część Druga/zadania/zadanie 123.md",
-    "Część Druga/funkcje rekurencyjne.md",
     "Pasted image 20250509152331.png",
-    "Część Druga/zbiory rekurencyjne.md",
     "Pasted image 20250509142611.png",
-    "Część Druga/zadania/zadanie 137.md",
-    "Część Druga/zadania/zadanie 126.md",
-    "Część Druga/zadania/zadanie 125.md",
     "Część Pierwsza/img/NFASimpleExample.svg.png",
     "Część Pierwsza/img/Pasted image 20250329124259.png",
     "Część Pierwsza/img",
@@ -224,9 +228,6 @@
     "zadanie 2 graf.png.png",
     "zadanie 2 zbior graf.png.png",
     "zadanie 2 zbior.png.png",
-    "Pasted image 20250323180629.png",
-    "Część Pierwsza/zadania",
-    "Część Pierwsza/Deterministyczne Automaty Skończone",
-    "Część Pierwsza"
+    "Część Pierwsza/zadania"
   ]
 }

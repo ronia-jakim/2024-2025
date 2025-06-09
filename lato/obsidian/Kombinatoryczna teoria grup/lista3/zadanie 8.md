@@ -3,7 +3,7 @@
 > 2. Pokaż, że jeśli $H$ jest skończenie generowaną grupą działającą na drzewie $T$ oraz $z\in[H,H]$ jest elementem należącym do centrum grupy $H$, to $z$ działa na $T$ jako izometria eliptyczna.
 > 3. Oznaczamy generatory grupy $G$ przez $\{z_i\;:\;i\in\mathbb{Z}/6\mathbb{Z}\}$, gdzie 
 >    $$\begin{matrix}z_0=I+E_{12},& z_1=I+E_{13},& z_2=I+E_{23}\\z_3=I+E_{21}&z_4=I+E_{31}&z_5=I+E_{32}\end{matrix}$$
->    Rozważając działanie podgrupy $H_i=\langle z_{i-1},z_{i+}\rangle$ na drzewie $T$ uzasadnij, że $z_i$ działa jako izometria eliptyczna dla $i\in\mathbb{Z}/6\mathbb{Z}$
+>    Rozważając działanie podgrupy $H_i=\langle z_{i-1},z_{i+1}\rangle$ na drzewie $T$ uzasadnij, że $z_i$ działa jako izometria eliptyczna dla $i\in\mathbb{Z}/6\mathbb{Z}$
 > 4. Wywnioskuj, że działanie grupy $G$ na $T$ jest eliptyczne.
 
 1\. 
