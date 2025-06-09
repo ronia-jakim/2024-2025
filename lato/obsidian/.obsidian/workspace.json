@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "55d8c125bde4fafa",
+        "id": "bdd26ff0072ed8a6",
         "type": "tabs",
         "children": [
           {
-            "id": "921b5f325e35e3ca",
+            "id": "bfc49e2249c722fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Measures on topological spaces/notes/03. separable metrizable spaces.md",
+                "file": "torus action and characterisitc classes/15..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "03. separable metrizable spaces"
             }
           },
@@ -47,10 +48,12 @@
               },
               "icon": "lucide-file",
               "title": "zadanie 8"
+=======
+              "title": "15."
+>>>>>>> e25d5d8b1a303d1e678bcb2a566db1f98608a71c
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,11 +200,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8b87f8c4b720c75",
+  "active": "bfc49e2249c722fa",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "cohomologie ekwiwariantne.md",
     "lista zagadnień.md",
+=======
+    "torus action and characterisitc classes/12. Pipe dreams, lower-upper varieties and Schwartz-MacPherson classes.md",
+    "torus action and characterisitc classes/15..md",
+    "torus action and characterisitc classes/13. Some pipe dream formulae with closed curves.md",
+    "torus action and characterisitc classes/lista zagadnień.md",
+    "torus action and characterisitc classes/moment map i czemu Hamiltonian daje mi formę symplektyczną.md",
+    "torus action and characterisitc classes/09. A quantum localization theorem for Grassmannians.md",
+    "torus action and characterisitc classes/11. A new tool for GKM spaces and their Gromov–Witten invariants.md",
+    "torus action and characterisitc classes/10. Plücker formulas and motivic Chern classes of coincident root loci.md",
+    "torus action and characterisitc classes/08. The Stiefel–Whitney homology class for a category.md",
+    "torus action and characterisitc classes/05. Elliptic Cohomology and Torus Action.md",
+    "torus action and characterisitc classes/04. Rationally Elliptic Algebraic Varieties and Singularities.md",
+    "torus action and characterisitc classes/03. On L-classes for singular varieties.md",
+    "torus action and characterisitc classes/02. Higher singularities of local complete intersections via characteristic classes.md",
+    "torus action and characterisitc classes/01. Hard Lefschetz and Hodge Riemann for polytopes.md",
+    "torus action and characterisitc classes",
+>>>>>>> e25d5d8b1a303d1e678bcb2a566db1f98608a71c
     "Kombinatoryczna teoria grup/lista3/zadanie 8.md",
+    "torus action and characterisitc classes/cohomologie ekwiwariantne.md",
     "Measures on topological spaces/notes/03. separable metrizable spaces.md",
     "torus action",
     "Measures on topological spaces/notes/02. cantor set.md",
@@ -215,26 +237,12 @@
     "Kombinatoryczna teoria grup/lista3/zadanie 2..md",
     "Kombinatoryczna teoria grup/definicje.md",
     "Kombinatoryczna teoria grup/duck.png",
-    "Measures on topological spaces/list 1/exercise 1.md",
     "Measures on topological spaces/list 1",
-    "Kombinatoryczna teoria grup/lista2/zadanie 13..md",
     "Kombinatoryczna teoria grup/lista3",
-    "Kombinatoryczna teoria grup/lista2/zadanie 12..md",
-    "Kombinatoryczna teoria grup/lista1/zadanie 9.md",
     "Kombinatoryczna teoria grup/lista1",
-    "Kombinatoryczna teoria grup/lista2/zadanie 14.md",
-    "Kombinatoryczna teoria grup/lista2/zadanie 15.md",
-    "Kombinatoryczna teoria grup/lista2/zadanie 5.md",
-    "Measures on topological spaces/list 3/exercise 5.md",
-    "Measures on topological spaces/list 3/exercise 6.md",
-    "Measures on topological spaces/list 3/exercies 2.md",
-    "Measures on topological spaces/list 3/exercise 4.md",
-    "Measures on topological spaces/list 3/exercise 3.md",
-    "Measures on topological spaces/list 2/exercise B.md",
     "Measures on topological spaces/list 2",
     "Measures on topological spaces/lista3",
     "Measures on topological spaces/lista4",
-    "Kombinatoryczna teoria grup/lista2",
-    "Kombinatoryczna teoria grup"
+    "Kombinatoryczna teoria grup/lista2"
   ]
 }
