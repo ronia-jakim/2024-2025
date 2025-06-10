@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "a7e62e4acef350c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4e1f6cf07686561",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82f91da5c4823ffa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Część Trzecia/zadania/02 VI 2025/numery zadan.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "numery zadan"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "93ad07b67fb40371",
+    "type": "split",
+    "children": [
+      {
+        "id": "77d433bdacd02ba6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5adf8056481508c0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2248fce7b2b8c686",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a06aa28ae76cc316",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0ddab630721dde51",
+    "type": "split",
+    "children": [
+      {
+        "id": "045053792cfddf3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6109c08313878004",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Część Trzecia/zadania/09 VI 2025/zadanie 177.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for zadanie 177"
+            }
+          },
+          {
+            "id": "a5e9ba1e0975d5d1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Część Trzecia/zadania/09 VI 2025/zadanie 177.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from zadanie 177"
+            }
+          },
+          {
+            "id": "09a0b0bca03319bc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b5a88c0081388205",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Część Trzecia/zadania/09 VI 2025/zadanie 177.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of zadanie 177"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "82f91da5c4823ffa",
+  "lastOpenFiles": [
+    "Część Trzecia/zadania/09 VI 2025/zadanie 177.md",
+    "Część Trzecia/zadania/02 VI 2025/numery zadan.md",
+    "Część Trzecia/zadania/02 VI 2025",
+    "Część Trzecia/zadania/09 VI 2025/zadanie 178.md",
+    "Część Trzecia/zadania/09 VI 2025/zadanie 179.md",
+    "Część Trzecia/zadania/09 VI 2025/zadanie 180.md"
+  ]
+}
