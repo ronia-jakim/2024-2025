@@ -1,15 +1,15 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/nixos.org)  (format=lualatex 1980.1.1)  28 APR 2025 16:43
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/nixos.org)  (format=lualatex 1980.1.1)  12 JUN 2025 18:02
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
-Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
-Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended collection.
-luaotfload | conf : Root cache directory is "/home/maruda/.texlive2023/texmf-var/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-resolved path "/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/luatex/luaotfload/fontloader-2023-12-28.lua".
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended collection.
+luaotfload | conf : Root cache directory is "/home/maruda/.texlive2024/texmf-var/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-resolved path "/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/luatex/luaotfload/fontloader-2023-12-28.lua".
 Lua-only attribute luaotfload@noligature = 1
 luaotfload | init : Context OpenType loader version 3.134
 Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
@@ -17,7 +17,7 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/home/maruda/.texlive2023/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/maruda/.texlive2024/texmf-var/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -35,81 +35,81 @@ Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
-Inserting `tracingstacklevels' in `input_level_string'. (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/book.cls
-Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/bk12.clo
-File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /home/maruda/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
-\c@part=\count186
-\c@chapter=\count187
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@subparagraph=\count192
-\c@figure=\count193
-\c@table=\count194
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen139
+Inserting `tracingstacklevels' in `input_level_string'. (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/base/bk12.clo
+File: bk12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/maruda/.texlive2024/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count194
+\c@chapter=\count195
+\c@section=\count196
+\c@subsection=\count197
+\c@subsubsection=\count198
+\c@paragraph=\count199
+\c@subparagraph=\count266
+\c@figure=\count267
+\c@table=\count268
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen140
 ) (../../../template.sty
 
 LaTeX Warning: You have requested package `../../../template',
                but the package provides `template'.
 
 Package: template 
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/fontenc.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 112.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/lm/t1lmr.fd
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 116.
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/fontspec/fontspec.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/l3packages/xparse/xparse.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-02-20 L3 programming layer (loader) 
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2024-02-20 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count195
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/fontspec/fontspec.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/l3packages/xparse/xparse.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count269
 Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box51
+\l__pdf_internal_box=\box52
 ))
-Package: xparse 2024-02-18 L3 Experimental document command parser
+Package: xparse 2024-08-16 L3 Experimental document command parser
 )
-Package: fontspec 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
-Lua module: fontspec 2024/02/13 2.9a Font selection for XeLaTeX and LuaLaTeX (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/fontspec/fontspec-luatex.sty
-Package: fontspec-luatex 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count196
-\l__fontspec_language_int=\count197
-\l__fontspec_strnum_int=\count198
-\l__fontspec_tmp_int=\count199
-\l__fontspec_tmpa_int=\count266
-\l__fontspec_tmpb_int=\count267
-\l__fontspec_tmpc_int=\count268
-\l__fontspec_em_int=\count269
-\l__fontspec_emdef_int=\count270
-\l__fontspec_strong_int=\count271
-\l__fontspec_strongdef_int=\count272
-\l__fontspec_tmpa_dim=\dimen140
-\l__fontspec_tmpb_dim=\dimen141
-\l__fontspec_tmpc_dim=\dimen142
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/fontenc.sty
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count270
+\l__fontspec_language_int=\count271
+\l__fontspec_strnum_int=\count272
+\l__fontspec_tmp_int=\count273
+\l__fontspec_tmpa_int=\count274
+\l__fontspec_tmpb_int=\count275
+\l__fontspec_tmpc_int=\count276
+\l__fontspec_em_int=\count277
+\l__fontspec_emdef_int=\count278
+\l__fontspec_strong_int=\count279
+\l__fontspec_strongdef_int=\count280
+\l__fontspec_tmpa_dim=\dimen141
+\l__fontspec_tmpb_dim=\dimen142
+\l__fontspec_tmpc_dim=\dimen143
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/fontspec/fontspec.cfg))) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/float/float.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/fontspec/fontspec.cfg))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count273
+\c@float@type=\count281
 \float@exts=\toks19
-\float@box=\box52
+\float@box=\box53
 \@float@everytoks=\toks20
-\@floatcapt=\box53
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/cantarell/cantarell.sty
+\@floatcapt=\box54
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/cantarell/cantarell.sty
 Package: cantarell 2019/06/20 Style file for Cantarell.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/fontaxes/fontaxes.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -121,67 +121,69 @@ LaTeX Info: Redefining \ulcshape on input line 41.
 LaTeX Info: Redefining \textsw on input line 47.
 LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/iftex/ifluatex.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/iftex/ifxetex.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/xkeyval/xkeyval.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/xkeyval/xkeyval.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/xkeyval/xkvutils.tex
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/xkeyval/xkeyval.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks21
 \XKV@tempa@toks=\toks22
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count274
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count282
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Font family 'cantarell-TLF' created for font
+Package fontspec Info: 
+(fontspec)             Font family 'cantarell-TLF' created for font
 (fontspec)             'Cantarell' with options
 (fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace={el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular},ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFont={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},FontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Monospaced,Lining},NFSSFamily=cantarell-TLF].
 (fontspec)              
@@ -190,80 +192,72 @@ Package fontspec Info: Font family 'cantarell-TLF' created for font
 (fontspec)              
 (fontspec)             - (el/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
 (fontspec)             - (el/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
 (fontspec)             - (l/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
 (fontspec)             - (l/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 (fontspec)             - (eb/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
 (fontspec)             - (eb/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Font family 'cantarell-LF' created for font 'Cantarell'
+Package fontspec Info: 
+(fontspec)             Font family 'cantarell-LF' created for font 'Cantarell'
 (fontspec)             with options
 (fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace={el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular},ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFont={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},FontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Proportional,Lining},NFSSFamily=cantarell-LF].
 (fontspec)              
@@ -272,80 +266,72 @@ Package fontspec Info: Font family 'cantarell-LF' created for font 'Cantarell'
 (fontspec)              
 (fontspec)             - (el/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
 (fontspec)             - (el/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
 (fontspec)             - (l/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
 (fontspec)             - (l/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 (fontspec)             - (eb/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
 (fontspec)             - (eb/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Font family 'cantarell-TOsF' created for font
+Package fontspec Info: 
+(fontspec)             Font family 'cantarell-TOsF' created for font
 (fontspec)             'Cantarell' with options
 (fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace={el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular},ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFont={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},FontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Monospaced,OldStyle},NFSSFamily=cantarell-TOsF].
 (fontspec)              
@@ -354,80 +340,72 @@ Package fontspec Info: Font family 'cantarell-TOsF' created for font
 (fontspec)              
 (fontspec)             - (el/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
 (fontspec)             - (el/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
 (fontspec)             - (l/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
 (fontspec)             - (l/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 (fontspec)             - (eb/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
 (fontspec)             - (eb/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Font family 'cantarell-OsF' created for font
+Package fontspec Info: 
+(fontspec)             Font family 'cantarell-OsF' created for font
 (fontspec)             'Cantarell' with options
 (fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace={el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular},ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFont={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},FontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Proportional,OldStyle},NFSSFamily=cantarell-OsF].
 (fontspec)              
@@ -436,80 +414,72 @@ Package fontspec Info: Font family 'cantarell-OsF' created for font
 (fontspec)              
 (fontspec)             - (el/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
 (fontspec)             - (el/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
 (fontspec)             - (l/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
 (fontspec)             - (l/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 (fontspec)             - (eb/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
 (fontspec)             - (eb/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+pnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Font family 'fca' created for font 'Cantarell' with
+Package fontspec Info: 
+(fontspec)             Font family 'fca' created for font 'Cantarell' with
 (fontspec)             options
 (fontspec)             [Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace={el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular},ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFont={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},FontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Monospaced,Lining},NFSSFamily=fca].
 (fontspec)              
@@ -518,80 +488,72 @@ Package fontspec Info: Font family 'fca' created for font 'Cantarell' with
 (fontspec)              
 (fontspec)             - (el/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
 (fontspec)             - (el/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
 (fontspec)             - (l/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
 (fontspec)             - (l/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 (fontspec)             - (eb/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
 (fontspec)             - (eb/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Thin scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Thin scale = 1.
 
-luaotfload | aux : font no 20 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Light scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Light scale = 1.
 
-luaotfload | aux : font no 21 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Bold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Bold scale = 1.
 
-luaotfload | aux : font no 22 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-ExtraBold scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-ExtraBold scale = 1.
 
-luaotfload | aux : font no 23 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Cantarell-Regular scale = 1.
+Package fontspec Info: 
+(fontspec)             Cantarell-Regular scale = 1.
 
-luaotfload | aux : font no 24 (nil) does not define feature smcp for script latn with language dflt
 
-Package fontspec Info: Font family 'Cantarell(0)' created for font 'Cantarell'
+Package fontspec Info: 
+(fontspec)             Font family 'Cantarell(0)' created for font 'Cantarell'
 (fontspec)             with options
 (fontspec)             [Ligatures=TeX,Extension=.otf,Ligatures={TeX,Common},Scale=1,FontFace={el}{n}{*-Thin},FontFace={el}{it}{Font=*-Thin,FakeSlant=0.141},FontFace={l}{n}{*-Light},FontFace={l}{it}{Font=*-Light,FakeSlant=0.141},UprightFont={*-Regular},ItalicFont={*-Regular},ItalicFeatures={FakeSlant=0.141},FontFace={b}{n}{*-Bold},FontFace={b}{it}{Font=*-Bold,FakeSlant=0.141},BoldFont={*-Bold},BoldItalicFont={*-Bold},BoldItalicFeatures={FakeSlant=0.141},FontFace={eb}{n}{*-ExtraBold},FontFace={eb}{it}{Font=*-ExtraBold,FakeSlant=0.141},Numbers={Monospaced,Lining}].
 (fontspec)              
@@ -600,66 +562,56 @@ Package fontspec Info: Font family 'Cantarell(0)' created for font 'Cantarell'
 (fontspec)              
 (fontspec)             - (el/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
 (fontspec)             - (el/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Thin.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
 (fontspec)             - (l/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
 (fontspec)             - (l/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Light.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 (fontspec)             - (eb/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
 (fontspec)             - (eb/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-ExtraBold.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->s*[1]"[Cantarell-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.141;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 151.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/geometry/geometry.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/iftex/ifvtex.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count275
-\Gm@cntv=\count276
-\c@Gm@tempcnt=\count277
-\Gm@bindingoffset=\dimen143
-\Gm@wd@mp=\dimen144
-\Gm@odd@mp=\dimen145
-\Gm@even@mp=\dimen146
-\Gm@layoutwidth=\dimen147
-\Gm@layoutheight=\dimen148
-\Gm@layouthoffset=\dimen149
-\Gm@layoutvoffset=\dimen150
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
 \Gm@dimlist=\toks23
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/parskip/parskip.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/kvoptions/kvoptions.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/ltxcmds/ltxcmds.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/kvsetkeys/kvsetkeys.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count278
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsfonts/amsfonts.sty
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count286
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks24
 \symAMSa=\mathgroup4
@@ -667,374 +619,374 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip50
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsmath/amstext.sty
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsmath/amsgen.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
-\ex@=\dimen151
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsmath/amsbsy.sty
+\ex@=\dimen152
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen152
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen153
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count279
-LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count280
-\leftroot@=\count281
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count282
-\DOTSCASE@=\count283
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box54
-\strutbox@=\box55
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen153
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count284
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count285
-\dotsspace@=\muskip16
-\c@parentequation=\count286
-\dspbrk@lvl=\count287
+\inf@bad=\count287
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count288
+\leftroot@=\count289
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count290
+\DOTSCASE@=\count291
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen154
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count292
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count293
+\dotsspace@=\muskip17
+\c@parentequation=\count294
+\dspbrk@lvl=\count295
 \tag@help=\toks26
-\row@=\count288
-\column@=\count289
-\maxfields@=\count290
+\row@=\count296
+\column@=\count297
+\maxfields@=\count298
 \andhelp@=\toks27
-\eqnshift@=\dimen154
-\alignsep@=\dimen155
-\tagshift@=\dimen156
-\tagwidth@=\dimen157
-\totwidth@=\dimen158
-\lineht@=\dimen159
+\eqnshift@=\dimen155
+\alignsep@=\dimen156
+\tagshift@=\dimen157
+\tagwidth@=\dimen158
+\totwidth@=\dimen159
+\lineht@=\dimen160
 \@envbody=\toks28
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip52
+\multlinetaggap=\skip53
 \mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsfonts/amssymb.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/frontendlayer/tikz.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/basiclayer/pgf.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/utilities/pgfrcs.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/utilities/pgfutil-common.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/frontendlayer/tikz.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/basiclayer/pgf.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/utilities/pgfrcs.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen160
-\pgfutil@tempdimb=\dimen161
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box56
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/utilities/pgfrcs.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/pgf.revision.tex)
+\pgfutil@tempdima=\dimen161
+\pgfutil@tempdimb=\dimen162
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box57
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfrcs.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/basiclayer/pgfcore.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/graphics/graphicx.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/basiclayer/pgfcore.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/graphics-cfg/graphics.cfg
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 107.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
+Package graphics Info: Driver file: luatex.def on input line 106.
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen162
-\Gin@req@width=\dimen163
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/systemlayer/pgfsys.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/systemlayer/pgfsys.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks31
 \pgfkeys@temptoks=\toks32
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks33
 ))
-\pgf@x=\dimen164
-\pgf@y=\dimen165
-\pgf@xa=\dimen166
-\pgf@ya=\dimen167
-\pgf@xb=\dimen168
-\pgf@yb=\dimen169
-\pgf@xc=\dimen170
-\pgf@yc=\dimen171
-\pgf@xd=\dimen172
-\pgf@yd=\dimen173
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count291
-\c@pgf@countb=\count292
-\c@pgf@countc=\count293
-\c@pgf@countd=\count294
+\c@pgf@counta=\count299
+\c@pgf@countb=\count300
+\c@pgf@countc=\count301
+\c@pgf@countd=\count302
 \t@pgf@toka=\toks34
 \t@pgf@tokb=\toks35
 \t@pgf@tokc=\toks36
-\pgf@sys@id@count=\count295
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/systemlayer/pgf.cfg
+\pgf@sys@id@count=\count303
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-luatex.def
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
 File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-))) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count296
-\pgfsyssoftpath@bigbuffer@items=\count297
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count304
+\pgfsyssoftpath@bigbuffer@items=\count305
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/graphics-cfg/color.cfg
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: luatex.def on input line 274.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmath.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathutil.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen174
-\pgfmath@count=\count298
-\pgfmath@box=\box57
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmath.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathutil.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count306
+\pgfmath@box=\box58
 \pgfmath@toks=\toks37
 \pgfmath@stack@operand=\toks38
 \pgfmath@stack@operation=\toks39
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count299
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count307
 ))
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfint.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfint.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen175
-\pgf@picmaxx=\dimen176
-\pgf@picminy=\dimen177
-\pgf@picmaxy=\dimen178
-\pgf@pathminx=\dimen179
-\pgf@pathmaxx=\dimen180
-\pgf@pathminy=\dimen181
-\pgf@pathmaxy=\dimen182
-\pgf@xx=\dimen183
-\pgf@xy=\dimen184
-\pgf@yx=\dimen185
-\pgf@yy=\dimen186
-\pgf@zx=\dimen187
-\pgf@zy=\dimen188
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen189
-\pgf@path@lasty=\dimen190
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen191
-\pgf@shorten@start@additional=\dimen192
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box58
-\pgf@hbox=\box59
-\pgf@layerbox@main=\box60
-\pgf@picture@serial@count=\count300
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count308
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen193
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+\pgflinewidth=\dimen194
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen194
-\pgf@pt@y=\dimen195
-\pgf@pt@temp=\dimen196
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen197
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+\pgfarrowsep=\dimen198
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen198
-\pgf@sys@shading@range@num=\count301
-\pgf@shadingcount=\count302
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count309
+\pgf@shadingcount=\count310
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box61
+\pgfexternal@startupbox=\box62
 )
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box62
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+\pgfnodeparttextbox=\box63
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen199
-\pgf@nodesepend=\dimen256
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/utilities/pgffor.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/utilities/pgfkeys.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgf/math/pgfmath.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/math/pgfmath.code.tex)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/utilities/pgffor.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/utilities/pgfkeys.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgf/math/pgfmath.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/math/pgfmath.code.tex)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen257
-\pgffor@skip=\dimen258
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
 \pgffor@stack=\toks40
 \pgffor@toks=\toks41
 ))
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count303
-\pgfplotmarksize=\dimen259
+\pgf@plot@mark@count=\count311
+\pgfplotmarksize=\dimen260
 )
-\tikz@lastx=\dimen260
-\tikz@lasty=\dimen261
-\tikz@lastxsaved=\dimen262
-\tikz@lastysaved=\dimen263
-\tikz@lastmovetox=\dimen264
-\tikz@lastmovetoy=\dimen265
-\tikzleveldistance=\dimen266
-\tikzsiblingdistance=\dimen267
-\tikz@figbox=\box63
-\tikz@figbox@bg=\box64
-\tikz@tempbox=\box65
-\tikz@tempbox@bg=\box66
-\tikztreelevel=\count304
-\tikznumberofchildren=\count305
-\tikznumberofcurrentchild=\count306
-\tikz@fig@count=\count307
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikz@lastmovetox=\dimen265
+\tikz@lastmovetoy=\dimen266
+\tikzleveldistance=\dimen267
+\tikzsiblingdistance=\dimen268
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count312
+\tikznumberofchildren=\count313
+\tikznumberofcurrentchild=\count314
+\tikz@fig@count=\count315
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count308
-\pgfmatrixcurrentcolumn=\count309
-\pgf@matrix@numberofcolumns=\count310
+\pgfmatrixcurrentrow=\count316
+\pgfmatrixcurrentcolumn=\count317
+\pgf@matrix@numberofcolumns=\count318
 )
-\tikz@expandcount=\count311
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+\tikz@expandcount=\count319
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tikz-cd/tikz-cd.sty
+))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen268
-\pgfarrowlength=\dimen269
-\pgfarrowwidth=\dimen270
-\pgfarrowlinewidth=\dimen271
-))) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen272
-\pgfdecoratedremainingdistance=\dimen273
-\pgfdecoratedinputsegmentcompleteddistance=\dimen274
-\pgfdecoratedinputsegmentremainingdistance=\dimen275
-\pgf@decorate@distancetomove=\dimen276
-\pgf@decorate@repeatstate=\count312
-\pgfdecorationsegmentamplitude=\dimen277
-\pgfdecorationsegmentlength=\dimen278
+\pgfarrowinset=\dimen269
+\pgfarrowlength=\dimen270
+\pgfarrowwidth=\dimen271
+\pgfarrowlinewidth=\dimen272
+))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen273
+\pgfdecoratedremainingdistance=\dimen274
+\pgfdecoratedinputsegmentcompleteddistance=\dimen275
+\pgfdecoratedinputsegmentremainingdistance=\dimen276
+\pgf@decorate@distancetomove=\dimen277
+\pgf@decorate@repeatstate=\count320
+\pgfdecorationsegmentamplitude=\dimen278
+\pgfdecorationsegmentlength=\dimen279
 )
-\tikz@lib@dec@box=\box67
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+\tikz@lib@dec@box=\box68
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
-\tikz@math@for@depth=\count313
-\tikz@math@dimen=\dimen279
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
+\tikz@math@for@depth=\count321
+\tikz@math@dimen=\dimen280
 \tikz@math@toks=\toks42
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box68
-\pgf@layerboxsaved@background=\box69
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+\pgf@layerbox@background=\box69
+\pgf@layerboxsaved@background=\box70
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen280
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+\arrowsize=\dimen281
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.text.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.text.code.tex
-\pgf@lib@dec@text@box=\box70
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.text.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.text.code.tex
+\pgf@lib@dec@text@box=\box71
 )
-\tikz@lib@dec@te@box=\box71
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex))
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/mathastext/mathastext.sty
-Package: mathastext 2023/12/29 v1.3zb Use the text font in math mode (JFB)
+\tikz@lib@dec@te@box=\box72
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex))
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/mathastext/mathastext.sty
+Package: mathastext 2024/10/26 v1.4e Use the text font in math mode (JFB)
 
 Package mathastext Info: Starting the math mode configuration.
-\mst@exists@muskip=\muskip17
-\mst@forall@muskip=\muskip18
-\mst@prime@muskip=\muskip19
+\mst@exists@muskip=\muskip18
+\mst@forall@muskip=\muskip19
+\mst@prime@muskip=\muskip20
 \mst@do@nonletters=\toks43
-\mst@do@easynonletters=\toks44
-\mst@do@az=\toks45
-\mst@do@AZ=\toks46
+\mst@undo@nonletters=\toks44
+\mst@do@easynonletters=\toks45
+\mst@undo@easynonletters=\toks46
 \symmtoperatorfont=\mathgroup6
 \symmtletterfont=\mathgroup7
 (   mathastext:   ) punctuation: , . : ; and \colon
 (   mathastext:   ) \imath and \jmath 
 LaTeX Font Info:    Overwriting math alphabet `\Mathnormalbold' in version `normal'
-(Font)                  TU/Cantarell(0)/b/it --> TU/Cantarell(0)/b/it on input line 2516.
+(Font)                  TU/Cantarell(0)/b/it --> TU/Cantarell(0)/b/it on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathnormalbold' in version `bold'
-(Font)                  TU/Cantarell(0)/b/it --> TU/Cantarell(0)/b/it on input line 2516.
+(Font)                  TU/Cantarell(0)/b/it --> TU/Cantarell(0)/b/it on input line 2934.
 LaTeX Font Info:    Overwriting symbol font `mtletterfont' in version `normal'
-(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/m/it on input line 2516.
+(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/m/it on input line 2934.
 LaTeX Font Info:    Overwriting symbol font `mtletterfont' in version `bold'
-(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/b/it on input line 2516.
+(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/b/it on input line 2934.
 LaTeX Font Info:    Overwriting symbol font `mtoperatorfont' in version `normal'
-(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/m/n on input line 2516.
+(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/m/n on input line 2934.
 LaTeX Font Info:    Overwriting symbol font `mtoperatorfont' in version `bold'
-(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/b/n on input line 2516.
+(Font)                  TU/Cantarell(0)/m/n --> TU/Cantarell(0)/b/n on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathbf' in version `normal'
-(Font)                  TU/Cantarell(0)/b/n --> TU/Cantarell(0)/b/n on input line 2516.
+(Font)                  TU/Cantarell(0)/b/n --> TU/Cantarell(0)/b/n on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathbf' in version `bold'
-(Font)                  TU/Cantarell(0)/b/n --> TU/Cantarell(0)/b/n on input line 2516.
+(Font)                  TU/Cantarell(0)/b/n --> TU/Cantarell(0)/b/n on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathit' in version `normal'
-(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/m/it on input line 2516.
+(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/m/it on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathit' in version `bold'
-(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/b/it on input line 2516.
+(Font)                  TU/Cantarell(0)/m/it --> TU/Cantarell(0)/b/it on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathsf' in version `normal'
-(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 2516.
+(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 2516.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathtt' in version `normal'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 2516.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 2934.
 LaTeX Font Info:    Overwriting math alphabet `\Mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 2516.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 2934.
 (   mathastext:   ) Latin letters in the `normal', resp. `bold',
 (   mathastext:   ) math versions are now set up to use the fonts
 (   mathastext:   ) TU/Cantarell(0)/m/it, resp. TU/Cantarell(0)/b/it.
@@ -1050,306 +1002,311 @@ Package mathastext Info: Loading is complete.  You can now use \Mathastext to
 (mathastext)             modify the normal and bold math versions.  Use it
 (mathastext)             with optional argument or use \MTDeclareVersion to
 (mathastext)             declare additional math versions.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/adjustbox/trimclip.sty
-Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/collectbox/collectbox.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
-\collectedbox=\box72
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/adjustbox/adjcalc.sty
+\collectedbox=\box73
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
 )
-\tc@llx=\dimen281
-\tc@lly=\dimen282
-\tc@urx=\dimen283
-\tc@ury=\dimen284
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/adjustbox/tc-pgf.def
-File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
-)
-Package trimclip Info: No clipping driver 'tc-luatex.def' available.
-(trimclip)             Using fall-back PGF driver.
-)
+\tc@llx=\dimen282
+\tc@lly=\dimen283
+\tc@urx=\dimen284
+\tc@ury=\dimen285
+Package trimclip Info: Using driver 'tc-luatex.def'.
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/adjustbox/tc-luatex.def
+File: tc-luatex.def 2025/02/26 v1.1 Clipping driver for luatex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+)))
 LaTeX Info: Redefining \Longrightarrow on input line 133.
 LaTeX Info: Redefining \Longleftarrow on input line 134.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip53
-\f@nch@O@elh=\skip54
-\f@nch@O@erh=\skip55
-\f@nch@O@olh=\skip56
-\f@nch@O@orh=\skip57
-\f@nch@O@elf=\skip58
-\f@nch@O@erf=\skip59
-\f@nch@O@olf=\skip60
-\f@nch@O@orf=\skip61
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/dashrule/dashrule.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip54
+\f@nch@offset@elh=\skip55
+\f@nch@offset@erh=\skip56
+\f@nch@offset@olh=\skip57
+\f@nch@offset@orh=\skip58
+\f@nch@offset@elf=\skip59
+\f@nch@offset@erf=\skip60
+\f@nch@offset@olf=\skip61
+\f@nch@offset@orf=\skip62
+\f@nch@height=\skip63
+\f@nch@footalignment=\skip64
+\f@nch@widthL=\skip65
+\f@nch@widthC=\skip66
+\f@nch@widthR=\skip67
+\@temptokenb=\toks47
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/dashrule/dashrule.sty
 Package: dashrule 2013/03/28 v1.3 Dashed rules
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/ifmtarg/ifmtarg.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )
-\c@hdr@segments=\count314
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pgfplots/pgfplots.sty (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplots.revision.tex)
+\c@hdr@segments=\count322
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pgfplots/pgfplots.sty (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplots.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplotscore.code.tex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplots.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplotscore.code.tex
 Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
 \pgfplots@luabackend@table=\catcodetable14
-\t@pgfplots@toka=\toks47
-\t@pgfplots@tokb=\toks48
-\t@pgfplots@tokc=\toks49
-\pgfplots@tmpa=\dimen285
-\c@pgfplots@coordindex=\count315
-\c@pgfplots@scanlineindex=\count316
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
+\t@pgfplots@toka=\toks48
+\t@pgfplots@tokb=\toks49
+\t@pgfplots@tokc=\toks50
+\pgfplots@tmpa=\dimen286
+\c@pgfplots@coordindex=\count323
+\c@pgfplots@scanlineindex=\count324
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks50
-\t@pgf@tokb=\toks51
-\t@pgf@tokc=\toks52
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/luamath/pgflibraryluamath.code.tex)
+\t@pgf@toka=\toks51
+\t@pgf@tokb=\toks52
+\t@pgf@tokc=\toks53
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/luamath/pgflibraryluamath.code.tex)
 Package pgfplots info on input line 290: luamath library shipped with pgf 3.1.10 is up-to-date
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 Package pgfplots info on input line 82: Found new luatex: initializing lua commands instead of write18 (shell-escape)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count317
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count318
-\t@pgfplotstable@a=\toks53
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count319
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count325
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count326
+\t@pgfplotstable@a=\toks54
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count327
 
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-luatex.def))) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count320
-\pgfplots@xmin@reg=\dimen286
-\pgfplots@xmax@reg=\dimen287
-\pgfplots@ymin@reg=\dimen288
-\pgfplots@ymax@reg=\dimen289
-\pgfplots@zmin@reg=\dimen290
-\pgfplots@zmax@reg=\dimen291
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-luatex.def))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count328
+\pgfplots@xmin@reg=\dimen287
+\pgfplots@xmax@reg=\dimen288
+\pgfplots@ymin@reg=\dimen289
+\pgfplots@ymax@reg=\dimen290
+\pgfplots@zmin@reg=\dimen291
+\pgfplots@zmax@reg=\dimen292
 )
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box73
-\beforetitleunit=\skip62
-\aftertitleunit=\skip63
-\ttl@plus=\dimen292
-\ttl@minus=\dimen293
-\ttl@toksa=\toks54
-\titlewidth=\dimen294
-\titlewidthlast=\dimen295
-\titlewidthfirst=\dimen296
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amscls/amsthm.sty
+))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box74
+\beforetitleunit=\skip68
+\aftertitleunit=\skip69
+\ttl@plus=\dimen293
+\ttl@minus=\dimen294
+\ttl@toksa=\toks55
+\titlewidth=\dimen295
+\titlewidthlast=\dimen296
+\titlewidthfirst=\dimen297
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks55
-\thm@bodyfont=\toks56
-\thm@headfont=\toks57
-\thm@notefont=\toks58
-\thm@headpunct=\toks59
-\thm@preskip=\skip64
-\thm@postskip=\skip65
-\thm@headsep=\skip66
-\dth@everypar=\toks60
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/thmtools.sty
+\thm@style=\toks56
+\thm@bodyfont=\toks57
+\thm@headfont=\toks58
+\thm@notefont=\toks59
+\thm@headpunct=\toks60
+\thm@preskip=\skip70
+\thm@postskip=\skip71
+\thm@headsep=\skip72
+\dth@everypar=\toks61
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2023/05/04 v0.76
-\thmt@toks=\toks61
-\c@thmt@dummyctr=\count321
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/thm-patch.sty
+\thmt@toks=\toks62
+\c@thmt@dummyctr=\count329
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2023/05/04 v0.76
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/parseargs.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2023/05/04 v0.76
-\@parsespec=\toks62
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/thm-kv.sty
+\@parsespec=\toks63
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2023/05/04 v0.76
 Package thm-kv Info: Theorem names will be uppercased on input line 42.
 Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/thm-autoref.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/thm-autoref.sty
 Package: thm-autoref 2023/05/04 v0.76
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/aliasctr.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/aliasctr.sty
 Package: aliasctr 2023/05/04 v0.76
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/thm-listof.sty
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/thm-listof.sty
 Package: thm-listof 2023/05/04 v0.76
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/thm-restate.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/thm-restate.sty
 Package: thm-restate 2023/05/04 v0.76
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/thmtools/thm-amsthm.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2023/05/04 v0.76
-\thmt@style@headstyle=\toks63
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tools/verbatim.sty
-Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks64
-\verbatim@line=\toks65
+\thmt@style@headstyle=\toks64
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks65
+\verbatim@line=\toks66
 \verbatim@in@stream=\read3
 )
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/environ/environ.sty
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/trimspaces/trimspaces.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box74
-\tcb@upperbox=\box75
-\tcb@lowerbox=\box76
-\tcb@phantombox=\box77
-\c@tcbbreakpart=\count322
-\c@tcblayer=\count323
-\c@tcolorbox@number=\count324
-\l__tcobox_tmpa_box=\box78
-\l__tcobox_tmpa_dim=\dimen297
-\tcb@temp=\box79
+\tcb@titlebox=\box75
+\tcb@upperbox=\box76
+\tcb@lowerbox=\box77
+\tcb@phantombox=\box78
+\c@tcbbreakpart=\count330
+\c@tcblayer=\count331
+\c@tcolorbox@number=\count332
+\l__tcobox_tmpa_box=\box79
+\l__tcobox_tmpa_dim=\dimen298
 \tcb@temp=\box80
 \tcb@temp=\box81
 \tcb@temp=\box82
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks66
-\labelindent=\skip67
-\enit@outerparindent=\dimen298
-\enit@toks=\toks67
-\enit@inbox=\box83
-\enit@count@id=\count325
-\enitdp@description=\count326
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tocloft/tocloft.sty
+\tcb@temp=\box83
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\enitkv@toks@=\toks67
+\labelindent=\skip73
+\enit@outerparindent=\dimen299
+\enit@toks=\toks68
+\enit@inbox=\box84
+\enit@count@id=\count333
+\enitdp@description=\count334
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip68
-\cftbeforetoctitleskip=\skip69
-\cftaftertoctitleskip=\skip70
-\cftbeforepartskip=\skip71
-\cftpartnumwidth=\skip72
-\cftpartindent=\skip73
-\cftbeforechapskip=\skip74
-\cftchapindent=\skip75
-\cftchapnumwidth=\skip76
-\cftbeforesecskip=\skip77
-\cftsecindent=\skip78
-\cftsecnumwidth=\skip79
-\cftbeforesubsecskip=\skip80
-\cftsubsecindent=\skip81
-\cftsubsecnumwidth=\skip82
-\cftbeforesubsubsecskip=\skip83
-\cftsubsubsecindent=\skip84
-\cftsubsubsecnumwidth=\skip85
-\cftbeforeparaskip=\skip86
-\cftparaindent=\skip87
-\cftparanumwidth=\skip88
-\cftbeforesubparaskip=\skip89
-\cftsubparaindent=\skip90
-\cftsubparanumwidth=\skip91
-\cftbeforeloftitleskip=\skip92
-\cftafterloftitleskip=\skip93
-\cftbeforefigskip=\skip94
-\cftfigindent=\skip95
-\cftfignumwidth=\skip96
-\c@lofdepth=\count327
-\c@lotdepth=\count328
-\cftbeforelottitleskip=\skip97
-\cftafterlottitleskip=\skip98
-\cftbeforetabskip=\skip99
-\cfttabindent=\skip100
-\cfttabnumwidth=\skip101
+\cftparskip=\skip74
+\cftbeforetoctitleskip=\skip75
+\cftaftertoctitleskip=\skip76
+\cftbeforepartskip=\skip77
+\cftpartnumwidth=\skip78
+\cftpartindent=\skip79
+\cftbeforechapskip=\skip80
+\cftchapindent=\skip81
+\cftchapnumwidth=\skip82
+\cftbeforesecskip=\skip83
+\cftsecindent=\skip84
+\cftsecnumwidth=\skip85
+\cftbeforesubsecskip=\skip86
+\cftsubsecindent=\skip87
+\cftsubsecnumwidth=\skip88
+\cftbeforesubsubsecskip=\skip89
+\cftsubsubsecindent=\skip90
+\cftsubsubsecnumwidth=\skip91
+\cftbeforeparaskip=\skip92
+\cftparaindent=\skip93
+\cftparanumwidth=\skip94
+\cftbeforesubparaskip=\skip95
+\cftsubparaindent=\skip96
+\cftsubparanumwidth=\skip97
+\cftbeforeloftitleskip=\skip98
+\cftafterloftitleskip=\skip99
+\cftbeforefigskip=\skip100
+\cftfigindent=\skip101
+\cftfignumwidth=\skip102
+\c@lofdepth=\count335
+\c@lotdepth=\count336
+\cftbeforelottitleskip=\skip103
+\cftafterlottitleskip=\skip104
+\cftbeforetabskip=\skip105
+\cfttabindent=\skip106
+\cfttabnumwidth=\skip107
 
 
 Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing out. on input line 1156.
 
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pdfescape/pdfescape.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/pdftexcmds/pdftexcmds.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/infwarerr/infwarerr.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks68
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/hycolor/hycolor.sty
+\pdftexcmds@toks=\toks69
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/hyperref/nameref.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/hyperref/nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/refcount/refcount.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/gettitlestring/gettitlestring.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count329
+\c@section@level=\count337
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen299
-\Hy@linkcounter=\count330
-\Hy@pagecounter=\count331
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/intcalc/intcalc.sty
+\@linkdim=\dimen300
+\Hy@linkcounter=\count338
+\Hy@pagecounter=\count339
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count332
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count340
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Hyper figures OFF on input line 4179.
-Package hyperref Info: Link nesting OFF on input line 4184.
-Package hyperref Info: Hyper index ON on input line 4187.
-Package hyperref Info: Plain pages OFF on input line 4194.
-Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count333
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/url/url.sty
-\Urlmuskip=\muskip20
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count341
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/url/url.sty
+\Urlmuskip=\muskip21
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen300
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen301
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/bigintcalc/bigintcalc.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count334
-\Field@Width=\dimen301
-\Fld@charsize=\dimen302
-Package hyperref Info: Hyper figures OFF on input line 6063.
-Package hyperref Info: Link nesting OFF on input line 6068.
-Package hyperref Info: Hyper index ON on input line 6071.
-Package hyperref Info: backreferencing OFF on input line 6078.
-Package hyperref Info: Link coloring OFF on input line 6083.
-Package hyperref Info: Link coloring with OCG OFF on input line 6088.
-Package hyperref Info: PDF/A mode OFF on input line 6093.
+\Fld@menulength=\count342
+\Field@Width=\dimen302
+\Fld@charsize=\dimen303
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
 
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/atbegshi-ltx.sty
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count335
-\c@Item=\count336
-\c@Hfootnote=\count337
+\Hy@abspage=\count343
+\c@Item=\count344
+\c@Hfootnote=\count345
 )
 Package hyperref Info: Driver (autodetected): hluatex.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/hyperref/hluatex.def
-File: hluatex.def 2024-01-20 v7.01h Hyperref driver for luaTeX
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/atveryend-ltx.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count338
-\c@bookmark@seq@number=\count339
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+\Fld@listcount=\count346
+\c@bookmark@seq@number=\count347
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/uniquecounter/uniquecounter.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip102
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/cleveref/cleveref.sty
+\Hy@SectionHShift=\skip108
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -1363,158 +1320,163 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tcolorbox/tcbtheorems.code.tex
-Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/pdfcol/pdfcol.sty
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box84
-\tcb@totalupperbox=\box85
-\tcb@totallowerbox=\box86
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tikzfill/tikzfill.image.sty
+\tcb@testbox=\box85
+\tcb@totalupperbox=\box86
+\tcb@totallowerbox=\box87
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tikzfill/tikzfill.image.sty
 Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tikzfill/tikzfill-common.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tikzfill/tikzfill-common.sty
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box87
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+\l__tikzfill_img_box=\box88
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
 ))
-\c@tcb@cnt@definition=\count340
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/svg/svg.sty
+\c@tcb@cnt@definition=\count348
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/svg/svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2024/10/24 v3.43 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2024/10/24 v3.43 KOMA-Script package (file load hooks)
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2024/10/24 v3.43 KOMA-Script package (using LaTeX hooks)
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2024/10/24 v3.43 KOMA-Script package (logo)
 )))
-Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
-Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tools/shellesc.sty
+Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-\c@svg@param@lastpage=\count341
-\svg@box=\box88
-\c@svg@param@currpage=\count342
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/transparent/transparent.sty
+\c@svg@param@lastpage=\count349
+\svg@box=\box89
+\c@svg@param@currpage=\count350
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/transparent/transparent.sty
 Package: transparent 2022-10-27 v1.5 Transparency with color stacks
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/transparent/transparent-nometadata.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/transparent/transparent-nometadata.sty
 Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/emoji/emoji.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+))) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/emoji/emoji.sty
 Package: emoji 2021/07/17 v0.2.2 Emoji support in (Lua)LaTeX
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/emoji/emoji-table.def
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/emoji/emoji-table.def
 File: emoji-table.def 2021/07/17 v0.2.2 Emojisupportin(Lua)LaTeX
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/soul/soul.sty
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/soul/soul.sty
 Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/soul/soul-ori.sty
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/soul/soul-ori.sty
 Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
-\SOUL@word=\toks69
-\SOUL@lasttoken=\toks70
-\SOUL@syllable=\toks71
-\SOUL@cmds=\toks72
-\SOUL@buffer=\toks73
-\SOUL@token=\toks74
-\SOUL@syllgoal=\dimen303
-\SOUL@syllwidth=\dimen304
-\SOUL@charkern=\dimen305
-\SOUL@hyphkern=\dimen306
-\SOUL@dimen=\dimen307
-\SOUL@dimeni=\dimen308
-\SOUL@minus=\count343
-\SOUL@comma=\count344
-\SOUL@apo=\count345
-\SOUL@grave=\count346
-\SOUL@spaceskip=\skip103
-\SOUL@ttwidth=\dimen309
-\SOUL@uldp=\dimen310
-\SOUL@ulht=\dimen311
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/generic/etexcmds/etexcmds.sty
+\SOUL@word=\toks70
+\SOUL@lasttoken=\toks71
+\SOUL@syllable=\toks72
+\SOUL@cmds=\toks73
+\SOUL@buffer=\toks74
+\SOUL@token=\toks75
+\SOUL@syllgoal=\dimen304
+\SOUL@syllwidth=\dimen305
+\SOUL@charkern=\dimen306
+\SOUL@hyphkern=\dimen307
+\SOUL@dimen=\dimen308
+\SOUL@dimeni=\dimen309
+\SOUL@minus=\count351
+\SOUL@comma=\count352
+\SOUL@apo=\count353
+\SOUL@grave=\count354
+\SOUL@spaceskip=\skip109
+\SOUL@ttwidth=\dimen310
+\SOUL@uldp=\dimen311
+\SOUL@ulht=\dimen312
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/varwidth/varwidth.sty
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box89
-\sift@deathcycles=\count347
-\@vwid@loff=\dimen312
-\@vwid@roff=\dimen313
+\@vwid@box=\box90
+\sift@deathcycles=\count355
+\@vwid@loff=\dimen313
+\@vwid@roff=\dimen314
 )
-luaotfload | cache : Lookup cache loaded from /home/maruda/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/changepage/changepage.sty
+luaotfload | cache : Lookup cache loaded from /home/maruda/.texlive2024/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count348
-\cp@tempcnt=\count349
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/listings/listings.sty
-\lst@mode=\count350
-\lst@gtempboxa=\box90
-\lst@token=\toks75
-\lst@length=\count351
-\lst@currlwidth=\dimen314
-\lst@column=\count352
-\lst@pos=\count353
-\lst@lostspace=\dimen315
-\lst@width=\dimen316
-\lst@newlines=\count354
-\lst@lineno=\count355
-\lst@maxwidth=\dimen317
-
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count356
-\lst@skipnumbers=\count357
-\lst@framebox=\box91
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/02/21 1.10 listings configuration
+\c@cp@cntr=\count356
+\cp@tempcnt=\count357
+)
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/listings/listings.sty
+\lst@mode=\count358
+\lst@gtempboxa=\box91
+\lst@token=\toks76
+\lst@length=\count359
+\lst@currlwidth=\dimen315
+\lst@column=\count360
+\lst@pos=\count361
+\lst@lostspace=\dimen316
+\lst@width=\dimen317
+\lst@newlines=\count362
+\lst@lineno=\count363
+\lst@maxwidth=\dimen318
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count364
+\lst@skipnumbers=\count365
+\lst@framebox=\box92
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
-Package: listings 2024/02/21 1.10 (Carsten Heinz)
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/microtype/microtype.sty
-Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
-\MT@toks=\toks76
-\MT@tempbox=\box92
-\MT@count=\count358
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
-LaTeX Info: Redefining \leftprotrusion on input line 1060.
-\MT@prot@toks=\toks77
-LaTeX Info: Redefining \rightprotrusion on input line 1078.
-LaTeX Info: Redefining \textls on input line 1368.
-\MT@outer@kern=\dimen318
-LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
-\MT@listname@count=\count359
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/microtype/microtype-luatex.def
-File: microtype-luatex.def 2023/03/13 v3.1a Definitions specific to luatex (RS)
-Lua module: microtype 2023/03/13 3.1a microtype module.
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
+\MT@toks=\toks77
+\MT@tempbox=\box93
+\MT@count=\count366
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks78
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen319
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count367
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/microtype/microtype-luatex.def
+File: microtype-luatex.def 2025/02/11 v3.2a Definitions specific to luatex (RS)
+Lua module: microtype 2025/02/11 v3.2a microtype module.
 Module microtype Info: overwriting function `keepligature' on input line 63
-LaTeX Info: Redefining \lsstyle on input line 688.
-LaTeX Info: Redefining \lslig on input line 688.
-\MT@outer@space=\skip104
+LaTeX Info: Redefining \lsstyle on input line 779.
+LaTeX Info: Redefining \lslig on input line 779.
+\MT@outer@space=\skip110
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tcolorbox/tcblistings.code.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tcolorbox/tcblistingscore.code.tex
-Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/tcolorbox/tcbprocessing.code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
 )
-\c@tcblisting=\count360
-)) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/02/21 1.10 listings language file
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2024/02/21 1.10 listings language file
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.4.1'
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.4.1'
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.4.1'
+)
+\c@tcblisting=\count368
+)) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2024/09/23 1.10c listings language file
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/04.aux) (./rozdzialy/05.aux) (./rozdzialy/06.aux) (./rozdzialy/07.aux) (./rozdzialy/08.aux))
 \openout1 = main.aux
 
@@ -1527,10 +1489,6 @@ LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 52.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
 LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
@@ -1543,7 +1501,8 @@ LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
 
-Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup8
@@ -1598,8 +1557,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 52.
-\c@mv@tabular=\count361
-\c@mv@boldtabular=\count362
+\c@mv@tabular=\count369
+\c@mv@boldtabular=\count370
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1635,23 +1594,23 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/context/base/mkii/supp-pdf.mkii
+(/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen319
-\scratchbox=\box93
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks78
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen320
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks79
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count371
+\scratchdimen=\dimen320
+\scratchbox=\box94
+\nofMPsegments=\count372
+\nofMParguments=\count373
+\everyMPshowfont=\toks79
+\MPscratchCnt=\count374
+\MPscratchDim=\dimen321
+\MPnumerator=\count375
+\makeMPintoPDFobject=\count376
+\everyMPtoPDFconversion=\toks80
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 
@@ -1664,24 +1623,28 @@ Package hyperref Info: Link coloring OFF on input line 52.
 
 \openout4 = main.out
 
-Package fontspec Info: Font family 'NotoColorEmoji(0)' created for font 'Noto
+Package fontspec Info: 
+(fontspec)             Font family 'NotoColorEmoji(0)' created for font 'Noto
 (fontspec)             Color Emoji' with options
 (fontspec)             [BoldFont={},ItalicFont={},SmallCapsFont={},Renderer=HarfBuzz].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"name:NotoColorEmoji:mode=harf;script=DFLT;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"name:Noto Color
+(fontspec)             Emoji:mode=harf;script=DFLT;language=dflt;"
 
-\c@lstlisting=\count369
+\c@lstlisting=\count377
+Package microtype Info: Patching varwidth to enable character protrusion.
+\MT@vwid@leftmargin=\dimen322
+\MT@vwid@rightmargin=\dimen323
 LaTeX Info: Redefining \microtypecontext on input line 52.
 Package microtype Info: Applying patch `item' on input line 52.
 Package microtype Info: Applying patch `toc' on input line 52.
 Package microtype Info: Applying patch `eqnum' on input line 52.
 Package microtype Info: Applying patch `footnote' on input line 52.
 Package microtype Info: Applying patch `verbatim' on input line 52.
+LaTeX Info: Redefining \microtypesetup on input line 52.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1703,15 +1666,15 @@ LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 55.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsfonts/umsa.fd
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/microtype/mt-msa.cfg
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsfonts/umsb.fd
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/microtype/mt-msb.cfg
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
@@ -1720,13 +1683,15 @@ LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 55.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 55.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/microtype/mt-cmr.cfg
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) [1
+)
+
+[1
 
 
 
-{/nix/store/vwv57nhj45xqmv91cxf042mqkl8psab0-texlive-combined-full-2023-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/nix/store/x7fb81hlnfp3rcaax9w40pz8qqs96ln2-texlive-combined-full-2024-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
 (Font)              scaled to size 29.86pt on input line 58.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
@@ -1744,113 +1709,69 @@ LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
 \openout5 = main.toc
 
 
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [0]
-\openout2 = rozdzialy/03.aux
- (./rozdzialy/03.tex
+\openout2 = rozdzialy/01.aux
+ (./rozdzialy/01.tex
+Chapter 1.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 1.
+(Font)              scaled to size 17.28pt on input line 5.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 1.
+(Font)              scaled to size 17.28pt on input line 5.
 LaTeX Font Info:    Font shape `TU/Cantarell(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 3.
+(Font)              scaled to size 14.4pt on input line 7.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[11
-
+[1
 
 
 
 ]
-LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/Cantarell(0)/m/it' tried instead on input line 51.
-LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 51.
-
-Overfull \hbox (11.55943pt too wide) in paragraph at lines 52--53
-[][]\OT1/cmr/m/n/12 (\mst@mathfont W\mst@mathfont , \mst@mathfont U\OT1/cmr/m/n/12 )$ \TU/Cantarell(0)/m/n/12 będzie zbiorem ho-mo-mor-fizmów $\mst@mathfont R$\TU/Cantarell(0)/m/n/12 -modułów. Funk-torem lewo-dołączonym
- []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[12])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 24.64995pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
-
-[13]
-\openout2 = rozdzialy/05.aux
- (./rozdzialy/05.tex
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 14.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 24.64995pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
-
-[20
-
-
-
-
-]
-Underfull \vbox (badness 6300) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 24.64995pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
-
-[21]
+[2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[22]
-Overfull \hbox (8.36893pt too wide) in paragraph at lines 133--134
- [] 
- []
+[3])
 
 
-Overfull \hbox (4.63336pt too wide) in paragraph at lines 145--147
-\TU/Cantarell(0)/m/n/12 co daje nam równość prze-jś-cia po po-marańc-zowych strza-łkach na górze (prawa strona równości)
- []
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
+[4]
+\openout2 = rozdzialy/02.aux
+ (./rozdzialy/02.tex
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NotoColorEmoji' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -2009,10 +1930,275 @@ Package microtype Info: Character `textgreater ' is missing
 (microtype)             in font `TU/NotoColorEmoji(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[5
+
+
+
+<./luatex.pE5RZt/1.png>]
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/sl' in size <12> not available
+(Font)              Font shape `TU/Cantarell(0)/m/it' tried instead on input line 65.
+LaTeX Font Info:    Font shape `TU/Cantarell(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 65.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[8]
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[9]
+Underfull \hbox (badness 1400) in paragraph at lines 219--220
+[]\TU/Cantarell(0)/m/n/12 Dowolna kat-e-go-ria $\OMS/cmsy/m/n/12 C$ \TU/Cantarell(0)/m/n/12 z ko-pro-duk-tem i obiek-tem koń-cowym jest kat-e-gorią
+ []
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[10]
+\openout2 = rozdzialy/03.aux
+ (./rozdzialy/03.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[11
+
+
+
+]
+Overfull \hbox (11.55943pt too wide) in paragraph at lines 52--53
+[][]\OT1/cmr/m/n/12 (\mst@mathfont W\mst@mathfont , \mst@mathfont U\OT1/cmr/m/n/12 )$ \TU/Cantarell(0)/m/n/12 będzie zbiorem ho-mo-mor-fizmów $\mst@mathfont R$\TU/Cantarell(0)/m/n/12 -modułów. Funk-torem lewo-dołączonym
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[12])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[13]
+\openout2 = rozdzialy/04.aux
+ (./rozdzialy/04.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[14
+
+
+
+]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[17]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[18])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[19<./luatex.pE5RZt/2.png>]
+\openout2 = rozdzialy/05.aux
+ (./rozdzialy/05.tex
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 14.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[20
+
+
+
+]
+Underfull \vbox (badness 6300) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[22]
+Overfull \hbox (8.36893pt too wide) in paragraph at lines 133--134
+ [] 
+ []
+
+
+Overfull \hbox (4.63336pt too wide) in paragraph at lines 145--147
+\TU/Cantarell(0)/m/n/12 co daje nam równość prze-jś-cia po po-marańc-zowych strza-łkach na górze (prawa strona równości)
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [23]
@@ -2022,26 +2208,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
 )
 
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[24<./luatex.ZyQrIW/1.png>]
+[24]
 \openout2 = rozdzialy/06.aux
  (./rozdzialy/06.tex
 LaTeX Font Info:    Trying to load font information for U+euf on input line 10.
- (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/amsfonts/ueuf.fd
+ (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) (/nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/tex/latex/microtype/mt-euf.cfg
+) (/nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/tex/latex/microtype/mt-euf.cfg
 File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 )
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [25
@@ -2054,10 +2242,12 @@ Overfull \hbox (2.5596pt too wide) in paragraph at lines 58--59
  []
 
 
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [26]
@@ -2072,20 +2262,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
 )
 
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [27]
 \openout2 = rozdzialy/07.aux
  (./rozdzialy/07.tex)
 
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
 [28
@@ -2094,64 +2286,65 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 24.64995pt, for example:
 (fancyhdr)                \setlength{\headheight}{24.64995pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
 
-[29] (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/04.aux) (./rozdzialy/05.aux) (./rozdzialy/06.aux) (./rozdzialy/07.aux) (./rozdzialy/08.aux))
+[29]
+\openout2 = rozdzialy/08.aux
+ (./rozdzialy/08.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[30
+
+
+
+])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 24.64995pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.64995pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-12.64995pt}.
+
+[31] (./main.aux (./rozdzialy/01.aux) (./rozdzialy/02.aux) (./rozdzialy/03.aux) (./rozdzialy/04.aux) (./rozdzialy/05.aux) (./rozdzialy/06.aux) (./rozdzialy/07.aux) (./rozdzialy/08.aux))
  ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 247B84BBC95D976F177DE5AA9A4F2FD9;2493.
+(rerunfilecheck)             Checksum: 115DB9FB4B0DA2DB60F49C7D209F97F4;4996.
 )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 76 ({)
+### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 55841 strings out of 476447
- 244339,2373549 words of node,token memory allocated
- 886 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 4 glyph, 38 attribute, 92 glue_spec, 38 attribute_list, 5 write nodes
-   avail lists: 1:7,2:5997,3:2371,4:5238,5:4599,6:95,7:9336,8:58,9:11493,10:37,11:592
- 76417 multiletter control sequences out of 65536+600000
- 82 fonts using 13822911 bytes
- 117i,16n,129p,1192b,1672s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57798 strings out of 475512
+ 244343,2373549 words of node,token memory allocated
+ 968 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 56 attribute, 96 glue_spec, 56 attribute_list, 4 write nodes
+   avail lists: 1:8,2:5928,3:2374,4:5238,5:4599,6:93,7:9294,8:66,9:11493,10:37,11:592
+ 79196 multiletter control sequences out of 65536+600000
+ 82 fonts using 19369791 bytes
+ 117i,27n,122p,1192b,1845s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</nix/store/swxn2kgfg47a8r0igh45r51c7x3mk92s-lm-2.005-tex/fonts/opentype/public/lm/lmmonolt10-bold.otf></nix/store/swxn2kgfg47a8r0igh45r51c7x3mk92s-lm-2.005-tex/fonts/opentype/public/lm/lmmono12-regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/euler/eufm10.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></nix/store/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/symbols/msam10.pfb></nix/st
+ore/z5ws6797p4763ycdkmdpayprws409k1g-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (33 pages, 318708 bytes).
 
-warning  (pdf backend): unreferenced destination with name 'tcb@cnt@definition.1.11'
-
-warning  (pdf backend): unreferenced destination with name 'section.1.8'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.4.3'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.4.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.4.1'
-
-warning  (pdf backend): unreferenced destination with name 'section.1.4'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.2.3'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.2.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.2.1'
-
-warning  (pdf backend): unreferenced destination with name 'section.1.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.1.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.1.1.1'
-
-warning  (pdf backend): unreferenced destination with name 'section.1.1'
-
-warning  (pdf backend): unreferenced destination with name 'chapter.1'
-</nix/store/swxn2kgfg47a8r0igh45r51c7x3mk92s-lm-2.005-tex/fonts/opentype/public/lm/lmmonolt10-bold.otf></nix/store/swxn2kgfg47a8r0igh45r51c7x3mk92s-lm-2.005-tex/fonts/opentype/public/lm/lmmono12-regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Bold.otf></nix/store/1fvgzyg5q3bq21qxl5ds0mvghfrmmsyn-cantarell-3.2-tex/fonts/opentype/gnome/cantarell/Cantarell-Regular.otf></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/euler/eufm10.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></nix/store/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/symbols/msam10.pfb></nix/st
-ore/s1awgirjjjx9q784fbncpzr9z75mllx2-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (15 pages, 198958 bytes).
-
-PDF statistics: 310 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 94 named destinations out of 1000 (max. 131072)
- 112 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 462 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
+ 146 named destinations out of 1000 (max. 131072)
+ 216 words of extra memory for PDF output out of 10000 (max. 100000000)
 
