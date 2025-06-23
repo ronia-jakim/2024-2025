@@ -27,15 +27,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.88700188"
-     inkscape:cx="270.5744"
-     inkscape:cy="574.4069"
+     inkscape:zoom="0.65031086"
+     inkscape:cx="417.49264"
+     inkscape:cy="455.93579"
      inkscape:window-width="1916"
      inkscape:window-height="1164"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g6" /><defs
+     inkscape:current-layer="g4" /><defs
      id="defs1"><rect
        x="966.33118"
        y="454.63581"
@@ -5741,81 +5741,83 @@
            width="1"
            height="1"
            fill="#0f4e6f"
-           id="rect437-7" /></g></g><text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
-       x="79.124886"
-       y="66.933304"
-       id="text4"><tspan
-         sodipodi:role="line"
-         id="tspan4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
+           id="rect437-7" /></g></g><g
+       id="g4"
+       transform="matrix(0.89724591,0,0,0.89724591,10.98827,5.1377039)"><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
          x="79.124886"
-         y="66.933304">August </tspan></text><text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
-       x="29.124582"
-       y="66.933304"
-       id="text5"><tspan
-         sodipodi:role="line"
-         id="tspan5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
+         y="66.933304"
+         id="text4"><tspan
+           sodipodi:role="line"
+           id="tspan4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
+           x="79.124886"
+           y="66.933304">August </tspan></text><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
          x="29.124582"
-         y="66.933304">25-29 </tspan></text><text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
-       x="137.12466"
-       y="66.933304"
-       id="text6"><tspan
-         sodipodi:role="line"
-         id="tspan6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
+         y="66.933304"
+         id="text5"><tspan
+           sodipodi:role="line"
+           id="tspan5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
+           x="29.124582"
+           y="66.933304">25-29 </tspan></text><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
          x="137.12466"
-         y="66.933304">2025</tspan></text><text
+         y="66.933304"
+         id="text6"><tspan
+           sodipodi:role="line"
+           id="tspan6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fe9816;fill-opacity:1;stroke-width:0.264583"
+           x="137.12466"
+           y="66.933304">2025</tspan></text></g><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,0.85084432,-48.921282)"
        id="text8"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Oswald;-inkscape-font-specification:'Oswald, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:justify;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect438);display:inline;fill:#0f4e6f;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dasharray:7.55906, 22.6772;stroke-dashoffset:0;stroke-opacity:1"><tspan
          x="24.695312"
          y="522.37916"
-         id="tspan8">The <tspan
+         id="tspan58">The <tspan
    dx="1.2940483 0 0 0 1.2940483 0 0 1.2940521 0 0 0 1.2940559"
-   id="tspan3">aim of the workshop</tspan><tspan
+   id="tspan56">aim of the workshop</tspan><tspan
    dx="0 1.2940521 0 0 1.2940521 0 0 1.2940521 0 0 0 0 0 0 0 1.2940521 0 0 0 1.2940369 0 0 0 0 1.2940369 0 0 0 0 0 0 0 0 0 0 1.2940674 0 0 1.2940369 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.2940674 0 0 1.2940674 0 0 0 0 0 0 1.2940063 0 0 1.2940369 0 0 0 0 0 1.2940674"
-   id="tspan7"> is to prepare the next generation of mathematicians to boldly go where no </tspan></tspan><tspan
+   id="tspan57"> is to prepare the next generation of mathematicians to boldly go where no </tspan></tspan><tspan
          x="24.695312"
          y="547.37916"
-         id="tspan11"><tspan
+         id="tspan60"><tspan
            dx="0 0 0 0 6.6241989 0 0 0 6.6241989 0 0 0 0 6.6241913 0 0 0 0 0 0 6.6241913 0 0 6.6241913 0 0 0 0 0 0 0 6.6241913 0 0 0 0 6.6242218 0 0 0 0 0 0 0 0 6.6241913 0 0 0 0 0 0 0 0 0 6.6242218 0 0 6.6241913 0 0 0 0 0 0 0 0 0 0 0 6.6241608 0 0 6.6242218 0 6.6242218 0 0 0 0 0 0 0 0 6.6241608"
-           id="tspan10">one has gone before by showing them research frontiers in mathematics in a tangible and </tspan></tspan><tspan
+           id="tspan59">one has gone before by showing them research frontiers in mathematics in a tangible and </tspan></tspan><tspan
          x="24.695312"
          y="572.37916"
-         id="tspan13"><tspan
+         id="tspan62"><tspan
            dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75991058 0 0 0 0 0.75990295 0 0 0.75991821 0 0 0 0 0 0 0.75990295 0 0 0 0 0 0 0.75990295 0 0 0.75990295 0 0 0 0 0 0 0 0 0.75990295 0 0 0 0 0 0 0 0.75990295 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75990295 0 0 0 0.75990295 0 0 0 0 0 0.75990295 0 0 0 0 0 0 0 0 0.75996399 0 0 0 0 0 0 0 0 0.75990295"
-           id="tspan12">comprehensible way. It should reveal to students various possibilities for their research careers, both </tspan></tspan><tspan
+           id="tspan61">comprehensible way. It should reveal to students various possibilities for their research careers, both </tspan></tspan><tspan
          x="24.695312"
          y="597.37916"
-         id="tspan15"><tspan
+         id="tspan64"><tspan
            dx="0 0 0 1.1013489 0 0 0 0 0 1.1013489 0 0 1.1013489 0 0 0 0 0 0 1.1013489 0 0 0 0 0 0 0 0 1.1013489 0 0 0 0 0 0 0 0 0 0 0 0 0 1.1013641 0 0 0 1.1013641 0 0 0 1.1013641 0 0 0 0 0 0 1.1013336 0 0 1.1013336 0 0 0 0 0 0 0 0 0 1.1013641 0 0 0 0 0 0 1.1013947 0 0 1.1013947 0 0 0 0 0 0 0 0 0 0 0 0 1.1013336"
-           id="tspan14">in terms of future research opportunities and the choice of potential thesis or postdoctoral advisors. </tspan></tspan><tspan
+           id="tspan63">in terms of future research opportunities and the choice of potential thesis or postdoctoral advisors. </tspan></tspan><tspan
          x="24.695312"
          y="622.37916"
-         id="tspan20"><tspan
+         id="tspan69"><tspan
            dx="0 0 0 0 3.5965729 0 0 0 0 0 0 0 0 3.5965729 0 0 0 0 3.5965729"
-           id="tspan16">The workshop will combine </tspan><tspan
+           id="tspan65">The workshop will combine </tspan><tspan
            dx="3.5965729 0 0 3.5965729 0 0 0 0 0 0 0 0 0 0 3.5965576"
            style="font-weight:bold"
-           id="tspan17">15 expository lectures</tspan><tspan
+           id="tspan66">15 expository lectures</tspan><tspan
            dx="0 3.5965729 0 0 3.5965729 0 0 0 0 0 0 3.5965729 0 0 0 0 0 0 0 0 3.5966034"
-           id="tspan18"> by senior speakers with </tspan><tspan
+           id="tspan67"> by senior speakers with </tspan><tspan
            dx="3.5965729 0 0 0 0 0 0 0 0 0 0 0 0 0 3.5965424"
            style="font-weight:bold"
-           id="tspan19">presentations by </tspan></tspan><tspan
+           id="tspan68">presentations by </tspan></tspan><tspan
          x="24.695312"
          y="647.37916"
-         id="tspan22"><tspan
+         id="tspan71"><tspan
    style="font-weight:bold"
-   id="tspan21">participating students</tspan>.</tspan></text><text
+   id="tspan70">participating students</tspan>.</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,58.379278,6.0734318)"
        id="text451"
@@ -5896,7 +5898,7 @@
          y="0"><tspan
            x="24.695312"
            y="519.24053"
-           id="tspan23">SPEAKERS:</tspan></text><text
+           id="tspan72">SPEAKERS:</tspan></text><text
          xml:space="preserve"
          transform="matrix(0.41831001,0,0,0.41831001,6.6697036,-72.497878)"
          id="text450"
@@ -5905,67 +5907,67 @@
          y="0"><tspan
            x="24.695312"
            y="517.89669"
-           id="tspan24">Ika Agricola
+           id="tspan73">Ika Agricola
 </tspan><tspan
            x="24.695312"
            y="536.87179"
-           id="tspan25">Vitaly Bergelson
+           id="tspan74">Vitaly Bergelson
 </tspan><tspan
            x="24.695312"
            y="555.84688"
-           id="tspan26">Rita Fioresi
+           id="tspan75">Rita Fioresi
 </tspan><tspan
            x="24.695312"
            y="574.82198"
-           id="tspan27">Mikołaj Frączek 
+           id="tspan76">Mikołaj Frączek 
 </tspan><tspan
            x="24.695312"
            y="593.79708"
-           id="tspan28">Piotr Gwiazda
+           id="tspan77">Piotr Gwiazda
 </tspan><tspan
            x="24.695312"
            y="612.77218"
-           id="tspan29">Agnieszka Kałamajska
+           id="tspan78">Agnieszka Kałamajska
 </tspan><tspan
            x="24.695312"
            y="631.74727"
-           id="tspan30">Aleksandra Kwiatkowska
+           id="tspan79">Aleksandra Kwiatkowska
 </tspan><tspan
            x="24.695312"
            y="650.72237"
-           id="tspan31">Nadia S. Larsen
+           id="tspan80">Nadia S. Larsen
 </tspan><tspan
            x="24.695312"
            y="669.69747"
-           id="tspan32">Urszula Ledzewicz
+           id="tspan81">Urszula Ledzewicz
 </tspan><tspan
            x="24.695312"
            y="688.67257"
-           id="tspan33">Mariusz T. Lemańczyk 
+           id="tspan82">Mariusz T. Lemańczyk 
 </tspan><tspan
            x="24.695312"
            y="707.64766"
-           id="tspan34">Tomasz Łuczak
+           id="tspan83">Tomasz Łuczak
 </tspan><tspan
            x="24.695312"
            y="726.62276"
-           id="tspan35">Damian Osajda
+           id="tspan84">Damian Osajda
 </tspan><tspan
            x="24.695312"
            y="745.59786"
-           id="tspan36">Katarzyna Pietruska-Pałuba 
+           id="tspan85">Katarzyna Pietruska-Pałuba 
 </tspan><tspan
            x="24.695312"
            y="764.57296"
-           id="tspan37">Marc A. Rieffel 
+           id="tspan86">Marc A. Rieffel 
 </tspan><tspan
            x="24.695312"
            y="783.54806"
-           id="tspan38">Ewelina Zatorska
+           id="tspan87">Ewelina Zatorska
 </tspan><tspan
            x="24.695312"
            y="802.52315"
-           id="tspan39"> </tspan></text><text
+           id="tspan88"> </tspan></text><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,-232.57888,17.948746)"
          id="text448"
@@ -5974,67 +5976,67 @@
          y="0"><tspan
            x="1419.9413"
            y="476.95656"
-           id="tspan40">University of Marburg
+           id="tspan89">University of Marburg
 </tspan><tspan
            x="1424.4773"
            y="506.95656"
-           id="tspan41">Ohio State University
+           id="tspan90">Ohio State University
 </tspan><tspan
            x="1423.3253"
            y="536.95656"
-           id="tspan42">University of Bolonga
+           id="tspan91">University of Bolonga
 </tspan><tspan
            x="1414.5173"
            y="566.95656"
-           id="tspan43">Jagiellonian University
+           id="tspan92">Jagiellonian University
 </tspan><tspan
            x="1277.3572"
            y="596.95656"
-           id="tspan44">Institute of Mathematics PAN, Warsaw
+           id="tspan93">Institute of Mathematics PAN, Warsaw
 </tspan><tspan
            x="1425.8213"
            y="626.95656"
-           id="tspan45">University of Warsaw
+           id="tspan94">University of Warsaw
 </tspan><tspan
            x="1221.4134"
            y="656.95656"
-           id="tspan46">University of Wrocław, University of Münster
+           id="tspan95">University of Wrocław, University of Münster
 </tspan><tspan
            x="1455.1253"
            y="686.95656"
-           id="tspan47">University of Oslo
+           id="tspan96">University of Oslo
 </tspan><tspan
            x="1347.5814"
            y="716.95656"
-           id="tspan48"> Łódź University of Technology
+           id="tspan97"> Łódź University of Technology
 </tspan><tspan
            x="1281.9654"
            y="746.95656"
-           id="tspan49"> Nicolaus Copernicus University Toruń
+           id="tspan98"> Nicolaus Copernicus University Toruń
 </tspan><tspan
            x="1296.6533"
            y="776.95656"
-           id="tspan50">Adam Mickiewicz University, Poznań
+           id="tspan99">Adam Mickiewicz University, Poznań
 </tspan><tspan
            x="1187.0215"
            y="806.95656"
-           id="tspan51">University of Wrocław, University of Copenhagen
+           id="tspan100">University of Wrocław, University of Copenhagen
 </tspan><tspan
            x="1425.8213"
            y="836.95656"
-           id="tspan52">University of Warsaw
+           id="tspan101">University of Warsaw
 </tspan><tspan
            x="1323.7734"
            y="866.95656"
-           id="tspan53">University of California, Berkeley
+           id="tspan102">University of California, Berkeley
 </tspan><tspan
            x="1418.8613"
            y="896.95656"
-           id="tspan54">University of Warwick
+           id="tspan103">University of Warwick
 </tspan><tspan
            x="1608.1973"
            y="926.95656"
-           id="tspan55"> </tspan></text></g><image
+           id="tspan104"> </tspan></text></g><image
        width="21.978024"
        height="20"
        preserveAspectRatio="none"
@@ -6057,12 +6059,12 @@
          x="250"
          y="250" /></g><text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0f4e6f;fill-opacity:1;stroke-width:0.264583"
-       x="104.96031"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Boldonse;-inkscape-font-specification:'Boldonse, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0f4e6f;fill-opacity:1;stroke-width:0.264583"
+       x="104.96472"
        y="78.466667"
        id="text7"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.29167px;font-family:Oswald;-inkscape-font-specification:'Oswald, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#0f4e6f;fill-opacity:1;stroke-width:0.264583"
-         x="104.96031"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7.05556px;font-family:Oswald;-inkscape-font-specification:'Oswald, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#0f4e6f;fill-opacity:1;stroke-width:0.264583"
+         x="104.96472"
          y="78.466667"
-         id="tspan9">in Banach Center, Będlewo</tspan></text></g></svg>
+         id="tspan9">Banach Center, Będlewo, Poland</tspan></text></g></svg>
